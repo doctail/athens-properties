@@ -1,0 +1,14 @@
+s00-cold-open.mp3 43.493878
+s01-hadean.mp3 35.213061
+s02-archean.mp3 45.061224
+s03-snowball.mp3 41.717551
+s04-great-dying.mp3 52.035918
+s05-impact.mp3 57.652245
+s06-cambrian.mp3 51.435102
+s07-triassic.mp3 37.537959
+s08-carboniferous.mp3 69.015510
+s09-jurassic.mp3 48.457143
+s10-cretaceous.mp3 47.151020
+s11-ice-age.mp3 53.603265
+s12-miocene.mp3 53.655510
+s13-ending.mp3 50.860408

@@ -1,6 +1,6 @@
 # EP01 — How Long Would You Survive in Every Era of Earth?
 
-Status: DRAFT v1 — waiting for owner approval (do not produce audio/animation yet)
+Status: v1.1 — recorded. Change from v1: #8 and #4 survival times fixed so the ranking is monotonic.
 Target: ~12 min · ~1,850 words · narrator 150–155 wpm
 Format: countdown #12 (worst) → #1 (best). On-screen: survival TIMER (top-right), TIER BOARD that fills up between eras, era label + "millions of years ago".
 
@@ -116,9 +116,9 @@ NARRATOR: Sixty-six million years ago, an asteroid around ten kilometres wide hi
 
 NARRATOR: Without sunlight, plants stop growing. When plants stop, everything that eats plants starves. And then everything that eats *those* animals starves.
 
-NARRATOR: If Dave is lucky enough to land far from the crater, he still joins the dinosaurs on the most famous losing team in history. Survival time: maybe a couple of weeks.
+NARRATOR: Even if Dave lands far from the crater, the sky is on fire and the world is going dark. He joins the dinosaurs on the most famous losing team in history. Survival time: a few days.
 
-[V] Timer: **~2 WEEKS**. Board: slot 8.
+[V] Timer: **~4 DAYS**. Board: slot 8.
 
 ---
 
@@ -196,9 +196,9 @@ NARRATOR: Yes, predators like Allosaurus are real. But a big predator isn't wait
 
 NARRATOR: The bigger problem is food. There's no grass, no wheat, almost none of the fruit we know. Every unknown leaf or berry could be dinner, or poison.
 
-NARRATOR: Near a river, with fish and eggs, Dave could last weeks. One bad encounter, and it's over. Survival time: about a month.
+NARRATOR: But near a river, with fish and eggs, and less fire and swamp than the Carboniferous, Dave could last a while. One bad encounter, and it's over. Survival time: about four months.
 
-[V] Timer: **~1 MONTH**. Board: slot 4.
+[V] Timer: **~4 MONTHS**. Board: slot 4.
 
 ---
 
