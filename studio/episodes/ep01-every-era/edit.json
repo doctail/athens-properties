@@ -1,20 +1,476 @@
 {
-  "sections": [
-    {"audio": "s00-cold-open.mp3", "images": [1, 2, 3, 4, 5],
-     "bubbles": [{"text": "Hello?… Is this Ohio?", "t0": 7.0, "t1": 10.5, "x": 1050, "y": 140}],
-     "title_card": 40.5},
-    {"audio": "s01-hadean.mp3", "images": [6, 7, 8, 9, 10, 11], "rank": 12, "era": "THE HADEAN", "era_short": "Hadean", "when": "4.5 BILLION YEARS AGO", "survival": "~10 SECONDS"},
-    {"audio": "s02-archean.mp3", "images": [12, 13, 14, 15, 16, 17], "rank": 11, "era": "THE ARCHEAN", "era_short": "Archean", "when": "3.5 BILLION YEARS AGO", "survival": "~2 MINUTES"},
-    {"audio": "s03-snowball.mp3", "images": [18, 19, 20, 21, 22, 23, 24], "rank": 10, "era": "SNOWBALL EARTH", "era_short": "Snowball Earth", "when": "650 MILLION YEARS AGO", "survival": "~6 HOURS"},
-    {"audio": "s04-great-dying.mp3", "images": [25, 26, 27, 28, 29, 30, 31, 32], "rank": 9, "era": "THE GREAT DYING", "era_short": "Great Dying", "when": "252 MILLION YEARS AGO", "survival": "~3 DAYS"},
-    {"audio": "s05-impact.mp3", "images": [33, 34, 35, 36, 37, 38, 39, 40], "rank": 8, "era": "IMPACT DAY", "era_short": "Impact Day", "when": "66 MILLION YEARS AGO", "survival": "~4 DAYS"},
-    {"audio": "s06-cambrian.mp3", "images": [41, 42, 43, 44, 45, 46, 47, 48], "rank": 7, "era": "THE CAMBRIAN", "era_short": "Cambrian", "when": "510 MILLION YEARS AGO", "survival": "~1 WEEK"},
-    {"audio": "s07-triassic.mp3", "images": [49, 50, 51, 52, 53, 54], "rank": 6, "era": "EARLY TRIASSIC", "era_short": "Early Triassic", "when": "248 MILLION YEARS AGO", "survival": "~1 WEEK"},
-    {"audio": "s08-carboniferous.mp3", "images": [55, 56, 57, 58, 59, 60, 61], "rank": 5, "era": "CARBONIFEROUS", "era_short": "Carboniferous", "when": "310 MILLION YEARS AGO", "survival": "~3 MONTHS"},
-    {"audio": "s09-jurassic.mp3", "images": [62, 63, 64, 65, 66, 67], "rank": 4, "era": "THE JURASSIC", "era_short": "Jurassic", "when": "150 MILLION YEARS AGO", "survival": "~4 MONTHS"},
-    {"audio": "s10-cretaceous.mp3", "images": [68, 69, 70, 71, 72], "rank": 3, "era": "LATE CRETACEOUS", "era_short": "Late Cretaceous", "when": "70 MILLION YEARS AGO", "survival": "~6 MONTHS"},
-    {"audio": "s11-ice-age.mp3", "images": [73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83], "rank": 2, "era": "THE ICE AGE", "era_short": "Ice Age", "when": "20,000 YEARS AGO", "survival": "DAYS → LIFETIME"},
-    {"audio": "s12-miocene.mp3", "images": [84, 85, 86, 87, 88, 89, 90, 91, 92], "rank": 1, "era": "THE MIOCENE", "era_short": "Miocene", "when": "15 MILLION YEARS AGO", "survival": "YEARS"},
-    {"audio": "s13-ending.mp3", "images": [93, 94, 95, 96], "board_overlay": 14.0, "tail": 1.5}
-  ]
+ "sections": [
+  {
+   "audio": "s00-cold-open.mp3",
+   "images": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "bubbles": [
+    {
+     "text": "Hello?… Is this Ohio?",
+     "t0": 7.0,
+     "t1": 10.5,
+     "x": 1050,
+     "y": 140
+    }
+   ],
+   "title_card": 40.5,
+   "callouts": [
+    {
+     "text": "72% BATTERY",
+     "anchor": "seventy-two percent"
+    },
+    {
+     "text": "12 ERAS. 1 DAVE.",
+     "anchor": "twelve different eras"
+    }
+   ],
+   "riser_before_title": true
+  },
+  {
+   "audio": "s01-hadean.mp3",
+   "images": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "rank": 12,
+   "era": "THE HADEAN",
+   "era_short": "Hadean",
+   "when": "4.5 BILLION YEARS AGO",
+   "survival": "~10 SECONDS",
+   "meters": {
+    "AIR": 0,
+    "FOOD": 0,
+    "WATER": 0,
+    "DANGER": 5
+   },
+   "tail": 1.6,
+   "callouts": [
+    {
+     "text": "SURFACE: PARTLY MOLTEN",
+     "anchor": "partly molten"
+    },
+    {
+     "text": "OXYGEN: ~0%",
+     "anchor": "no oxygen"
+    }
+   ],
+   "survival_anchor": "Survival time"
+  },
+  {
+   "audio": "s02-archean.mp3",
+   "images": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ],
+   "rank": 11,
+   "era": "THE ARCHEAN",
+   "era_short": "Archean",
+   "when": "3.5 BILLION YEARS AGO",
+   "survival": "~2 MINUTES",
+   "meters": {
+    "AIR": 0,
+    "FOOD": 0,
+    "WATER": 2,
+    "DANGER": 4
+   },
+   "tail": 1.6,
+   "callouts": [
+    {
+     "text": "STROMATOLITES = MICROBE MATS",
+     "anchor": "stromatolites"
+    },
+    {
+     "text": "OXYGEN: ~0%",
+     "anchor": "almost no free oxygen"
+    }
+   ],
+   "survival_anchor": "Survival time"
+  },
+  {
+   "audio": "s03-snowball.mp3",
+   "images": [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "rank": 10,
+   "era": "SNOWBALL EARTH",
+   "era_short": "Snowball Earth",
+   "when": "650 MILLION YEARS AGO",
+   "survival": "~6 HOURS",
+   "meters": {
+    "AIR": 3,
+    "FOOD": 0,
+    "WATER": 2,
+    "DANGER": 4
+   },
+   "tail": 1.6,
+   "callouts": [
+    {
+     "text": "700–635 MILLION YEARS AGO",
+     "anchor": "700 to 635"
+    },
+    {
+     "text": "ICE NEAR THE EQUATOR",
+     "anchor": "close to the equator"
+    }
+   ],
+   "survival_anchor": "Dave follows"
+  },
+  {
+   "audio": "s04-great-dying.mp3",
+   "images": [
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+   ],
+   "rank": 9,
+   "era": "THE GREAT DYING",
+   "era_short": "Great Dying",
+   "when": "252 MILLION YEARS AGO",
+   "survival": "~3 DAYS",
+   "meters": {
+    "AIR": 3,
+    "FOOD": 1,
+    "WATER": 1,
+    "DANGER": 4
+   },
+   "tail": 1.6,
+   "callouts": [
+    {
+     "text": "SIBERIAN VOLCANOES",
+     "anchor": "Siberia"
+    },
+    {
+     "text": "~80–90% OF SEA SPECIES GONE",
+     "anchor": "80 to 90 percent"
+    }
+   ],
+   "survival_anchor": "Survival time"
+  },
+  {
+   "audio": "s05-impact.mp3",
+   "images": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+   ],
+   "rank": 8,
+   "era": "IMPACT DAY",
+   "era_short": "Impact Day",
+   "when": "66 MILLION YEARS AGO",
+   "survival": "~4 DAYS",
+   "meters": {
+    "AIR": 3,
+    "FOOD": 1,
+    "WATER": 2,
+    "DANGER": 5
+   },
+   "tail": 1.6,
+   "callouts": [
+    {
+     "text": "ASTEROID ≈ 10 KM WIDE",
+     "anchor": "ten kilometres"
+    },
+    {
+     "text": "SUN BLOCKED FOR MONTHS–YEARS",
+     "anchor": "block the sun"
+    }
+   ],
+   "survival_anchor": "Survival time",
+   "flash_images": [
+    36
+   ]
+  },
+  {
+   "audio": "s06-cambrian.mp3",
+   "images": [
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+   ],
+   "rank": 7,
+   "era": "THE CAMBRIAN",
+   "era_short": "Cambrian",
+   "when": "510 MILLION YEARS AGO",
+   "survival": "~1 WEEK",
+   "meters": {
+    "AIR": 2,
+    "FOOD": 2,
+    "WATER": 2,
+    "DANGER": 3
+   },
+   "tail": 1.6,
+   "callouts": [
+    {
+     "text": "ANOMALOCARIS",
+     "anchor": "Anomalocaris"
+    },
+    {
+     "text": "ZERO PLANTS ON LAND",
+     "anchor": "Absolutely nothing"
+    }
+   ],
+   "survival_anchor": "Survival time"
+  },
+  {
+   "audio": "s07-triassic.mp3",
+   "images": [
+    49,
+    50,
+    51,
+    52,
+    53,
+    54
+   ],
+   "rank": 6,
+   "era": "EARLY TRIASSIC",
+   "era_short": "Early Triassic",
+   "when": "248 MILLION YEARS AGO",
+   "survival": "~1 WEEK",
+   "meters": {
+    "AIR": 4,
+    "FOOD": 1,
+    "WATER": 1,
+    "DANGER": 4
+   },
+   "tail": 1.6,
+   "callouts": [
+    {
+     "text": "OCEAN ≈ 40 °C",
+     "anchor": "forty degrees"
+    },
+    {
+     "text": "ONE SUPERCONTINENT: PANGAEA",
+     "anchor": "Pangaea"
+    }
+   ],
+   "survival_anchor": "Survival time"
+  },
+  {
+   "audio": "s08-carboniferous.mp3",
+   "images": [
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61
+   ],
+   "rank": 5,
+   "era": "CARBONIFEROUS",
+   "era_short": "Carboniferous",
+   "when": "310 MILLION YEARS AGO",
+   "survival": "~3 MONTHS",
+   "meters": {
+    "AIR": 5,
+    "FOOD": 3,
+    "WATER": 4,
+    "DANGER": 3
+   },
+   "tail": 1.6,
+   "callouts": [
+    {
+     "text": "OXYGEN 30%+  (TODAY: 21%)",
+     "anchor": "thirty percent"
+    },
+    {
+     "text": "MEGANEURA: WINGS ≈ 70 CM",
+     "anchor": "seventy centimetres"
+    },
+    {
+     "text": "ARTHROPLEURA ≈ 2.6 M LONG",
+     "anchor": "two and a half metres"
+    }
+   ],
+   "survival_anchor": "Survival time"
+  },
+  {
+   "audio": "s09-jurassic.mp3",
+   "images": [
+    62,
+    63,
+    64,
+    65,
+    66,
+    67
+   ],
+   "rank": 4,
+   "era": "THE JURASSIC",
+   "era_short": "Jurassic",
+   "when": "150 MILLION YEARS AGO",
+   "survival": "~4 MONTHS",
+   "meters": {
+    "AIR": 4,
+    "FOOD": 3,
+    "WATER": 4,
+    "DANGER": 3
+   },
+   "tail": 1.6,
+   "callouts": [
+    {
+     "text": "ALLOSAURUS",
+     "anchor": "Allosaurus"
+    },
+    {
+     "text": "NO GRASS. NO WHEAT.",
+     "anchor": "no grass"
+    }
+   ],
+   "survival_anchor": "Survival time"
+  },
+  {
+   "audio": "s10-cretaceous.mp3",
+   "images": [
+    68,
+    69,
+    70,
+    71,
+    72
+   ],
+   "rank": 3,
+   "era": "LATE CRETACEOUS",
+   "era_short": "Late Cretaceous",
+   "when": "70 MILLION YEARS AGO",
+   "survival": "~6 MONTHS",
+   "meters": {
+    "AIR": 4,
+    "FOOD": 4,
+    "WATER": 4,
+    "DANGER": 3
+   },
+   "tail": 1.6,
+   "callouts": [
+    {
+     "text": "FLOWERING PLANTS",
+     "anchor": "Flowering plants"
+    },
+    {
+     "text": "MYTH: THEY NEVER MET",
+     "anchor": "never lived together"
+    }
+   ],
+   "survival_anchor": "Survival time"
+  },
+  {
+   "audio": "s11-ice-age.mp3",
+   "images": [
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83
+   ],
+   "rank": 2,
+   "era": "THE ICE AGE",
+   "era_short": "Ice Age",
+   "when": "20,000 YEARS AGO",
+   "survival": "DAYS → LIFETIME",
+   "meters": {
+    "AIR": 4,
+    "FOOD": 3,
+    "WATER": 4,
+    "DANGER": 3
+   },
+   "tail": 1.6,
+   "callouts": [
+    {
+     "text": "NOT FROZEN EVERYWHERE",
+     "anchor": "wasn't frozen everywhere"
+    },
+    {
+     "text": "OTHER HUMANS",
+     "anchor": "Other humans"
+    }
+   ],
+   "survival_anchor": "Survival time"
+  },
+  {
+   "audio": "s12-miocene.mp3",
+   "images": [
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92
+   ],
+   "rank": 1,
+   "era": "THE MIOCENE",
+   "era_short": "Miocene",
+   "when": "15 MILLION YEARS AGO",
+   "survival": "YEARS",
+   "meters": {
+    "AIR": 4,
+    "FOOD": 5,
+    "WATER": 4,
+    "DANGER": 2
+   },
+   "tail": 1.6,
+   "callouts": [
+    {
+     "text": "WARMER THAN TODAY",
+     "anchor": "warmer than today"
+    },
+    {
+     "text": "MEGALODON",
+     "anchor": "Megalodon"
+    }
+   ],
+   "survival_anchor": "Survival time"
+  },
+  {
+   "audio": "s13-ending.mp3",
+   "images": [
+    93,
+    94,
+    95,
+    96
+   ],
+   "board_overlay": 14.0,
+   "tail": 1.5
+  }
+ ]
 }
