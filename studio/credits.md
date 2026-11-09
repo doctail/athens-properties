@@ -1,6 +1,6 @@
 # vidIQ credit ledger
 
-Plan: renewable 150/cycle (resets 2026-11-27), add-on credits do not refill.
+Plan: 20 credits refill daily (owner, 2026-11-09). Rule: research in small daily batches; uploads and channel edits are done MANUALLY by the owner to save credits.
 
 | Date | Agent / step | Tool | Credits | Balance after |
 |---|---|---|---|---|
