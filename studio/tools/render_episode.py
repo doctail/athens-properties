@@ -121,7 +121,7 @@ def draw_meters(d, meters, a, t_in):
         for s in range(5):
             on = s < v and t_in > 0.15 * (s + 1) + 0.1 * i
             bx = x0 + 200 + s * 42
-            rounded(d, (bx, y + 6, bx + 34, y + 40), (col if on else (255, 255, 255)) + (int((255 if on else 50) * a),), r=8)
+            rounded(d, (bx, y + 6, bx + 34, y + 40), (col if on else (20, 30, 50)) + (int((255 if on else 200) * a),), r=8)
 
 
 def draw_progress(d, rank, a):
