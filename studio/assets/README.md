@@ -8,4 +8,4 @@ Local files are low-res previews. Full-resolution originals live in Canva (media
 | Avatar | MAHaainwgPo | https://www.canva.com/M/MAHaainwgPo |
 | Banner v2 (safe-area fit) | MAHaap4P5Cc | https://www.canva.com/M/MAHaap4P5Cc |
 
-Note: nanobanana is configured but its GEMINI_API_KEY is rejected by Google (API_KEY_INVALID). Canva generate-image is the working image tool for now.
+Note: nanobanana's GEMINI_API_KEY is now valid, but the project is on the Gemini Free Tier where the image model has 0 quota (429), so it still can't generate until billing is enabled. Canva generate-image is the working image tool for now.
