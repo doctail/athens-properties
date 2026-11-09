@@ -16,3 +16,9 @@
 - **Chosen: local render** in this container (ffmpeg 6.1 present, Remotion installable from npm): Gemini images of Dave at full res + vsub voiceover + our own timer/tier-board/caption overlays.
 - Owner decision 2026-11-09: no paid Gemini billing. Bill voice approved.
 - Former blocker: Gemini API key rejected (API_KEY_INVALID). Owner must add a valid key as a network secret (host generativelanguage.googleapis.com, header x-goog-api-key) in the cloud environment "athens-properties".
+
+## 2026-11-09 — v1 rendered
+- 96 Flow images (studio/episodes/ep01-every-era/images), full narration (audio/s00–s13), renderer studio/tools/render_episode.py + edit.json.
+- Output: build/final.mp4 — 11:59, 1920x1080, h264/aac, 309 MB (not in git, too large; re-render with `python3 studio/tools/render_episode.py studio/episodes/ep01-every-era`).
+- Upload: MANUAL by owner, metadata in metadata.md. Thumbnail prompt in metadata.md.
+- Known v1 limits: no music bed, no sound effects, no burned-in captions (YouTube auto-captions), static images with camera moves only.
