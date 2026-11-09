@@ -1,0 +1,11 @@
+{"audio": "s1-hadean.mp3", "out": "s1-hadean.mp4", "hook": "HOW LONG WOULD YOU LAST?",
+ "gap": 0.1,
+ "phrases": [
+  {"text": "Ten seconds.", "img": "../images/007.jpg", "key": ["Ten", "seconds"], "badge": "~10 SECONDS"},
+  {"text": "That's how long you'd last on the early Earth.", "img": "../images/006.jpg", "key": ["early", "Earth"]},
+  {"text": "The ground is molten,", "img": "../images/011.jpg", "key": ["molten"]},
+  {"text": "the air has zero oxygen,", "img": "../images/008.jpg", "key": ["zero", "oxygen"]},
+  {"text": "and space rocks never stop falling.", "img": "../images/010.jpg", "key": ["space", "rocks"], "shake": true},
+  {"text": "Honestly?", "img": "../images/009.jpg", "key": []},
+  {"text": "I'd give you about", "img": "../images/007.jpg", "key": []}
+ ]}

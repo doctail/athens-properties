@@ -62,3 +62,9 @@ Prompt for Flow (attach Dave model sheet):
 Flat 2D vector cartoon, thick dark-brown outlines, bold saturated colours, 16:9 YouTube thumbnail composition. NO text. Right side: huge close-up of Dave (from the reference) with a terrified face, eyes wide, mouth open. Left side: a vertical split showing three eras stacked from top to bottom: erupting lava world, giant T. rex roaring, woolly mammoth in snow. Strong contrast, simple background, very readable at small size.
 ```
 Text to add (max 3 words, white with thick dark outline, top-left): **12 ERAS?** or **HOW LONG?**
+
+## Shorts
+### S1 — Hadean loop (shorts/s1-hadean.mp4, 10.3 s)
+Title: You'd last 10 seconds here 🌋 #shorts
+Description: The early Earth would kill you faster than you can read this. Full ranking of all 12 eras on the channel. #history #prehistoric #shorts
+Link it to the long video (Studio → Shorts → "Related video" = EP01).
