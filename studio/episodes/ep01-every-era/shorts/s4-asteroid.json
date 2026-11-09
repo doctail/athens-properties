@@ -1,0 +1,14 @@
+{"audio": "s4-asteroid.mp3", "out": "s4-asteroid.mp4", "hook": "66 MILLION YEARS AGO", "gap": 0.08,
+ "phrases": [
+  {"text": "Ten kilometres wide.", "img": "../images/035.jpg", "key": ["Ten", "kilometres"], "badge": "10 KM WIDE"},
+  {"text": "That's the rock that ended the dinosaurs.", "img": "../images/040.jpg", "key": ["ended", "dinosaurs"]},
+  {"text": "It hit Mexico sixty-six million years ago,", "img": "../images/036.jpg", "key": ["Mexico"], "shake": true},
+  {"text": "set", "img": "../images/037.jpg", "key": []},
+  {"text": "the sky on fire,", "img": "../images/037.jpg", "key": ["fire"]},
+  {"text": "and turned day into night", "img": "../images/038.jpg", "key": ["night"]},
+  {"text": "for months.", "img": "../images/039.jpg", "key": ["months"]},
+  {"text": "Three quarters of all species,", "img": "../images/040.jpg", "cx": 0.75, "key": ["Three", "quarters"]},
+  {"text": "gone.", "img": "../images/038.jpg", "cx": 0.3, "key": ["gone"]},
+  {"text": "And the thing that did it?", "img": "../images/034.jpg", "key": []},
+  {"text": "Only", "img": "../images/035.jpg", "key": []}
+ ]}

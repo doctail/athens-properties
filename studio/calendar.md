@@ -15,9 +15,10 @@ Shorts: 1 per day on the other days (Mon, Wed, Thu, Sat, Sun), same time window.
 | Date | Day | Type | Content |
 |---|---|---|---|
 | 2026-11-09 | Mon | Long | EP01 Every Era of Earth (published early by mistake) |
-| 2026-11-10 | Tue | Short | EP01-S1 Hadean "10 seconds" loop |
-| 2026-11-11 | Wed | Short | EP01-S2 Meganeura / Arthropleura size shock |
-| 2026-11-12 | Thu | Short | EP01-S3 Myth: T. rex never met Spinosaurus |
+| 2026-11-09 | Mon | Short | EP01-S1 Hadean "10 seconds" loop |
+| 2026-11-10 | Tue | Short | EP01-S2 Meganeura / Arthropleura size shock |
+| 2026-11-11 | Wed | Short | EP01-S3 Myth: T. rex never met Spinosaurus |
+| 2026-11-12 | Thu | Short | EP01-S4 Asteroid "10 km wide" loop |
 | 2026-11-13 | Fri | Long | EP02 Could You Survive a Day in Ancient Egypt? |
 | 2026-11-14 | Sat | Short | EP02-S1 |
 | 2026-11-15 | Sun | Short | EP02-S2 |

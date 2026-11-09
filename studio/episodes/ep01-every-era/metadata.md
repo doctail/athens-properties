@@ -78,3 +78,8 @@ Related video: EP01.
 Title: T. rex vs Spinosaurus never happened 🦖 #shorts
 Description: They lived about 30 million years apart, on different continents (Spinosaurus ~99–93 million years ago in North Africa, T. rex ~68–66 million years ago in North America). #dinosaurs #history #shorts
 Related video: EP01.
+
+### S4 — Asteroid loop (shorts/s4-asteroid.mp4, 15.7 s)
+Title: The rock that ended the dinosaurs was only 10 km wide ☄️ #shorts
+Description: 66 million years ago an asteroid about 10 km wide hit what is now Mexico's Yucatán Peninsula. Wildfires, months of darkness, and about three quarters of all species gone. #dinosaurs #history #shorts
+Related video: EP01.
