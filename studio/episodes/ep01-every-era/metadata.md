@@ -16,18 +16,18 @@ Where should Dave land next? Tell us in the comments 👇
 CHAPTERS
 0:00 Intro: meet Dave
 0:44 #12 The Hadean (4.5 billion years ago)
-1:21 #11 The Archean (3.5 billion years ago)
-2:09 #10 Snowball Earth (650 million years ago)
-2:53 #9 The Great Dying (252 million years ago)
-3:48 #8 Impact Day (66 million years ago)
-4:48 #7 The Cambrian (510 million years ago)
-5:42 #6 Early Triassic (248 million years ago)
-6:22 #5 Carboniferous (310 million years ago)
-7:33 #4 The Jurassic (150 million years ago)
-8:24 #3 Late Cretaceous (70 million years ago)
-9:14 #2 The Ice Age (20,000 years ago)
-10:10 #1 The Miocene (15 million years ago)
-11:06 Final ranking
+1:23 #11 The Archean (3.5 billion years ago)
+2:12 #10 Snowball Earth (650 million years ago)
+2:57 #9 The Great Dying (252 million years ago)
+3:53 #8 Impact Day (66 million years ago)
+4:54 #7 The Cambrian (510 million years ago)
+5:50 #6 Early Triassic (248 million years ago)
+6:31 #5 Carboniferous (310 million years ago)
+7:44 #4 The Jurassic (150 million years ago)
+8:36 #3 Late Cretaceous (70 million years ago)
+9:27 #2 The Ice Age (20,000 years ago)
+10:24 #1 The Miocene (15 million years ago)
+11:22 Final ranking
 
 Note: survival times are our own estimates for entertainment, based on the conditions described by the sources below. They are not scientific measurements.
 
