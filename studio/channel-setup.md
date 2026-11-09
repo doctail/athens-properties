@@ -33,18 +33,20 @@ history, prehistoric, ice age, ancient humans, how did people survive, what if, 
 ## 6. Old content
 - Set all 133 TextHook Shorts to **Private** (do not delete).
 
-## 7. First 10 episodes (validated = from vidIQ data of 2026-11-09)
-| # | Working title | Series | Basis |
+## 7. Episode order (updated 2026-11-09: Egypt first to pay off the EP01 teaser, then series alternated)
+| # | Working title | Series (playlist) | Basis |
 |---|---|---|---|
-| 1 | How Long Would You Survive in Every Era of Earth? | Dave Survives | [Certain] 131k/mo, +6864%, comp 38 |
-| 2 | Life 20,000 Years Ago: Could You Survive the Ice Age? | Dave Survives | [Certain] outliers 690k & 583k on a 3.7k channel |
-| 3 | How Did Ancient Humans Get Any Privacy? | How Did They | [Certain] 113k/mo, +1855%, comp 25 |
-| 4 | Could 2 People Really Restart Humanity? | What If | [Certain] 387k/mo, +333%, comp 33 |
-| 5 | How Could You Survive a Deadly Winter With Nothing? | Dave Survives | [Certain] outlier 58× on a 3.7k channel |
+| 1 | How Long Would You Survive in Every Era of Earth? | Dave Survives | [Certain] 131k/mo, +6864% — DONE |
+| 2 | Could You Survive a Day in Ancient Egypt? | Dave Survives | [Guessing] to validate with vidIQ (5 credits) |
+| 3 | Could 2 People Really Restart Humanity? | What If | [Certain] 387k/mo, +333%, comp 33 |
+| 4 | How Did Ancient Humans Get Any Privacy? | How Did They | [Certain] 113k/mo, +1855%, comp 25 |
+| 5 | Life 20,000 Years Ago: Could You Survive the Ice Age? | Dave Survives | [Certain] outliers 690k & 583k on a 3.7k channel |
 | 6 | Why Did Every Human Come From Africa? | How Did They | [Certain] 207k/mo, +241%, comp 29 |
-| 7 | A Day 20,000 Years Ago, Hour by Hour | Dave Survives | [Likely] format repeated by several outliers |
-| 8 | Could You Survive Your First Night in the Stone Age? | Dave Survives | [Likely] "Ice Age Day 1" outlier 77× |
-| 9 | What If You Were the Last Person on Earth? | What If | [Certain] 123k/mo, +568%, but comp 64 (harder) |
-| 10 | How Did Ancient People Clean Their Teeth? | How Did They | [Guessing] not validated yet |
+| 7 | What If You Were the Last Person on Earth? | What If | [Certain] 123k/mo, +568%, comp 64 (harder) |
+| 8 | Could You Survive Your First Night in the Stone Age? | Dave Survives | [Likely] "Ice Age Day 1" outlier 77x |
+| 9 | How Did Ancient People Clean Their Teeth? | How Did They | [Guessing] not validated |
+| 10 | How Could You Survive a Deadly Winter With Nothing? | Dave Survives | [Certain] outlier 58x on a 3.7k channel |
+
+Every episode ends with a teaser of the next one.
 
 Episode 1 is the channel trailer in practice: it introduces Dave and every era.
