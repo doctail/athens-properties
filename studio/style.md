@@ -6,7 +6,7 @@
 - Personality: curious, overconfident, clueless about survival; always tries a modern solution first and it fails.
 - Running gags: phone shows "No signal" in every era; he keeps losing a sneaker; a "Days survived" counter in the corner.
 - Role in the story: the viewer's stand-in. The narrator explains, Dave suffers the consequences.
-- Reference image: `studio/assets/dave-model-sheet.png` (always pass it as reference when generating new scenes).
+- Reference image: `Canva media `MAHaajzXE40` (preview: `studio/assets/dave-model-sheet-preview.png`)` (always pass it as reference when generating new scenes).
 
 ## Narrator
 - Calm, dry, slightly ironic male or female voice in English (US). One voice for every episode.
