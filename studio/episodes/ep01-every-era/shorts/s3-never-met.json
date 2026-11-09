@@ -1,0 +1,11 @@
+{"audio": "s3-never-met.mp3", "out": "s3-never-met.mp4", "hook": "THE MOVIES LIED", "gap": 0.1,
+ "phrases": [
+  {"text": "They never met.", "img": "../images/070.jpg", "cx": 0.35, "key": ["never", "met"], "badge": "THEY NEVER MET"},
+  {"text": "T. rex and Spinosaurus fight in every movie,", "img": "../images/070.jpg", "cx": 0.75, "key": ["T.", "rex", "Spinosaurus"]},
+  {"text": "but they lived", "img": "../images/068.jpg", "cx": 0.3, "key": []},
+  {"text": "about thirty million years apart,", "img": "../images/068.jpg", "cx": 0.7, "key": ["thirty", "million"]},
+  {"text": "on different continents.", "img": "../images/062.jpg", "key": ["different", "continents"]},
+  {"text": "The greatest dinosaur battle ever?", "img": "../images/070.jpg", "cx": 0.55, "key": ["battle"]},
+  {"text": "It never happened.", "img": "../images/070.jpg", "cx": 0.75, "key": ["never"], "shake": true},
+  {"text": "Because these two", "img": "../images/070.jpg", "cx": 0.35, "key": []}
+ ]}

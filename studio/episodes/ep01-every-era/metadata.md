@@ -68,3 +68,13 @@ Text to add (max 3 words, white with thick dark outline, top-left): **12 ERAS?**
 Title: You'd last 10 seconds here 🌋 #shorts
 Description: The early Earth would kill you faster than you can read this. Full ranking of all 12 eras on the channel. #history #prehistoric #shorts
 Link it to the long video (Studio → Shorts → "Related video" = EP01).
+
+### S2 — Giant bugs loop (shorts/s2-giant-bugs.mp4, 14.5 s)
+Title: This dragonfly had 70 cm wings 😳 #shorts
+Description: 300 million years ago the air had so much oxygen that insects grew huge. Meganeura's wingspan was about 70 cm; Arthropleura grew to about 2.6 m. #history #prehistoric #shorts
+Related video: EP01.
+
+### S3 — Myth bust loop (shorts/s3-never-met.mp4, 10.9 s)
+Title: T. rex vs Spinosaurus never happened 🦖 #shorts
+Description: They lived about 30 million years apart, on different continents (Spinosaurus ~99–93 million years ago in North Africa, T. rex ~68–66 million years ago in North America). #dinosaurs #history #shorts
+Related video: EP01.

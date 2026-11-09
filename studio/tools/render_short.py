@@ -93,6 +93,8 @@ def main(spec_path):
         if ph.get("badge"):
             s = min(1, (t - a) / 0.18); s = 1 + 0.25 * (1 - s) if s < 1 else 1
             f = ImageFont.truetype(FB, int(120 * s)); tw = d.textlength(ph["badge"], font=f)
+            if tw > W - 180:
+                f = ImageFont.truetype(FB, int(120 * s * (W - 180) / tw)); tw = d.textlength(ph["badge"], font=f)
             d.rounded_rectangle(((W - tw) / 2 - 40, 420, (W + tw) / 2 + 40, 420 + f.size + 50), radius=30, fill=MUSTARD, outline=INK, width=8)
             d.text(((W - tw) / 2, 440), ph["badge"], font=f, fill=INK)
         # captions: phrase split into chunks of up to 3 words, timed by characters

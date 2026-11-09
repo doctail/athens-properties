@@ -1,0 +1,11 @@
+{"audio": "s2-giant-bugs.mp3", "out": "s2-giant-bugs.mp4", "hook": "300 MILLION YEARS AGO", "gap": 0.1,
+ "phrases": [
+  {"text": "Seventy centimetres.", "img": "../images/058.jpg", "key": ["Seventy", "centimetres"], "badge": "70 CM WINGS"},
+  {"text": "That's the wingspan of a dragonfly", "img": "../images/058.jpg", "cx": 0.2, "key": ["wingspan", "dragonfly"]},
+  {"text": "that lived", "img": "../images/055.jpg", "key": []},
+  {"text": "three hundred million years ago.", "img": "../images/055.jpg", "cx": 0.8, "key": ["three", "hundred", "million"]},
+  {"text": "And the millipede crawling next to it?", "img": "../images/059.jpg", "cx": 0.25, "key": ["millipede"]},
+  {"text": "Longer than your bed.", "img": "../images/059.jpg", "cx": 0.6, "key": ["Longer", "bed"], "shake": true},
+  {"text": "The air had so much oxygen,", "img": "../images/056.jpg", "key": ["oxygen"]},
+  {"text": "some insects had wings of", "img": "../images/058.jpg", "key": []}
+ ]}
