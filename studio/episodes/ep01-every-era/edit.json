@@ -3,17 +3,35 @@
   {
    "audio": "s00-cold-open.mp3",
    "images": [
-    1,
-    2,
-    3,
-    4,
-    5
+    {
+     "n": 1
+    },
+    {
+     "n": 2,
+     "at": "a phone with seventy-two"
+    },
+    {
+     "n": 3,
+     "at": "absolutely no survival skills"
+    },
+    {
+     "n": 4,
+     "at": "A broken time machine"
+    },
+    {
+     "n": 19,
+     "at": "The rules"
+    },
+    {
+     "n": 5,
+     "at": "We'll count down"
+    }
    ],
    "bubbles": [
     {
      "text": "Hello?… Is this Ohio?",
-     "t0": 7.0,
-     "t1": 10.5,
+     "t0": 6.0,
+     "t1": 9.2,
      "x": 1050,
      "y": 140
     }
@@ -34,12 +52,29 @@
   {
    "audio": "s01-hadean.mp3",
    "images": [
-    6,
-    7,
-    8,
-    9,
-    10,
-    11
+    {
+     "n": 6
+    },
+    {
+     "n": 10,
+     "at": "pounded by space rocks"
+    },
+    {
+     "n": 7,
+     "at": "partly molten"
+    },
+    {
+     "n": 8,
+     "at": "choking mix of volcanic gases"
+    },
+    {
+     "n": 9,
+     "at": "Dave doesn't have to worry"
+    },
+    {
+     "n": 11,
+     "at": "Because Dave isn't going"
+    }
    ],
    "rank": 12,
    "era": "THE HADEAN",
@@ -68,12 +103,29 @@
   {
    "audio": "s02-archean.mp3",
    "images": [
-    12,
-    13,
-    14,
-    15,
-    16,
-    17
+    {
+     "n": 12
+    },
+    {
+     "n": 13,
+     "at": "These lumpy rocks"
+    },
+    {
+     "n": 14,
+     "at": "They are the most advanced"
+    },
+    {
+     "n": 15,
+     "at": "The problem is"
+    },
+    {
+     "n": 16,
+     "at": "You just"
+    },
+    {
+     "n": 17,
+     "at": "Dave passes out"
+    }
    ],
    "rank": 11,
    "era": "THE ARCHEAN",
@@ -102,13 +154,33 @@
   {
    "audio": "s03-snowball.mp3",
    "images": [
-    18,
-    19,
-    20,
-    21,
-    22,
-    23,
-    24
+    {
+     "n": 19
+    },
+    {
+     "n": 18,
+     "at": "welcome to Snowball Earth"
+    },
+    {
+     "n": 20,
+     "at": "much of the planet was buried"
+    },
+    {
+     "n": 21,
+     "at": "nothing to build a shelter"
+    },
+    {
+     "n": 22,
+     "at": "except ice"
+    },
+    {
+     "n": 23,
+     "at": "Dave's phone dies"
+    },
+    {
+     "n": 24,
+     "at": "Dave follows"
+    }
    ],
    "rank": 10,
    "era": "SNOWBALL EARTH",
@@ -137,14 +209,37 @@
   {
    "audio": "s04-great-dying.mp3",
    "images": [
-    25,
-    26,
-    27,
-    28,
-    29,
-    30,
-    31,
-    32
+    {
+     "n": 25
+    },
+    {
+     "n": 26,
+     "at": "The planet overheated"
+    },
+    {
+     "n": 27,
+     "at": "Scientists estimate"
+    },
+    {
+     "n": 28,
+     "at": "Dave can breathe here"
+    },
+    {
+     "n": 32,
+     "at": "the heat is brutal"
+    },
+    {
+     "n": 29,
+     "at": "The animals that made it through"
+    },
+    {
+     "n": 30,
+     "at": "dig burrows and eat"
+    },
+    {
+     "n": 31,
+     "at": "Dave cannot dig"
+    }
    ],
    "rank": 9,
    "era": "THE GREAT DYING",
@@ -173,14 +268,37 @@
   {
    "audio": "s05-impact.mp3",
    "images": [
-    33,
-    34,
-    35,
-    36,
-    37,
-    38,
-    39,
-    40
+    {
+     "n": 33
+    },
+    {
+     "n": 34,
+     "at": "But Dave's time machine"
+    },
+    {
+     "n": 35,
+     "at": "Sixty-six million"
+    },
+    {
+     "n": 36,
+     "at": "Near the impact"
+    },
+    {
+     "n": 37,
+     "at": "debris rains back"
+    },
+    {
+     "n": 38,
+     "at": "Without sunlight"
+    },
+    {
+     "n": 40,
+     "at": "everything that eats plants starves"
+    },
+    {
+     "n": 39,
+     "at": "the world is going dark"
+    }
    ],
    "rank": 8,
    "era": "IMPACT DAY",
@@ -212,14 +330,37 @@
   {
    "audio": "s06-cambrian.mp3",
    "images": [
-    41,
-    42,
-    43,
-    44,
-    45,
-    46,
-    47,
-    48
+    {
+     "n": 41
+    },
+    {
+     "n": 42,
+     "at": "Under the waves"
+    },
+    {
+     "n": 43,
+     "at": "Anomalocaris with"
+    },
+    {
+     "n": 44,
+     "at": "On land?"
+    },
+    {
+     "n": 45,
+     "at": "He can grab shellfish"
+    },
+    {
+     "n": 46,
+     "at": "can't be sure what's safe"
+    },
+    {
+     "n": 48,
+     "at": "no shade from the sun"
+    },
+    {
+     "n": 47,
+     "at": "Dave gets tired fast"
+    }
    ],
    "rank": 7,
    "era": "THE CAMBRIAN",
@@ -248,12 +389,29 @@
   {
    "audio": "s07-triassic.mp3",
    "images": [
-    49,
-    50,
-    51,
-    52,
-    53,
-    54
+    {
+     "n": 49
+    },
+    {
+     "n": 51,
+     "at": "sea surface temperatures"
+    },
+    {
+     "n": 50,
+     "at": "That's hot-tub"
+    },
+    {
+     "n": 52,
+     "at": "Most of the land"
+    },
+    {
+     "n": 53,
+     "at": "Food is scarce"
+    },
+    {
+     "n": 54,
+     "at": "as long as Dave lands"
+    }
    ],
    "rank": 6,
    "era": "EARLY TRIASSIC",
@@ -282,13 +440,33 @@
   {
    "audio": "s08-carboniferous.mp3",
    "images": [
-    55,
-    56,
-    57,
-    58,
-    59,
-    60,
-    61
+    {
+     "n": 55
+    },
+    {
+     "n": 56,
+     "at": "And the air is incredible"
+    },
+    {
+     "n": 57,
+     "at": "Dave feels amazing"
+    },
+    {
+     "n": 58,
+     "at": "Meganeura"
+    },
+    {
+     "n": 59,
+     "at": "Arthropleura, a millipede"
+    },
+    {
+     "n": 60,
+     "at": "The real danger is fire"
+    },
+    {
+     "n": 61,
+     "at": "But there's water"
+    }
    ],
    "rank": 5,
    "era": "CARBONIFEROUS",
@@ -321,12 +499,29 @@
   {
    "audio": "s09-jurassic.mp3",
    "images": [
-    62,
-    63,
-    64,
-    65,
-    66,
-    67
+    {
+     "n": 62
+    },
+    {
+     "n": 63,
+     "at": "It's not the dinosaurs"
+    },
+    {
+     "n": 64,
+     "at": "Yes, predators like"
+    },
+    {
+     "n": 65,
+     "at": "most animals would probably avoid"
+    },
+    {
+     "n": 66,
+     "at": "The bigger problem is food"
+    },
+    {
+     "n": 67,
+     "at": "But near a river"
+    }
    ],
    "rank": 4,
    "era": "THE JURASSIC",
@@ -355,11 +550,25 @@
   {
    "audio": "s10-cretaceous.mp3",
    "images": [
-    68,
-    69,
-    70,
-    71,
-    72
+    {
+     "n": 68
+    },
+    {
+     "n": 69,
+     "at": "Flowering plants"
+    },
+    {
+     "n": 70,
+     "at": "And here's a myth"
+    },
+    {
+     "n": 71,
+     "at": "Dave's biggest enemies"
+    },
+    {
+     "n": 72,
+     "at": "Survival time"
+    }
    ],
    "rank": 3,
    "era": "LATE CRETACEOUS",
@@ -388,17 +597,49 @@
   {
    "audio": "s11-ice-age.mp3",
    "images": [
-    73,
-    74,
-    75,
-    76,
-    77,
-    78,
-    79,
-    80,
-    81,
-    82,
-    83
+    {
+     "n": 73
+    },
+    {
+     "n": 74,
+     "at": "how is freezing"
+    },
+    {
+     "n": 75,
+     "at": "There were grasslands"
+    },
+    {
+     "n": 77,
+     "at": "And something else"
+    },
+    {
+     "n": 78,
+     "at": "Other humans"
+    },
+    {
+     "n": 79,
+     "at": "hunt a mammoth as a team"
+    },
+    {
+     "n": 76,
+     "at": "Alone, Dave is in trouble"
+    },
+    {
+     "n": 80,
+     "at": "But if those hunters"
+    },
+    {
+     "n": 81,
+     "at": "Dave might survive for years"
+    },
+    {
+     "n": 82,
+     "at": "That's a big"
+    },
+    {
+     "n": 83,
+     "at": "Survival time"
+    }
    ],
    "rank": 2,
    "era": "THE ICE AGE",
@@ -427,15 +668,37 @@
   {
    "audio": "s12-miocene.mp3",
    "images": [
-    84,
-    85,
-    86,
-    87,
-    88,
-    89,
-    90,
-    91,
-    92
+    {
+     "n": 84
+    },
+    {
+     "n": 85,
+     "at": "Fifteen million years ago"
+    },
+    {
+     "n": 86,
+     "at": "coasts and rivers"
+    },
+    {
+     "n": 87,
+     "at": "There are still dangers"
+    },
+    {
+     "n": 88,
+     "at": "very large bear-dog"
+    },
+    {
+     "n": 90,
+     "at": "So, Dave"
+    },
+    {
+     "n": 91,
+     "at": "But on a quiet stretch"
+    },
+    {
+     "n": 92,
+     "at": "Dave could live"
+    }
    ],
    "rank": 1,
    "era": "THE MIOCENE",
@@ -464,10 +727,33 @@
   {
    "audio": "s13-ending.mp3",
    "images": [
-    93,
-    94,
-    95,
-    96
+    {
+     "n": 93
+    },
+    {
+     "n": 24,
+     "at": "But notice what actually kills"
+    },
+    {
+     "n": 32,
+     "at": "It's the air"
+    },
+    {
+     "n": 83,
+     "at": "Every human alive today"
+    },
+    {
+     "n": 94,
+     "at": "And he's not going home"
+    },
+    {
+     "n": 95,
+     "at": "Where should Dave land"
+    },
+    {
+     "n": 96,
+     "at": "and subscribe"
+    }
    ],
    "board_overlay": 14.0,
    "tail": 1.5
