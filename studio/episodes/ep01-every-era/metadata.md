@@ -69,17 +69,17 @@ Title: You'd last 10 seconds here 🌋 #shorts
 Description: The early Earth would kill you faster than you can read this. Full ranking of all 12 eras on the channel. #history #prehistoric #shorts
 Link it to the long video (Studio → Shorts → "Related video" = EP01).
 
-### S2 — Giant bugs loop (shorts/s2-giant-bugs.mp4, 14.5 s)
+### S2 — Giant bugs loop (shorts/f2-bugs.mp4, 9.3 s, fast cuts; replaces s2-giant-bugs)
 Title: This dragonfly had 70 cm wings 😳 #shorts
 Description: 300 million years ago the air had so much oxygen that insects grew huge. Meganeura's wingspan was about 70 cm; Arthropleura grew to about 2.6 m. #history #prehistoric #shorts
 Related video: EP01.
 
-### S3 — Myth bust loop (shorts/s3-never-met.mp4, 10.9 s)
+### S3 — Myth bust loop (shorts/f3-never-met.mp4, 7.7 s, fast cuts; replaces s3-never-met)
 Title: T. rex vs Spinosaurus never happened 🦖 #shorts
 Description: They lived about 30 million years apart, on different continents (Spinosaurus ~99–93 million years ago in North Africa, T. rex ~68–66 million years ago in North America). #dinosaurs #history #shorts
 Related video: EP01.
 
-### S4 — Asteroid loop (shorts/s4-asteroid.mp4, 15.7 s)
+### S4 — Asteroid loop (shorts/f4-asteroid.mp4, 9.7 s, fast cuts; replaces s4-asteroid)
 Title: The rock that ended the dinosaurs was only 10 km wide ☄️ #shorts
 Description: 66 million years ago an asteroid about 10 km wide hit what is now Mexico's Yucatán Peninsula. Wildfires, months of darkness, and about three quarters of all species gone. #dinosaurs #history #shorts
 Related video: EP01.

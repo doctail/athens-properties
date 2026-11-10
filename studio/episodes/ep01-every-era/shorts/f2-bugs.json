@@ -1,0 +1,10 @@
+{"audio": "f2-bugs.mp3", "out": "f2-bugs.mp4", "hook": "300 MILLION YEARS AGO", "badge": "70 CM WINGS", "seamless": true, "gap": 0.06,
+ "phrases": [
+  {"text": "Seventy centimetres.", "key": ["Seventy", "centimetres"], "shots": [["../images/058.jpg", 1.0, 0.35, 0.5], ["../images/058.jpg", 1.8, 0.25, 0.35]]},
+  {"text": "A dragonfly's wingspan,", "key": ["dragonfly's", "wingspan"], "shots": [["../images/058.jpg", 1.0, 0.6, 0.5], ["../images/055.jpg", 1.0, 0.5, 0.5]]},
+  {"text": "three hundred million years ago.", "key": ["three", "hundred", "million"], "shots": [["../images/055.jpg", 1.0, 0.3, 0.5], ["../images/055.jpg", 1.0, 0.7, 0.5], ["../images/056.jpg", 1.0, 0.5, 0.5]]},
+  {"text": "The millipede?", "key": ["millipede"], "shots": [["../images/059.jpg", 1.0, 0.3, 0.5]]},
+  {"text": "Longer than your bed.", "key": ["Longer", "bed"], "shake": true, "shots": [["../images/059.jpg", 1.0, 0.7, 0.5], ["../images/059.jpg", 1.6, 0.3, 0.7]]},
+  {"text": "Thirty percent oxygen.", "key": ["Thirty", "oxygen"], "shots": [["../images/056.jpg", 1.6, 0.5, 0.35], ["../images/057.jpg", 1.0, 0.5, 0.5]]},
+  {"text": "Wings of", "key": [], "shots": [["../images/058.jpg", 1.6, 0.3, 0.4]]}
+ ]}

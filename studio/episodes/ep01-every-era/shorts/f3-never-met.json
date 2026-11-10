@@ -1,0 +1,10 @@
+{"audio": "f3-never-met.mp3", "out": "f3-never-met.mp4", "hook": "THE MOVIES LIED", "badge": "THEY NEVER MET", "seamless": true, "gap": 0.06,
+ "phrases": [
+  {"text": "They never met.", "key": ["never", "met"], "shots": [["../images/070.jpg", 1.0, 0.35, 0.5]]},
+  {"text": "T. rex and Spinosaurus?", "key": ["T.", "rex", "Spinosaurus"], "shots": [["../images/070.jpg", 1.4, 0.3, 0.4], ["../images/070.jpg", 1.4, 0.75, 0.4]]},
+  {"text": "Thirty million years apart.", "key": ["Thirty", "million"], "shots": [["../images/068.jpg", 1.0, 0.3, 0.5], ["../images/068.jpg", 1.0, 0.7, 0.5], ["../images/062.jpg", 1.0, 0.5, 0.5]]},
+  {"text": "Different continents.", "key": ["Different", "continents"], "shots": [["../images/062.jpg", 1.0, 0.2, 0.5], ["../images/068.jpg", 1.5, 0.5, 0.5]]},
+  {"text": "The movie fight?", "key": ["movie"], "shots": [["../images/070.jpg", 1.0, 0.55, 0.5]]},
+  {"text": "Never happened.", "key": ["Never"], "shake": true, "shots": [["../images/070.jpg", 1.8, 0.5, 0.55]]},
+  {"text": "Because they", "key": [], "shots": [["../images/070.jpg", 1.6, 0.3, 0.35]]}
+ ]}

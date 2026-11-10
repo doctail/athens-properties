@@ -1,0 +1,11 @@
+{"audio": "f4-asteroid.mp3", "out": "f4-asteroid.mp4", "hook": "66 MILLION YEARS AGO", "badge": "10 KM WIDE", "seamless": true, "gap": 0.06,
+ "phrases": [
+  {"text": "Ten kilometres wide.", "key": ["Ten", "kilometres"], "shots": [["../images/035.jpg", 1.0, 0.35, 0.5], ["../images/035.jpg", 1.8, 0.3, 0.45]]},
+  {"text": "That's all it took.", "key": ["all"], "shots": [["../images/034.jpg", 1.0, 0.4, 0.5], ["../images/034.jpg", 1.6, 0.7, 0.2]]},
+  {"text": "Sky on fire.", "key": ["fire"], "shake": true, "shots": [["../images/036.jpg", 1.0, 0.5, 0.5], ["../images/037.jpg", 1.0, 0.4, 0.5]]},
+  {"text": "Months of darkness.", "key": ["darkness"], "shots": [["../images/038.jpg", 1.0, 0.5, 0.5], ["../images/039.jpg", 1.0, 0.4, 0.5]]},
+  {"text": "Three quarters of life,", "key": ["Three", "quarters"], "shots": [["../images/040.jpg", 1.0, 0.6, 0.5], ["../images/040.jpg", 1.6, 0.65, 0.5]]},
+  {"text": "gone.", "key": ["gone"], "shots": [["../images/038.jpg", 1.6, 0.3, 0.6]]},
+  {"text": "The rock that ended the dinosaurs?", "key": ["ended", "dinosaurs"], "shots": [["../images/035.jpg", 1.0, 0.6, 0.5], ["../images/036.jpg", 1.6, 0.5, 0.5]]},
+  {"text": "Only", "key": [], "shots": [["../images/035.jpg", 1.5, 0.35, 0.4]]}
+ ]}

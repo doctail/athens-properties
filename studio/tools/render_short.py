@@ -83,10 +83,13 @@ def main(spec_path):
             si = min(int(p * len(shots)), len(shots) - 1); spp = p * len(shots) - si
             simg, sz, scx, scy = (shots[si] + [1.0, 0.5, 0.5])[:4]
             im, bg = img(simg)
-            fg = cover(im, W, H, zoom=sz * (1 + 0.06 * spp), cx=scx, cy=scy)
+            vert = im.height / im.width > 1.4
+            fg = cover(im, W, H if vert else fh, zoom=sz * (1 + 0.06 * spp), cx=scx, cy=scy)
             if ph.get("shake") and si == 0:
                 m = 16 * max(0, 1 - spp * 2); fg = fg.transform(fg.size, Image.AFFINE, (1, 0, random.uniform(-m, m), 0, 1, random.uniform(-m, m)))
-            fr = fg.copy(); d = ImageDraw.Draw(fr)
+            if vert: fr = fg.copy()
+            else: fr = bg.copy(); fr.paste(fg, (0, fy))
+            d = ImageDraw.Draw(fr)
             hw = d.textlength(sp["hook"], font=fh_hook)
             d.text(((W - hw) / 2, 150), sp["hook"], font=fh_hook, fill=WHITE, stroke_width=7, stroke_fill=INK)
             if sp.get("badge"):
