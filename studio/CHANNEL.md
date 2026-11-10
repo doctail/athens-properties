@@ -24,7 +24,7 @@ Evidence (month-over-month, vidIQ rising keywords):
 
 ## Production stack (all available to Claude in this project)
 - Research/analytics/upload: vidIQ MCP (`mcp__vidIQ_for_Claude__*`)
-- Images / character sheets: nanobanana MCP (`mcp__nanobanana-mcp__*`), needs GEMINI_API_KEY
+- Images: **Google Flow, run by the owner** from multi-prompt files Claude writes (`studio/episodes/<slug>/flow-prompts.md`: one HEADER + numbered prompts per run, Dave model sheet attached as reference). Owner drops the images in `images/`. No API image generation (nanobanana/Gemini dropped 2026-11-10: no paid billing).
 - Animation: vsub code video (Remotion) `mcp__vsub__code_video_*`; alternative `create_ai_video_v3`
 - Voiceover / music: vsub `text_to_speech`, vidIQ `vidiq_voiceover_generate`, `vidiq_generate_music`
 - Titles / thumbnails / scoring: vidIQ `generate_titles`, `generate_thumbnail`, `score_title`, `score_thumbnail`

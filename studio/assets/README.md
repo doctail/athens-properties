@@ -8,4 +8,4 @@ Local files are low-res previews. Full-resolution originals live in Canva (media
 | Avatar | MAHaainwgPo | https://www.canva.com/M/MAHaainwgPo |
 | Banner v2 (safe-area fit) | MAHaap4P5Cc | https://www.canva.com/M/MAHaap4P5Cc |
 
-Note: nanobanana is configured but its GEMINI_API_KEY is rejected by Google (API_KEY_INVALID). Canva generate-image is the working image tool for now.
+Episode images are made by the owner in Google Flow from `flow-prompts.md` (attach the Dave model sheet). nanobanana/Gemini was removed on 2026-11-10.
