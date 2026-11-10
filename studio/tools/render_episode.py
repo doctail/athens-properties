@@ -176,7 +176,8 @@ def overlays(frame, sec, t, dur, ev, board):
             s = back(lt / 0.35) * (1 - ease((lt - 3.2) / 0.4)); a = min(1, lt / 0.15) * (1 - ease((lt - 3.2) / 0.4))
             f = font(FONT_BLACK, int(64 * max(0.3, s)))
             tw = d.textlength(c["text"], font=f); bh = int(110 * max(0.3, s))
-            x = (W - tw) / 2; y = 130
+            badge_on = sec.get("survival") and ev.get("survival_t") is not None and t >= ev["survival_t"]
+            x = (W - tw) / 2; y = 330 if badge_on else 130
             rounded(d, (x - 40, y, x + tw + 40, y + bh), SAND + (int(245 * a),), r=24, outline=INK + (int(255 * a),), width=6)
             d.text((x, y + (bh - f.size) / 2 - 6), c["text"], font=f, fill=INK + (int(255 * a),))
     # survival badge, appears when narrator says it
@@ -234,8 +235,24 @@ def render_section(args):
     build = os.path.join(ep, "build"); os.makedirs(build, exist_ok=True)
     audio = os.path.join(ep, "audio", sec["audio"])
     ndur = probe(audio); tail = sec.get("tail", 0.7); dur = ndur + tail
-    imgs = [load_cover(os.path.join(ep, "images", f"{n:03d}.jpg")) for n in sec["images"]]
+    # images: int (evenly spread) or {"n": N, "at": "anchor phrase"} (starts when the narrator says it)
+    entries = [e if isinstance(e, dict) else {"n": e} for e in sec["images"]]
+    nums = [e["n"] for e in entries]
+    imgs = [load_cover(os.path.join(ep, "images", f"{n:03d}.jpg")) for n in nums]
+    starts = []
+    for i, e in enumerate(entries):
+        if i == 0: starts.append(0.0)
+        elif "at" in e: starts.append(anchor_time(text, e["at"], ndur))
+        else: starts.append(None)
+    # fill unanchored starts evenly between anchored neighbours
+    known = [(i, v) for i, v in enumerate(starts) if v is not None] + [(len(starts), dur)]
+    for (i0, v0), (i1, v1) in zip(known, known[1:]):
+        for k in range(i0 + 1, i1): starts[k] = v0 + (v1 - v0) * (k - i0) / (i1 - i0)
+    for i in range(1, len(starts)):
+        if starts[i] <= starts[i - 1] + 0.8: raise ValueError(f"section {idx}: image {nums[i]} starts too close/before previous ({starts[i]:.2f})")
+    ends = starts[1:] + [dur]
     seg = dur / len(imgs)
+    sec = dict(sec); sec["images"] = nums
     ev = {"callouts": [], "flashes": [], "survival_t": None}
     sfx = []
     for c in sec.get("callouts", []):
@@ -243,7 +260,7 @@ def render_section(args):
     if sec.get("survival_anchor"):
         ev["survival_t"] = anchor_time(text, sec["survival_anchor"], ndur) + 0.6; sfx.append(("ding", ev["survival_t"], 0.6))
     for n in sec.get("flash_images", []):
-        ft = sec["images"].index(n) * seg; ev["flashes"].append(ft); sfx.append(("boom", ft, 1.0))
+        ft = starts[nums.index(n)]; ev["flashes"].append(ft); sfx.append(("boom", ft, 1.0))
     if sec.get("rank"):
         sfx += [("glitch", 0.0, 0.6), ("whoosh", 0.15, 0.6)]
     elif sec.get("banner"):
@@ -263,7 +280,7 @@ def render_section(args):
     p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     for fi in range(int(round(dur * fps))):
         t = fi / fps
-        k = min(int(t / seg), len(imgs) - 1); lt = t - k * seg
+        k = max(i for i in range(len(starts)) if starts[i] <= t + 1e-9); lt = t - starts[k]; seg = ends[k] - starts[k]
         mode = (sec["images"][k] + idx) % 4
         shake = (0, 0)
         for ft in ev["flashes"]:

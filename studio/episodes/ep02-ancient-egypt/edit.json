@@ -1,28 +1,519 @@
-{"sections": [
- {"audio": "s00.mp3", "images": [1, 2, 3], "bubbles": [{"text": "…Egypt?", "t0": 3.0, "t1": 6.0, "x": 1100, "y": 160}], "title_card": 10.6, "riser_before_title": true},
- {"audio": "s01.mp3", "images": [4, 5, 6, 7, 8], "banner": {"big": "5:00 AM", "title": "THE ROOF", "sub": "GIZA · AROUND 2560 BC"}, "tally": {"before": 0, "add": 0, "total": 6},
-  "callouts": [{"text": "FLOOD SEASON: NO FARMING", "anchor": "it's flood season"}], "tail": 1.0},
- {"audio": "s02.mp3", "images": [9, 10, 11, 12, 13, 14], "banner": {"big": "6:00 AM", "title": "BREAKFAST", "sub": "BREAD + BEER"}, "tally": {"before": 0, "add": 1, "total": 6},
-  "callouts": [{"text": "BEER = LIQUID FOOD", "anchor": "basically liquid food"}, {"text": "SAND IN EVERY LOAF", "anchor": "full of grit"}],
-  "badge_title": "THREAT #1", "survival": "YOUR BREAKFAST", "survival_anchor": "Threat number one", "tail": 1.4},
- {"audio": "s03.mp3", "images": [15, 16, 18, 19, 20, 21, 22, 23, 17, 24, 25, 26, 27], "banner": {"big": "7:00 AM", "title": "THE PYRAMID", "sub": "BIGGEST BUILDING SITE ON EARTH"}, "tally": {"before": 1, "add": 1, "total": 6},
-  "callouts": [{"text": "MYTH: BUILT BY SLAVES", "anchor": "not built by slaves"}, {"text": "TEAM NAME: \"FRIENDS OF KHUFU\"", "anchor": "Friends of Khufu"},
-               {"text": "WET SAND ≈ HALF THE EFFORT", "anchor": "roughly in half"}, {"text": "AVERAGE BLOCK ≈ 2.5 TONNES", "anchor": "over two tonnes"}],
-  "badge_title": "THREAT #2", "survival": "A 2-TONNE ROCK", "survival_anchor": "Threat number two", "tail": 1.4},
- {"audio": "s04.mp3", "images": [28, 29, 30, 31, 32, 33, 34], "banner": {"big": "12:00 PM", "title": "THE HEAT", "sub": "40 °C IN THE SHADE"}, "tally": {"before": 2, "add": 1, "total": 6},
-  "callouts": [{"text": "40 °C+", "anchor": "forty degrees"}, {"text": "KOHL: SUN SHIELD + MEDICINE?", "anchor": "It's called kohl"}],
-  "badge_title": "THREAT #3", "survival": "HEATSTROKE", "survival_anchor": "threat number three", "tail": 1.2},
- {"audio": "s05.mp3", "images": [35, 36, 37, 38, 39, 40, 41, 42], "banner": {"big": "3:00 PM", "title": "THE NILE", "sub": "WATER, FISH, LIFE… AND DEATH"}, "tally": {"before": 3, "add": 3, "total": 6},
-  "callouts": [{"text": "NILE CROCODILES", "anchor": "Nile crocodiles"}, {"text": "HIPPOS: THE REAL DANGER", "anchor": "really feared was the hippo"}, {"text": "PARASITES (FOUND IN MUMMIES)", "anchor": "Tiny parasitic worms"}],
-  "badge_title": "THREATS #4 · #5 · #6", "survival": "ONE RIVER", "survival_anchor": "Threat four", "tail": 1.4},
- {"audio": "s06.mp3", "images": [43, 44, 45, 46, 47, 48], "banner": {"big": "4:00 PM", "title": "THE TAX MAN", "sub": "EGYPT RAN ON PAPERWORK"}, "tally": {"before": 6, "add": 0, "total": 6},
-  "callouts": [{"text": "NO MONEY: TAX IN GRAIN & WORK", "anchor": "There was no money"}, {"text": "MOST PEOPLE COULDN'T READ", "anchor": "Most Egyptians couldn't read"}], "tail": 1.0},
- {"audio": "s07.mp3", "images": [49, 50, 27, 51, 52], "banner": {"big": "5:00 PM", "title": "THE DOCTOR", "sub": "BEST MEDICINE OF THE ANCIENT WORLD?"}, "tally": {"before": 6, "add": 0, "total": 6},
-  "callouts": [{"text": "HONEY: REALLY KILLS BACTERIA", "anchor": "put honey on cuts"}, {"text": "ANIMAL DUNG: …NO", "anchor": "animal dung"}], "tail": 1.0},
- {"audio": "s08.mp3", "images": [53, 54, 55, 4, 56, 57], "banner": {"big": "8:00 PM", "title": "NIGHT", "sub": "BREAD, BEER, SENET"}, "tally": {"before": 6, "add": 0, "total": 6},
-  "callouts": [{"text": "SENET: 30 SQUARES, 5,000 YEARS OLD", "anchor": "called senet"}, {"text": "SCORPIONS & COBRAS", "anchor": "Scorpions and cobras"}], "tail": 1.0},
- {"audio": "s09.mp3", "images": [58, 21, 15, 1], "banner": {"big": "NEXT DAY", "title": "THE VERDICT", "sub": "DID DAVE SURVIVE?"},
-  "badge_title": "SURVIVED", "survival": "1 DAY", "survival_anchor": "One day: yes",
-  "callouts": [{"text": "A WHOLE LIFE? VERY TOUGH", "anchor": "living a whole life"}], "tail": 1.0},
- {"audio": "s10.mp3", "images": [59], "tail": 1.8}
-]}
+{
+ "sections": [
+  {
+   "audio": "s00.mp3",
+   "images": [
+    {
+     "n": 1
+    },
+    {
+     "n": 2,
+     "at": "at least six things"
+    },
+    {
+     "n": 3,
+     "at": "Let's see how many"
+    }
+   ],
+   "bubbles": [
+    {
+     "text": "…Egypt?",
+     "t0": 3.0,
+     "t1": 6.0,
+     "x": 1100,
+     "y": 160
+    }
+   ],
+   "title_card": 10.6,
+   "riser_before_title": true
+  },
+  {
+   "audio": "s01.mp3",
+   "images": [
+    {
+     "n": 4
+    },
+    {
+     "n": 7,
+     "at": "Dave's house has"
+    },
+    {
+     "n": 6,
+     "at": "Plus the goat"
+    },
+    {
+     "n": 5,
+     "at": "But it's flood season"
+    },
+    {
+     "n": 8,
+     "at": "Which means Dave"
+    }
+   ],
+   "banner": {
+    "big": "5:00 AM",
+    "title": "THE ROOF",
+    "sub": "GIZA · AROUND 2560 BC"
+   },
+   "tally": {
+    "before": 0,
+    "add": 0,
+    "total": 6
+   },
+   "callouts": [
+    {
+     "text": "FLOOD SEASON: NO FARMING",
+     "anchor": "it's flood season"
+    }
+   ],
+   "tail": 1.0
+  },
+  {
+   "audio": "s02.mp3",
+   "images": [
+    {
+     "n": 9
+    },
+    {
+     "n": 10,
+     "at": "Yes, beer"
+    },
+    {
+     "n": 11,
+     "at": "Egyptian beer was thick"
+    },
+    {
+     "n": 12,
+     "at": "It was basically liquid food"
+    },
+    {
+     "n": 13,
+     "at": "The bread is the real danger"
+    },
+    {
+     "n": 14,
+     "at": "Over a lifetime"
+    }
+   ],
+   "banner": {
+    "big": "6:00 AM",
+    "title": "BREAKFAST",
+    "sub": "BREAD + BEER"
+   },
+   "tally": {
+    "before": 0,
+    "add": 1,
+    "total": 6
+   },
+   "callouts": [
+    {
+     "text": "BEER = LIQUID FOOD",
+     "anchor": "basically liquid food"
+    },
+    {
+     "text": "SAND IN EVERY LOAF",
+     "anchor": "full of grit"
+    }
+   ],
+   "badge_title": "THREAT #1",
+   "survival": "YOUR BREAKFAST",
+   "survival_anchor": "Threat number one",
+   "tail": 1.4
+  },
+  {
+   "audio": "s03.mp3",
+   "images": [
+    {
+     "n": 15
+    },
+    {
+     "n": 18,
+     "at": "The pyramids were not built by slaves"
+    },
+    {
+     "n": 19,
+     "at": "Archaeologists found the town"
+    },
+    {
+     "n": 20,
+     "at": "The workers were fed"
+    },
+    {
+     "n": 21,
+     "at": "They were even buried"
+    },
+    {
+     "n": 22,
+     "at": "The teams even had names"
+    },
+    {
+     "n": 23,
+     "at": "Dave's team has a name too"
+    },
+    {
+     "n": 17,
+     "at": "And the trick for moving"
+    },
+    {
+     "n": 16,
+     "at": "physicists have tested it"
+    },
+    {
+     "n": 24,
+     "at": "doesn't mean"
+    },
+    {
+     "n": 27,
+     "at": "Workers' skeletons show"
+    },
+    {
+     "n": 25,
+     "at": "Threat number two"
+    },
+    {
+     "n": 26,
+     "at": "His sneaker does not"
+    }
+   ],
+   "banner": {
+    "big": "7:00 AM",
+    "title": "THE PYRAMID",
+    "sub": "BIGGEST BUILDING SITE ON EARTH"
+   },
+   "tally": {
+    "before": 1,
+    "add": 1,
+    "total": 6
+   },
+   "callouts": [
+    {
+     "text": "MYTH: BUILT BY SLAVES",
+     "anchor": "not built by slaves"
+    },
+    {
+     "text": "TEAM NAME: \"FRIENDS OF KHUFU\"",
+     "anchor": "Friends of Khufu"
+    },
+    {
+     "text": "WET SAND ≈ HALF THE EFFORT",
+     "anchor": "roughly in half"
+    },
+    {
+     "text": "AVERAGE BLOCK ≈ 2.5 TONNES",
+     "anchor": "over two tonnes"
+    }
+   ],
+   "badge_title": "THREAT #2",
+   "survival": "A 2-TONNE ROCK",
+   "survival_anchor": "Threat number two",
+   "tail": 1.4
+  },
+  {
+   "audio": "s04.mp3",
+   "images": [
+    {
+     "n": 28
+    },
+    {
+     "n": 29,
+     "at": "Dave is wearing a hoodie"
+    },
+    {
+     "n": 30,
+     "at": "Dehydration and heatstroke"
+    },
+    {
+     "n": 31,
+     "at": "And everyone around Dave"
+    },
+    {
+     "n": 32,
+     "at": "thick black eyeliner"
+    },
+    {
+     "n": 33,
+     "at": "It's called kohl"
+    },
+    {
+     "n": 34,
+     "at": "Looking good was also medicine"
+    }
+   ],
+   "banner": {
+    "big": "12:00 PM",
+    "title": "THE HEAT",
+    "sub": "40 °C IN THE SHADE"
+   },
+   "tally": {
+    "before": 2,
+    "add": 1,
+    "total": 6
+   },
+   "callouts": [
+    {
+     "text": "40 °C+",
+     "anchor": "forty degrees"
+    },
+    {
+     "text": "KOHL: SUN SHIELD + MEDICINE?",
+     "anchor": "It's called kohl"
+    }
+   ],
+   "badge_title": "THREAT #3",
+   "survival": "HEATSTROKE",
+   "survival_anchor": "threat number three",
+   "tail": 1.2
+  },
+  {
+   "audio": "s05.mp3",
+   "images": [
+    {
+     "n": 35
+    },
+    {
+     "n": 36,
+     "at": "It's the source of everything"
+    },
+    {
+     "n": 37,
+     "at": "And it's full of things"
+    },
+    {
+     "n": 39,
+     "at": "Huge, fast"
+    },
+    {
+     "n": 38,
+     "at": "It attacked boats"
+    },
+    {
+     "n": 42,
+     "at": "And the most dangerous thing"
+    },
+    {
+     "n": 40,
+     "at": "Tiny parasitic worms"
+    },
+    {
+     "n": 41,
+     "at": "Scientists have found traces"
+    }
+   ],
+   "banner": {
+    "big": "3:00 PM",
+    "title": "THE NILE",
+    "sub": "WATER, FISH, LIFE… AND DEATH"
+   },
+   "tally": {
+    "before": 3,
+    "add": 3,
+    "total": 6
+   },
+   "callouts": [
+    {
+     "text": "NILE CROCODILES",
+     "anchor": "Nile crocodiles"
+    },
+    {
+     "text": "HIPPOS: THE REAL DANGER",
+     "anchor": "really feared was the hippo"
+    },
+    {
+     "text": "PARASITES (FOUND IN MUMMIES)",
+     "anchor": "Tiny parasitic worms"
+    }
+   ],
+   "badge_title": "THREATS #4 · #5 · #6",
+   "survival": "ONE RIVER",
+   "survival_anchor": "Threat four",
+   "tail": 1.4
+  },
+  {
+   "audio": "s06.mp3",
+   "images": [
+    {
+     "n": 43
+    },
+    {
+     "n": 44,
+     "at": "And when the flood went down"
+    },
+    {
+     "n": 45,
+     "at": "so everyone could be taxed"
+    },
+    {
+     "n": 46,
+     "at": "There was no money yet"
+    },
+    {
+     "n": 47,
+     "at": "Most Egyptians couldn't read"
+    },
+    {
+     "n": 48,
+     "at": "And there's no customer service"
+    }
+   ],
+   "banner": {
+    "big": "4:00 PM",
+    "title": "THE TAX MAN",
+    "sub": "EGYPT RAN ON PAPERWORK"
+   },
+   "tally": {
+    "before": 6,
+    "add": 0,
+    "total": 6
+   },
+   "callouts": [
+    {
+     "text": "NO MONEY: TAX IN GRAIN & WORK",
+     "anchor": "There was no money"
+    },
+    {
+     "text": "MOST PEOPLE COULDN'T READ",
+     "anchor": "Most Egyptians couldn't read"
+    }
+   ],
+   "tail": 1.0
+  },
+  {
+   "audio": "s07.mp3",
+   "images": [
+    {
+     "n": 49
+    },
+    {
+     "n": 50,
+     "at": "Time to see an Egyptian doctor"
+    },
+    {
+     "n": 27,
+     "at": "They set broken bones"
+    },
+    {
+     "n": 51,
+     "at": "and put honey on cuts"
+    },
+    {
+     "n": 52,
+     "at": "But the same medical texts"
+    }
+   ],
+   "banner": {
+    "big": "5:00 PM",
+    "title": "THE DOCTOR",
+    "sub": "BEST MEDICINE OF THE ANCIENT WORLD?"
+   },
+   "tally": {
+    "before": 6,
+    "add": 0,
+    "total": 6
+   },
+   "callouts": [
+    {
+     "text": "HONEY: REALLY KILLS BACTERIA",
+     "anchor": "put honey on cuts"
+    },
+    {
+     "text": "ANIMAL DUNG: …NO",
+     "anchor": "animal dung"
+    }
+   ],
+   "tail": 1.0
+  },
+  {
+   "audio": "s08.mp3",
+   "images": [
+    {
+     "n": 53
+    },
+    {
+     "n": 54,
+     "at": "Their favourite was called senet"
+    },
+    {
+     "n": 55,
+     "at": "Dave loses three games"
+    },
+    {
+     "n": 56,
+     "at": "Then it's back to the roof"
+    },
+    {
+     "n": 57,
+     "at": "And one last visitor"
+    }
+   ],
+   "banner": {
+    "big": "8:00 PM",
+    "title": "NIGHT",
+    "sub": "BREAD, BEER, SENET"
+   },
+   "tally": {
+    "before": 6,
+    "add": 0,
+    "total": 6
+   },
+   "callouts": [
+    {
+     "text": "SENET: 30 SQUARES, 5,000 YEARS OLD",
+     "anchor": "called senet"
+    },
+    {
+     "text": "SCORPIONS & COBRAS",
+     "anchor": "Scorpions and cobras"
+    }
+   ],
+   "tail": 1.0
+  },
+  {
+   "audio": "s09.mp3",
+   "images": [
+    {
+     "n": 58
+    },
+    {
+     "n": 7,
+     "at": "Childhood was the most dangerous"
+    },
+    {
+     "n": 21,
+     "at": "Plenty of adults"
+    },
+    {
+     "n": 15,
+     "at": "And yet, these were the people"
+    },
+    {
+     "n": 16,
+     "at": "With bread, beer, ropes"
+    }
+   ],
+   "banner": {
+    "big": "NEXT DAY",
+    "title": "THE VERDICT",
+    "sub": "DID DAVE SURVIVE?"
+   },
+   "badge_title": "SURVIVED",
+   "survival": "1 DAY",
+   "survival_anchor": "One day: yes",
+   "callouts": [
+    {
+     "text": "A WHOLE LIFE? VERY TOUGH",
+     "anchor": "living a whole life"
+    }
+   ],
+   "tail": 1.0
+  },
+  {
+   "audio": "s10.mp3",
+   "images": [
+    {
+     "n": 59
+    }
+   ],
+   "tail": 1.8
+  }
+ ]
+}
