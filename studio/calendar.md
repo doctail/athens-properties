@@ -4,7 +4,9 @@ Long-form: Tuesday + Friday, 21:00–23:00 Italy (15–17 US Eastern) — to ver
 Shorts: 1 per day on the other days (Mon, Wed, Thu, Sat, Sun), same time window. 3 Shorts per episode, made from the episode's images and voice.
 
 ## Shorts rules (owner, 2026-11-09)
-- 8–15 seconds, never 40 s.
+- 8–10 seconds, never 40 s. A cut every 0.6–0.8 s (12+ shots): the viewer must not notice the restart (owner, 2026-11-10).
+- Seamless start: badge and hook static from frame 1, no pop-in, no boom at t=0.
+- Ask Flow for ~10–12 vertical images per Short; extra shots come from crops (wide / medium / detail) of the same image.
 - Built to loop: the last line runs into the first one ("…I'd give you about / Ten seconds."), last frame = first frame.
 - Hook in the first second: the answer/number or the shock image, not an intro.
 - Burned-in captions (2–3 words at a time, key words in yellow), static hook line on top.

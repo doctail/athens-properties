@@ -1,0 +1,10 @@
+{"audio": "f3-hippo.mp3", "out": "f3-hippo.mp4", "hook": "THE NILE'S REAL KILLER", "badge": "NOT THE CROC", "seamless": true, "gap": 0.06,
+ "phrases": [
+  {"text": "Not the crocodile.", "key": ["Not", "crocodile"], "shots": [["v/V15.jpg", 1.0, 0.5, 0.5], ["v/V15.jpg", 1.9, 0.5, 0.7]]},
+  {"text": "The hippo.", "key": ["hippo"], "shots": [["v/V16.jpg", 1.0, 0.5, 0.5]]},
+  {"text": "Two tonnes,", "key": ["Two", "tonnes"], "shake": true, "shots": [["v/V17.jpg", 1.0, 0.5, 0.5]]},
+  {"text": "faster than you,", "key": ["faster"], "shots": [["v/V21.jpg", 1.0, 0.5, 0.5]]},
+  {"text": "and it flips boats.", "key": ["flips", "boats"], "shake": true, "shots": [["v/V18.jpg", 1.0, 0.5, 0.5], ["v/V18.jpg", 1.8, 0.5, 0.35]]},
+  {"text": "The deadliest thing in the Nile?", "key": ["deadliest"], "shots": [["v/V19.jpg", 1.0, 0.5, 0.5], ["v/V20.jpg", 1.0, 0.5, 0.5], ["v/V20.jpg", 1.8, 0.5, 0.65]]},
+  {"text": "Definitely", "key": [], "shots": [["v/V16.jpg", 1.9, 0.5, 0.55]]}
+ ]}

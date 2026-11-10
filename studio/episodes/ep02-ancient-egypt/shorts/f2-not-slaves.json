@@ -1,0 +1,12 @@
+{"audio": "f2-not-slaves.mp3", "out": "f2-not-slaves.mp4", "hook": "WHO BUILT THE PYRAMIDS?", "badge": "NOT SLAVES", "seamless": true, "gap": 0.06,
+ "phrases": [
+  {"text": "Not slaves.", "key": ["Not", "slaves"], "shots": [["v/V14.jpg", 1.0, 0.5, 0.5]]},
+  {"text": "Paid workers,", "key": ["Paid"], "shots": [["v/V08.jpg", 1.0, 0.5, 0.5]]},
+  {"text": "with bread,", "key": ["bread"], "shots": [["v/V09.jpg", 1.0, 0.5, 0.5]]},
+  {"text": "beer,", "key": ["beer"], "shots": [["v/V10.jpg", 1.0, 0.5, 0.5]]},
+  {"text": "meat,", "key": ["meat"], "shots": [["v/V11.jpg", 1.0, 0.5, 0.5]]},
+  {"text": "and their own tombs next to the pyramid.", "key": ["own", "tombs"], "shots": [["v/V12.jpg", 1.0, 0.5, 0.5], ["v/V13.jpg", 1.0, 0.5, 0.5], ["v/V13.jpg", 1.8, 0.5, 0.6]]},
+  {"text": "Everything the movies showed you?", "key": ["movies"], "shots": [["v/V14.jpg", 1.6, 0.5, 0.5], ["v/V08.jpg", 1.8, 0.4, 0.6]]},
+  {"text": "Wrong.", "key": ["Wrong"], "shake": true, "shots": [["v/V14.jpg", 2.2, 0.5, 0.45]]},
+  {"text": "They were", "key": [], "shots": [["v/V12.jpg", 1.7, 0.5, 0.45]]}
+ ]}

@@ -48,7 +48,9 @@ def main(spec_path):
     total = t - gap
     filt = "".join(f"[0:a]atrim={s}:{e},asetpts=PTS-STARTPTS,apad=pad_dur={gap if i < len(segs)-1 else 0}[p{i}];" for i, (s, e) in enumerate(segs))
     filt += "".join(f"[p{i}]" for i in range(len(segs))) + f"concat=n={len(segs)}:v=0:a=1[v]"
-    sfx = [("boom", 0.0, 0.5)] + [("whoosh", max(0, a - 0.1), 0.35) for a, _, _ in timeline[1:]]
+    seamless = sp.get("seamless", False)
+    sfx = ([] if seamless else [("boom", 0.0, 0.5)]) + [("whoosh", max(0, a - 0.1), 0.2 if seamless else 0.35) for a, _, _ in timeline[1:]]
+    if not sfx: sfx = [("tick", 0.0, 0.0)]
     inputs = ["-i", P(sp["audio"])]
     for k, (n, at, vol) in enumerate(sfx):
         inputs += ["-i", os.path.join(SFX, n + ".wav")]; ms = int(at * 1000)
@@ -76,6 +78,34 @@ def main(spec_path):
         k = max(i for i, (a, _, _) in enumerate(timeline) if a <= t + 1e-6) if t >= timeline[0][0] else 0
         a, b, ph = timeline[k]; nxt = timeline[k + 1][0] if k + 1 < len(timeline) else total
         p = (t - a) / max(0.01, nxt - a)
+        shots = ph.get("shots")
+        if shots:
+            si = min(int(p * len(shots)), len(shots) - 1); spp = p * len(shots) - si
+            simg, sz, scx, scy = (shots[si] + [1.0, 0.5, 0.5])[:4]
+            im, bg = img(simg)
+            fg = cover(im, W, H, zoom=sz * (1 + 0.06 * spp), cx=scx, cy=scy)
+            if ph.get("shake") and si == 0:
+                m = 16 * max(0, 1 - spp * 2); fg = fg.transform(fg.size, Image.AFFINE, (1, 0, random.uniform(-m, m), 0, 1, random.uniform(-m, m)))
+            fr = fg.copy(); d = ImageDraw.Draw(fr)
+            hw = d.textlength(sp["hook"], font=fh_hook)
+            d.text(((W - hw) / 2, 150), sp["hook"], font=fh_hook, fill=WHITE, stroke_width=7, stroke_fill=INK)
+            if sp.get("badge"):
+                f = ImageFont.truetype(FB, 110); tw = d.textlength(sp["badge"], font=f)
+                if tw > W - 180: f = ImageFont.truetype(FB, int(110 * (W - 180) / tw)); tw = d.textlength(sp["badge"], font=f)
+                d.rounded_rectangle(((W - tw) / 2 - 40, 270, (W + tw) / 2 + 40, 270 + f.size + 50), radius=30, fill=MUSTARD, outline=INK, width=8)
+                d.text(((W - tw) / 2, 290), sp["badge"], font=f, fill=INK)
+            words = ph["text"].split(); groups = [words[i:i + 3] for i in range(0, len(words), 3)]
+            lens = [len(" ".join(g)) for g in groups]; acc = 0; gi = 0
+            for i, L in enumerate(lens):
+                if (t - a) / max(0.01, b - a) >= acc / sum(lens): gi = i
+                acc += L
+            line = " ".join(groups[gi]).upper(); f2 = fh_big; tw = d.textlength(line, font=f2)
+            if tw > W - 80: f2 = ImageFont.truetype(FB, int(96 * (W - 80) / tw)); tw = d.textlength(line, font=f2)
+            x = (W - tw) / 2; y = 1450
+            for wd in line.split(" "):
+                col = MUSTARD if wd.strip(".,?!").capitalize() in [w.capitalize() for w in ph.get("key", [])] else WHITE
+                d.text((x, y), wd, font=f2, fill=col, stroke_width=9, stroke_fill=INK); x += d.textlength(wd + " ", font=f2)
+            pr.stdin.write(fr.tobytes()); continue
         im, bg = img(ph["img"])
         last = k == len(timeline) - 1
         z = 1.0 + 0.08 * p if not last else 1.08 - 0.08 * p  # last shot zooms back to the first shot's start framing

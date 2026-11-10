@@ -54,12 +54,12 @@ Done: thumbnail/thumb_A_1_normal_day.jpg (main), thumbnail/thumb_B_survive_this.
 Mix: music at about -27 LUFS before ducking, EQ dip -6 dB at 1.8 kHz, sidechain ducking under the voice, fade in 2 s / out 5 s, final mix -14 LUFS. File: build/final_music.mp4.
 
 ## Shorts (related video: EP02)
-### S1 — "Sand." (shorts/s1-sand.mp4, 15.4 s) — Sat 14
+### S1 — "Sand." (shorts/f1-sand.mp4, 7.5 s, fast cuts) — Sat 14
 Title: Every loaf of bread in ancient Egypt had THIS in it 🍞 #shorts
 Description: Grain ground on stone + desert wind = sand in every loaf. Egyptian mummies show teeth worn down to the nerve, pharaohs included. #ancientegypt #history #shorts
-### S2 — "They weren't slaves." (shorts/s2-not-slaves.mp4, 14.2 s) — Sun 15
+### S2 — "They weren't slaves." (shorts/f2-not-slaves.mp4, 8.4 s, fast cuts) — Sun 15
 Title: The pyramids were NOT built by slaves 🏗️ #shorts
 Description: Archaeologists found the builders' town at Giza: bakeries, breweries, cattle bones, named work gangs and their own cemetery next to the pyramids. #pyramids #ancientegypt #shorts
-### S3 — "Not the crocodile." (shorts/s3-hippo.mp4, 12.1 s) — Mon 16
+### S3 — "Not the crocodile." (shorts/f3-hippo.mp4, 7.6 s, fast cuts) — Mon 16
 Title: The Nile's deadliest animal wasn't the crocodile 🦛 #shorts
 Description: Ancient Egyptians feared the hippo: huge, fast, territorial, and it attacked boats. #ancientegypt #animals #shorts

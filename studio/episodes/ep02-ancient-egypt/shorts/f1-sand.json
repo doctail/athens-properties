@@ -1,0 +1,9 @@
+{"audio": "f1-sand.mp3", "out": "f1-sand.mp4", "hook": "ANCIENT EGYPT'S BREAD", "badge": "SAND", "seamless": true, "gap": 0.06,
+ "phrases": [
+  {"text": "Sand.", "key": ["Sand"], "shots": [["v/V01.jpg", 1.0, 0.5, 0.5]]},
+  {"text": "In every loaf of bread in ancient Egypt.", "key": ["every", "loaf"], "shots": [["v/V02.jpg", 1.0, 0.5, 0.5], ["v/V03.jpg", 1.6, 0.5, 0.55], ["v/V04.jpg", 1.0, 0.5, 0.5]]},
+  {"text": "It ground their teeth", "key": ["teeth"], "shots": [["v/V05.jpg", 1.0, 0.5, 0.5], ["v/V05.jpg", 2.0, 0.45, 0.33]]},
+  {"text": "down to the nerve.", "key": ["nerve"], "shake": true, "shots": [["v/V07.jpg", 1.0, 0.5, 0.5], ["v/V07.jpg", 1.8, 0.5, 0.4]]},
+  {"text": "Even the pharaohs.", "key": ["pharaohs"], "shots": [["v/V06.jpg", 1.0, 0.5, 0.5], ["v/V06.jpg", 1.9, 0.5, 0.35]]},
+  {"text": "The secret ingredient?", "key": ["secret"], "shots": [["v/V03.jpg", 1.0, 0.5, 0.5], ["v/V01.jpg", 2.0, 0.5, 0.5]]}
+ ]}
