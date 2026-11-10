@@ -1,0 +1,12 @@
+{"audio": "s1-sand.mp3", "out": "s1-sand.mp4", "hook": "ANCIENT EGYPT'S BREAD", "gap": 0.1,
+ "phrases": [
+  {"text": "Sand.", "img": "v/V01.jpg", "key": ["Sand"], "badge": "SAND"},
+  {"text": "That's what was in every loaf of bread in ancient Egypt.", "img": "v/V02.jpg", "key": ["every", "loaf"]},
+  {"text": "Grain was ground on stone,", "img": "v/V03.jpg", "key": ["stone"]},
+  {"text": "and the desert wind did the rest.", "img": "v/V04.jpg", "key": ["desert", "wind"]},
+  {"text": "Over the years,", "img": "v/V05.jpg", "key": []},
+  {"text": "it wore their teeth down to the nerve.", "img": "v/V05.jpg", "cx": 0.4, "key": ["teeth", "nerve"], "shake": true},
+  {"text": "Even pharaohs had rotten teeth.", "img": "v/V06.jpg", "key": ["pharaohs", "rotten"]},
+  {"text": "And the secret ingredient", "img": "v/V07.jpg", "key": ["secret"]},
+  {"text": "nobody asked for?", "img": "v/V01.jpg", "key": []}
+ ]}

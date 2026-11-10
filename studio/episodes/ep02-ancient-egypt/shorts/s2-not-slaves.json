@@ -1,0 +1,13 @@
+{"audio": "s2-not-slaves.mp3", "out": "s2-not-slaves.mp4", "hook": "WHO BUILT THE PYRAMIDS?", "gap": 0.1,
+ "phrases": [
+  {"text": "They weren't slaves.", "img": "v/V14.jpg", "key": ["weren't", "slaves"], "badge": "NOT SLAVES"},
+  {"text": "The people who built the pyramids had bakeries,", "img": "v/V09.jpg", "key": ["bakeries"]},
+  {"text": "breweries, and meat on the menu.", "img": "v/V10.jpg", "key": ["breweries", "meat"]},
+  {"text": "They worked in named teams,", "img": "v/V12.jpg", "key": ["named", "teams"]},
+  {"text": "and they were buried in their own tombs,", "img": "v/V13.jpg", "key": ["own", "tombs"]},
+  {"text": "right next to the pyramid.", "img": "v/V08.jpg", "key": ["pyramid"]},
+  {"text": "The movies", "img": "v/V11.jpg", "key": ["movies"]},
+  {"text": "got it wrong.", "img": "v/V11.jpg", "cx": 0.7, "key": ["wrong"], "shake": true},
+  {"text": "The truth is,", "img": "v/V08.jpg", "cx": 0.3, "key": ["truth"]},
+  {"text": "the builders", "img": "v/V14.jpg", "key": []}
+ ]}

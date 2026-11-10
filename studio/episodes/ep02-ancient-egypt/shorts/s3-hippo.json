@@ -1,0 +1,10 @@
+{"audio": "s3-hippo.mp3", "out": "s3-hippo.mp4", "hook": "THE NILE'S REAL KILLER", "gap": 0.1,
+ "phrases": [
+  {"text": "Not the crocodile.", "img": "v/V15.jpg", "key": ["Not", "crocodile"], "badge": "NOT THE CROC"},
+  {"text": "The animal Egyptians feared most on the Nile was the hippo.", "img": "v/V16.jpg", "key": ["feared", "hippo"]},
+  {"text": "Two tonnes,", "img": "v/V17.jpg", "key": ["Two", "tonnes"], "shake": true},
+  {"text": "much faster than it looks,", "img": "v/V17.jpg", "cx": 0.35, "key": ["faster"]},
+  {"text": "and it flips boats.", "img": "v/V18.jpg", "key": ["flips", "boats"], "shake": true},
+  {"text": "So if you see something big moving in the river…", "img": "v/V20.jpg", "key": ["something", "big"]},
+  {"text": "it's probably", "img": "v/V15.jpg", "key": []}
+ ]}

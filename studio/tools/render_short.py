@@ -81,10 +81,12 @@ def main(spec_path):
         z = 1.0 + 0.08 * p if not last else 1.08 - 0.08 * p  # last shot zooms back to the first shot's start framing
         if k == 0: z = 1.0 + 0.08 * p
         if last and ph["img"] == timeline[0][2]["img"]: z = 1.0 + 0.08 * max(0.0, 1 - p) * 0  # end exactly at first framing
-        fg = cover(im, W, fh, zoom=z, cx=ph.get("cx", 0.5), cy=0.5)
+        vertical = im.height / im.width > 1.4
+        fg = cover(im, W, H if vertical else fh, zoom=z, cx=ph.get("cx", 0.5), cy=0.5)
         if ph.get("shake"):
             m = 18 * max(0, 1 - p * 2); fg = fg.transform(fg.size, Image.AFFINE, (1, 0, random.uniform(-m, m), 0, 1, random.uniform(-m, m)))
-        fr = bg.copy(); fr.paste(fg, (0, fy))
+        if vertical: fr = fg.copy()
+        else: fr = bg.copy(); fr.paste(fg, (0, fy))
         d = ImageDraw.Draw(fr)
         # hook (static, top)
         hw = d.textlength(sp["hook"], font=fh_hook)

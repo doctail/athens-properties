@@ -333,7 +333,7 @@ def main():
         timeline.append(("sec", i, s))
         if s.get("rank"):
             board[12 - s["rank"]] = {"era": s["era_short"], "survival": s["survival"]}
-            timeline.append(("card", i, {"board": list(board), "highlight": s["rank"], "bg": s["images"][-1]}))
+            timeline.append(("card", i, {"board": list(board), "highlight": s["rank"], "bg": (s["images"][-1]["n"] if isinstance(s["images"][-1], dict) else s["images"][-1])}))
     final_board = list(board)
     with ProcessPoolExecutor(a.jobs) as ex:
         jobs = []
