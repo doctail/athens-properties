@@ -48,3 +48,7 @@ Flow prompt (attach Dave model sheet), 16:9, NO text:
 Flat 2D vector cartoon, thick dark-brown outlines, bold saturated colours, YouTube thumbnail composition, NO text. Right side: huge close-up of Dave (from the reference) with a shocked face and smudged black kohl eyeliner, holding a cracked loaf of bread. Left side: the unfinished Great Pyramid with ramps and a giant hippo bursting out of the Nile in front of it. Strong contrast, simple background, readable at small size.
 ```
 Text to add (I add it): "1 NORMAL DAY" (A) or "NOT SLAVES?" (B).
+
+## Music
+"Science Montage" — Jeremy Blake (YouTube Audio Library). Check in the Audio Library whether attribution is required; if yes, add to description: Music: "Science Montage" by Jeremy Blake (YouTube Audio Library).
+Mix: music at about -27 LUFS before ducking, EQ dip -6 dB at 1.8 kHz, sidechain ducking under the voice, fade in 2 s / out 5 s, final mix -14 LUFS. File: build/final_music.mp4.
