@@ -3,3 +3,5 @@ node_modules/
 .env.local
 .nano-banana-config.json
 studio/episodes/*/build/
+__pycache__/
+*.pyc
