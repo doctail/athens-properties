@@ -1,7 +1,7 @@
-# EP02 — Google Flow prompts (59 landscape + 6 vertical = 65 images, 3 runs)
+# EP02 — Google Flow prompts (59 landscape + 21 vertical = 80 images)
 
 Attach the Dave model sheet as reference in EVERY run. Download in order. Name files with the 3-digit number.
-Runs 1–2: 16:9. Run 3: images 049–059 at 16:9, then V1–V6 at **9:16** (if Flow needs one aspect ratio per run, do V1–V6 as a separate small run).
+Runs 1–2: 16:9. Run 3: images 049–059 at 16:9, vertical V01–V21 in a separate run at **9:16**.
 
 ## HEADER (paste at the top of every run)
 ```
@@ -82,12 +82,41 @@ DAVE = the character in the reference image: man in his early 30s, slightly chub
 059. Teaser: Dave standing alone on an empty modern city street with weeds and abandoned cars; one other distant person standing far away at the end of the street.
 ```
 
-## VERTICAL for Shorts — V1–V6 at 9:16
+## VERTICAL for Shorts — V01–V21 at 9:16 (7 per Short, one small separate run)
+Use the same HEADER, but write "9:16 vertical portrait" instead of "16:9 landscape". Keep the main subject in the CENTRE third (top and bottom get covered by captions).
+
+### Short 1 — "Sand." (bread & teeth loop)
+Voice: "Sand. That's what was in every loaf of bread in ancient Egypt. Grain was ground on stone, and the desert wind did the rest. Over the years, it wore their teeth down to the nerve. Even pharaohs had rotten teeth. And the secret ingredient nobody asked for? …" → loops to "Sand."
 ```
-V1. 9:16 vertical. Close-up of Dave biting a gritty loaf of bread, his tooth cracking (comic star shape), pained face, clay oven behind.
-V2. 9:16 vertical. A huge limestone block on a wooden sledge being pulled up a ramp toward the camera by many workers, the unfinished pyramid towering behind.
-V3. 9:16 vertical. A hippo bursting out of the Nile under a small papyrus boat, water splashing, very dramatic.
-V4. 9:16 vertical. Dave with dramatic black kohl eyeliner, posing like a model, the pyramid behind him.
-V5. 9:16 vertical. An Egyptian doctor holding two clay jars, one with golden honey, one surrounded by flies; Dave looking between them nervously.
-V6. 9:16 vertical. The goat sitting proudly at a senet board, Dave defeated in the background.
+V01. 9:16 vertical. Extreme close-up of a round Egyptian loaf broken open, sand grains glittering inside the bread, dramatic light.
+V02. 9:16 vertical. A woman in a linen dress pulling round loaves from a dome clay oven, steam rising.
+V03. 9:16 vertical. Hands grinding grain on a flat stone quern, flour and grit spraying.
+V04. 9:16 vertical. Desert wind blowing a cloud of sand across a courtyard straight into open bowls of flour.
+V05. 9:16 vertical. Dave biting the bread, a cartoon crack-star at his tooth, eyes watering in pain.
+V06. 9:16 vertical. A pharaoh with the striped royal headdress holding his swollen cheek in pain, very undignified.
+V07. 9:16 vertical. Dave holding the loaf up suspiciously, staring at it, close-up, sand trickling out.
+```
+
+### Short 2 — "They weren't slaves." (pyramid myth loop)
+Voice: "They weren't slaves. The people who built the pyramids had bakeries, breweries, and meat on the menu. They worked in named teams, and they were buried in their own tombs, right next to the pyramid. The movies got it wrong. The truth is, the builders …" → loops to "They weren't slaves."
+```
+V08. 9:16 vertical. Low angle: the huge unfinished Great Pyramid with ramps towering above a crowd of workers.
+V09. 9:16 vertical. Workers' bakery: rows of bell-shaped bread moulds in hot ashes, bakers working.
+V10. 9:16 vertical. Workers' brewery: big clay jars, a worker stirring thick beer.
+V11. 9:16 vertical. Workers happily eating roasted meat and bread together in the evening.
+V12. 9:16 vertical. A team of workers cheering around a stone block marked with abstract red ochre symbols (NOT letters), team spirit.
+V13. 9:16 vertical. Small mud-brick workers' tombs at the foot of the unfinished pyramid at sunset.
+V14. 9:16 vertical. Fake movie scene in grey tones: whipped slaves pulling a stone, with a big red X shape over it (no letters).
+```
+
+### Short 3 — "Not the crocodile." (hippo loop)
+Voice: "Not the crocodile. The animal Egyptians feared most on the Nile was the hippo. Two tonnes, much faster than it looks, and it flips boats. So if you see something big moving in the river… it's probably …" → loops to "Not the crocodile."
+```
+V15. 9:16 vertical. A Nile crocodile with its mouth open on the riverbank, Dave behind it shrugging.
+V16. 9:16 vertical. A huge hippo's head rising out of the Nile, small eyes staring straight at the viewer, reeds around.
+V17. 9:16 vertical. A hippo charging through shallow water with a huge splash, mouth open showing big tusks.
+V18. 9:16 vertical. A hippo flipping a small papyrus boat, two fishermen flying into the air.
+V19. 9:16 vertical. Fishermen in a papyrus boat staring nervously at ripples in the water ahead.
+V20. 9:16 vertical. Dave kneeling at the river's edge, a large dark shape moving under the water right in front of him.
+V21. 9:16 vertical. Dave running away from the river in panic, one sneaker flying off.
 ```
