@@ -145,15 +145,30 @@ def overlays(frame, sec, t, dur, ev, board):
         if sec.get("meters"):
             ti = t - 4.6
             draw_meters(d, sec["meters"], ease(ti / 0.4), ti)
-    # era banner
-    if rank:
+    # era banner (#rank) or generic banner (big label, e.g. a clock time)
+    bn = sec.get("banner")
+    if rank or bn:
+        big = f"#{rank}" if rank else bn["big"]; title = sec["era"] if rank else bn["title"]; sub = sec["when"] if rank else bn.get("sub", "")
         a = ease((t - 0.2) / 0.5) * (1 - ease((t - 4.3) / 0.5))
         if a > 0:
-            dx = int(-120 * (1 - a))
-            rounded(d, (60 + dx, H - 300, 940 + dx, H - 70), BLUE + (int(225 * a),), outline=INK + (int(255 * a),), width=6)
-            d.text((95 + dx, H - 290), f"#{rank}", font=font(FONT_BLACK, 120), fill=MUSTARD + (int(255 * a),))
-            d.text((340 + dx, H - 265), sec["era"], font=font(FONT_BLACK, 62), fill=(255, 255, 255, int(255 * a)))
-            d.text((340 + dx, H - 180), sec["when"], font=font(FONT_BOLD, 40), fill=SAND + (int(255 * a),))
+            dx = int(-120 * (1 - a)); fb = font(FONT_BLACK, 120 if rank else 92)
+            bw = d.textlength(big, font=fb); tx = 95 + bw + 40
+            tw = max(d.textlength(title, font=font(FONT_BLACK, 62)), d.textlength(sub, font=font(FONT_BOLD, 40)))
+            rounded(d, (60 + dx, H - 300, tx + tw + 50 + dx, H - 70), BLUE + (int(225 * a),), outline=INK + (int(255 * a),), width=6)
+            d.text((95 + dx, H - 290 + (0 if rank else 22)), big, font=fb, fill=MUSTARD + (int(255 * a),))
+            d.text((tx + dx, H - 265), title, font=font(FONT_BLACK, 62), fill=(255, 255, 255, int(255 * a)))
+            d.text((tx + dx, H - 180), sub, font=font(FONT_BOLD, 40), fill=SAND + (int(255 * a),))
+    # threat tally (top centre): N of M dots filled, label on the left
+    if sec.get("tally"):
+        tl = sec["tally"]; n = tl["before"] + (tl["add"] if ev.get("survival_t") is not None and t >= ev["survival_t"] else 0)
+        a = ease((t - 0.6) / 0.4)
+        if a > 0:
+            lab = tl.get("label", "THREATS"); f = font(FONT_BLACK, 34); lw = d.textlength(lab, font=f)
+            total = tl["total"]; x0 = W // 2 - (lw + 20 + total * 40) // 2
+            d.text((x0, 30), lab, font=f, fill=(255, 255, 255, int(255 * a)), stroke_width=4, stroke_fill=INK + (int(255 * a),))
+            for i in range(total):
+                x = x0 + lw + 40 + i * 40; on = i < n
+                d.ellipse((x - 14, 32, x + 14, 60), fill=(RED if on else (255, 255, 255)) + (int((255 if on else 110) * a),), outline=INK + (int(255 * a),), width=3)
     # callouts (pop-in cards, top centre)
     for c in ev["callouts"]:
         lt = t - c["t"]
@@ -170,11 +185,11 @@ def overlays(frame, sec, t, dur, ev, board):
         if lt >= 0:
             s = back(lt / 0.4); a = min(1, lt / 0.15)
             sh = int(10 * math.sin(lt * 40) * max(0, 1 - lt / 0.5))
-            bw, bh = int(720 * s), int(210 * s)
+            bw, bh = int(max(720, d.textlength(sec["survival"], font=font(FONT_BLACK, 96)) + 80) * s), int(210 * s)
             x1, y1 = W - 60 - bw + sh, 60
             rounded(d, (x1, y1, x1 + bw, y1 + bh), MUSTARD + (int(245 * a),), outline=INK + (int(255 * a),), width=7)
             if s > 0.6:
-                d.text((x1 + 34, y1 + 18), "SURVIVAL TIME", font=font(FONT_BOLD, 42), fill=INK + (int(255 * a),))
+                d.text((x1 + 34, y1 + 18), sec.get("badge_title", "SURVIVAL TIME"), font=font(FONT_BOLD, 42), fill=INK + (int(255 * a),))
                 d.text((x1 + 34, y1 + 70), sec["survival"], font=font(FONT_BLACK, 96), fill=INK + (int(255 * a),))
     # speech bubbles
     for b in sec.get("bubbles", []):
@@ -231,6 +246,8 @@ def render_section(args):
         ft = sec["images"].index(n) * seg; ev["flashes"].append(ft); sfx.append(("boom", ft, 1.0))
     if sec.get("rank"):
         sfx += [("glitch", 0.0, 0.6), ("whoosh", 0.15, 0.6)]
+    elif sec.get("banner"):
+        sfx += [("whoosh", 0.15, 0.6)]
         if sec.get("meters"): sfx.append(("tick", 4.6, 0.6))
     for b in sec.get("bubbles", []): sfx.append(("pop", b["t0"], 0.7))
     if sec.get("title_card"):
