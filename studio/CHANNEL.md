@@ -26,7 +26,8 @@ Evidence (month-over-month, vidIQ rising keywords):
 - Research/analytics/upload: vidIQ MCP (`mcp__vidIQ_for_Claude__*`)
 - Images: **Google Flow, run by the owner** from multi-prompt files Claude writes (`studio/episodes/<slug>/flow-prompts.md`: one HEADER + numbered prompts per run, Dave model sheet attached as reference). Owner drops the images in `images/`. No API image generation (nanobanana/Gemini dropped 2026-11-10: no paid billing).
 - Animation: vsub code video (Remotion) `mcp__vsub__code_video_*`; alternative `create_ai_video_v3`
-- Voiceover / music: vsub `text_to_speech`, vidIQ `vidiq_voiceover_generate`, `vidiq_generate_music`
+- Voiceover: vsub `text_to_speech`, vidIQ `vidiq_voiceover_generate`
+- Music: YouTube Audio Library tracks picked by the owner, mixed with `studio/tools/mix_music.sh`. No vidIQ music generation (owner decision 2026-11-11).
 - Titles / thumbnails / scoring: vidIQ `generate_titles`, `generate_thumbnail`, `score_title`, `score_thumbnail`
 
 ## Hard rules
