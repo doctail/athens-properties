@@ -5,3 +5,6 @@ node_modules/
 studio/episodes/*/build/
 __pycache__/
 *.pyc
+studio/focus/*/*.mp4
+studio/treasure/*/*.mp4
+studio/treasure/*/build/
