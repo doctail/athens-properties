@@ -13,3 +13,14 @@
 ## Il proprietario
 - Rispondi in italiano. Titoli, testo a schermo e descrizioni in inglese americano.
 - Ritmo: Dave 2 long a settimana, Year Built 2 a settimana, Focus 1 a settimana, Treasure 1 a settimana.
+
+## Dove trovare cosa (leggi qui prima di dire "non trovo")
+| Canale | Come si produce | Cosa fare adesso | File nel repo |
+|---|---|---|---|
+| Dave | Nodum `CH Dave/CARD Dave` + `STYLE Dave` + `FORMULA Dave` | Nodum `CH Dave/STATUS Dave` | `studio/episodes/<slug>/`, render `studio/tools/render_episode.py` |
+| Year Built | repo `doctail/city3d`, `PRODUZIONE_TIMELAPSE.md` | Nodum `CH Year Built/STATUS Year Built` + `BACKLOG Year Built` | tutto in `doctail/city3d` |
+| Focus | Nodum `CH Focus/RECIPE Focus` | Nodum `CH Focus/BACKLOG Focus` | `studio/focus/<nn-slug>/` con `make.sh`, `metadata.md`, `thumb.jpg`; strumenti `studio/tools/focus/` (`noise.sh`, `thumb.py`, zero crediti) |
+| Treasure | Nodum `CH Treasure/RECIPE Treasure` | Nodum `CH Treasure/BACKLOG Treasure` | `studio/treasure/<slug>/` |
+
+- **Focus, video 01 pronto da generare**: `bash studio/focus/01-super-deep-brown-sleep-12h/make.sh` (~75 min di CPU, crea `video.mp4` da ~0,8 GB, NON committarlo: supera il limite di GitHub). Titolo, descrizione, tag e copertina sono già nella cartella.
+- Se lavori in una chat senza accesso al repo, le stesse informazioni sono in Nodum (vault "My Vault", cartella del canale).
