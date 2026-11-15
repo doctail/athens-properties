@@ -194,8 +194,9 @@ def overlays(frame, sec, t, dur, ev, board):
     # survival badge, appears when narrator says it
     if sec.get("survival") and ev.get("survival_t") is not None:
         lt = t - ev["survival_t"]
-        if lt >= 0:
-            s = back(lt / 0.4); a = min(1, lt / 0.15)
+        bd = sec.get("badge_dur")  # seconds on screen; None = stays until the end of the section (EP01/EP02 behaviour)
+        if lt >= 0 and (bd is None or lt <= bd + 0.3):
+            s = back(lt / 0.4); a = min(1, lt / 0.15) * (1.0 if bd is None else max(0.0, min(1.0, 1 - (lt - bd) / 0.3)))
             sh = int(10 * math.sin(lt * 40) * max(0, 1 - lt / 0.5))
             k = sec.get("badge_scale", 1.0)  # <1 makes a smaller badge so it does not cover faces
             bw, bh = int(max(720 * k, d.textlength(sec["survival"], font=font(FONT_BLACK, int(96 * k))) + 80 * k) * s), int(210 * k * s)
