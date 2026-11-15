@@ -39,6 +39,9 @@ def main(spec_path):
     sp = json.load(open(spec_path)); base = os.path.dirname(os.path.abspath(spec_path))
     P = lambda p: os.path.join(base, p)
     segs = chunks(P(sp["audio"])); phrases = sp["phrases"]
+    while len(segs) > len(phrases):  # commas inside a phrase also create short pauses: merge across the smallest gaps
+        k = min(range(len(segs) - 1), key=lambda i: segs[i + 1][0] - segs[i][1])
+        segs[k:k + 2] = [(segs[k][0], segs[k + 1][1])]
     assert len(segs) == len(phrases), f"{len(segs)} speech chunks vs {len(phrases)} phrases: {segs}"
     gap = sp.get("gap", 0.12)
     # build tight audio
