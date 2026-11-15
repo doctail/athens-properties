@@ -1,128 +1,173 @@
 # EP03 — Could 2 People Really Restart Humanity? (What If)
 
-Status: DRAFT v1 — waiting for owner approval (script gate). No flow prompts or images until this is approved.
-Target: ~8–9 min · ~1,150 words · narrator Bill (same settings as EP01/EP02)
+Status: DRAFT v2 — waiting for owner OK. v1 (approved 2026-11-15) is in git history. Changes from v1 are listed at the bottom.
+Target: ~6 min · ~920 words of narration (5,150 characters) · narrator Bill (same settings as EP01/EP02) · 80 images, one every ~4.5 s
 Setting: Earth, a few years after "the event" (never explained). Dave wakes up in a camp with one other survivor, Carla, a nurse he has never met.
 Format: "What If" series. Dave tries the modern solution first; it fails. Timeline cards on screen: DAY 1 · YEAR 1 · YEAR 5 · YEAR 20 · THE VERDICT.
 Rule (from EP01/EP02): cold open under 15 seconds, no rules speech.
 
-Legend: **[V]** visual · **NARRATOR** voice · **DAVE / CARLA** speech bubble only (no voice)
+Legend: **[V nnn]** image number(s) from images/ · **NARRATOR** voice · **DAVE / CARLA** speech bubble only (no voice). Only the NARRATOR lines are spoken.
 
 ---
 
-## COLD OPEN (0:00–0:14)
+## COLD OPEN (0:00–0:13)
 
-[V] Dave wakes in a tent on a grey beach. A woman's boot is next to his face. His phone: NO SIGNAL. Bubble: "...Hello?"
+[V 001–003] Dave wakes in a tent on a grey beach, one sneaker by his face. His phone is dead. Two tiny figures by a fire, the ruined city far away.
 
-NARRATOR: Two people. No cities, no phones that work, and one of them is a stranger. Could the two of them restart the entire human race? Let's find out.
-
-[V] Title sting: DAVE VS HISTORY.
+NARRATOR: Dave wakes up on a grey beach with a dead phone and an empty world. One other person is alive, and she's a stranger. Could two people restart the entire human race? Let's find out.
 
 ---
 
-## DAY 1 — THE MATH (0:14–1:20)
+## DAY 1 — THE MATH (0:13–1:04)
 
-[V] Dave and Carla sit by a fire. Dave holds up a notebook. Carla holds up a fish.
+[V 004–006] Dave and Carla by the fire, Carla with a fish, Dave with a notebook, Dave thinking hard.
 
-NARRATOR: The first question is not "can they survive?" It's "can they have children?" And that comes down to one number: how many people you need to keep a species going.
+NARRATOR: Day one. Carla catches a fish. Dave makes a plan. And the first question isn't whether they can survive. It's whether they can have children, and that comes down to one number: how many people you need to keep a species going.
 
-[V] Card: MINIMUM VIABLE POPULATION. Dave scribbles "2 + 2 = 4?"
+[V 007] The notebook: two stick figures, a plus, an equals, a question mark.
 
-NARRATOR: Conservation biologists have a rule of thumb: a small population needs about fifty individuals to avoid rapid inbreeding, and about five hundred to keep its genetic diversity over the long run. Two people is far below both. [Likely]
+NARRATOR: Dave's math is simple. Two people, plus two people, equals a family. Right?
 
-[V] Dave gives a thumbs-up. Carla slowly shakes her head.
+[V 008–009] A crowd of fifty. Then a crowd of five hundred.
 
-NARRATOR: And the more pressing problem is what happens to the children.
+NARRATOR: Conservation biologists use a rule of thumb for wild animals: a small population needs about fifty individuals to avoid rapid inbreeding, and about five hundred to keep its genetic diversity over the long run. Humans aren't a perfect match, but the logic is the same.
 
----
+[V 010–013] Two tiny figures facing the crowd. Dave's thumbs up. Carla's crossed arms. Dave's sweat drop.
 
-## YEAR 1 — THE FOOD PROBLEM (1:20–2:40)
-
-[V] Montage: Dave failing to catch a fish, then succeeding, then dropping it in the sand. Carla builds a fence from driftwood.
-
-NARRATOR: Forget the baby problem for a second. Two adults can't hunt, farm, build, and watch for danger at the same time. Hunter-gatherer groups that survived for thousands of years were usually dozens of people, because they shared the work.
-
-[V] Dave tries to start a farm with a single seed packet. The seed blows away.
-
-NARRATOR: Dave's first plan is farming. It takes a few seasons to get a harvest, and a single bad winter can wipe out a crop. Carla's plan is simpler: eat what lives in the sea and leave the rest alone.
-
-[V] Carla points at the sea. Dave points at a field. They both look unhappy.
-
-NARRATOR: Carla is right. Dave isn't. But Carla is also one person short of a second pair of hands, and a single broken ankle could end the whole project.
-
-[V] Dave limps across the beach, boot untied, sneaker gone. Caption: THREAT: ONE ANKLE.
+NARRATOR: Two people is far below both numbers. Dave gives a thumbs up anyway. Carla does not. Because the number is only the first problem. The second one is what happens to the children.
 
 ---
 
-## YEAR 5 — THE PROBLEM NOBODY WANTS TO TALK ABOUT (2:40–4:30)
+## YEAR 1 — THE FOOD PROBLEM (1:04–2:00)
 
-[V] Dave and Carla standing apart by the fire. A pause. Dave clears his throat.
+[V 014–016] Dave spears at the sea and misses, then catches a fish, then a seagull steals it.
 
-NARRATOR: Every survival plan now runs into the same wall. The only people you can have children with are the people you already know. And there are two of them.
+NARRATOR: Forget babies for a moment. Year one is about staying alive. Dave tries to spear a fish, and misses. He tries a hand line and finally catches one. Then a seagull takes it.
 
-[V] Dave's face: "oh no." Carla's face: "absolutely not." A heart is crossed out in the sand.
+[V 017–019] Carla builds a driftwood fence and stands lookout. Both are exhausted, a to-do cloud above their heads.
 
-NARRATOR: Here's what genetics says. Two unrelated people produce children who carry different versions of most genes. But if those two are closely related, their children inherit the same faulty versions from both sides. That's called inbreeding depression: more miscarriages, weaker immune systems, higher rates of disease. [Certain]
+NARRATOR: Carla builds a fence. She also has to watch the horizon. And that's the real problem: two adults can't hunt, cook, build, farm and keep watch at the same time.
 
-[V] Card: INBREEDING DEPRESSION. Small icons: a cough, a broken bone, a sad face.
+[V 020] A group of twenty sharing the work.
 
-NARRATOR: Early humans never faced this problem alone. They lived in groups of many families who swapped partners across the region. Dave and Carla have no such option.
+NARRATOR: Hunter-gatherer groups that survived for thousands of years were usually dozens of people, because they shared the work.
 
-[V] Dave sits down and holds his head. Carla pats his shoulder, then takes the notebook and writes "Plan B."
+[V 021–023] Dave plants a single seed. It blows away. A frozen, wilted field.
 
-NARRATOR: Which is why the honest answer to the title question is: not with just two people, no.
+NARRATOR: Dave's big idea is farming. It sounds great, but a harvest takes a whole season, and one bad winter can wipe it out.
 
----
+[V 024–025] Carla points at the sea, Dave at the field. Dave limps, one sneaker missing.
 
-## YEAR 5 — THE PLAN B THAT ISN'T (4:30–5:40)
-
-[V] Carla sketches a map on the sand: arrows to other coasts, cities in the distance.
-
-NARRATOR: Here's the cleverest idea on the table: find more survivors. The population of the planet is not zero. Carla's plan is to walk. Dave's plan is to fix the satellite dish, which is one wire away from working. It is never one wire away from working.
-
-[V] Dave holds up a dish. A wire snaps. Caption: NO SIGNAL.
-
-NARRATOR: Finding other survivors is the only real way out of the trap. The problem is that the people you find may be carrying the same diseases, the same shortage of food, and the same bad luck.
+NARRATOR: Carla's plan is simpler: eat what lives in the sea. Carla is right. Dave is not. But Carla is also one broken ankle away from disaster, and so is Dave. With nobody else to help, one injury could end the whole project.
 
 ---
 
-## YEAR 20 — THE KIDS (5:40–7:10)
+## YEAR 5 — THE PROBLEM NOBODY WANTS TO TALK ABOUT (2:00–3:25)
 
-[V] Time-lapse: the camp grows. Tents become a stone house. A small figure runs on the beach, chased by a seagull.
+[V 026–029] Dave and Carla stand apart by the fire. Dave clears his throat. Close-ups: "oh no" and "absolutely not".
 
-NARRATOR: Let's skip ahead twenty years. Dave and Carla did not find a huge group. They found three more people, a few seeds that survived, and a lot of stubbornness. Against all odds, the camp has children.
+NARRATOR: Five years in, Dave and Carla have food and a fence, and a bigger problem. Dave clears his throat. Carla stares at the sea. Neither of them wants to say it out loud. They are two strangers, and the whole future of humanity depends on them getting along.
 
-[V] Dave holds a baby. Carla points out the baby's nose is much more like hers. Dave shrugs.
+[V 030] A heart drawn in the sand with a big X over it.
 
-NARRATOR: The first generation is the hardest. Every child needs food, shelter, and someone to pick them up when they fall. Dave is now the reluctant teacher of the group's only school: a whiteboard and a sock puppet.
+NARRATOR: Carla's opinion is clear. But here's the part that surprises most people: the real genetic problem isn't Dave and Carla.
 
-[V] Dave teaching. The sock puppet bites him.
+[V 031] Two unrelated people under a rainbow arch of different blocks.
 
-NARRATOR: The biggest threat is not hunger or the weather. It's a single infection with nobody to treat it. Dave learns to boil water. Carla learns how to set a broken arm from a book she finds in a library that's mostly burned down.
+NARRATOR: Dave and Carla aren't related. Two unrelated people carry different versions of most genes, and that mix protects their children. Their first child could be perfectly healthy.
 
-[V] Dave reads a damp book labelled FIRST AID. Page 1 is missing.
+[V 032–033] A ladder of identical blocks with cracks. A pale child with a thermometer.
 
----
+NARRATOR: The trouble starts with the next generation. If there are no other people, the grandchildren can only have children with cousins, or with brothers and sisters. And closely related parents can pass the same faulty gene versions to a child from both sides.
 
-## THE VERDICT (7:10–8:20)
+[V 034–035] Icons: a cough, a broken bone, a sad face. A cracked shield.
 
-[V] Dave and Carla sit by the fire, older, more lined, a small camp behind them.
+NARRATOR: That's called inbreeding depression: more miscarriages, weaker immune systems, higher rates of disease. And it adds up with every generation.
 
-NARRATOR: So could two people restart humanity? On their own, almost certainly not. Two people in a crisis can build a shelter, catch a fish, and survive a winter. But they cannot keep a species going on their own, because of the genetics, the workload, and the sheer bad luck that every small group faces.
+[V 036–038] A map of many camps linked by dotted lines. Two families meeting at a river. A young couple by a fire.
 
-[V] Dave holds up a tiny sign: "2 people = 1 bad winter."
+NARRATOR: Early humans never faced this alone. They lived in groups of many families, spread across a whole region, and young people moved between bands. Genes kept mixing. That's what kept small groups alive for thousands of years.
 
-NARRATOR: What they can do is be the first link in the chain. A group of about fifty, mixed families, and a few generations of planning, is what actually keeps humanity alive. That's been the pattern for hundreds of thousands of years.
+[V 039–042] Dave looks in every direction. He holds his head. Carla pats his shoulder and writes in the notebook.
 
-[V] Verdict badge: RESTART HUMANITY — PROBABLY NOT (BUT WE TRIED).
-
-NARRATOR: Dave would like you to know he is still not wearing a coat.
+NARRATOR: Dave and Carla have nobody to exchange with. Dave sits down and holds his head. Carla takes the notebook and writes two words: Plan B.
 
 ---
 
-## END SCREEN (8:20–8:40)
+## YEAR 5 — PLAN B (3:25–4:03)
 
-[V] Dave and Carla wave. Dave's phone reads: NO SIGNAL. Next episode card: "How Did Ancient Humans Get Any Privacy?"
+[V 043–044] Carla draws a map in the sand and packs a bag.
 
-NARRATOR: Next time, Dave is shocked to learn that privacy was not a thing in the Stone Age. Subscribe, and see him try.
+NARRATOR: Plan B is the oldest plan in history: find more people. Carla draws a map in the sand, with arrows to far coastlines. She packs rope and water.
 
+[V 045–048] Dave with the satellite dish. The wire snaps. Dave stares at the dead dish.
+
+NARRATOR: Dave has his own plan: fix the satellite dish. It's one wire away from working. It is always one wire away from working.
+
+[V 049–050] Carla walks a long empty coast, then sees smoke on the horizon.
+
+NARRATOR: So Carla walks. Days later, she sees smoke on the horizon.
+
+[V 051–053] Two strangers on a dune, coughing and thin. A tiny pot of soup for four.
+
+NARRATOR: Two strangers, thin and sick. Dave takes a step back. Finding more people is the only real way out of the trap. But every new person also brings new risks: disease, hunger, and one more mouth to feed.
+
+---
+
+## YEAR 20 — THE KIDS (4:03–4:57)
+
+[V 054–056] Calendar pages blow away. The camp has grown. Five adults stand in front of a stone house.
+
+NARRATOR: Skip ahead twenty years. The seasons keep turning, and against all odds there's a stone house, a garden, and smoke from a chimney. Dave and Carla found three more people along the way.
+
+[V 057–058] Cupped hands with seeds. A child runs along the beach, chased by a seagull.
+
+NARRATOR: They also found a handful of surviving seeds, and a lot of stubbornness. And now, there are children.
+
+[V 059–060] Dave holds a baby, Carla says it has her nose. Children eat soup at a long table.
+
+NARRATOR: Dave holds a baby. Carla says the baby has her nose. Dave shrugs. Every child needs food, shelter, and someone to pick them up when they fall.
+
+[V 061–062] Dave at a blank board with a sock puppet, which bites him.
+
+NARRATOR: Dave becomes the group's reluctant teacher: one blank board, one sock puppet. The puppet bites him.
+
+[V 063–067] Dave boils water. A burned library. Carla finds a damp first aid book and sets a broken arm. The first page is missing.
+
+NARRATOR: The biggest threat now isn't hunger or weather. It's a single infection with nobody to treat it. Dave learns to boil water. Carla searches a burned-out library and finds a damp first aid book. She sets a broken arm from it. The first page is missing.
+
+---
+
+## THE VERDICT (4:57–5:43)
+
+[V 068–070] Dave and Carla older by the fire. A tiny camp on a huge beach. A cosy camp with a fish roasting.
+
+NARRATOR: So, could two people restart humanity? On their own, almost certainly not. Two people can build a shelter, catch fish and survive a winter.
+
+[V 071–072] A long chain with only the first two links bright. Dave holds a small sign: one figure and a cracked snowflake.
+
+NARRATOR: But they can't keep a species going. That takes a chain, and a chain needs more than two links. The genetics, the workload and the bad luck, one bad winter, one broken ankle, one infection, can end it at any time.
+
+[V 073–075] A group of fifty around a fire. Four generations in a row. Early humans crossing a savanna.
+
+NARRATOR: What actually works is a group: dozens of people from different families, with enough hands to share the work, and generations to build on. That's how humans survived for hundreds of thousands of years.
+
+[V 076–077] Dave and Carla shrug with half a thumbs up each. Dave shivers in his hoodie.
+
+NARRATOR: Final verdict: probably not, but nice try. And Dave would like you to know he is still not wearing a coat.
+
+---
+
+## END SCREEN (5:43–5:55)
+
+[V 078–080] They wave. Dave's phone, dark. Dave peeks out of a cave through an animal-hide curtain.
+
+NARRATOR: Dave and Carla wave goodbye. His phone still says no signal. Next time, Dave learns that privacy was never a thing in the Stone Age. Subscribe, and watch him try.
+
+---
+
+## What changed from v1 (read this before approving)
+1. **Length.** v1 had about 660 narrated words, which is ~4 minutes, not the 8 I wrote. The timestamps in v1 were wrong. v2 has ~920 narrated words, ~6 minutes at 155 words/min (to be confirmed by the real audio), so the 80 images last ~4.5 s each: fast, as you asked. If you want 8 minutes I add ~300 words, but the pace would slow to ~6 s per image.
+2. **Genetics fix.** v1 implied that Dave and Carla's own children would be at risk. They are unrelated strangers, so their first child could be healthy. The risk starts with the grandchildren, who would have to pair with relatives. v2 says this.
+3. **Every image 001–080 is tied to a line** with [V nnn]. Image 070 is missing (not generated yet): the 068–070 beat can reuse 069 or 068 if 070 is not made.
+4. Confidence tags removed from the narrator lines. They stay in sources.md.
