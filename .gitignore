@@ -8,3 +8,7 @@ __pycache__/
 studio/focus/*/*.mp4
 studio/treasure/*/*.mp4
 studio/treasure/*/build/
+
+# KDP tooling
+kdp/.venv/
+kdp/out/

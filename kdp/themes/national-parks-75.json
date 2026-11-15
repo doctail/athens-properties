@@ -1,0 +1,1283 @@
+{
+  "title": "Large Print National Parks Word Search",
+  "subtitle": "75 Relaxing Large-Print Puzzles with Full Solutions",
+  "author": "Morgan Hayes",
+  "also_from": [],
+  "puzzles": [
+    {
+      "name": "Yellowstone",
+      "words": [
+        "GEYSER",
+        "BISON",
+        "CALDERA",
+        "OBSIDIAN",
+        "SULFUR",
+        "WOLF",
+        "MUDPOT",
+        "THERMAL",
+        "FUMAROLE",
+        "GRIZZLY",
+        "ELK",
+        "CANYON"
+      ]
+    },
+    {
+      "name": "Yosemite",
+      "words": [
+        "GRANITE",
+        "WATERFALL",
+        "HALFDOME",
+        "SEQUOIA",
+        "MEADOW",
+        "CLIFF",
+        "EAGLE",
+        "MERCED",
+        "GLACIER",
+        "RAVEN",
+        "SPRING",
+        "PINE"
+      ]
+    },
+    {
+      "name": "Grand Canyon",
+      "words": [
+        "MESA",
+        "STRATA",
+        "CONDOR",
+        "RAPIDS",
+        "COLORADO",
+        "JUNIPER",
+        "BUTTE",
+        "SANDSTONE",
+        "RIMROCK",
+        "MULEDEER",
+        "LIZARD",
+        "SUNRISE"
+      ]
+    },
+    {
+      "name": "Zion",
+      "words": [
+        "NARROWS",
+        "VIRGIN",
+        "WINGATE",
+        "CHECKERBOARD",
+        "TUNNEL",
+        "MOUNTAIN",
+        "CLIMB",
+        "CHAIN",
+        "BIGHORN",
+        "SPIRE",
+        "CANYON",
+        "WALLS"
+      ]
+    },
+    {
+      "name": "Acadia",
+      "words": [
+        "TIDE",
+        "LIGHTHOUSE",
+        "FOGHORN",
+        "PUFFIN",
+        "SPRUCE",
+        "LOBSTER",
+        "HARBOR",
+        "ISLAND",
+        "CARRIAGE",
+        "MAINE",
+        "BEACON",
+        "MOSS"
+      ]
+    },
+    {
+      "name": "Glacier",
+      "words": [
+        "GOAT",
+        "GLACIER",
+        "ARETE",
+        "CIRQUE",
+        "MORAINE",
+        "HUCKLEBERRY",
+        "CEDAR",
+        "TRAIL",
+        "LAKE",
+        "MOOSE",
+        "SNOWFIELD",
+        "CHALET"
+      ]
+    },
+    {
+      "name": "Everglades",
+      "words": [
+        "ALLIGATOR",
+        "MANGROVE",
+        "SAWGRASS",
+        "EGRET",
+        "MANATEE",
+        "CYPRESS",
+        "PANTHER",
+        "HERON",
+        "PRAIRIE",
+        "OSPREY",
+        "SLOUGH",
+        "LIMESTONE"
+      ]
+    },
+    {
+      "name": "Great Smoky Mountains",
+      "words": [
+        "SALAMANDER",
+        "FIREFLY",
+        "LAUREL",
+        "APPALACHIAN",
+        "HOLLOW",
+        "WILDFLOWER",
+        "TROUT",
+        "BALSAM",
+        "RIDGE",
+        "CHIPMUNK",
+        "FOG",
+        "WOODPECKER"
+      ]
+    },
+    {
+      "name": "Olympic",
+      "words": [
+        "RAINFOREST",
+        "ELWHA",
+        "TIDEPOOL",
+        "SEAL",
+        "MOSS",
+        "HURRICANE",
+        "OCEAN",
+        "COAST",
+        "DOUGLASFIR",
+        "OTTER",
+        "STARFISH",
+        "ANEMONE"
+      ]
+    },
+    {
+      "name": "Denali",
+      "words": [
+        "TUNDRA",
+        "CARIBOU",
+        "AURORA",
+        "WOLVERINE",
+        "PERMAFROST",
+        "SUMMIT",
+        "ALASKA",
+        "PTARMIGAN",
+        "LICHEN",
+        "BLIZZARD",
+        "WILDERNESS",
+        "DALLSHEEP"
+      ]
+    },
+    {
+      "name": "Grand Teton",
+      "words": [
+        "TETON",
+        "JACKSON",
+        "SAGEBRUSH",
+        "PRONGHORN",
+        "SNAKERIVER",
+        "JENNYLAKE",
+        "MOOSE",
+        "COYOTE",
+        "ASPEN",
+        "MARMOT",
+        "PIKA",
+        "TREELINE"
+      ]
+    },
+    {
+      "name": "Rocky Mountain",
+      "words": [
+        "ALPINE",
+        "PIKA",
+        "BIGHORN",
+        "AVALANCHE",
+        "DIVIDE",
+        "CONIFER",
+        "WAPITI",
+        "TUNDRA",
+        "FOOTHILLS",
+        "SNOWMELT",
+        "STREAM",
+        "ASPEN"
+      ]
+    },
+    {
+      "name": "Redwood",
+      "words": [
+        "REDWOOD",
+        "COASTAL",
+        "FERN",
+        "BANANASLUG",
+        "FOG",
+        "SALMON",
+        "ELK",
+        "CANOPY",
+        "BURL",
+        "MUSHROOM",
+        "TANOAK",
+        "CREEK"
+      ]
+    },
+    {
+      "name": "Arches",
+      "words": [
+        "DELICATE",
+        "FIN",
+        "WINDOW",
+        "SLICKROCK",
+        "HOODOO",
+        "BALANCED",
+        "MOAB",
+        "DUNE",
+        "SANDSTONE",
+        "DESERT",
+        "LICHEN",
+        "ARCH"
+      ]
+    },
+    {
+      "name": "Bryce Canyon",
+      "words": [
+        "AMPHITHEATER",
+        "PINK",
+        "HOODOO",
+        "SPIRE",
+        "RIM",
+        "SNOWFALL",
+        "PRAIRIE",
+        "PINYON",
+        "TRAIL",
+        "STARGAZING",
+        "DARKSKY",
+        "FINS"
+      ]
+    },
+    {
+      "name": "Shenandoah",
+      "words": [
+        "SKYLINE",
+        "OVERLOOK",
+        "DEER",
+        "BLACKBEAR",
+        "HIKE",
+        "ROCKFISH",
+        "WARBLER",
+        "MEADOW",
+        "BLUEBERRY",
+        "HAWKSBILL",
+        "TRAIL",
+        "DRIVE"
+      ]
+    },
+    {
+      "name": "Badlands",
+      "words": [
+        "FOSSIL",
+        "SEDIMENT",
+        "EROSION",
+        "CLAYSTONE",
+        "PINNACLE",
+        "GULCH",
+        "STRIPE",
+        "MUDSTONE",
+        "BIGHORN",
+        "PRAIRIE",
+        "WHEATGRASS",
+        "HORIZON"
+      ]
+    },
+    {
+      "name": "Death Valley",
+      "words": [
+        "PLAYA",
+        "SALT",
+        "DUNES",
+        "BORAX",
+        "MESQUITE",
+        "BADWATER",
+        "SIDEWINDER",
+        "ARROYO",
+        "CREOSOTE",
+        "HEAT",
+        "ZABRISKIE",
+        "CHIMNEY"
+      ]
+    },
+    {
+      "name": "Hawaii Volcanoes",
+      "words": [
+        "LAVA",
+        "KILAUEA",
+        "PELE",
+        "PAHOEHOE",
+        "BASALT",
+        "SHIELD",
+        "NENE",
+        "MAUNALOA",
+        "CRATER",
+        "FUMES",
+        "RIFT",
+        "STEAM"
+      ]
+    },
+    {
+      "name": "Mount Rainier",
+      "words": [
+        "CREVASSE",
+        "ICEFALL",
+        "STRATOVOLCANO",
+        "SUBALPINE",
+        "HEATHER",
+        "MARMOT",
+        "PARADISE",
+        "LAHAR",
+        "TARN",
+        "SUMMIT",
+        "CONE",
+        "FIRN"
+      ]
+    },
+    {
+      "name": "Crater Lake",
+      "words": [
+        "MAZAMA",
+        "WIZARD",
+        "PUMICE",
+        "CLEARWATER",
+        "RIM",
+        "ISLAND",
+        "OSPREY",
+        "SNOWPACK",
+        "TROUT",
+        "CALDERA",
+        "DEPTH",
+        "BLUEWATER"
+      ]
+    },
+    {
+      "name": "Mammoth Cave",
+      "words": [
+        "STALACTITE",
+        "STALAGMITE",
+        "KARST",
+        "CAVEFISH",
+        "BATS",
+        "SINKHOLE",
+        "GYPSUM",
+        "CAVERN",
+        "DRIPSTONE",
+        "LIMESTONE",
+        "STREAM",
+        "ECHO"
+      ]
+    },
+    {
+      "name": "Carlsbad Caverns",
+      "words": [
+        "GUANO",
+        "BIGROOM",
+        "FLOWSTONE",
+        "RIMSTONE",
+        "ALABASTER",
+        "POPCORN",
+        "SOLUTION",
+        "CHAMBER",
+        "DRIPPING",
+        "SCULPTURE",
+        "WHITENOSE",
+        "PASSAGE"
+      ]
+    },
+    {
+      "name": "Joshua Tree",
+      "words": [
+        "JOSHUA",
+        "MONZOGRANITE",
+        "YUCCA",
+        "CHOLLA",
+        "QUAIL",
+        "BOULDER",
+        "CACTUS",
+        "SUNSET",
+        "STARGAZE",
+        "WASH",
+        "CREOSOTE",
+        "PALM"
+      ]
+    },
+    {
+      "name": "Sequoia",
+      "words": [
+        "GIANTFOREST",
+        "WHITNEY",
+        "BURN",
+        "MARIPOSA",
+        "CRESCENT",
+        "GROVE",
+        "FIRESCAR",
+        "CONE",
+        "BARK",
+        "SPRING",
+        "SNOWMELT",
+        "TUNNEL"
+      ]
+    },
+    {
+      "name": "Isle Royale",
+      "words": [
+        "ARCHIPELAGO",
+        "SUPERIOR",
+        "BEAVER",
+        "LOON",
+        "KAYAK",
+        "SHORELINE",
+        "FERRY",
+        "BOREAL",
+        "BIRCH",
+        "SHOAL",
+        "COVE",
+        "LIGHTHOUSE"
+      ]
+    },
+    {
+      "name": "Petrified Forest",
+      "words": [
+        "PETRIFIED",
+        "AGATE",
+        "ARGILLITE",
+        "SILICA",
+        "JASPER",
+        "CHERT",
+        "PAINTED",
+        "LOG",
+        "CRYSTAL",
+        "DINOSAUR",
+        "PETROGLYPH",
+        "CONIFER"
+      ]
+    },
+    {
+      "name": "Channel Islands",
+      "words": [
+        "KELP",
+        "FOX",
+        "SEALION",
+        "ANACAPA",
+        "SANTACRUZ",
+        "ABALONE",
+        "DOLPHIN",
+        "PINNIPED",
+        "CORMORANT",
+        "WHALE",
+        "SWELL",
+        "KELPFOREST"
+      ]
+    },
+    {
+      "name": "Congaree",
+      "words": [
+        "BOTTOMLAND",
+        "FLOODPLAIN",
+        "OXBOW",
+        "TUPELO",
+        "SWAMP",
+        "LOBLOLLY",
+        "SWEETGUM",
+        "MAYFLY",
+        "SPIDER",
+        "BOARDWALK",
+        "CANOE",
+        "HERON"
+      ]
+    },
+    {
+      "name": "Great Sand Dunes",
+      "words": [
+        "DUNE",
+        "RIPPLE",
+        "CRESTED",
+        "WIND",
+        "SANDBOARD",
+        "MEDANO",
+        "SAND",
+        "ALPINE",
+        "CREEK",
+        "SNOWPACK",
+        "MOUNTAIN",
+        "PRAIRIE"
+      ]
+    },
+    {
+      "name": "Haleakalā",
+      "words": [
+        "SILVERSWORD",
+        "NENE",
+        "SUMMIT",
+        "CRATER",
+        "SUNRISE",
+        "CINDER",
+        "DORMANT",
+        "MAUI",
+        "HIKING",
+        "PLANT",
+        "BIRD",
+        "CLOUD"
+      ]
+    },
+    {
+      "name": "Big Bend",
+      "words": [
+        "CHISOS",
+        "RIOGRANDE",
+        "BASIN",
+        "ROADRUNNER",
+        "JAVELINA",
+        "TERLINGUA",
+        "MESQUITE",
+        "DESERT",
+        "BOQUILLAS",
+        "STARGAZE",
+        "MOUNTAIN",
+        "LIZARD"
+      ]
+    },
+    {
+      "name": "Biscayne",
+      "words": [
+        "CORAL",
+        "MANGROVE",
+        "MANATEE",
+        "SNORKEL",
+        "REEF",
+        "ISLAND",
+        "BAY",
+        "SEAGRASS",
+        "BARRACUDA",
+        "KEY",
+        "PELICAN",
+        "SHIPWRECK"
+      ]
+    },
+    {
+      "name": "Black Canyon",
+      "words": [
+        "GUNNISON",
+        "GNEISS",
+        "SCHIST",
+        "PEGMATITE",
+        "SHADOW",
+        "CANYON",
+        "RIVER",
+        "CRACK",
+        "SHEER",
+        "DEEP",
+        "CLIFF",
+        "TALUS"
+      ]
+    },
+    {
+      "name": "Canyonlands",
+      "words": [
+        "CONFLUENCE",
+        "WHITERIM",
+        "ROCKART",
+        "SPIRE",
+        "GREEN",
+        "COLORADO",
+        "MESA",
+        "BUTTE",
+        "PINNACLE",
+        "DESERT",
+        "PETROGLYPH",
+        "MAZE"
+      ]
+    },
+    {
+      "name": "Capitol Reef",
+      "words": [
+        "WATERPOCKET",
+        "MONOCLINE",
+        "FOLD",
+        "FREMONT",
+        "PETROGLYPH",
+        "ORCHARD",
+        "DOME",
+        "CHINLE",
+        "NAVAJO",
+        "DESERT",
+        "ROCK",
+        "WASH"
+      ]
+    },
+    {
+      "name": "Cuyahoga Valley",
+      "words": [
+        "TOWPATH",
+        "CANAL",
+        "LOCK",
+        "HEMLOCK",
+        "HERON",
+        "RAILROAD",
+        "BEAVER",
+        "FALLS",
+        "OHIO",
+        "VALLEY",
+        "BRIDGE",
+        "WETLAND"
+      ]
+    },
+    {
+      "name": "Dry Tortugas",
+      "words": [
+        "FORTJEFFERSON",
+        "TORTUGA",
+        "MOAT",
+        "COAL",
+        "SEAGULL",
+        "TERN",
+        "SAND",
+        "REEF",
+        "LIGHTHOUSE",
+        "KEY",
+        "SHIPWRECK",
+        "SNORKEL"
+      ]
+    },
+    {
+      "name": "Gateway Arch",
+      "words": [
+        "ARCH",
+        "STAINLESS",
+        "STEEL",
+        "TRAM",
+        "MISSISSIPPI",
+        "STLOUIS",
+        "PIONEER",
+        "EXPLORER",
+        "RIVERBOAT",
+        "RIVET",
+        "CAPSULE",
+        "JEFFERSON"
+      ]
+    },
+    {
+      "name": "Great Basin",
+      "words": [
+        "BRISTLECONE",
+        "SAGEBRUSH",
+        "LEHMAN",
+        "PINYON",
+        "WHEELER",
+        "BASIN",
+        "STARGAZE",
+        "CAVE",
+        "LIMESTONE",
+        "RANGE",
+        "SPRING",
+        "DARKSKY"
+      ]
+    },
+    {
+      "name": "Guadalupe Mountains",
+      "words": [
+        "GUADALUPE",
+        "PERMIAN",
+        "REEF",
+        "FOSSIL",
+        "MCKITTRICK",
+        "MANZANITA",
+        "PEAK",
+        "GYPSUM",
+        "DESERT",
+        "RIDGE",
+        "WILDFLOWER",
+        "ELEVATION"
+      ]
+    },
+    {
+      "name": "Hot Springs",
+      "words": [
+        "THERMAL",
+        "BATHHOUSE",
+        "MINERAL",
+        "MOUNTAIN",
+        "ARKANSAS",
+        "OZARK",
+        "SPRING",
+        "CREEK",
+        "STEAM",
+        "FOREST",
+        "BATHS",
+        "ROCK"
+      ]
+    },
+    {
+      "name": "Indiana Dunes",
+      "words": [
+        "DUNE",
+        "BEACH",
+        "LAKE",
+        "MICHIGAN",
+        "WETLAND",
+        "PRAIRIE",
+        "MARSH",
+        "SAND",
+        "OAK",
+        "SHOREBIRD",
+        "HIKING",
+        "WARBLER"
+      ]
+    },
+    {
+      "name": "Kenai Fjords",
+      "words": [
+        "GLACIER",
+        "FJORD",
+        "KENAI",
+        "ORCA",
+        "PUFFIN",
+        "SEALION",
+        "ICEFIELD",
+        "HUMPBACK",
+        "SEAWARD",
+        "ALASKA",
+        "TIDEWATER",
+        "CALVING"
+      ]
+    },
+    {
+      "name": "Kings Canyon",
+      "words": [
+        "KINGS",
+        "GRANITE",
+        "GROVE",
+        "GIANT",
+        "CANYON",
+        "RIVER",
+        "MOUNTAIN",
+        "MEADOW",
+        "WATERFALL",
+        "BUCKEYE",
+        "ALPINE",
+        "WILDERNESS"
+      ]
+    },
+    {
+      "name": "Lassen Volcanic",
+      "words": [
+        "LASSEN",
+        "PLUG",
+        "DACITE",
+        "BOILING",
+        "CINDER",
+        "SUMMIT",
+        "PUMICE",
+        "SNOW",
+        "MEADOW",
+        "ALPINE",
+        "TARN",
+        "FUMAROLE"
+      ]
+    },
+    {
+      "name": "Mesa Verde",
+      "words": [
+        "CLIFFDWELLING",
+        "ANCESTRAL",
+        "PUEBLO",
+        "KIVA",
+        "MESA",
+        "PETROGLYPH",
+        "MORTAR",
+        "PITHOUSE",
+        "SANDSTONE",
+        "JUNIPER",
+        "PINYON",
+        "ARCHAEOLOGY"
+      ]
+    },
+    {
+      "name": "New River Gorge",
+      "words": [
+        "BRIDGE",
+        "RAPIDS",
+        "WHITEWATER",
+        "RAFTING",
+        "GORGE",
+        "CLIFF",
+        "SANDSTONE",
+        "RIVER",
+        "MOUNTAIN",
+        "BOULDER",
+        "CLIMB",
+        "COAL"
+      ]
+    },
+    {
+      "name": "North Cascades",
+      "words": [
+        "CASCADE",
+        "GLACIER",
+        "RIDGE",
+        "SNOWPACK",
+        "ALPINE",
+        "LAKE",
+        "CEDAR",
+        "HEMLOCK",
+        "WILDERNESS",
+        "PEAK",
+        "SUMMIT",
+        "WATERFALL"
+      ]
+    },
+    {
+      "name": "Organ Pipe Cactus",
+      "words": [
+        "ORGANPIPE",
+        "OCOTILLO",
+        "SONORAN",
+        "DESERT",
+        "BORDER",
+        "COYOTE",
+        "DESERTBIGHORN",
+        "PRICKLYPEAR",
+        "SAGUARO",
+        "BAT",
+        "CHOLLA",
+        "SUNRISE"
+      ]
+    },
+    {
+      "name": "Pinnacles",
+      "words": [
+        "CONDOR",
+        "TALUS",
+        "PINNACLE",
+        "CAVE",
+        "BAT",
+        "VOLCANIC",
+        "SPIRE",
+        "RIFT",
+        "MONOLITH",
+        "BOULDER",
+        "CHAPARRAL",
+        "SOLITUDE"
+      ]
+    },
+    {
+      "name": "Saguaro",
+      "words": [
+        "SAGUARO",
+        "TUCSON",
+        "BLOSSOM",
+        "WOODPECKER",
+        "SONORAN",
+        "CACTUS",
+        "ARMS",
+        "MONSOON",
+        "FLOWER",
+        "DESERTDAWN",
+        "GILAMONSTER",
+        "TOWER"
+      ]
+    },
+    {
+      "name": "Theodore Roosevelt",
+      "words": [
+        "BISON",
+        "ELK",
+        "PRAIRIE",
+        "RANCH",
+        "LONGHORN",
+        "TEDDY",
+        "BADLANDS",
+        "RIVER",
+        "MARSH",
+        "WILDLIFE",
+        "WINDMILL",
+        "GRASSLAND"
+      ]
+    },
+    {
+      "name": "Virgin Islands",
+      "words": [
+        "CORAL",
+        "TURTLE",
+        "REEF",
+        "SNORKEL",
+        "PETROGLYPH",
+        "SUGARMILL",
+        "BEACH",
+        "BAY",
+        "LEATHERBACK",
+        "MANGROVE",
+        "TRAIL",
+        "CRUZAN"
+      ]
+    },
+    {
+      "name": "Voyageurs",
+      "words": [
+        "VOYAGEUR",
+        "CANOE",
+        "LOON",
+        "BIRCH",
+        "PORTAGE",
+        "ISLAND",
+        "PINE",
+        "BOREAL",
+        "KAYAK",
+        "LAKE",
+        "PADDLE",
+        "LANTERN"
+      ]
+    },
+    {
+      "name": "White Sands",
+      "words": [
+        "SLED",
+        "DUNE",
+        "GYPSUM",
+        "SELENITE",
+        "PLAYA",
+        "LIZARD",
+        "SUNSET",
+        "CRYSTAL",
+        "ALKALI",
+        "WHITE",
+        "TRACKS",
+        "DUNES"
+      ]
+    },
+    {
+      "name": "Wind Cave",
+      "words": [
+        "BOXWORK",
+        "CALCITE",
+        "CAVE",
+        "BISON",
+        "PRAIRIE",
+        "PONDEROSA",
+        "FORMATION",
+        "DRUSE",
+        "DARKNESS",
+        "SURFACE",
+        "LIMESTONE",
+        "MAZE"
+      ]
+    },
+    {
+      "name": "Wrangell-St. Elias",
+      "words": [
+        "WRANGELL",
+        "ELIAS",
+        "ICEFIELD",
+        "RUSSELL",
+        "MOUNTAINEER",
+        "CANYON",
+        "MORAINE",
+        "ALPINE",
+        "PEAK",
+        "GLACIER",
+        "SUMMIT",
+        "WILDERNESS"
+      ]
+    },
+    {
+      "name": "Cape Cod",
+      "words": [
+        "SEASHORE",
+        "DUNE",
+        "KETTLE",
+        "WHALE",
+        "MARSH",
+        "BEACH",
+        "HARBOR",
+        "BLUEFISH",
+        "TERN",
+        "PILGRIM",
+        "PROVINCETOWN",
+        "BAYSIDE"
+      ]
+    },
+    {
+      "name": "Assateague Island",
+      "words": [
+        "PONY",
+        "SALTMARSH",
+        "BEACH",
+        "OCEAN",
+        "DUNE",
+        "SHOREBIRD",
+        "PLOVER",
+        "OYSTER",
+        "CHINCOTEAGUE",
+        "FERAL",
+        "MARSH",
+        "MAINLAND"
+      ]
+    },
+    {
+      "name": "Chiricahua",
+      "words": [
+        "CHIRICAHUA",
+        "HOODOO",
+        "RHYOLITE",
+        "SPIRE",
+        "PINNACLE",
+        "BALANCE",
+        "ARIZONA",
+        "OAK",
+        "COATI",
+        "DESERT",
+        "CANYON",
+        "SKYLINE"
+      ]
+    },
+    {
+      "name": "Cape Hatteras",
+      "words": [
+        "LIGHTHOUSE",
+        "SOUND",
+        "DUNE",
+        "WRECK",
+        "BARRIER",
+        "OCEAN",
+        "SEASHELL",
+        "KITE",
+        "CAPE",
+        "OUTER",
+        "TIDE",
+        "TERN"
+      ]
+    },
+    {
+      "name": "Sleeping Bear Dunes",
+      "words": [
+        "SLEEPINGBEAR",
+        "PERCHED",
+        "DUNE",
+        "MICHIGAN",
+        "LAKE",
+        "FOREST",
+        "ISLAND",
+        "BEECH",
+        "MAPLE",
+        "OVERLOOK",
+        "SHORE",
+        "SAND"
+      ]
+    },
+    {
+      "name": "Buffalo River",
+      "words": [
+        "BUFFALO",
+        "BLUFF",
+        "SMALLMOUTH",
+        "CANOE",
+        "LIMESTONE",
+        "OZARK",
+        "SPRING",
+        "GRAVEL",
+        "FLOAT",
+        "ELK",
+        "SINKHOLE",
+        "HOLLOW"
+      ]
+    },
+    {
+      "name": "Lake Clark",
+      "words": [
+        "LAKECLARK",
+        "FLOATPLANE",
+        "SALMON",
+        "BROWNBEAR",
+        "TUNDRA",
+        "VOLCANO",
+        "SPRUCE",
+        "RIVER",
+        "CARIBOU",
+        "SOCKEYE",
+        "WILDERNESS",
+        "FJORD"
+      ]
+    },
+    {
+      "name": "Gates of the Arctic",
+      "words": [
+        "ARCTIC",
+        "BROOKS",
+        "CARIBOU",
+        "WOLF",
+        "NORTHERN",
+        "MIDNIGHT",
+        "SUNLIGHT",
+        "RIVER",
+        "GRAYLING",
+        "WILDERNESS",
+        "MOSS",
+        "CANYON"
+      ]
+    },
+    {
+      "name": "Katmai",
+      "words": [
+        "KATMAI",
+        "BROWNBEAR",
+        "SALMON",
+        "FALLS",
+        "VOLCANO",
+        "ASH",
+        "CALDERA",
+        "VALLEY",
+        "GRIZZLY",
+        "LAKE",
+        "RIVER",
+        "FISH"
+      ]
+    },
+    {
+      "name": "Kobuk Valley",
+      "words": [
+        "KOBUK",
+        "SANDDUNES",
+        "CARIBOU",
+        "ARCTIC",
+        "TUNDRA",
+        "RIVER",
+        "BOREAL",
+        "MIGRATION",
+        "ICECAP",
+        "SEDGE",
+        "WILDFLOWER",
+        "RAVEN"
+      ]
+    },
+    {
+      "name": "Cumberland Island",
+      "words": [
+        "WILDHORSE",
+        "MARSH",
+        "LIVEOAK",
+        "DUNE",
+        "ISLAND",
+        "BEACH",
+        "TIDE",
+        "MANATEE",
+        "CARNEGIE",
+        "FERAL",
+        "FERRY",
+        "SHELLS"
+      ]
+    },
+    {
+      "name": "Padre Island",
+      "words": [
+        "SEASHORE",
+        "SEAGRASS",
+        "KEMPSRIDLEY",
+        "DUNE",
+        "TIDEFLAT",
+        "PLOVER",
+        "LAGOON",
+        "SHELL",
+        "WRACK",
+        "SANDBAR",
+        "PELICAN",
+        "BEACH"
+      ]
+    },
+    {
+      "name": "Lake Mead",
+      "words": [
+        "RESERVOIR",
+        "HOOVERDAM",
+        "BOULDER",
+        "MARINA",
+        "DESERT",
+        "BASIN",
+        "SHORELINE",
+        "HOUSEBOAT",
+        "DRAWDOWN",
+        "MOJAVE",
+        "BIGHORN",
+        "SUNSET"
+      ]
+    },
+    {
+      "name": "Glen Canyon",
+      "words": [
+        "LAKEPOWELL",
+        "HORSESHOE",
+        "RAINBOW",
+        "COLORADO",
+        "SLOTCANYON",
+        "SANDSTONE",
+        "DAM",
+        "MESA",
+        "ARCH",
+        "DRAWDOWN",
+        "PETROGLYPH",
+        "HOUSEBOAT"
+      ]
+    },
+    {
+      "name": "Dinosaur",
+      "words": [
+        "DINOSAUR",
+        "QUARRY",
+        "FOSSIL",
+        "JURASSIC",
+        "YAMPA",
+        "GREEN",
+        "CANYON",
+        "SAURIAN",
+        "BONE",
+        "RIVER",
+        "MORRISON",
+        "SANDSTONE"
+      ]
+    },
+    {
+      "name": "Ozark Riverways",
+      "words": [
+        "CURRENT",
+        "SPRING",
+        "RIVER",
+        "CANOE",
+        "CAVE",
+        "MILL",
+        "FLOAT",
+        "OZARK",
+        "CYPRESS",
+        "SINKHOLE",
+        "BLUFF",
+        "GRAVEL"
+      ]
+    },
+    {
+      "name": "Harpers Ferry",
+      "words": [
+        "POTOMAC",
+        "SHENANDOAH",
+        "ARMORY",
+        "ARSENAL",
+        "CANAL",
+        "RAILROAD",
+        "CONFLUENCE",
+        "BLUERIDGE",
+        "FERRY",
+        "BRIDGE",
+        "HISTORY",
+        "ABOLITION"
+      ]
+    }
+  ]
+}
