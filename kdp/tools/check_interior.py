@@ -55,8 +55,10 @@ def main() -> int:
 
     # 5. puzzle count matches theme
     n_expected = len(theme.get("puzzles", []))
-    # puzzle pages print "PUZZLE N"; solution pages print "PUZZLE N — NAME": expect both for each puzzle
-    n_found = len(re.findall(r"PUZZLE \d+", text))
+    # puzzle pages print "<LABEL> N"; solution pages print "<LABEL> N — NAME": expect both for each puzzle.
+    # LABEL comes from the theme ("puzzle_label"), default "PUZZLE".
+    label = theme.get("puzzle_label", "PUZZLE")
+    n_found = len(re.findall(re.escape(label) + r" \d+", text))
     results.append(("puzzle count (pages + solutions)", n_found == 2 * n_expected,
                     f"expected {2 * n_expected}, found {n_found}"))
 

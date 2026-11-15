@@ -8,7 +8,7 @@ Outputs an 8.5x11 interior PDF with front matter, puzzles, and full
 solutions. KDP needs a separate cover, either from their free Cover Creator
 or generated separately here."""
 from __future__ import annotations
-import argparse, json, math, os, random, string
+import argparse, json, math, os, random, string, unicodedata
 from reportlab.pdfgen import canvas
 from reportlab.pdfgen.canvas import Canvas
 from reportlab.lib.pagesizes import letter
@@ -41,14 +41,138 @@ FONTS = {
 }
 
 
+# Every visible string of the interior, per language. Keep claims factual:
+# nothing about publishers, teams, sales or reviews (kdp/RULES.md).
+STRINGS = {
+    "en": {
+        "find": "FIND THESE WORDS",
+        "label": "PUZZLE",
+        "solutions": "SOLUTIONS",
+        "how_title": "HOW TO PLAY",
+        "how_all": [
+            "Each puzzle hides a list of words in a grid of letters.", "",
+            "Words run in straight lines — across, down, diagonally,",
+            "and sometimes backwards.", "",
+            "Find every word in the list and circle it in the grid.", "",
+            "Stuck? Full solutions are at the back of the book.", "",
+            "Take your time. There is no clock. Enjoy the quiet.",
+        ],
+        "how_forward": [
+            "Each puzzle hides a list of words in a grid of letters.", "",
+            "Words run only left to right or top to bottom.",
+            "Never diagonally, never backwards.", "",
+            "Find every word in the list and circle it in the grid.", "",
+            "Stuck? Full solutions are at the back of the book.", "",
+            "Take your time. There is no clock. Enjoy the quiet.",
+        ],
+        "copyright": [
+            "All rights reserved.", "",
+            "No part of this publication may be reproduced, distributed, or",
+            "transmitted in any form without the prior written permission of",
+            "the author, except for brief quotations in reviews.", "",
+            "The puzzles in this book are an original compilation.",
+            "Printed editions produced via Amazon KDP.",
+        ],
+        "review_title": "DID YOU ENJOY THIS BOOK?",
+        "review": [
+            "",
+            "If you enjoyed these puzzles, you can leave a short review on Amazon.",
+            "",
+            "Even one honest sentence helps other readers find this book.",
+            "",
+        ],
+        "thanks": "Thank you, {author}.",
+        "also_title": "ALSO FROM {author}",
+        "also_hint": "Search the titles below on Amazon to find them:",
+        "about_title": "ABOUT THIS BOOK",
+        "about": [
+            "",
+            "This book is set in large type,",
+            "with full solutions at the back.",
+            "", "", "",
+            "Thank you for spending your time with this book.",
+        ],
+    },
+    "es": {
+        "find": "BUSQUE ESTAS PALABRAS",
+        "label": "SOPA",
+        "solutions": "SOLUCIONES",
+        "how_title": "CÓMO SE JUEGA",
+        "how_all": [
+            "Cada sopa de letras esconde una lista de palabras.", "",
+            "Las palabras van en línea recta, en cualquier dirección,",
+            "incluso en diagonal o al revés.", "",
+            "Busque cada palabra de la lista y enciérrela en la cuadrícula.", "",
+            "¿No encuentra una? Las soluciones están al final del libro.", "",
+            "Tómese su tiempo. No hay reloj. Disfrute la calma.",
+        ],
+        "how_forward": [
+            "Cada sopa de letras esconde una lista de palabras.", "",
+            "Las palabras van solo de izquierda a derecha",
+            "o de arriba hacia abajo. Nunca en diagonal ni al revés.",
+            "Las palabras aparecen sin tildes.", "",
+            "Busque cada palabra de la lista y enciérrela en la cuadrícula.", "",
+            "¿No encuentra una? Las soluciones están al final del libro.", "",
+            "Tómese su tiempo. No hay reloj. Disfrute la calma.",
+        ],
+        "copyright": [
+            "Todos los derechos reservados.", "",
+            "Ninguna parte de esta publicación puede reproducirse, distribuirse",
+            "ni transmitirse en ninguna forma sin el permiso previo por escrito",
+            "del autor, salvo citas breves en reseñas.", "",
+            "Las sopas de letras de este libro son una recopilación original.",
+            "Edición impresa producida a través de Amazon KDP.",
+        ],
+        "review_title": "¿LE GUSTÓ ESTE LIBRO?",
+        "review": [
+            "",
+            "Si disfrutó estas sopas de letras, puede dejar una reseña breve en Amazon.",
+            "",
+            "Una sola frase sincera ayuda a otros lectores a encontrar este libro.",
+            "",
+        ],
+        "thanks": "Gracias, {author}.",
+        "also_title": "OTROS LIBROS DE {author}",
+        "also_hint": "Busque estos títulos en Amazon:",
+        "about_title": "SOBRE ESTE LIBRO",
+        "about": [
+            "",
+            "Este libro está impreso en letra grande,",
+            "con todas las soluciones al final.",
+            "", "", "",
+            "Gracias por dedicar su tiempo a este libro.",
+        ],
+    },
+}
+S = STRINGS["en"]           # set in main() from --lang / theme "lang"
+FORWARD = False             # set in main() from --forward-only
+FILL = string.ascii_uppercase
+FILL_WEIGHTS: list[float] | None = None
+
+
+def strip_accents(word: str) -> str:
+    """Uppercase, accents removed, Ñ kept (Spanish word searches print words without tildes)."""
+    out = []
+    for ch in word.upper():
+        if ch == "Ñ":
+            out.append(ch)
+            continue
+        base = unicodedata.normalize("NFD", ch)
+        out.append("".join(x for x in base if not unicodedata.combining(x)))
+    return "".join(out)
+
+
 def register_fonts() -> None:
     for name, path in FONTS.items():
         pdfmetrics.registerFont(TTFont(name, path))
 
 
 # ---------------- puzzle generation ----------------
-def _try_place(grid: Grid, word: str, N: int) -> list[Cell] | None:
-    dr, dc = random.choice(DIRS)
+FORWARD_DIRS = [(0, 1), (1, 0)]    # left-to-right and top-to-bottom only
+
+
+def _try_place(grid: Grid, word: str, N: int, dirs: list[tuple[int, int]] = DIRS) -> list[Cell] | None:
+    dr, dc = random.choice(dirs)
     r, c = random.randint(0, N - 1), random.randint(0, N - 1)
     cells: list[Cell] = []
     for k, ch in enumerate(word):
@@ -64,14 +188,15 @@ def _try_place(grid: Grid, word: str, N: int) -> list[Cell] | None:
     return cells
 
 
-def generate_puzzle(words: list[str], N: int = GRID_N) -> tuple[Grid, list[list[Cell]], list[str]]:
+def generate_puzzle(words: list[str], N: int = GRID_N,
+                    dirs: list[tuple[int, int]] = DIRS) -> tuple[Grid, list[list[Cell]], list[str]]:
     grid: Grid = [["" for _ in range(N)] for _ in range(N)]
     placements: list[list[Cell]] = []
     placed: list[str] = []
     for w in sorted(words, key=len, reverse=True):
         cells = None
         for _ in range(500):
-            cells = _try_place(grid, w, N)
+            cells = _try_place(grid, w, N, dirs)
             if cells:
                 break
         if cells:
@@ -80,7 +205,7 @@ def generate_puzzle(words: list[str], N: int = GRID_N) -> tuple[Grid, list[list[
     for r in range(N):
         for c in range(N):
             if not grid[r][c]:
-                grid[r][c] = random.choice(string.ascii_uppercase)
+                grid[r][c] = random.choices(FILL, weights=FILL_WEIGHTS)[0]
     return grid, placements, placed
 
 
@@ -126,7 +251,7 @@ def draw_word_list(c: Canvas, words: list[str], gx: float, top_y: float,
                     grid_w: float, cols: int = 3) -> None:
     c.setFillColorRGB(0, 0, 0)
     c.setFont("SansB", 14)
-    c.drawCentredString(PAGE_W / 2, top_y, "FIND THESE WORDS")
+    c.drawCentredString(PAGE_W / 2, top_y, S["find"])
     words = sorted(words)
     rows = math.ceil(len(words) / cols)
     col_w = grid_w / cols
@@ -163,35 +288,38 @@ def _wrap(text: str, width: int) -> list[str]:
 
 
 def front_matter(c: Canvas, title: str, subtitle: str, author: str) -> None:
-    # title page
+    # title page: main title (before ": ") big, the rest smaller, then subtitle.
+    # Positions follow the line count so long titles never overlap the subtitle.
+    main_t, _, tail_t = title.partition(": ")
     c.setFillColorRGB(0.10, 0.10, 0.10)
+    y = PAGE_H - 230
     c.setFont("SansB", 30)
-    for i, line in enumerate(_wrap(title.upper(), 16)):
-        c.drawCentredString(PAGE_W / 2, PAGE_H - 250 - i * 38, line)
+    for line in _wrap(main_t.upper(), 16):
+        c.drawCentredString(PAGE_W / 2, y, line)
+        y -= 38
+    if tail_t:
+        c.setFont("SansB", 20)
+        y -= 6
+        for line in _wrap(tail_t.upper(), 28):
+            c.drawCentredString(PAGE_W / 2, y, line)
+            y -= 28
+    y -= 24
     c.setFont("Sans", 15)
-    for i, line in enumerate(_wrap(subtitle, 40)):
-        c.drawCentredString(PAGE_W / 2, PAGE_H - 360 - i * 22, line)
+    for line in _wrap(subtitle, 40):
+        c.drawCentredString(PAGE_W / 2, y, line)
+        y -= 22
+    y -= 26
     c.setStrokeColorRGB(0.7, 0.7, 0.7)
     c.setLineWidth(1)
-    c.line(PAGE_W / 2 - 80, PAGE_H - 410, PAGE_W / 2 + 80, PAGE_H - 410)
+    c.line(PAGE_W / 2 - 80, y, PAGE_W / 2 + 80, y)
     c.setFont("Sans", 13)
     c.drawCentredString(PAGE_W / 2, 120, author)
     c.showPage()
 
-    # copyright page
+    # copyright page (the first line's exact form is checked by check_interior.py)
     c.setFillColorRGB(0.2, 0.2, 0.2)
     c.setFont("Sans", 10)
-    lines = [
-        ("Copyright © 2026 " + author + ".") if author else "Copyright © 2026.",
-        "All rights reserved.",
-        "",
-        "No part of this publication may be reproduced, distributed, or",
-        "transmitted in any form without the prior written permission of",
-        "the publisher, except for brief quotations in reviews.",
-        "",
-        "The puzzles in this book are an original compilation.",
-        "Printed editions produced via Amazon KDP.",
-    ]
+    lines = [("Copyright © 2026 " + author + ".") if author else "Copyright © 2026."] + S["copyright"]
     for i, ln in enumerate(lines):
         c.drawString(MARGIN, PAGE_H - 120 - i * 16, ln)
     c.showPage()
@@ -199,20 +327,9 @@ def front_matter(c: Canvas, title: str, subtitle: str, author: str) -> None:
     # how to play
     c.setFillColorRGB(0.1, 0.1, 0.1)
     c.setFont("SansB", 22)
-    c.drawCentredString(PAGE_W / 2, PAGE_H - 140, "HOW TO PLAY")
+    c.drawCentredString(PAGE_W / 2, PAGE_H - 140, S["how_title"])
     c.setFont("Sans", 13)
-    how = [
-        "Each puzzle hides a list of words in a grid of letters.",
-        "",
-        "Words run in straight lines — across, down, diagonally,",
-        "and sometimes backwards.",
-        "",
-        "Find every word in the list and circle it in the grid.",
-        "",
-        "Stuck? Full solutions are at the back of the book.",
-        "",
-        "Take your time. There is no clock. Enjoy the quiet.",
-    ]
+    how = S["how_forward"] if FORWARD else S["how_all"]
     for i, ln in enumerate(how):
         c.drawCentredString(PAGE_W / 2, PAGE_H - 200 - i * 22, ln)
     c.showPage()
@@ -225,7 +342,7 @@ def puzzle_page(c: Canvas, idx: int, name: str, grid: Grid, words: list[str],
     c.drawCentredString(PAGE_W / 2, PAGE_H - 40, running_title)
     c.setFillColorRGB(0.1, 0.1, 0.1)
     c.setFont("SansB", 12)
-    c.drawString(MARGIN, PAGE_H - 64, f"PUZZLE {idx}")
+    c.drawString(MARGIN, PAGE_H - 64, f"{S['label']} {idx}")
     c.setFont("SansB", 22)
     c.drawCentredString(PAGE_W / 2, PAGE_H - 96, name.upper())
 
@@ -247,7 +364,7 @@ def solutions_pages(c: Canvas, solutions: list[tuple[int, str, Grid, list[list[C
     # section divider
     c.setFillColorRGB(0.1, 0.1, 0.1)
     c.setFont("SansB", 30)
-    c.drawCentredString(PAGE_W / 2, PAGE_H / 2 + 10, "SOLUTIONS")
+    c.drawCentredString(PAGE_W / 2, PAGE_H / 2 + 10, S["solutions"])
     footer(c, page_no)
     c.showPage()
     page_no += 1
@@ -265,7 +382,7 @@ def solutions_pages(c: Canvas, solutions: list[tuple[int, str, Grid, list[list[C
             idx, name, grid, placements = sol
             c.setFillColorRGB(0.1, 0.1, 0.1)
             c.setFont("SansB", 13)
-            c.drawCentredString(PAGE_W / 2, slot, f"PUZZLE {idx}  —  {name.upper()}")
+            c.drawCentredString(PAGE_W / 2, slot, f"{S['label']} {idx}  —  {name.upper()}")
             draw_grid(c, grid, gx, slot - 16, cell, 10, highlights=placements)
         footer(c, page_no)
         c.showPage()
@@ -282,17 +399,9 @@ def back_matter(c: Canvas, author: str, also_from: list[dict]) -> None:
     # --- review request ---
     c.setFillColorRGB(0.1, 0.1, 0.1)
     c.setFont("SansB", 28)
-    c.drawCentredString(PAGE_W / 2, PAGE_H - 200, "DID YOU ENJOY THIS BOOK?")
+    c.drawCentredString(PAGE_W / 2, PAGE_H - 200, S["review_title"])
     c.setFont("Sans", 14)
-    lines = [
-        "",
-        "Reviews are how small publishers like us reach more readers.",
-        "If you enjoyed these puzzles, please leave a quick review on Amazon.",
-        "",
-        "Even one honest sentence makes a real difference.",
-        "",
-        ("Thank you, from everyone at " + author + ".") if author else "Thank you for solving with us.",
-    ]
+    lines = S["review"] + ([S["thanks"].format(author=author)] if author else [])
     for i, ln in enumerate(lines):
         c.drawCentredString(PAGE_W / 2, PAGE_H - 260 - i * 24, ln)
     # decorative rule
@@ -328,12 +437,11 @@ def back_matter(c: Canvas, author: str, also_from: list[dict]) -> None:
     if also_from:
         c.setFillColorRGB(0.1, 0.1, 0.1)
         c.setFont("SansB", 26)
-        c.drawCentredString(PAGE_W / 2, PAGE_H - 180, "ALSO FROM " + author.upper())
+        c.drawCentredString(PAGE_W / 2, PAGE_H - 180, S["also_title"].format(author=author.upper()))
         c.setStrokeColorRGB(0.5, 0.55, 0.5)
         c.line(PAGE_W / 2 - 80, PAGE_H - 200, PAGE_W / 2 + 80, PAGE_H - 200)
         c.setFont("Sans", 13)
-        c.drawCentredString(PAGE_W / 2, PAGE_H - 230,
-                            "Search the titles below on Amazon to find them:")
+        c.drawCentredString(PAGE_W / 2, PAGE_H - 230, S["also_hint"])
         y = PAGE_H - 290
         for entry in also_from:
             c.setFont("SansB", 14)
@@ -348,21 +456,12 @@ def back_matter(c: Canvas, author: str, also_from: list[dict]) -> None:
         c.showPage()
 
     if author:
-        # --- about the press (only when a real author/imprint is set) ---
+        # --- about this book: facts about the book only, no claims about the author ---
         c.setFillColorRGB(0.1, 0.1, 0.1)
         c.setFont("SansB", 22)
-        c.drawCentredString(PAGE_W / 2, PAGE_H - 180, "ABOUT " + (author or "OUR PRESS").upper())
+        c.drawCentredString(PAGE_W / 2, PAGE_H - 180, S["about_title"])
         c.setFont("Sans", 13)
-        about_lines = [
-            "",
-            f"{author} publishes large print puzzle books for adults.",
-            "Each book is set in large type, with full solutions at the back.",
-            "",
-            "",
-            "",
-            "Thank you for spending your time with one of our books.",
-        ]
-        for i, ln in enumerate(about_lines):
+        for i, ln in enumerate(S["about"]):
             c.drawCentredString(PAGE_W / 2, PAGE_H - 240 - i * 22, ln)
         c.showPage()
 
@@ -372,7 +471,7 @@ def back_matter(c: Canvas, author: str, also_from: list[dict]) -> None:
 def clean_words(words: list[str]) -> list[str]:
     out: list[str] = []
     for w in words:
-        w = "".join(ch for ch in w.upper() if ch.isalpha())
+        w = "".join(ch for ch in strip_accents(w) if ch.isalpha())
         if w and len(w) <= GRID_N:
             out.append(w)
     return out
@@ -386,10 +485,22 @@ def main() -> None:
     ap.add_argument("--subtitle")
     ap.add_argument("--author")
     ap.add_argument("--seed", type=int, default=7)
+    ap.add_argument("--forward-only", action="store_true",
+                    help="words only left-to-right or top-to-bottom (dementia-friendly)")
+    ap.add_argument("--lang", choices=sorted(STRINGS), help="interior language (default: theme 'lang', else en)")
     a = ap.parse_args()
+    dirs = FORWARD_DIRS if a.forward_only else DIRS
 
     random.seed(a.seed)
-    data = json.load(open(a.themes))
+    data = json.load(open(a.themes, encoding="utf-8"))
+    global S, FORWARD, FILL, FILL_WEIGHTS
+    lang = a.lang or data.get("lang", "en")
+    S = dict(STRINGS[lang])
+    S["label"] = data.get("puzzle_label", S["label"])
+    FORWARD = a.forward_only
+    if lang == "es":
+        FILL = string.ascii_uppercase + "Ñ"
+        FILL_WEIGHTS = [1.0] * 26 + [0.3]   # Ñ is rare in Spanish text
     title = a.title or data.get("title", "Word Search")
     subtitle = a.subtitle or data.get("subtitle", "")
     author = a.author or data.get("author", "")
@@ -407,7 +518,7 @@ def main() -> None:
     page_no = 1
     for i, p in enumerate(data["puzzles"], start=1):
         words = clean_words(p["words"])
-        grid, placements, placed = generate_puzzle(words)
+        grid, placements, placed = generate_puzzle(words, dirs=dirs)
         puzzle_page(c, i, p["name"], grid, placed, page_no, running)
         solutions.append((i, p["name"], grid, placements))
         if len(placed) < len(words):
