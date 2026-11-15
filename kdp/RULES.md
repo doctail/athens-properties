@@ -8,6 +8,7 @@ Fonte di verità per tutti gli agenti KDP. Ogni violazione blocca il libro: ness
 - Font incorporati: `pdffonts` deve mostrare solo font embedded.
 - Dimensione pagina: 8.5 x 11 pollici (612 x 792 pt).
 - Parole nelle liste: 16pt minimo (large print).
+- Eccezione approvata da Morgan (2026-11-15): le lettere delle griglie di soluzione possono restare a 14pt, per non aumentare il numero di pagine. Le word list restano a 16pt.
 - Tutte le parole devono essere piazzate nella griglia. Se una manca, il puzzle non è pronto.
 - Nessun testo inventato su editore, autore, metodo di produzione, recensioni, vendite.
 - Vietati nel testo: "by hand", "our press", "our small press", "bestseller", placeholder tipo "E. P. Greenwood".
