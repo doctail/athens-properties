@@ -12,8 +12,11 @@ import sys
 
 BANNED = [
     "E. P. Greenwood", "OUR PRESS", "our small press", "by hand", "every book",
-    "bestseller", "Lorem", "TODO", "PLACEHOLDER",
+    "bestseller",
 ]
+# Developer placeholders: whole word, exact case. A case-insensitive substring
+# match on "TODO" flags ordinary Spanish ("Todos los derechos reservados").
+BANNED_TOKENS = ["Lorem", "TODO", "PLACEHOLDER"]
 
 
 def run(cmd: list[str]) -> str:
@@ -41,6 +44,7 @@ def main() -> int:
 
     # 2. banned / placeholder text
     hits = [b for b in BANNED if b.lower() in text.lower()]
+    hits += [t for t in BANNED_TOKENS if re.search(r"\b" + re.escape(t) + r"\b", text)]
     results.append(("no placeholders or invented claims", not hits, ", ".join(hits) or "none"))
 
     # 3. fonts embedded
