@@ -1,7 +1,7 @@
 # EP03 — upload metadata
 
 Status: DRAFT v1. Do not upload before: script approved (done 2026-11-15), images approved, preview approved, publish OK from the owner.
-Planned publish: Tuesday 2026-11-17 21:00 Italy — to confirm (see STATUS Dave). Upload is manual.
+Publish: **Tuesday 2026-11-17, 21:00 Italy**. EP02 (already live) ends with "find out on Tuesday", so this date is a promise to the audience. Upload is manual.
 Chapters computed from the real render (no music yet): if music/intro changes the length, recompute.
 
 ## Title (EN-US)
@@ -21,7 +21,7 @@ CHAPTERS
 3:52 Year 5: Plan B
 4:35 Year 20: The Kids
 5:34 The Verdict
-6:26 Next episode
+6:26 Next episode: privacy in the Stone Age
 
 SOURCES
 • Frankham et al., genetic management and the 50/500 rule (conservation genetics)
@@ -38,7 +38,7 @@ This is an animated thought experiment. Narration: AI voice. Animated with AI-as
 could 2 people restart humanity, what if two people survived, restart humanity, last people on earth, survival what if, animated what if, dave vs history, history explained
 
 ## Settings
-Category Education · English · Not made for kids · Altered/synthetic: No, same as EP02 (stylised animation, not realistic footage) [Likely]: confirm in the Studio form before publish · Playlist: What If…? (see PLAYLISTS Dave) · End screen: EP04 + subscribe. Pinned comment: "Would you last a week with one other person? 🪱🐟"
+Category Education · English · Not made for kids · Altered/synthetic: No, same as EP02 (stylised animation, not realistic footage) [Likely]: confirm in the Studio form before publish · Playlist: What If…? (see PLAYLISTS Dave) · End screen: EP04 does not exist yet at upload, so it cannot be linked: use the most recent upload (EP02) + subscribe now, and replace it with EP04 once EP04 is live (Fri 2026-11-20). Pinned comment: "Would you last a week with one other person? 🪱🐟"
 
 ## Thumbnail
 Flow prompt: see flow-prompts.md (THUMBNAIL section). Text in editor, max 3 words, candidate: "2 PEOPLE?"
