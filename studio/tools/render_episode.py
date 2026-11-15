@@ -44,9 +44,20 @@ def narration_texts(ep):
     return [" ".join(l.split(":", 1)[1].strip() for l in s.splitlines() if l.startswith("NARRATOR:")).replace("*", "") for s in secs]
 
 
-def anchor_time(text, anchor, ndur):
+def load_knots(ep, audio_name):
+    """Real sentence-start times from studio/tools/align_narration.py (audio/align.json); None if absent."""
+    p = os.path.join(ep, "audio", "align.json")
+    if not os.path.exists(p): return None
+    return json.load(open(p)).get(audio_name)
+
+
+def anchor_time(text, anchor, ndur, knots=None):
     i = text.find(anchor)
     if i < 0: raise ValueError(f"anchor not found: {anchor!r}")
+    if knots:  # piecewise-linear between known sentence starts (characters -> seconds)
+        for (c0, t0), (c1, t1) in zip(knots, knots[1:]):
+            if c0 <= i <= c1:
+                return max(0.0, t0 + (t1 - t0) * (i - c0) / max(1, c1 - c0) - 0.15)
     return max(0.0, i / len(text) * ndur - 0.15)
 
 
@@ -234,6 +245,7 @@ def render_section(args):
     ep, idx, sec, fps, text, board = args
     build = os.path.join(ep, "build"); os.makedirs(build, exist_ok=True)
     audio = os.path.join(ep, "audio", sec["audio"])
+    knots = load_knots(ep, sec["audio"])
     ndur = probe(audio); tail = sec.get("tail", 0.7); dur = ndur + tail
     # images: int (evenly spread) or {"n": N, "at": "anchor phrase"} (starts when the narrator says it)
     entries = [e if isinstance(e, dict) else {"n": e} for e in sec["images"]]
@@ -242,7 +254,7 @@ def render_section(args):
     starts = []
     for i, e in enumerate(entries):
         if i == 0: starts.append(0.0)
-        elif "at" in e: starts.append(anchor_time(text, e["at"], ndur))
+        elif "at" in e: starts.append(anchor_time(text, e["at"], ndur, knots))
         else: starts.append(None)
     # fill unanchored starts evenly between anchored neighbours
     known = [(i, v) for i, v in enumerate(starts) if v is not None] + [(len(starts), dur)]
@@ -256,9 +268,9 @@ def render_section(args):
     ev = {"callouts": [], "flashes": [], "survival_t": None}
     sfx = []
     for c in sec.get("callouts", []):
-        tt = anchor_time(text, c["anchor"], ndur); ev["callouts"].append({"text": c["text"], "t": tt}); sfx.append(("pop", tt, 0.7))
+        tt = anchor_time(text, c["anchor"], ndur, knots); ev["callouts"].append({"text": c["text"], "t": tt}); sfx.append(("pop", tt, 0.7))
     if sec.get("survival_anchor"):
-        ev["survival_t"] = anchor_time(text, sec["survival_anchor"], ndur) + 0.6; sfx.append(("ding", ev["survival_t"], 0.6))
+        ev["survival_t"] = anchor_time(text, sec["survival_anchor"], ndur, knots) + 0.6; sfx.append(("ding", ev["survival_t"], 0.6))
     for n in sec.get("flash_images", []):
         ft = starts[nums.index(n)]; ev["flashes"].append(ft); sfx.append(("boom", ft, 1.0))
     if sec.get("rank"):

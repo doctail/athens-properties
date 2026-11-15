@@ -76,7 +76,12 @@
      "anchor": "about five hundred"
     }
    ],
-   "tail": 0.7
+   "tail": 0.7,
+   "tally": {
+    "before": 0,
+    "add": 0,
+    "total": 4
+   }
   },
   {
    "audio": "s02.mp3",
@@ -139,7 +144,15 @@
      "anchor": "usually dozens of people"
     }
    ],
-   "tail": 0.7
+   "tail": 0.7,
+   "tally": {
+    "before": 0,
+    "add": 1,
+    "total": 4
+   },
+   "badge_title": "THREAT #1",
+   "survival": "ONE BROKEN ANKLE",
+   "survival_anchor": "one broken ankle away"
   },
   {
    "audio": "s03.mp3",
@@ -153,7 +166,7 @@
     },
     {
      "n": 28,
-     "at": "Carla stares at the sea"
+     "at": "Neither of them wants to say it out loud"
     },
     {
      "n": 29,
@@ -230,20 +243,28 @@
    "bubbles": [
     {
      "text": "OH NO",
-     "t0": 7.9,
-     "t1": 10.1,
+     "t0": 11.37,
+     "t1": 13.97,
      "x": 1150,
      "y": 300
     },
     {
      "text": "ABSOLUTELY NOT",
-     "t0": 13.1,
-     "t1": 15.7,
+     "t0": 14.1,
+     "t1": 16.7,
      "x": 1000,
      "y": 300
     }
    ],
-   "tail": 0.7
+   "tail": 0.7,
+   "tally": {
+    "before": 1,
+    "add": 1,
+    "total": 4
+   },
+   "badge_title": "THREAT #2",
+   "survival": "INBREEDING",
+   "survival_anchor": "inbreeding depression"
   },
   {
    "audio": "s04.mp3",
@@ -302,7 +323,15 @@
      "anchor": "brings new risks"
     }
    ],
-   "tail": 0.7
+   "tail": 0.7,
+   "tally": {
+    "before": 2,
+    "add": 1,
+    "total": 4
+   },
+   "badge_title": "THREAT #3",
+   "survival": "DISEASE",
+   "survival_anchor": "Two strangers, thin and sick"
   },
   {
    "audio": "s05.mp3",
@@ -376,13 +405,21 @@
    "bubbles": [
     {
      "text": "SHE HAS MY NOSE",
-     "t0": 24.1,
-     "t1": 26.9,
+     "t0": 23.28,
+     "t1": 25.88,
      "x": 1000,
      "y": 300
     }
    ],
-   "tail": 0.7
+   "tail": 0.7,
+   "tally": {
+    "before": 3,
+    "add": 1,
+    "total": 4
+   },
+   "badge_title": "THREAT #4",
+   "survival": "ONE INFECTION",
+   "survival_anchor": "a single infection"
   },
   {
    "audio": "s06.mp3",
@@ -393,6 +430,10 @@
     {
      "n": 69,
      "at": "On their own"
+    },
+    {
+     "n": 70,
+     "at": "catch fish and survive a winter"
     },
     {
      "n": 71,
@@ -433,7 +474,15 @@
      "anchor": "dozens of people from different families"
     }
    ],
-   "tail": 0.9
+   "tail": 0.9,
+   "tally": {
+    "before": 4,
+    "add": 0,
+    "total": 4
+   },
+   "badge_title": "VERDICT",
+   "survival": "PROBABLY NOT",
+   "survival_anchor": "Final verdict"
   },
   {
    "audio": "s07.mp3",
@@ -453,8 +502,8 @@
    "bubbles": [
     {
      "text": "NO SIGNAL",
-     "t0": 2.4,
-     "t1": 5.0,
+     "t0": 2.83,
+     "t1": 5.43,
      "x": 1150,
      "y": 300
     }
