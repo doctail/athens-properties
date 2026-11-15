@@ -8,16 +8,30 @@
     },
     {
      "n": 2,
-     "at": "One other person"
+     "at": "a dead phone"
     },
     {
      "n": 3,
-     "at": "Could two people restart"
+     "at": "One other person is alive"
     }
    ],
    "title_card": 12.3,
    "riser_before_title": true,
-   "tail": 1.5
+   "tail": 1.5,
+   "hook_counter": {
+    "label": "HUMANS ALIVE",
+    "from": 8000000000,
+    "to": 2,
+    "t0": 0.67,
+    "t1": 3.87,
+    "hold": 2.4
+   },
+   "callouts": [
+    {
+     "text": "COULD 2 PEOPLE RESTART HUMANITY?",
+     "anchor": "Could two people restart"
+    }
+   ]
   },
   {
    "audio": "s01.mp3",

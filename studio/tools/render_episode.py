@@ -156,6 +156,26 @@ def overlays(frame, sec, t, dur, ev, board):
         if sec.get("meters"):
             ti = t - 4.6
             draw_meters(d, sec["meters"], ease(ti / 0.4), ti)
+    # hook counter (optional, e.g. HUMANS ALIVE 8,000,000,000 -> 2): rolls down fast, lands with a pop and a flash
+    hc = sec.get("hook_counter")
+    if hc and hc["t0"] <= t <= hc["t1"] + hc.get("hold", 2.0) + 0.4:
+        pr = max(0.0, min(1.0, (t - hc["t0"]) / (hc["t1"] - hc["t0"])))
+        val = hc["to"] if pr >= 1 else max(hc["to"], int(round(hc["from"] * (hc["to"] / hc["from"]) ** pr)))
+        lt = t - hc["t1"]; landed = pr >= 1
+        fade = 1.0 - ease((t - (hc["t1"] + hc.get("hold", 2.0))) / 0.4); fade = max(0.0, min(1.0, fade))
+        sc = (1.0 + 0.35 * max(0.0, 1 - lt / 0.5)) * (back(lt / 0.3) if lt < 0.3 else 1.0) if landed else 1.0
+        sc = max(0.3, sc)
+        num = f"{val:,}"
+        fn = font(FONT_BLACK, int(190 * sc)); fl = font(FONT_BOLD, 56)
+        tw = max(d.textlength(num, font=fn), d.textlength(hc["label"], font=fl)) + 120
+        bx0, by0, bx1, by1 = (W - tw) / 2, 50, (W + tw) / 2, 50 + 330 * max(1.0, sc * 0.9)
+        a_ = int(235 * fade)
+        rounded(d, (bx0, by0, bx1, by1), (25, 18, 14, a_), r=36, outline=(MUSTARD if not landed else (230, 60, 50)) + (int(255 * fade),), width=8)
+        d.text((W / 2 - d.textlength(hc["label"], font=fl) / 2, by0 + 22), hc["label"], font=fl, fill=SAND + (int(255 * fade),))
+        col = (255, 255, 255) if not landed else (255, 70, 55)
+        d.text((W / 2 - d.textlength(num, font=fn) / 2, by0 + 92), num, font=fn, fill=col + (int(255 * fade),))
+        if landed and 0 <= lt < 0.18:  # impact flash
+            d.rectangle((0, 0, W, H), fill=(255, 255, 255, int(150 * (1 - lt / 0.18))))
     # era banner (#rank) or generic banner (big label, e.g. a clock time)
     bn = sec.get("banner")
     if rank or bn:
@@ -281,6 +301,11 @@ def render_section(args):
         sfx += [("whoosh", 0.15, 0.6)]
         if sec.get("meters"): sfx.append(("tick", 4.6, 0.6))
     for b in sec.get("bubbles", []): sfx.append(("pop", b["t0"], 0.7))
+    hc = sec.get("hook_counter")
+    if hc:
+        sfx.append(("glitch", hc["t0"], 0.5))
+        sfx += [("tick", hc["t0"] + i * 0.14, 0.3) for i in range(int((hc["t1"] - hc["t0"]) / 0.14))]
+        sfx.append(("boom", hc["t1"], 1.0))
     if sec.get("title_card"):
         sfx.append(("boom", sec["title_card"], 0.8))
         if sec.get("riser_before_title"): sfx.append(("riser", sec["title_card"] - 1.2, 0.6))
