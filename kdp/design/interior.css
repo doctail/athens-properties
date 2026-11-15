@@ -6,8 +6,8 @@
 :root {
   /* Colour tokens: ink (neutral), accent, accent tint. Paper is white. */
   --ink: #1A1A1A;        /* 17.4:1 on white */
-  --accent: #1E4D3A;     /* forest green, 9.9:1 on white */
-  --tint: #DCEAE2;       /* fill behind solution words; ink on tint 14.6:1 */
+  --accent: #1E4D3A;     /* forest green, 9.6:1 on white */
+  --tint: #DCEAE2;       /* fill behind solution words; ink on tint 14.0:1 */
 
   /* Type tokens */
   --font: "Liberation Sans", "DejaVu Sans", sans-serif;
