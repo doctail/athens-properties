@@ -166,7 +166,7 @@ NARRATOR: Dave and Carla wave goodbye. His phone still says no signal. Next time
 
 ---
 
-## What changed from v1 (read this before approving)
+### What changed from v1 (read this before approving)
 1. **Length.** v1 had about 660 narrated words, which is ~4 minutes, not the 8 I wrote. The timestamps in v1 were wrong. v2 has ~920 narrated words, ~6 minutes at 155 words/min (to be confirmed by the real audio), so the 80 images last ~4.5 s each: fast, as you asked. If you want 8 minutes I add ~300 words, but the pace would slow to ~6 s per image.
 2. **Genetics fix.** v1 implied that Dave and Carla's own children would be at risk. They are unrelated strangers, so their first child could be healthy. The risk starts with the grandchildren, who would have to pair with relatives. v2 says this.
 3. **Every image 001–080 is tied to a line** with [V nnn]. Image 070 is missing (not generated yet): the 068–070 beat can reuse 069 or 068 if 070 is not made.
