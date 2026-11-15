@@ -45,8 +45,12 @@ Flow prompt: see flow-prompts.md (THUMBNAIL section). Text in editor, max 3 word
 YouTube Audio Library track to be chosen by the owner. Mix per studio/tools/mix_music.sh (music about -27 LUFS before ducking, sidechain under voice, final -14 LUFS).
 
 ## Shorts (plan from CALENDAR Dave)
-### S1 — "Two people. One bad winter." (Wed 2026-11-18) — 12 vertical images (V01–V12 in flow-prompts.md), ~8 s, loop, formula: survival-time reveal
+### S1 — "Two people. One bad winter." (Wed 2026-11-18) — images V01–V10, ~8 s, loop, formula: survival-time reveal
 Title: Two people. One bad winter. 🥶 #shorts
 Description: Could two people restart humanity? Not without a lot of luck. #whatif #survival #shorts
-### S2 — (Thu 2026-11-19) — prompts to be written after S1 is approved
-### S3 — (Sat 2026-11-21) — prompts to be written after S2 is approved
+### S2 — "You need about 50. They have 2." (Thu 2026-11-19) — images V11–V20, size shock
+Title: You need about 50 people. Dave has 1 friend. 😬 #shorts
+Description: Conservation biologists use ~50 as a rule of thumb to avoid rapid inbreeding. Two people are nowhere near. #whatif #history #shorts
+### S3 — "Myth: any 2 people can restart humanity" (Sat 2026-11-21) — images V21–V30, myth bust
+Title: Myth: any 2 people can restart humanity ❌ #shorts
+Description: Genetics, workload and bad luck say otherwise. #whatif #survival #shorts
