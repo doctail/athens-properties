@@ -1,15 +1,17 @@
-# BOZZA: valida solo dopo READY FOR HUMAN REVIEW del checker
+# Listing KDP: Sopa de Letras para Adultos Mayores
 
-Il libro non è ancora costruito. Nessun upload, nessuna pubblicazione. Questa bozza diventa valida solo quando il checker emette "READY FOR HUMAN REVIEW" per questo libro.
+Stato: interior controllato dal checker (`READY FOR HUMAN REVIEW`, 2026-11-15). Nessun upload fatto: l'upload è manuale.
 
-Da verificare nel PDF costruito prima del gate:
-- 75 sopas, 12 palabras ciascuna, una sopa per pagina.
-- Word list a 16 pt.
-- Parole solo da sinistra a destra o dall'alto in basso (mai diagonale, mai al contrario).
-- Parole senza tilde nella griglia.
-- Temi di vita quotidiana e di un tempo (cocina, familia, juegos de la infancia, música de antes, fiestas, el campo).
-- Soluzioni complete in fondo; formato 8.5 x 11 in.
-- Le 3 categorie sono proposte: vanno verificate nell'interfaccia KDP.
+File per l'upload:
+- Interior: `kdp/books/sopa-memoria-75-interior.pdf` (119 pagine, 8.5 x 11 in, carta bianca)
+- Copertina: `kdp/books/sopa-memoria-75-cover.pdf` (full wrap 17.518 x 11.25 in, dorso 0.268 in per 119 pagine)
+
+Da fare su KDP prima di pubblicare:
+- Lingua del libro: Español. Marketplace principale: Amazon.com.
+- Contenuti IA: dichiarare testo (liste di parole e testi del libro) e immagini (illustrazione di copertina generata con Google Flow).
+- Verificare dorso e misure con il Cover Calculator KDP (119 pagine, carta bianca).
+- Verificare le 3 categorie nell'interfaccia.
+- Titolo, sottotitolo, autore ed edizione si bloccano 72 ore dopo la pubblicazione.
 
 Mercato: Amazon US (amazon.com). Lingua del libro: español. Autore: Morgan Hayes.
 

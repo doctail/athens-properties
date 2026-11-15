@@ -46,21 +46,28 @@ body {
   display: flex; align-items: center; justify-content: center;
   font-size: 56pt; font-weight: 700; letter-spacing: -0.5pt; white-space: nowrap;
 }
-.f-sub { margin-top: 0.12in; font-size: 44pt; font-weight: 700; line-height: 1.08; }
-/* Grid card: wide, starts under the stack and runs into the bottom bleed */
-.grid-card {
-  left: 0.40in; width: 7.70in; height: 8in;
-  background: var(--paper);
-  padding: 0.2in 0.19in 0 0.19in;
+/* Illustration as a photo print with a white border; size and position set by script.
+   Source is 1500 px square: at 5.0 in printed that is 300 dpi, so the script never goes above 5.0 in. */
+.art-card {
+  background: var(--paper); padding: 0.11in;
+  box-shadow: 0 0.05in 0.16in rgba(0, 0, 0, 0.35);
+  transform: rotate(-1.5deg);
 }
-.grid { display: grid; grid-template-columns: repeat(11, 0.6655in); grid-auto-rows: 0.6655in; }
+.art-card img { display: block; width: 100%; height: 100%; object-fit: cover; }
+/* Small word-search sheet over the lower right corner of the illustration */
+.grid-card {
+  background: var(--paper); padding: 0.11in;
+  box-shadow: 0 0.05in 0.14in rgba(0, 0, 0, 0.35);
+  transform: rotate(3deg);
+}
+.grid { display: grid; grid-template-columns: repeat(8, 0.355in); grid-auto-rows: 0.355in; }
 .cell {
   display: flex; align-items: center; justify-content: center;
-  font-size: 34pt; font-weight: 700; color: var(--ink);
+  font-size: 17pt; font-weight: 700; color: var(--ink);
 }
-.hit-ring { position: absolute; border: 0.07in solid var(--accent); border-radius: 0.36in; }
-.f-author-bar { left: 0; width: 8.625in; bottom: 0; background: var(--accent); } /* top set by script: on a row boundary */
-.f-author { left: 0.125in; width: 8.25in; text-align: center; font-size: 34pt; font-weight: 700; line-height: 1; } /* top set by script */
+.hit-ring { position: absolute; border: 0.04in solid var(--accent); border-radius: 0.2in; }
+.f-sub { left: 0.125in; width: 8.25in; text-align: center; font-size: 26pt; font-weight: 700; line-height: 1.15; } /* top set by script */
+.f-author { left: 0.125in; width: 8.25in; text-align: center; font-size: 30pt; font-weight: 700; line-height: 1; } /* top set by script */
 
 /* ---------- SPINE ---------- */
 .spine-text { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
@@ -79,7 +86,7 @@ body {
   font-size: 22pt; line-height: 1.38;
 }
 .b-list {
-  left: 0.75in; width: 7.1in; top: 3.95in;
+  left: 0.75in; width: 7.1in; top: 4.3in;
   font-size: 22pt; line-height: 1.3; list-style: none;
 }
 .b-list li { padding-left: 0.42in; position: relative; margin-bottom: 0.17in; }
@@ -88,7 +95,7 @@ body {
   width: 0.17in; height: 0.17in; background: var(--paper);
 }
 .b-close {
-  left: 0.75in; width: 7.1in; top: 7.55in;
+  left: 0.75in; width: 7.1in; top: 7.95in;
   font-size: 22pt; line-height: 1.38;
 }
 .b-author { left: 0.75in; top: 10.05in; font-size: 26pt; font-weight: 700; }
@@ -100,7 +107,7 @@ body {
 <!-- BACK -->
 <section id="back" class="abs">
   <div class="abs b-head">75 sopas de letras en letra grande</div>
-  <div class="abs b-body">Cada sopa de letras tiene un tema de antes: cosas, lugares y costumbres de otros tiempos.</div>
+  <div class="abs b-body">Cada sopa de letras tiene un tema de la vida de antes: la cocina, la familia, los juegos de la infancia, la música de siempre, las fiestas y el campo.</div>
   <ul class="abs b-list">
     <li>75 sopas de letras</li>
     <li>Letras grandes y claras, fáciles de leer</li>
@@ -123,11 +130,11 @@ body {
   <div class="f-stack" id="stack">
     <h1 class="f-title"><span class="l1 fit">Sopa de Letras</span><span class="l2 fit">para Adultos Mayores</span></h1>
     <div class="f-band"><span class="fit-band">Letra Grande y Fácil</span></div>
-    <div class="f-sub">75 Sopas<br>con Recuerdos de Antes<br>y Soluciones Completas</div>
   </div>
+  <div class="abs art-card" id="art"><img src="art.jpg" alt=""></div>
   <div class="abs grid-card" id="card"><div class="grid" id="grid"></div></div>
-  <div class="abs f-author-bar"></div>
-  <div class="abs f-author">Morgan Hayes</div>
+  <div class="abs f-sub" id="sub">75 Sopas con Recuerdos de Antes<br>y Soluciones Completas</div>
+  <div class="abs f-author" id="author">Morgan Hayes</div>
 </section>
 
 <script>
@@ -145,35 +152,41 @@ body {
   });
   var st = document.getElementById('stack').getBoundingClientRect();
   var front = document.getElementById('front').getBoundingClientRect();
-  var cardTop = (st.bottom - front.top) / 96 + 0.2;            /* inches, front panel coords */
-  document.getElementById('card').style.top = cardTop + 'in';
-  /* Author bar starts on a row boundary so no row of letters is sliced; author centred between bar top and safe bottom (11.0). */
-  var CELL = 0.6655, firstRow = cardTop + 0.2, n = Math.floor((10.2 - firstRow) / CELL);
-  var barTop = firstRow + n * CELL + 0.12;
-  document.querySelector('.f-author-bar').style.top = barTop + 'in';
-  var au = document.querySelector('.f-author'), h = au.getBoundingClientRect().height / 96;
-  au.style.top = Math.min(barTop + (11.0 - barTop - h) / 2, 11.0 - h) + 'in';
+  /* Vertical layout in front-panel inches: stack, illustration, subtitle, author, all above safe bottom 11.0. */
+  var top = (st.bottom - front.top) / 96 + 0.3;
+  var sub = document.getElementById('sub'), au = document.getElementById('author');
+  var subH = sub.getBoundingClientRect().height / 96, auH = au.getBoundingClientRect().height / 96;
+  var GAP_ART = 0.32, GAP_AU = 0.16, SAFE_BOTTOM = 10.95;
+  var A = Math.min(5.0, SAFE_BOTTOM - top - GAP_ART - subH - GAP_AU - auH);   /* outer size incl. border */
+  var art = document.getElementById('art');
+  art.style.width = A + 'in'; art.style.height = A + 'in';
+  art.style.left = (0.125 + (8.25 - A) / 2) + 'in'; art.style.top = top + 'in';
+  var card = document.getElementById('card'), CW = 8 * 0.355 + 0.22, CH = 3 * 0.355 + 0.22;
+  card.style.left = (0.125 + (8.25 + A) / 2 - CW + 0.35) + 'in';
+  card.style.top = (top + A - CH + 0.05) + "in";
+  sub.style.top = (top + A + GAP_ART) + 'in';
+  au.style.top = (top + A + GAP_ART + subH + GAP_AU) + 'in';
+  document.documentElement.dataset.artIn = A.toFixed(3);
 })();
 /* 11 x 9 sample grid, deterministic filler (includes Ñ), RECUERDOS placed HORIZONTALLY on row 1 and ringed. */
 (function () {
-  var W = 11, H = 9, ALPHA = "ABCDEFGHIJLMNOPRSTUVZ";   /* filler without Ñ: one Ñ is placed by hand below */
+  var W = 8, H = 3, ALPHA = "ABCDEFGHIJLMNOPRSTUVZ";   /* filler without Ñ: one Ñ is placed by hand below */
   var seed = 1975;
   function rnd() { seed = (seed * 1103515245 + 12345) & 0x7fffffff; return seed / 0x7fffffff; }
   var g = [];
   for (var r = 0; r < H; r++) { g.push([]); for (var c = 0; c < W; c++) g[r].push(ALPHA[Math.floor(rnd() * ALPHA.length)]); }
-  var word = "RECUERDOS", row = 1, c0 = 1;
+  var word = "CAFECITO", row = 1, c0 = 0;   /* horizontal, as in the book */
   for (var i = 0; i < word.length; i++) g[row][c0 + i] = word[i];
-  /* Show Ñ clearly in visible rows */
-  g[0][4] = "Ñ";
+  g[0][5] = "Ñ";
   var el = document.getElementById("grid"), html = "";
   for (var rr = 0; rr < H; rr++) for (var cc = 0; cc < W; cc++) html += '<div class="cell">' + g[rr][cc] + '</div>';
   el.innerHTML = html;
-  var cell = 0.6655;
+  var cell = 0.355;
   var ring = document.createElement("div");
   ring.className = "hit-ring";
-  ring.style.left = (0.19 + c0 * cell - 0.06) + "in";
-  ring.style.top = (0.2 + row * cell + 0.0) + "in";
-  ring.style.width = (word.length * cell + 0.12) + "in";
+  ring.style.left = (0.11 + c0 * cell - 0.02) + "in";
+  ring.style.top = (0.11 + row * cell) + "in";
+  ring.style.width = (word.length * cell + 0.04) + "in";
   ring.style.height = cell + "in";
   el.parentNode.appendChild(ring);
 })();
