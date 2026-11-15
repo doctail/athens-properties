@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Sopa de Letras Cover</title>
+<style id="page-size">
+/* Default = 119 pages (spine 0.268 in). render.js overrides --spine and @page size. */
+@page { size: 17.518in 11.25in; margin: 0; }
+</style>
+<style>
+:root {
+  --spine: 0.268in;      /* set by render.js: pages x 0.002252 in */
+  --spine-font: 10pt;    /* set by render.js */
+  --ink: #1A1A1A;        /* 17.4:1 on white */
+  --accent: #1E4D3A;     /* white on accent ~9.9:1 */
+  --paper: #FFFFFF;
+  --font: "Liberation Sans", "DejaVu Sans", sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: calc(17.25in + var(--spine)); height: 11.25in; overflow: hidden; }
+body {
+  position: relative;
+  font-family: var(--font);
+  background: var(--accent);
+  color: var(--paper);
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.abs { position: absolute; }
+
+/* Panels. Back trim x 0.125..8.5; front trim x 0..8.5 inside #front; y trim 0.125..11.125.
+   Safe zone = trim inset 0.125 in: back x 0.25..8.375, front x 0.125..8.375, y 0.25..11.0 */
+#back  { left: 0; top: 0; width: 8.625in; height: 11.25in; overflow: hidden; }
+#spine { left: 8.625in; top: 0; width: var(--spine); height: 11.25in; background: var(--ink); }
+#front { left: calc(8.625in + var(--spine)); top: 0; width: 8.625in; height: 11.25in; overflow: hidden; }
+
+/* ---------- FRONT ---------- */
+/* Text stack in normal flow inside the front safe zone; title lines are fitted to width by script. */
+.f-stack { position: absolute; left: 0.125in; width: 8.25in; top: 0.36in; text-align: center; }
+.f-title { font-weight: 700; line-height: 1; }
+.f-title .l1, .f-title .l2 { display: block; white-space: nowrap; }
+.f-title .l1 { font-size: 96pt; letter-spacing: -1pt; }
+.f-title .l2 { font-size: 60pt; letter-spacing: -0.5pt; margin-top: 0.02in; }
+.f-band {
+  margin-top: 0.16in; height: 0.98in;
+  background: var(--paper); color: var(--accent);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 56pt; font-weight: 700; letter-spacing: -0.5pt; white-space: nowrap;
+}
+.f-sub { margin-top: 0.12in; font-size: 44pt; font-weight: 700; line-height: 1.08; }
+/* Grid card: wide, starts under the stack and runs into the bottom bleed */
+.grid-card {
+  left: 0.40in; width: 7.70in; height: 8in;
+  background: var(--paper);
+  padding: 0.2in 0.19in 0 0.19in;
+}
+.grid { display: grid; grid-template-columns: repeat(11, 0.6655in); grid-auto-rows: 0.6655in; }
+.cell {
+  display: flex; align-items: center; justify-content: center;
+  font-size: 34pt; font-weight: 700; color: var(--ink);
+}
+.hit-ring { position: absolute; border: 0.07in solid var(--accent); border-radius: 0.36in; }
+.f-author-bar { left: 0; width: 8.625in; bottom: 0; background: var(--accent); } /* top set by script: on a row boundary */
+.f-author { left: 0.125in; width: 8.25in; text-align: center; font-size: 34pt; font-weight: 700; line-height: 1; } /* top set by script */
+
+/* ---------- SPINE ---------- */
+.spine-text { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+.spine-text span {
+  writing-mode: vertical-rl;   /* top-to-bottom, standard for US books */
+  font-size: var(--spine-font); font-weight: 700; white-space: nowrap; line-height: 1;
+}
+
+/* ---------- BACK ---------- */
+.b-head {
+  left: 0.75in; width: 7.1in; top: 0.85in;
+  font-size: 44pt; font-weight: 700; line-height: 1.08;
+}
+.b-body {
+  left: 0.75in; width: 7.1in; top: 2.65in;
+  font-size: 22pt; line-height: 1.38;
+}
+.b-list {
+  left: 0.75in; width: 7.1in; top: 3.95in;
+  font-size: 22pt; line-height: 1.3; list-style: none;
+}
+.b-list li { padding-left: 0.42in; position: relative; margin-bottom: 0.17in; }
+.b-list li::before {
+  content: ""; position: absolute; left: 0; top: 0.11in;
+  width: 0.17in; height: 0.17in; background: var(--paper);
+}
+.b-close {
+  left: 0.75in; width: 7.1in; top: 7.55in;
+  font-size: 22pt; line-height: 1.38;
+}
+.b-author { left: 0.75in; top: 10.05in; font-size: 26pt; font-weight: 700; }
+.b-barcode { left: 6.075in; top: 9.6in; width: 2.0in; height: 1.2in; background: var(--paper); }
+</style>
+</head>
+<body>
+
+<!-- BACK -->
+<section id="back" class="abs">
+  <div class="abs b-head">75 sopas de letras en letra grande</div>
+  <div class="abs b-body">Cada sopa de letras tiene un tema de antes: cosas, lugares y costumbres de otros tiempos.</div>
+  <ul class="abs b-list">
+    <li>75 sopas de letras</li>
+    <li>Letras grandes y claras, fáciles de leer</li>
+    <li>Las palabras van solo de izquierda a derecha o de arriba hacia abajo</li>
+    <li>Temas de antes, para recordar y conversar</li>
+    <li>Soluciones completas al final del libro</li>
+  </ul>
+  <div class="abs b-close">Puede resolverlas a su ritmo, solo o en compañía. También es un regalo sencillo para un familiar.</div>
+  <div class="abs b-author">Morgan Hayes</div>
+  <div class="abs b-barcode" data-check="barcode"></div>
+</section>
+
+<!-- SPINE -->
+<section id="spine" class="abs">
+  <div class="spine-text"><span>Sopa de Letras para Adultos Mayores&nbsp;&nbsp;·&nbsp;&nbsp;Morgan Hayes</span></div>
+</section>
+
+<!-- FRONT -->
+<section id="front" class="abs">
+  <div class="f-stack" id="stack">
+    <h1 class="f-title"><span class="l1 fit">Sopa de Letras</span><span class="l2 fit">para Adultos Mayores</span></h1>
+    <div class="f-band"><span class="fit-band">Letra Grande y Fácil</span></div>
+    <div class="f-sub">75 Sopas<br>con Recuerdos de Antes<br>y Soluciones Completas</div>
+  </div>
+  <div class="abs grid-card" id="card"><div class="grid" id="grid"></div></div>
+  <div class="abs f-author-bar"></div>
+  <div class="abs f-author">Morgan Hayes</div>
+</section>
+
+<script>
+/* Fit each title line to the same measure (8.0 in) so both lines read as one block. */
+(function () {
+  var MAX = 8.0 * 96;
+  document.querySelectorAll('.fit, .fit-band').forEach(function (el) {
+    el.style.display = el.classList.contains('fit-band') ? 'inline-block' : 'block';
+    var target = el.classList.contains('fit-band') ? 7.7 * 96 : MAX;
+    el.style.display = 'inline-block';
+    var fs = parseFloat(getComputedStyle(el).fontSize);
+    fs = fs * target / el.getBoundingClientRect().width;
+    el.style.fontSize = Math.min(fs, 140) + 'px';
+    el.style.display = el.classList.contains('fit-band') ? 'inline' : 'block';
+  });
+  var st = document.getElementById('stack').getBoundingClientRect();
+  var front = document.getElementById('front').getBoundingClientRect();
+  var cardTop = (st.bottom - front.top) / 96 + 0.2;            /* inches, front panel coords */
+  document.getElementById('card').style.top = cardTop + 'in';
+  /* Author bar starts on a row boundary so no row of letters is sliced; author centred between bar top and safe bottom (11.0). */
+  var CELL = 0.6655, firstRow = cardTop + 0.2, n = Math.floor((10.2 - firstRow) / CELL);
+  var barTop = firstRow + n * CELL + 0.12;
+  document.querySelector('.f-author-bar').style.top = barTop + 'in';
+  var au = document.querySelector('.f-author'), h = au.getBoundingClientRect().height / 96;
+  au.style.top = Math.min(barTop + (11.0 - barTop - h) / 2, 11.0 - h) + 'in';
+})();
+/* 11 x 9 sample grid, deterministic filler (includes Ñ), RECUERDOS placed HORIZONTALLY on row 1 and ringed. */
+(function () {
+  var W = 11, H = 9, ALPHA = "ABCDEFGHIJLMNOPRSTUVZ";   /* filler without Ñ: one Ñ is placed by hand below */
+  var seed = 1975;
+  function rnd() { seed = (seed * 1103515245 + 12345) & 0x7fffffff; return seed / 0x7fffffff; }
+  var g = [];
+  for (var r = 0; r < H; r++) { g.push([]); for (var c = 0; c < W; c++) g[r].push(ALPHA[Math.floor(rnd() * ALPHA.length)]); }
+  var word = "RECUERDOS", row = 1, c0 = 1;
+  for (var i = 0; i < word.length; i++) g[row][c0 + i] = word[i];
+  /* Show Ñ clearly in visible rows */
+  g[0][4] = "Ñ";
+  var el = document.getElementById("grid"), html = "";
+  for (var rr = 0; rr < H; rr++) for (var cc = 0; cc < W; cc++) html += '<div class="cell">' + g[rr][cc] + '</div>';
+  el.innerHTML = html;
+  var cell = 0.6655;
+  var ring = document.createElement("div");
+  ring.className = "hit-ring";
+  ring.style.left = (0.19 + c0 * cell - 0.06) + "in";
+  ring.style.top = (0.2 + row * cell + 0.0) + "in";
+  ring.style.width = (word.length * cell + 0.12) + "in";
+  ring.style.height = cell + "in";
+  el.parentNode.appendChild(ring);
+})();
+</script>
+</body>
+</html>
