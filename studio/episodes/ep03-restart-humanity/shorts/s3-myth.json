@@ -1,0 +1,126 @@
+{
+ "audio": "s3-myth.mp3",
+ "out": "s3-myth.mp4",
+ "hook": "RESTART HUMANITY?",
+ "badge": "MYTH",
+ "gap": 0.1,
+ "seamless": true,
+ "phrases": [
+  {
+   "text": "Myth: two people can restart humanity.",
+   "key": [
+    "Myth",
+    "two"
+   ],
+   "shots": [
+    [
+     "images/V21.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V21.jpg",
+     1.9,
+     0.4,
+     0.08
+    ],
+    [
+     "images/V30.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "Their first child? Probably fine.",
+   "key": [
+    "first",
+    "fine"
+   ],
+   "shots": [
+    [
+     "images/V28.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V28.jpg",
+     2.0,
+     0.5,
+     0.1
+    ]
+   ]
+  },
+  {
+   "text": "Then grandchildren would pair with relatives.",
+   "key": [
+    "grandchildren",
+    "relatives"
+   ],
+   "shots": [
+    [
+     "images/V22.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V22.jpg",
+     2.2,
+     0.5,
+     0.41
+    ]
+   ]
+  },
+  {
+   "text": "More miscarriages, weaker immune systems.",
+   "key": [
+    "miscarriages",
+    "weaker"
+   ],
+   "shots": [
+    [
+     "images/V23.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V24.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V26.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "Don't believe the",
+   "key": [
+    "believe"
+   ],
+   "shots": [
+    [
+     "images/V27.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V21.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  }
+ ]
+}

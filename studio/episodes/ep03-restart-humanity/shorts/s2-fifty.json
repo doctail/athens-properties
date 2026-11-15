@@ -1,0 +1,124 @@
+{
+ "audio": "s2-fifty.mp3",
+ "out": "s2-fifty.mp4",
+ "hook": "HOW MANY TO RESTART?",
+ "badge": "NEED ~50. HAVE 2.",
+ "gap": 0.1,
+ "seamless": true,
+ "phrases": [
+  {
+   "text": "Two people.",
+   "key": [
+    "Two"
+   ],
+   "shots": [
+    [
+     "images/V12.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V12.jpg",
+     2.2,
+     0.5,
+     0.9
+    ]
+   ]
+  },
+  {
+   "text": "Rule of thumb for wild animals:",
+   "key": [
+    "thumb",
+    "wild"
+   ],
+   "shots": [
+    [
+     "images/V19.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V15.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "about fifty, to avoid rapid inbreeding.",
+   "key": [
+    "fifty",
+    "inbreeding"
+   ],
+   "shots": [
+    [
+     "images/V13.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V13.jpg",
+     2.0,
+     0.5,
+     0.6
+    ],
+    [
+     "images/V11.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "Hunter-gatherer bands were usually dozens.",
+   "key": [
+    "dozens"
+   ],
+   "shots": [
+    [
+     "images/V17.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V17.jpg",
+     1.9,
+     0.5,
+     0.71
+    ],
+    [
+     "images/V16.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "Dave's group? Just",
+   "key": [
+    "Just"
+   ],
+   "shots": [
+    [
+     "images/V14.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V12.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  }
+ ]
+}

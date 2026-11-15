@@ -1,0 +1,465 @@
+{
+ "sections": [
+  {
+   "audio": "s00.mp3",
+   "images": [
+    {
+     "n": 1
+    },
+    {
+     "n": 2,
+     "at": "One other person"
+    },
+    {
+     "n": 3,
+     "at": "Could two people restart"
+    }
+   ],
+   "title_card": 12.3,
+   "riser_before_title": true,
+   "tail": 1.5
+  },
+  {
+   "audio": "s01.mp3",
+   "images": [
+    {
+     "n": 4
+    },
+    {
+     "n": 5,
+     "at": "Dave makes a plan"
+    },
+    {
+     "n": 6,
+     "at": "It's whether they can have children"
+    },
+    {
+     "n": 7,
+     "at": "Dave's math is simple"
+    },
+    {
+     "n": 8,
+     "at": "Conservation biologists use"
+    },
+    {
+     "n": 9,
+     "at": "and about five hundred to keep"
+    },
+    {
+     "n": 10,
+     "at": "Two people is far below"
+    },
+    {
+     "n": 11,
+     "at": "Dave gives a thumbs up"
+    },
+    {
+     "n": 12,
+     "at": "Carla does not"
+    },
+    {
+     "n": 13,
+     "at": "The second one is what"
+    }
+   ],
+   "banner": {
+    "big": "DAY 1",
+    "title": "THE MATH"
+   },
+   "callouts": [
+    {
+     "text": "ABOUT 50 PEOPLE",
+     "anchor": "about fifty individuals"
+    },
+    {
+     "text": "ABOUT 500 PEOPLE",
+     "anchor": "about five hundred"
+    }
+   ],
+   "tail": 0.7
+  },
+  {
+   "audio": "s02.mp3",
+   "images": [
+    {
+     "n": 14
+    },
+    {
+     "n": 15,
+     "at": "He tries a hand line"
+    },
+    {
+     "n": 16,
+     "at": "Then a seagull takes it"
+    },
+    {
+     "n": 17,
+     "at": "Carla builds a fence"
+    },
+    {
+     "n": 18,
+     "at": "She also has to watch"
+    },
+    {
+     "n": 19,
+     "at": "And that's the real problem"
+    },
+    {
+     "n": 20,
+     "at": "Hunter-gatherer groups"
+    },
+    {
+     "n": 21,
+     "at": "Dave's big idea is farming"
+    },
+    {
+     "n": 22,
+     "at": "It sounds great"
+    },
+    {
+     "n": 23,
+     "at": "and one bad winter"
+    },
+    {
+     "n": 24,
+     "at": "Carla's plan is simpler"
+    },
+    {
+     "n": 25,
+     "at": "But Carla is also one broken ankle"
+    }
+   ],
+   "banner": {
+    "big": "YEAR 1",
+    "title": "THE FOOD PROBLEM"
+   },
+   "callouts": [
+    {
+     "text": "DOZENS SHARE THE WORK",
+     "anchor": "usually dozens of people"
+    }
+   ],
+   "tail": 0.7
+  },
+  {
+   "audio": "s03.mp3",
+   "images": [
+    {
+     "n": 26
+    },
+    {
+     "n": 27,
+     "at": "Dave clears his throat"
+    },
+    {
+     "n": 28,
+     "at": "Carla stares at the sea"
+    },
+    {
+     "n": 29,
+     "at": "They are two strangers"
+    },
+    {
+     "n": 30,
+     "at": "Carla's opinion is clear"
+    },
+    {
+     "n": 31,
+     "at": "Dave and Carla aren't related"
+    },
+    {
+     "n": 32,
+     "at": "The trouble starts with the next generation"
+    },
+    {
+     "n": 33,
+     "at": "And closely related parents"
+    },
+    {
+     "n": 34,
+     "at": "That's called inbreeding depression"
+    },
+    {
+     "n": 35,
+     "at": "And it adds up"
+    },
+    {
+     "n": 36,
+     "at": "Early humans never faced"
+    },
+    {
+     "n": 37,
+     "at": "and young people moved"
+    },
+    {
+     "n": 38,
+     "at": "Genes kept mixing"
+    },
+    {
+     "n": 39,
+     "at": "Dave and Carla have nobody"
+    },
+    {
+     "n": 40,
+     "at": "Dave sits down"
+    },
+    {
+     "n": 41,
+     "at": "Carla takes the notebook"
+    },
+    {
+     "n": 42,
+     "at": "writes two words"
+    }
+   ],
+   "banner": {
+    "big": "YEAR 5",
+    "title": "THE PROBLEM",
+    "sub": "THE PART NOBODY MENTIONS"
+   },
+   "callouts": [
+    {
+     "text": "FIRST CHILD: COULD BE HEALTHY",
+     "anchor": "Their first child could be"
+    },
+    {
+     "text": "INBREEDING DEPRESSION",
+     "anchor": "inbreeding depression"
+    }
+   ],
+   "bubbles": [
+    {
+     "text": "OH NO",
+     "t0": 7.9,
+     "t1": 10.1,
+     "x": 1150,
+     "y": 300
+    },
+    {
+     "text": "ABSOLUTELY NOT",
+     "t0": 13.1,
+     "t1": 15.7,
+     "x": 1000,
+     "y": 300
+    }
+   ],
+   "tail": 0.7
+  },
+  {
+   "audio": "s04.mp3",
+   "images": [
+    {
+     "n": 43
+    },
+    {
+     "n": 44,
+     "at": "She packs rope"
+    },
+    {
+     "n": 45,
+     "at": "Dave has his own plan"
+    },
+    {
+     "n": 46,
+     "at": "fix the satellite dish"
+    },
+    {
+     "n": 47,
+     "at": "It's one wire away"
+    },
+    {
+     "n": 48,
+     "at": "It is always one wire"
+    },
+    {
+     "n": 49,
+     "at": "So Carla walks"
+    },
+    {
+     "n": 50,
+     "at": "Days later"
+    },
+    {
+     "n": 51,
+     "at": "Two strangers, thin"
+    },
+    {
+     "n": 52,
+     "at": "Dave takes a step back"
+    },
+    {
+     "n": 53,
+     "at": "But every new person"
+    }
+   ],
+   "banner": {
+    "big": "PLAN B",
+    "title": "FIND MORE PEOPLE"
+   },
+   "callouts": [
+    {
+     "text": "NEW PEOPLE = NEW RISKS",
+     "anchor": "brings new risks"
+    }
+   ],
+   "tail": 0.7
+  },
+  {
+   "audio": "s05.mp3",
+   "images": [
+    {
+     "n": 54
+    },
+    {
+     "n": 55,
+     "at": "The seasons keep turning"
+    },
+    {
+     "n": 56,
+     "at": "Dave and Carla found three"
+    },
+    {
+     "n": 57,
+     "at": "They also found a handful"
+    },
+    {
+     "n": 58,
+     "at": "And now, there are children"
+    },
+    {
+     "n": 59,
+     "at": "Dave holds a baby"
+    },
+    {
+     "n": 60,
+     "at": "Every child needs food"
+    },
+    {
+     "n": 61,
+     "at": "Dave becomes the group's"
+    },
+    {
+     "n": 62,
+     "at": "The puppet bites him"
+    },
+    {
+     "n": 63,
+     "at": "Dave learns to boil water"
+    },
+    {
+     "n": 64,
+     "at": "Carla searches"
+    },
+    {
+     "n": 65,
+     "at": "finds a damp first aid book"
+    },
+    {
+     "n": 66,
+     "at": "She sets a broken arm"
+    },
+    {
+     "n": 67,
+     "at": "The first page is missing"
+    }
+   ],
+   "banner": {
+    "big": "YEAR 20",
+    "title": "THE KIDS"
+   },
+   "callouts": [
+    {
+     "text": "3 MORE SURVIVORS",
+     "anchor": "found three more people"
+    }
+   ],
+   "bubbles": [
+    {
+     "text": "SHE HAS MY NOSE",
+     "t0": 24.1,
+     "t1": 26.9,
+     "x": 1000,
+     "y": 300
+    }
+   ],
+   "tail": 0.7
+  },
+  {
+   "audio": "s06.mp3",
+   "images": [
+    {
+     "n": 68
+    },
+    {
+     "n": 69,
+     "at": "On their own"
+    },
+    {
+     "n": 71,
+     "at": "But they can't keep a species going"
+    },
+    {
+     "n": 72,
+     "at": "The genetics, the workload"
+    },
+    {
+     "n": 73,
+     "at": "What actually works is a group"
+    },
+    {
+     "n": 74,
+     "at": "and generations to build on"
+    },
+    {
+     "n": 75,
+     "at": "That's how humans survived"
+    },
+    {
+     "n": 76,
+     "at": "Final verdict"
+    },
+    {
+     "n": 77,
+     "at": "And Dave would like"
+    }
+   ],
+   "banner": {
+    "big": "THE VERDICT",
+    "title": "TWO PEOPLE?"
+   },
+   "callouts": [
+    {
+     "text": "A GROUP OF DOZENS",
+     "anchor": "dozens of people from different families"
+    }
+   ],
+   "tail": 0.9
+  },
+  {
+   "audio": "s07.mp3",
+   "images": [
+    {
+     "n": 78
+    },
+    {
+     "n": 79,
+     "at": "His phone still says"
+    },
+    {
+     "n": 80,
+     "at": "Next time, Dave learns"
+    }
+   ],
+   "bubbles": [
+    {
+     "text": "NO SIGNAL",
+     "t0": 2.4,
+     "t1": 5.0,
+     "x": 1150,
+     "y": 300
+    }
+   ],
+   "tail": 2.0
+  }
+ ]
+}
