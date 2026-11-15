@@ -2,7 +2,7 @@
 
 Status: DRAFT v1. Do not upload before: script approved (done 2026-11-15), images approved, preview approved, publish OK from the owner.
 Planned publish: Tuesday 2026-11-17 21:00 Italy — to confirm (see STATUS Dave). Upload is manual.
-Chapters are ESTIMATES from the word count; replace them with the real times after the audio and the render.
+Chapters computed from the real render (no music yet): if music/intro changes the length, recompute.
 
 ## Title (EN-US)
 Could 2 People Really Restart Humanity?
@@ -15,12 +15,13 @@ Spoiler: the answer is not what you'd hope. But Dave keeps trying. 👇 Where sh
 
 CHAPTERS
 0:00 Intro
-0:13 Day 1: The Math
-1:04 Year 1: The Food Problem
-2:00 Year 5: The Problem Nobody Wants to Talk About
-3:25 Year 5: Plan B
-4:03 Year 20: The Kids
-4:57 The Verdict
+0:14 Day 1: The Math
+1:12 Year 1: The Food Problem
+2:13 Year 5: The Problem Nobody Wants to Talk About
+3:52 Year 5: Plan B
+4:35 Year 20: The Kids
+5:34 The Verdict
+6:26 Next episode
 
 SOURCES
 • Frankham et al., genetic management and the 50/500 rule (conservation genetics)
