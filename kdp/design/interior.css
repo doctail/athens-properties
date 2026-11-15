@@ -1,0 +1,208 @@
+/* Large Print National Parks Word Search - interior system
+   Trim 8.5 x 11 in, no bleed. One font family (Liberation Sans), three colours. */
+
+@page { size: 8.5in 11in; margin: 0; }
+
+:root {
+  /* Colour tokens: ink (neutral), accent, accent tint. Paper is white. */
+  --ink: #1A1A1A;        /* 17.4:1 on white */
+  --accent: #1E4D3A;     /* forest green, 9.9:1 on white */
+  --tint: #DCEAE2;       /* fill behind solution words; ink on tint 14.6:1 */
+
+  /* Type tokens */
+  --font: "Liberation Sans", "DejaVu Sans", sans-serif;
+  --size-display: 44pt;  /* title page */
+  --size-title: 32pt;    /* puzzle and section titles */
+  --size-header: 16pt;   /* running header */
+  --size-body: 18pt;     /* how-to-play text */
+  --size-word: 19pt;     /* word list */
+  --size-folio: 16pt;    /* page number */
+  --size-grid: 23pt;     /* puzzle grid letters */
+  --size-grid-sol: 14pt; /* solution grid letters (2 grids per page) */
+
+  /* Grid tokens */
+  --margin: 0.75in;
+  --cell: 0.40in;        /* 15 x 0.40 = 6.0in, inside the 7in text block */
+  --cell-sol: 0.24in;    /* 15 x 0.24 = 3.6in */
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  font-family: var(--font);
+  color: var(--ink);
+  background: #FFFFFF;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* Page frame: the padding is the 0.75in margin; nothing is placed outside it. */
+.page {
+  width: 8.5in;
+  height: 11in;
+  padding: var(--margin);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  page-break-after: always;
+  break-after: page;
+  position: relative;
+}
+.page:last-child { page-break-after: auto; break-after: auto; }
+
+/* Running header (puzzle pages only) */
+.running-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: var(--size-header);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding-bottom: 0.08in;
+  border-bottom: 2pt solid var(--accent);
+}
+.running-header .book { font-weight: 400; color: var(--ink); letter-spacing: 0.04em; }
+
+/* Titles */
+.title {
+  font-size: var(--size-title);
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  margin: 0.16in 0 0.14in;
+}
+
+/* Puzzle grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(15, var(--cell));
+  grid-auto-rows: var(--cell);
+  margin: 0 auto;
+  border: 2.5pt solid var(--accent);
+  border-radius: 6pt;
+  padding: 0.06in;
+  width: max-content;
+}
+.grid span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--size-grid);
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Word list: 3 columns, check box before each word */
+.wordlist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.25in;
+  row-gap: 0.1in;
+  margin: 0.24in auto 0;
+  width: 6.0in;
+  list-style: none;
+}
+.wordlist li {
+  display: flex;
+  align-items: center;
+  gap: 0.12in;
+  font-size: var(--size-word);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 1.15;
+}
+.wordlist li::before {
+  content: "";
+  flex: none;
+  width: 0.2in;
+  height: 0.2in;
+  border: 1.5pt solid var(--accent);
+  border-radius: 2pt;
+}
+
+/* Footer page number, inside the margin box */
+.folio {
+  margin-top: auto;
+  text-align: center;
+  font-size: var(--size-folio);
+  color: var(--ink);
+}
+
+/* Solutions */
+.solution {
+  margin: 0 auto 0.14in;
+  width: max-content;
+}
+.solution h3 {
+  font-size: 18pt;
+  font-weight: 700;
+  margin-bottom: 0.06in;
+}
+.solution h3 .num { color: var(--accent); margin-right: 0.08in; }
+.sol-grid {
+  position: relative;
+  border: 2pt solid var(--accent);
+  border-radius: 5pt;
+  padding: 0.04in;
+}
+.sol-grid svg {
+  position: absolute;
+  left: 0.04in;
+  top: 0.04in;
+  width: calc(15 * var(--cell-sol));
+  height: calc(15 * var(--cell-sol));
+}
+.sol-grid .cells {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(15, var(--cell-sol));
+  grid-auto-rows: var(--cell-sol);
+}
+.sol-grid .cells span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--size-grid-sol);
+  line-height: 1;
+}
+.sol-grid .cells span.hit { font-weight: 700; }
+.sol-grid .band { fill: var(--tint); stroke: var(--accent); stroke-width: 1.4; }
+
+/* Title page */
+.title-page { justify-content: center; text-align: center; }
+.title-page .kicker {
+  font-size: 22pt;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.title-page h1 {
+  font-size: var(--size-display);
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0.2in 0 0.3in;
+}
+.title-page .tiles {
+  display: flex;
+  justify-content: center;
+  gap: 0.06in;
+  margin: 0 auto 0.35in;
+}
+.title-page .tiles span {
+  width: 0.55in;
+  height: 0.55in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26pt;
+  font-weight: 700;
+  border: 2pt solid var(--accent);
+  border-radius: 4pt;
+}
+.title-page .tiles span.on { background: var(--tint); }
+.title-page .subtitle { font-size: 20pt; line-height: 1.35; }
+.title-page .rule { width: 2in; border-top: 2pt solid var(--accent); margin: 0.45in auto; }
+.title-page .author { font-size: 24pt; font-weight: 700; }
