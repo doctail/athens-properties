@@ -161,3 +161,16 @@ V30. Vertical: Dave's face in the last frame, same framing as V21 so the loop cl
 Flat 2D vector cartoon, thick dark-brown outlines, bold saturated colours, YouTube thumbnail composition, NO text. Right third: huge close-up of Dave (from the reference) with a terrified expression, mouth open, a few drops of sweat. Left third: a small lonely campfire on a grey beach under a dark sky, with a faint ruined city silhouette. Strong contrast, simple background, readable at small size.
 ```
 Thumbnail text (added in the editor, not in Flow): max 3 words, thick white letters with dark outline. Candidate: "2 PEOPLE?". Same layout as EP01/EP02 (Dave right, object left).
+
+## THUMBNAIL v2 (after the owner's tests 1 and 2, judged too empty and too dark)
+Why the tests fail (checked at feed size, next to EP01/EP02): the sky and sea are almost black, the only light is a tiny fire (5% of the frame), nothing says "two people", and there is no space planned for the text. EP01/EP02 work because they are saturated, with one big readable object next to Dave. Keep Dave exactly like test 2 (right third, terrified), change the rest. Text added in the editor: "2 PEOPLE?" (max 3 words) top-left, so keep the top-left clear.
+
+### Variant A — Carla next to him (shows "two")
+```
+Flat 2D vector cartoon, thick dark-brown outlines, bold saturated colours, YouTube thumbnail composition, NO text, NO letters. Right third: huge close-up of Dave (from the reference) with a terrified expression, mouth open, sweat drops. Left-centre: Carla (woman, dark hair in a ponytail, dark green utility jacket, khaki trousers) standing with arms crossed, looking annoyed at Dave, next to a small campfire. Background: a dramatic orange, pink and purple sunset sky, a ruined city skyline in silhouette, grey beach. Strong contrast, bright, readable at small size. Keep the top-left corner clear and simple.
+```
+
+### Variant B — the empty world (shows "only two")
+```
+Flat 2D vector cartoon, thick dark-brown outlines, bold saturated colours, YouTube thumbnail composition, NO text, NO letters. Right third: huge close-up of Dave (from the reference) with a terrified expression, mouth open, sweat drops. Left two thirds: a huge empty grey beach under a dramatic orange and pink sunset sky, a ruined city skyline in the distance, and two tiny figures (one in a mustard hoodie, one in a green jacket) standing far away next to a small campfire. Strong contrast, bright, readable at small size. Keep the top-left corner clear and simple.
+```

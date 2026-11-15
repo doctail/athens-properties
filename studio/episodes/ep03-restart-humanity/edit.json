@@ -152,7 +152,8 @@
    },
    "badge_title": "THREAT #1",
    "survival": "ONE BROKEN ANKLE",
-   "survival_anchor": "one broken ankle away"
+   "survival_anchor": "one broken ankle away",
+   "badge_scale": 0.62
   },
   {
    "audio": "s03.mp3",
@@ -234,10 +235,6 @@
     {
      "text": "FIRST CHILD: COULD BE HEALTHY",
      "anchor": "Their first child could be"
-    },
-    {
-     "text": "INBREEDING DEPRESSION",
-     "anchor": "inbreeding depression"
     }
    ],
    "bubbles": [
@@ -264,7 +261,8 @@
    },
    "badge_title": "THREAT #2",
    "survival": "INBREEDING",
-   "survival_anchor": "inbreeding depression"
+   "survival_anchor": "inbreeding depression",
+   "badge_scale": 0.62
   },
   {
    "audio": "s04.mp3",
@@ -317,12 +315,7 @@
     "big": "PLAN B",
     "title": "FIND MORE PEOPLE"
    },
-   "callouts": [
-    {
-     "text": "NEW PEOPLE = NEW RISKS",
-     "anchor": "brings new risks"
-    }
-   ],
+   "callouts": [],
    "tail": 0.7,
    "tally": {
     "before": 2,
@@ -331,7 +324,8 @@
    },
    "badge_title": "THREAT #3",
    "survival": "DISEASE",
-   "survival_anchor": "Two strangers, thin and sick"
+   "survival_anchor": "Two strangers, thin and sick",
+   "badge_scale": 0.62
   },
   {
    "audio": "s05.mp3",
@@ -419,7 +413,8 @@
    },
    "badge_title": "THREAT #4",
    "survival": "ONE INFECTION",
-   "survival_anchor": "a single infection"
+   "survival_anchor": "a single infection",
+   "badge_scale": 0.62
   },
   {
    "audio": "s06.mp3",
@@ -482,7 +477,8 @@
    },
    "badge_title": "VERDICT",
    "survival": "PROBABLY NOT",
-   "survival_anchor": "Final verdict"
+   "survival_anchor": "Final verdict",
+   "badge_scale": 0.62
   },
   {
    "audio": "s07.mp3",

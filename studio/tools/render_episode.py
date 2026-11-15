@@ -197,12 +197,13 @@ def overlays(frame, sec, t, dur, ev, board):
         if lt >= 0:
             s = back(lt / 0.4); a = min(1, lt / 0.15)
             sh = int(10 * math.sin(lt * 40) * max(0, 1 - lt / 0.5))
-            bw, bh = int(max(720, d.textlength(sec["survival"], font=font(FONT_BLACK, 96)) + 80) * s), int(210 * s)
+            k = sec.get("badge_scale", 1.0)  # <1 makes a smaller badge so it does not cover faces
+            bw, bh = int(max(720 * k, d.textlength(sec["survival"], font=font(FONT_BLACK, int(96 * k))) + 80 * k) * s), int(210 * k * s)
             x1, y1 = W - 60 - bw + sh, 60
             rounded(d, (x1, y1, x1 + bw, y1 + bh), MUSTARD + (int(245 * a),), outline=INK + (int(255 * a),), width=7)
             if s > 0.6:
-                d.text((x1 + 34, y1 + 18), sec.get("badge_title", "SURVIVAL TIME"), font=font(FONT_BOLD, 42), fill=INK + (int(255 * a),))
-                d.text((x1 + 34, y1 + 70), sec["survival"], font=font(FONT_BLACK, 96), fill=INK + (int(255 * a),))
+                d.text((x1 + 34 * k, y1 + 18 * k), sec.get("badge_title", "SURVIVAL TIME"), font=font(FONT_BOLD, int(42 * k)), fill=INK + (int(255 * a),))
+                d.text((x1 + 34 * k, y1 + 70 * k), sec["survival"], font=font(FONT_BLACK, int(96 * k)), fill=INK + (int(255 * a),))
     # speech bubbles
     for b in sec.get("bubbles", []):
         if b["t0"] <= t <= b["t1"]:
