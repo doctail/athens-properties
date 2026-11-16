@@ -153,7 +153,9 @@ NARRATOR: Dave waves goodbye. His phone still says no signal. Next time, Dave fi
 
 ---
 
-### Open points for the owner (also in STATUS)
+### Owner decisions (2026-11-16): 1 keep the EP03 correction line; 2 EP05 teaser stays WITHOUT a weekday; 3 title #1 confirmed. Script OK for the voice still pending.
+
+### Open points for the owner (superseded by the line above)
 1. **Teaser line of EP03.** EP03 says "privacy was never a thing in the Stone Age". The research says that is not accurate: privacy existed, built from distance, manners and the freedom to leave. The verdict says so in one friendly line ("That wasn't quite fair"). If you prefer not to contradict EP03, delete the first sentence of V 087–088; the rest still works.
 2. **Teaser for EP05.** CALENDAR lists EP05 "Life 20,000 Years Ago: the Ice Age" for Tue 2026-11-24. The script says "next time" with no weekday. Add "on Tuesday" only if you want to commit (EP02 promised a weekday and EP03 had to keep it).
 3. **"Probably" jokes.** "less glamorous business" (V 041–043) is a joke, not a sourced claim.
