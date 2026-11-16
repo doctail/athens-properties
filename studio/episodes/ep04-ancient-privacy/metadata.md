@@ -32,7 +32,6 @@ SOURCES (full list with notes in sources.md)
 • Samson et al. (2017), Proc. R. Soc. B 284:20170967, sleep and night-time vigilance in Hadza hunter-gatherers
 • Altman (1977), Journal of Social Issues 33(3):66, "Privacy regulation: culturally universal or culturally specific?"
 • Wiessner (2014), PNAS 111(39):14027, firelight talk among the Ju/'hoansi
-• Ben Mocha (2020), Proc. R. Soc. B, concealment of mating across cultures
 • Mezhyrich mammoth-bone dwellings (Chu et al. 2025 radiocarbon study); Çatalhöyük Research Project; Skara Brae (Historic Environment Scotland)
 
 Much of what we know about Stone Age behavior is inferred from archaeology and from living hunter-gatherers. We say when something is an inference.
@@ -56,7 +55,7 @@ Two Flow variants (A: crowd peeking over the hide curtain, B: tiny hut packed wi
 Same track as EP03 for continuity ("Science Montage", Jeremy Blake, YouTube Audio Library; file in the EP03 audio/music folder) unless the owner prefers another. Mix per studio/tools/mix_music.sh (music about -27 LUFS before ducking, sidechain under the voice, final -14 LUFS).
 
 ## Voice
-vsub "Bill" (pqHfZKP75CvOlQylNhV4), stability 55, similarity 75, style 15, **speed 100** (EP03 wrongly used 105). Estimated cost: about 5,728 characters x 0.138 = ~790 vsub credits for the long video + ~450 for 3 Shorts (EP03 reference: 773 total). Not spent yet; needs the owner's OK after the script.
+vsub "Bill" (pqHfZKP75CvOlQylNhV4), stability 55, similarity 75, style 15, **speed 100** (EP03 wrongly used 105). Estimated cost: about 5,457 characters x 0.138 = ~753 vsub credits for the long video + ~450 for 3 Shorts (EP03 reference: 773 total). Not spent yet; needs the owner's OK after the script.
 
 ## Shorts (plan from CALENDAR Dave)
 ### S1 — "Everyone asleep at once: 18 minutes" (Sun 2026-11-22) — images V01–V11, ~8 s, loop, number reveal
