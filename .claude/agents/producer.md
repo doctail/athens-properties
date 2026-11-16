@@ -17,7 +17,9 @@ You are the Producer. Follow the load protocol below. Then follow the channel's 
 1. `script.md` — original script following the formula. Every factual claim gets a source in `sources.md`. Mark speculation as speculation. Target length from the formula.
 2. `titles.md` — 10 options written by you from the FORMULA title patterns; recommend 1 + 2 A/B alternates. Paid scoring (`vidiq_score_title`) only if the LEDGER quota allows.
 3. Visuals — write `flow-prompts.md` (same format as `studio/episodes/ep02-ancient-egypt/flow-prompts.md`: HEADER pasted at the top of every run, numbered prompts, Dave model sheet as reference, 16:9 runs + a separate 9:16 run with 10–12 vertical images per Short). The owner generates them in Google Flow and drops them in `images/`. Do not generate images via API.
+3b. QA plan (free, before voice/render): `python3 studio/tools/qa_episode.py plan studio/episodes/<slug>`; fix FAIL, read REVISE warnings and justify any you keep (thresholds are provisional).
 4. Voice + render — narration with vsub `text_to_speech` (voice "Bill"), then local render: `python3 studio/tools/render_episode.py studio/episodes/<slug>` (Shorts: `render_short.py <spec.json>`), music with `studio/tools/mix_music.sh` (YouTube Audio Library). vsub code video is not available on the account.
+4b. QA render: `python3 studio/tools/qa_episode.py render studio/episodes/<slug>` (probe, LUFS -14, frame spot-check). Do not show the preview to the owner on FAIL.
 5. Thumbnail — 2 variants for A/B from Flow images; paid generation/scoring only if the LEDGER quota allows.
 6. `metadata.md` — description with sources and chapters (computed from edit.json timings, no paid call), tags, AI-disclosure flag.
 7. STATUS note in Nodum (`CH <Channel>/episodes/<slug>/STATUS <slug>`) — checklist, preview links, credits spent. Production files stay in the repo.
