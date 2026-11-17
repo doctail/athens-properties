@@ -25,7 +25,7 @@ OVERLAY: date "1453"; label "ONE CITY".
 IMAGE: A bird's-eye paper-cut view inside a walled city: domes, small villages, open fields between them, a double wall line with a moat. No text.
 OVERLAY: red label "< 50,000 PEOPLE"; arrow to the double wall; thin label "WALL, MOAT".
 [V004a] NARRATOR: It had been attacked many times. Only once had it fallen, in 1204, to a Crusader army.
-IMAGE: Crusader knights with cross-marked tunics storming a harbor tower from ships, torn-paper fire; late-12th-century look.
+IMAGE: Crusader knights in mail and plain undyed surcoats (no emblems) storming a harbor tower from ships, torn-paper fire; late-12th-century look.
 OVERLAY: stamp "1204"; red circle on the tower.
 [V004b] NARRATOR: In 1422 the sultan Murad the Second tried and failed. He struggled against a blockade of the strait by the Byzantine fleet, and a rebellion at home forced him to leave.
 IMAGE: Collage of a medieval fleet of small ships on a narrow strait, with a rebellious fire burning in a distant city on the far shore.
