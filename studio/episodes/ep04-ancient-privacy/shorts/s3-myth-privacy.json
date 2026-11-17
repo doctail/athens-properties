@@ -1,0 +1,127 @@
+{
+ "audio": "s3-myth-privacy.mp3",
+ "out": "s3-myth-privacy.mp4",
+ "hook": "NO PRIVACY? MYTH.",
+ "badge": "MYTH",
+ "gap": 0.1,
+ "seamless": true,
+ "phrases": [
+  {
+   "text": "Myth: they had no privacy.",
+   "key": [
+    "Myth",
+    "privacy"
+   ],
+   "shots": [
+    [
+     "images/V23.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V24.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "Camps were crowded, yes.",
+   "key": [
+    "crowded"
+   ],
+   "shots": [
+    [
+     "images/V25.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V28.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "Every culture needs privacy, argued Altman.",
+   "key": [
+    "Every",
+    "culture",
+    "Altman"
+   ],
+   "shots": [
+    [
+     "images/V31.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V30.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V32.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "Methods differ: words, body language, distance.",
+   "key": [
+    "words",
+    "body",
+    "language"
+   ],
+   "shots": [
+    [
+     "images/V27.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V27.jpg",
+     1.9,
+     0.5,
+     0.45
+    ],
+    [
+     "images/V26.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "So don't believe the",
+   "key": [
+    "believe"
+   ],
+   "shots": [
+    [
+     "images/V33.jpg",
+     1.6,
+     0.5,
+     0.4
+    ],
+    [
+     "images/V33.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  }
+ ]
+}

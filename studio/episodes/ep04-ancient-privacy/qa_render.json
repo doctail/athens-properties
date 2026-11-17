@@ -3,11 +3,11 @@
  "verdict": "REVISE",
  "fails": [],
  "warns": [
-  "true peak 0.2 dBFS (> -1.0)"
+  "true peak -0.6 dBFS (> -1.0)"
  ],
  "duration_s": 429.3,
- "lufs": -15.0,
- "true_peak_dbfs": 0.2,
+ "lufs": -14.9,
+ "true_peak_dbfs": -0.6,
  "frame_means": [
   134.8,
   131.6,

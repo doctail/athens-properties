@@ -1,0 +1,126 @@
+{
+ "audio": "s1-asleep-18min.mp3",
+ "out": "s1-asleep-18min.mp4",
+ "hook": "EVERYONE ASLEEP AT ONCE?",
+ "badge": "ONLY 18 MINUTES",
+ "gap": 0.1,
+ "seamless": true,
+ "phrases": [
+  {
+   "text": "Asleep at once?",
+   "key": [
+    "asleep",
+    "once"
+   ],
+   "shots": [
+    [
+     "images/V01.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V02.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "Hadza adults, tracked twenty days.",
+   "key": [
+    "Hadza",
+    "twenty"
+   ],
+   "shots": [
+    [
+     "images/V02.jpg",
+     2.2,
+     0.41,
+     0.72
+    ],
+    [
+     "images/V03.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V04.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "All asleep together: eighteen minutes.",
+   "key": [
+    "eighteen",
+    "minutes"
+   ],
+   "shots": [
+    [
+     "images/V05.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V07.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "The authors suggest a built-in night watch.",
+   "key": [
+    "night",
+    "watch"
+   ],
+   "shots": [
+    [
+     "images/V06.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V08.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V09.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "So how often is everyone",
+   "key": [
+    "everyone"
+   ],
+   "shots": [
+    [
+     "images/V10.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V11.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "audio": "s2-28-adults.mp3",
+ "out": "s2-28-adults.mp4",
+ "hook": "28 ADULT NEIGHBORS",
+ "badge": "A TYPICAL CAMP",
+ "gap": 0.1,
+ "seamless": true,
+ "phrases": [
+  {
+   "text": "About twenty-eight adults.",
+   "key": [
+    "twenty-eight",
+    "adults"
+   ],
+   "shots": [
+    [
+     "images/V12.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V13.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "One study of thirty-two foraging societies",
+   "key": [
+    "thirty-two",
+    "study"
+   ],
+   "shots": [
+    [
+     "images/V14.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V15.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V16.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "found a typical band, plus children.",
+   "key": [
+    "band",
+    "children"
+   ],
+   "shots": [
+    [
+     "images/V17.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V18.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "Many not even close relatives.",
+   "key": [
+    "close",
+    "relatives"
+   ],
+   "shots": [
+    [
+     "images/V19.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V20.jpg",
+     1.0,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V21.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "So, Dave's neighbors? Roughly",
+   "key": [
+    "neighbors",
+    "Roughly"
+   ],
+   "shots": [
+    [
+     "images/V22.jpg",
+     1.6,
+     0.5,
+     0.4
+    ],
+    [
+     "images/V22.jpg",
+     1.0,
+     0.5,
+     0.5
+    ]
+   ]
+  }
+ ]
+}
