@@ -1,0 +1,27 @@
+# EP04 — images to regenerate (visual QA of 2026-11-17)
+Run these 9 in Google Flow with the Dave model sheet attached (`studio/assets/dave-model-sheet-preview.png`), 16:9, then name each file with its number (015.png ... 088.png) and send them. Only these 9 are blockers; the minor notes in the QA do not need a redo.
+Reasons: 015 modern angry neighbor with picket fence; 047 canvas tents, lanterns, folding stool; 053 shows Dave instead of a teenager; 063 and 067 modern hoodies/jackets and a Dave look-alike; 075 modern hikers and nylon tents; 080 windows and chimneys unlike Catalhoyuk (078); 085 board with 12 pictograms instead of the 5 of 084; 088 canvas tents, crates, bottle, rubbish.
+
+## HEADER (paste at the top)
+```
+Generate one separate image for each numbered prompt below, in the same order. Name each file with its number.
+STYLE FOR ALL IMAGES: flat 2D vector cartoon, thick dark-brown outlines, no gradients, simple clean shapes, warm Stone Age palette (olive-green savanna, faded sand, dusty terracotta, deep blue night skies, one warm mustard fire glow), 16:9 landscape unless the prompt says 9:16. NO text, NO letters, NO numbers, NO readable signs, NO logos, NO watermarks. NO red crosses, NO crescents, NO flags, NO national or religious symbols, NO swastikas or similar emblems.
+SETTING: a Stone Age foraging camp on a wide grassland with scattered trees and a rocky hill with a cave mouth. A few small dome huts made of bent branches covered in grass, a hearth fire in the middle of the camp, drying racks, baskets, animal hides on poles. No metal, no modern objects except what Dave carries.
+CAMP PEOPLE = about thirty ancient people of all ages and a mix of skin tones, simple faces, friendly, curious, fully clothed in simple animal-hide wraps, cloaks and plant-fibre skirts, bead necklaces, bare feet. EVERYONE stays clothed in every image. No nudity, no tattoos, no weapons pointed at anyone.
+DAVE = the character in the reference image: man in his early 30s, slightly chubby, messy brown hair, short stubble, big expressive eyes, mustard-yellow hoodie, blue jeans, white sneakers (both sneakers unless the prompt says one is missing), smartphone in hand (screen dark). Keep Dave IDENTICAL in every image, ONE Dave per image.
+GRANDPA = an old man with a short white beard, bald on top, grey fur cloak, a wooden walking stick, twinkling eyes. Keep him identical.
+TODDLER = a small child with messy brown hair, a wooden bead necklace and a hide wrap. Keep identical.
+```
+
+## RUN FIX — 9 images
+```
+015. Reaction: close-up of a curious, friendly Stone Age neighbor peering at Dave from only a hand's width away, Dave's nose in the foreground, awkward. The neighbor wears an animal-hide wrap and a bead necklace, tanned skin, simple friendly face. Background: the grassy camp with grass-covered dome huts and a drying rack. NO modern clothes, NO T-shirt, NO fence, NO house siding.
+047. Dave sprinting back towards the glowing camp fire in the dusk, arms flailing, his phone in his hand. The camp ahead has only small dome huts of bent branches covered in grass and animal-hide shelters, firelight, drying racks. NO canvas tents, NO lanterns, NO lamps, NO folding furniture, NO modern objects.
+053. A Stone Age teenager (NOT Dave: a slim dark-haired teen in an animal-hide wrap, bare feet, bead necklace) lying on his back awake on the grass, staring at the stars with a thoughtful face; around him the rest of the camp sleeps under hides. No hoodie, no jeans, no sneakers, no phone.
+063. Close-up: two faces side by side, two Stone Age people in animal-hide wraps and bead necklaces (NOT Dave, NO hoodies, NO modern clothes), one whispering behind a cupped hand into the other's ear, eyes sliding sideways. Keep the faces in the upper half of the frame.
+067. Reaction: close-up of a frowning Stone Age man in an animal-hide wrap, arms crossed, one eyebrow high, glancing sideways at two whisperers behind him who also wear animal-hide wraps. NOT Dave, NO hoodies, NO jackets, NO trousers, NO boots. Faces in the upper half of the frame.
+075. Dave following a small group of ancient people along the path, happy, one sneaker missing (one bare foot), whistling, the camp behind him getting smaller. The group wears animal-hide wraps and carries bundles of sticks and baskets on their backs (no backpacks). The camp behind has grass-covered dome huts only: NO modern dome tents, NO orange or green nylon.
+080. Dave standing on a flat roof looking down through a square hole at a ladder, scratching his head, other rooftops like streets all around. Same town as image 078: plain boxy mudbrick houses, flat roofs, NO windows, NO window panes, NO chimneys, NO multi-storey look; only square holes in the roofs with wooden ladders. Warm sand colours.
+085. Dave pointing at a wooden board with a stick like a teacher, a confident grin. The board shows EXACTLY the same five simple icons as image 084, in a row and nothing else: a grass hut wall, a pair of footprints, a night sky with a plain full round moon and a few dots for stars, a speech bubble with a tiny padlock, an open gate. No letters, no other symbols.
+088. Dave shrugging with a half-hearted thumbs-up, the sunrise behind him, the camp slowly waking at dawn: grass-covered dome huts and hide shelters, a few ancient people of mixed skin tones in animal-hide wraps stretching and cooking. Clean ground. NO canvas tents, NO crates, NO bottles, NO rubbish, NO black silhouettes.
+```
