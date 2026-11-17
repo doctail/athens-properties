@@ -73,15 +73,24 @@ def treat(im):
     return Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
 
 
-def make_card(path, W, H, rng, focus=0.35, ratio=1.5):
+def make_card(path, W, H, rng, focus=0.35, ratio=1.5, wfrac=None, tape=True, crop=True):
     im = Image.open(path).convert("RGB")
     im.thumbnail((2600, 2600))
-    if im.width / im.height < ratio * 0.9:  # verticale: ritaglio largo su un dettaglio (focus 0=alto, 1=basso)
-        ch_ = int(im.width / ratio)
-        top = int((im.height - ch_) * focus)
-        im = im.crop((0, top, im.width, top + ch_))
+    r0 = im.width / im.height
+    if crop and ratio and abs(r0 - ratio) > 0.06 and (wfrac is not None or r0 < ratio * 0.9):
+        if r0 < ratio:  # troppo alta: tengo una fascia (focus 0=alto, 1=basso)
+            ch_ = int(im.width / ratio)
+            top = int((im.height - ch_) * focus)
+            im = im.crop((0, top, im.width, top + ch_))
+        else:           # troppo larga: tengo una colonna centrata
+            cw_ = int(im.height * ratio)
+            left = int((im.width - cw_) * 0.5)
+            im = im.crop((left, 0, left + cw_, im.height))
     im = treat(im)
-    maxw, maxh = int(W * 0.68), int(H * 0.74)
+    if wfrac is not None:
+        maxw, maxh = int(W * wfrac), 10 ** 6
+    else:
+        maxw, maxh = int(W * 0.68), int(H * 0.74)
     s = min(maxw / im.width, maxh / im.height)
     im = im.resize((max(8, int(im.width * s)), max(8, int(im.height * s))), Image.LANCZOS)
     b, pad = 26, 30
@@ -114,6 +123,9 @@ def make_card(path, W, H, rng, focus=0.35, ratio=1.5):
     out_a = np.maximum(sa, pa)
     out_rgb = (comp * pa + 20 * sa * (1 - pa)) / np.maximum(out_a, 1e-3)
     # nastro adesivo
+    if not tape:
+        A0 = (out_a[..., 0] * 255).astype(np.uint8)
+        return premult(np.clip(out_rgb, 0, 255).astype(np.uint8), A0), A0
     tape = Image.new("RGBA", (CW, CH), (0, 0, 0, 0))
     td = ImageDraw.Draw(tape)
     tw, th = 150, 44
