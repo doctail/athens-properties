@@ -6,6 +6,12 @@
 - `vidiq_balance` può mostrare il rinnovabile a 0 e solo crediti "add-on": è il bonus giornaliero, è normale.
 - I crediti sono **sufficienti**. Non scrivere mai osservazioni sulla scarsità dei crediti, non proporre di comprarne, non ridurre il lavoro per risparmiarli. Basta dichiarare il costo prima di una chiamata a pagamento e registrarla in Nodum `00 HQ/LEDGER`.
 
+## Date, scadenze, ritmo di lavoro — NON rompere le scatole (ordine del proprietario, 17/11/2026, già detto più volte)
+- **Mai** scrivere promemoria, avvisi, "tempi stretti", "margine", "entro mercoledì", date di render/uscita/consegna, né chiedere conferme sulle date. Le date le gestisce il proprietario, tutte.
+- Mai chiedere "OK sullo script" o altri permessi a catena se il proprietario ha già detto di procedere: quando dice "fai la voce / montalo" è l'OK. Si lavora fino alla fine del compito, senza fermarsi a ogni passo.
+- Il proprietario non guarda le immagini: **le controlla l'agente, una per una** (stile, personaggi, emblemi protetti come croci rosse, corrispondenza con la frase `[V nnn]`), poi voce, render e montaggio. Il costo si dichiara in una riga prima di una chiamata a pagamento, e si va avanti.
+- Risposte brevi: cosa è stato fatto, cosa non va, cosa serve dal proprietario (solo se serve davvero).
+
 ## Memoria
 - La conoscenza dei 4 canali sta in **Nodum** (vault "My Vault"): parti da `00 HQ/00 START`, poi `00 HQ/RULES` e la CARD del canale su cui lavori. Non ricopiare quelle note nel repo.
 - Year Built vive nel repo `doctail/city3d` (memoria tecnica in `PRODUZIONE_TIMELAPSE.md`).
