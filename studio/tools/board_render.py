@@ -248,13 +248,20 @@ class Board:
                 continue
             ty, lt = e["type"], tt - e.get("t", 0)
             if ty in ("image", "map", "label"):
-                en = C.ease_out(lt / 0.5)
+                dur = e.get("dur")
+                if dur is not None and lt > dur + 0.35:
+                    continue
+                en = C.ease_out(lt / 0.5) if (dur is None or lt <= dur) else 1 - C.ease_out((lt - dur) / 0.35)
                 dx, dy = e["dir"]
                 cx = e["cx"] + dx * W * 0.5 * (1 - en) + jit[0]
                 cy = e["cy"] + dy * H * 0.6 * (1 - en) + jit[1]
                 ang = e.get("rot", 0) + 7.0 * (1 - en) * (1 if e["k"] % 2 else -1) + jit[2] + 0.4 * math.sin(tt * 0.9 + e["k"])
                 sc = (1.0 + 0.05 * (1 - en)) * (1 + 0.018 * min(tt, self.dur) / self.dur)
-                C.draw(frame, e["sprite"][0], e["sprite"][1], cx, cy, ang, sc)
+                sp, sa = e["sprite"]
+                if e.get("typeon") and lt < 1.1:  # scrittura da sinistra a destra
+                    k = int(sp.shape[1] * min(1.0, max(0.05, (lt - 0.2) / 0.7)))
+                    sp, sa = sp.copy(), sa.copy(); sp[:, k:] = 0; sa[:, k:] = 0
+                C.draw(frame, sp, sa, cx, cy, ang, sc)
             elif ty == "pin":
                 pop = C.ease_out(lt / 0.3)
                 bounce = 1.0 + 0.25 * math.sin(min(1.0, lt / 0.3) * math.pi)

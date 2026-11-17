@@ -41,55 +41,89 @@ def clean_alpha(a):
     return cv2.GaussianBlur((a * 255).astype(np.uint8), (0, 0), 0.9)
 
 
+def camera_rect(cx, cy, z, W0, H0):
+    """Ritaglio 16:9 della sorgente: centro normalizzato (cx,cy), zoom z (1 = tutta l'altezza). Ritorna X0,Y0,cw,ch in pixel sorgente."""
+    ch = H0 / z
+    cw = ch * 16 / 9
+    X0 = min(max(cx * W0 - cw / 2, 0), W0 - cw)
+    Y0 = min(max(cy * H0 - ch / 2, 0), H0 - ch)
+    return X0, Y0, cw, ch
+
+
+def to_screen(shot, sx, sy, W0, H0):
+    """Punto sorgente normalizzato -> coordinate schermo normalizzate nell'inquadratura 'shot' (cx,cy,z)."""
+    X0, Y0, cw, ch = camera_rect(shot[0], shot[1], shot[2], W0, H0)
+    return (sx * W0 - X0) / cw, (sy * H0 - Y0) / ch
+
+
 class Page:
+    TR = 0.40  # durata dello scorrimento tra due inquadrature
+
     def __init__(self, spec, W, H, seed):
         self.id, self.W, self.H = spec["id"], W, H
         self.audio = spec["audio"]
         self.dur = probe(self.audio) + spec.get("gap", 0.25)
-        self.push, self.fgpush = spec.get("push", 0.05), spec.get("fgpush", 0.035)
-        fx, fy = spec.get("focus", [0.5, 0.5])
-        self.focus = (fx * W, fy * H)
+        self.fgpush = spec.get("fgpush", 0.035)
         self.base = self.fg = self.shadow = None
+        self.shots = [(0.0, 0.5, 0.5, 1.0)]
         if spec.get("image"):
-            m = 1.0
-            im = cv2.cvtColor(cv2.imread(spec["image"]), cv2.COLOR_BGR2RGB)
-            self.base, _ = cover(im, W, H, m)
-            self.base = self.base[(self.base.shape[0] - H) // 2:(self.base.shape[0] - H) // 2 + H, (self.base.shape[1] - W) // 2:(self.base.shape[1] - W) // 2 + W]
+            self.base = cv2.cvtColor(cv2.imread(spec["image"]), cv2.COLOR_BGR2RGB)
+            self.H0, self.W0 = self.base.shape[:2]
+            if spec.get("shots"):
+                self.shots = [tuple(x) for x in spec["shots"]]
             if spec.get("cut"):
-                c = cv2.imread(spec["cut"], cv2.IMREAD_UNCHANGED)  # BGRA
+                c = cv2.imread(spec["cut"], cv2.IMREAD_UNCHANGED)
                 a = clean_alpha(c[..., 3])
                 rgb = cv2.cvtColor(c[..., :3], cv2.COLOR_BGR2RGB)
-                rgb, _ = cover(rgb, W, H, m); a, _ = cover(a, W, H, m)
-                oy, ox = (rgb.shape[0] - H) // 2, (rgb.shape[1] - W) // 2
-                rgb, a = rgb[oy:oy + H, ox:ox + W], a[oy:oy + H, ox:ox + W]
                 self.fg = np.dstack([C.premult(rgb, a), a])
-                sh = cv2.GaussianBlur(np.roll(np.roll(a, 14, 0), 9, 1), (0, 0), 14)
-                self.shadow = sh
-        self.board = B.Board(spec["board"], W, H, seed) if spec.get("board") else None
-        if self.board:
-            self.board.dur = self.dur
-        self.paper = None
+                self.shadow = cv2.GaussianBlur(np.roll(np.roll(a, 20, 0), 13, 1), (0, 0), 20)
+        self.boards = []
+        for bs in (spec.get("boards") or ([spec["board"]] if spec.get("board") else [])):
+            bd = B.Board(bs, W, H, seed + len(self.boards) * 3)
+            bd.dur = self.dur
+            self.boards.append((float(bs.get("t0", 0.0)), bd))
+
+    def cam(self, tt):
+        i = max(k for k, s in enumerate(self.shots) if s[0] <= tt + 1e-6)
+        t0 = self.shots[i][0]
+        t1 = self.shots[i + 1][0] if i + 1 < len(self.shots) else self.dur
+        def state(k, t):
+            s = self.shots[k]; e = self.shots[k + 1][0] if k + 1 < len(self.shots) else self.dur
+            f = min(1.0, max(0.0, (t - s[0]) / max(e - s[0], 0.1)))
+            return s[1], s[2], s[3] * (1 + 0.03 * f)
+        cur = state(i, tt)
+        if i > 0 and tt - t0 < self.TR:
+            prev = state(i - 1, t0)
+            e = C.ease_out((tt - t0) / self.TR)
+            return tuple(prev[k] + (cur[k] - prev[k]) * e for k in range(3))
+        return cur
 
     def frame(self, tt, gk, paper):
         W, H = self.W, self.H
-        e = C.ease_out(min(1.0, tt / max(self.dur, 0.1)))
-        t = min(1.0, tt / self.dur)
         if self.base is not None:
-            zb = 1.0 + self.push * t
-            M = cv2.getRotationMatrix2D(self.focus, 0, zb)
-            fr = cv2.warpAffine(self.base, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REPLICATE)
+            cx, cy, z = self.cam(tt)
+            def M(zz):
+                X0, Y0, cw, ch = camera_rect(cx, cy, zz, self.W0, self.H0)
+                return np.array([[W / cw, 0, -X0 * W / cw], [0, H / ch, -Y0 * H / ch]], np.float64)
+            fr = cv2.warpAffine(self.base, M(z), (W, H), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
             if self.fg is not None:
-                zf = zb * (1.0 + self.fgpush * e)
-                Mf = cv2.getRotationMatrix2D(self.focus, 0, zf)
-                if self.shadow is not None:
-                    sh = cv2.warpAffine(self.shadow, Mf, (W, H), flags=cv2.INTER_LINEAR)
-                    fr = (fr.astype(np.float32) * (1 - 0.36 * sh[..., None] / 255.0)).astype(np.uint8)
+                e = C.ease_out(min(1.0, tt / max(self.dur * 0.6, 0.1)))
+                i = max(k for k, sh_ in enumerate(self.shots) if sh_[0] <= tt + 1e-6)
+                dt = tt - self.shots[i][0]
+                punch = 0.06 * (1 - C.ease_out(dt / 0.5)) if dt < 0.5 else 0.0   # il pezzo di carta "scatta" a ogni inquadratura
+                Mf = M(z * (1.0 + self.fgpush * e + punch))
+                sh = cv2.warpAffine(self.shadow, Mf, (W, H), flags=cv2.INTER_LINEAR)
+                fr = (fr.astype(np.float32) * (1 - 0.34 * sh[..., None] / 255.0)).astype(np.uint8)
                 f = cv2.warpAffine(self.fg, Mf, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT, borderValue=0)
                 fr = (fr.astype(np.uint16) * (255 - f[..., 3:4]) // 255 + f[..., :3]).clip(0, 255).astype(np.uint8)
         else:
             fr = paper.copy()
-        if self.board:
-            self.board.render(fr, tt, gk)
+        cur = None
+        for t0, bd in self.boards:
+            if t0 <= tt + 1e-6:
+                cur = (t0, bd)
+        if cur:
+            cur[1].render(fr, tt - cur[0], gk)
         return fr
 
 
