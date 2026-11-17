@@ -32,3 +32,12 @@ Both new versions dressed DAVE in a hide tunic (and sandals in 088). Dave must k
 015. Reaction: close-up of a curious, friendly Stone Age neighbor peering at Dave from only a hand's width away, Dave's nose in the foreground, awkward. DAVE wears his mustard-yellow hoodie (hood and drawstrings visible), NOT a hide tunic, NOT bare shoulders. The neighbor wears an animal-hide wrap and a bead necklace, tanned skin, simple friendly face. Background: the grassy camp with grass-covered dome huts and a drying rack. NO modern clothes on the neighbor, NO fence, NO house siding.
 088. Dave shrugging with a half-hearted thumbs-up, the sunrise behind him, the camp slowly waking at dawn. DAVE wears his mustard-yellow hoodie, blue jeans and white sneakers, exactly like the reference: NOT a hide tunic, NOT sandals, NOT bare chest. Around him: grass-covered dome huts and hide shelters, a few ancient people of mixed skin tones in animal-hide wraps stretching and cooking. Clean ground. NO canvas tents, NO crates, NO bottles, NO rubbish, NO black silhouettes.
 ```
+
+## SHORTS — 4 vertical images to regenerate (visual QA 2026-11-17)
+Same HEADER as above, but **9:16 vertical**. Name them V12.png, V23.png, V25.png, V32.png. The loop frames V11, V22, V33 are NOT regenerated: the specs reuse V01, V12 and V23 as the last shot.
+```
+V12. Vertical 9:16: Dave's face extremely close, one eyebrow raised (skeptical look), the camp behind him with grass huts low in the frame. Hook frame. Keep the TOP 15% of the frame a calm plain pale sky: no trees, no hut tops, no smoke there.
+V23. Vertical 9:16: Dave's face large (head and shoulders filling the frame), grinning, one hand pointing confidently at the camera, the camp low behind him. Hook frame. Keep the TOP 15% of the frame a calm plain pale sky: no trees, no cliff there.
+V25. Vertical 9:16: a thin animal-hide wall with a fire behind it casting a huge silly shadow of Dave on the hide. The shadow must have Dave's shape: messy hair and a hoodie with hood, jeans. NOT a caveman, NO club, NO fur skirt.
+V32. Vertical 9:16: Dave behind a barred door made of a thick stone slab with a wooden bar across it (like V30), one eye at a narrow crack, lonely. NO iron, NO metal bars, NO rivets, NO handle, NOT a prison look.
+```
