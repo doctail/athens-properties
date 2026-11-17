@@ -25,3 +25,10 @@ TODDLER = a small child with messy brown hair, a wooden bead necklace and a hide
 085. Dave pointing at a wooden board with a stick like a teacher, a confident grin. The board shows EXACTLY the same five simple icons as image 084, in a row and nothing else: a grass hut wall, a pair of footprints, a night sky with a plain full round moon and a few dots for stars, a speech bubble with a tiny padlock, an open gate. No letters, no other symbols.
 088. Dave shrugging with a half-hearted thumbs-up, the sunrise behind him, the camp slowly waking at dawn: grass-covered dome huts and hide shelters, a few ancient people of mixed skin tones in animal-hide wraps stretching and cooking. Clean ground. NO canvas tents, NO crates, NO bottles, NO rubbish, NO black silhouettes.
 ```
+
+## ROUND 2 (2026-11-17) — 7 of the 9 were accepted; redo only 015 and 088
+Both new versions dressed DAVE in a hide tunic (and sandals in 088). Dave must keep his mustard-yellow hoodie, blue jeans and white sneakers in every image. Same HEADER as above.
+```
+015. Reaction: close-up of a curious, friendly Stone Age neighbor peering at Dave from only a hand's width away, Dave's nose in the foreground, awkward. DAVE wears his mustard-yellow hoodie (hood and drawstrings visible), NOT a hide tunic, NOT bare shoulders. The neighbor wears an animal-hide wrap and a bead necklace, tanned skin, simple friendly face. Background: the grassy camp with grass-covered dome huts and a drying rack. NO modern clothes on the neighbor, NO fence, NO house siding.
+088. Dave shrugging with a half-hearted thumbs-up, the sunrise behind him, the camp slowly waking at dawn. DAVE wears his mustard-yellow hoodie, blue jeans and white sneakers, exactly like the reference: NOT a hide tunic, NOT sandals, NOT bare chest. Around him: grass-covered dome huts and hide shelters, a few ancient people of mixed skin tones in animal-hide wraps stretching and cooking. Clean ground. NO canvas tents, NO crates, NO bottles, NO rubbish, NO black silhouettes.
+```
