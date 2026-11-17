@@ -1,0 +1,81 @@
+{
+ "mode": "plan",
+ "verdict": "PASS",
+ "fails": [],
+ "warns": [],
+ "total_s": 419.8,
+ "images": 90,
+ "mean_cut_s": 4.66,
+ "sections": [
+  {
+   "i": 0,
+   "audio_s": 14.1,
+   "images": 4,
+   "s_per_image": 3.5,
+   "overlays": 2
+  },
+  {
+   "i": 1,
+   "audio_s": 78.0,
+   "images": 17,
+   "s_per_image": 4.6,
+   "overlays": 6
+  },
+  {
+   "i": 2,
+   "audio_s": 74.4,
+   "images": 15,
+   "s_per_image": 5.0,
+   "overlays": 7
+  },
+  {
+   "i": 3,
+   "audio_s": 45.1,
+   "images": 11,
+   "s_per_image": 4.1,
+   "overlays": 6
+  },
+  {
+   "i": 4,
+   "audio_s": 36.9,
+   "images": 10,
+   "s_per_image": 3.7,
+   "overlays": 6
+  },
+  {
+   "i": 5,
+   "audio_s": 57.3,
+   "images": 13,
+   "s_per_image": 4.4,
+   "overlays": 6
+  },
+  {
+   "i": 6,
+   "audio_s": 29.5,
+   "images": 7,
+   "s_per_image": 4.2,
+   "overlays": 5
+  },
+  {
+   "i": 7,
+   "audio_s": 38.3,
+   "images": 6,
+   "s_per_image": 6.4,
+   "overlays": 5
+  },
+  {
+   "i": 8,
+   "audio_s": 32.8,
+   "images": 5,
+   "s_per_image": 6.6,
+   "overlays": 5
+  },
+  {
+   "i": 9,
+   "audio_s": 13.4,
+   "images": 2,
+   "s_per_image": 6.7,
+   "overlays": 1
+  }
+ ]
+}

@@ -1,0 +1,665 @@
+{
+ "sections": [
+  {
+   "audio": "s00.mp3",
+   "images": [
+    {
+     "n": 1
+    },
+    {
+     "n": 2,
+     "at": "and he already needs"
+    },
+    {
+     "n": 3,
+     "at": "Around him"
+    },
+    {
+     "n": 4,
+     "at": "and not one wall"
+    }
+   ],
+   "title_card": 13.75,
+   "riser_before_title": true,
+   "tail": 1.5,
+   "hook_counter": {
+    "label": "NEIGHBORS",
+    "from": 0,
+    "to": 28,
+    "t0": 0.4,
+    "t1": 3.4,
+    "hold": 2.0
+   },
+   "callouts": [
+    {
+     "text": "HOW DID THEY GET PRIVACY?",
+     "anchor": "So how did ancient humans"
+    }
+   ]
+  },
+  {
+   "audio": "s01.mp3",
+   "images": [
+    {
+     "n": 5
+    },
+    {
+     "n": 6,
+     "at": "So researchers combine"
+    },
+    {
+     "n": 7,
+     "at": "like the Hadza of Tanzania"
+    },
+    {
+     "n": 8,
+     "at": "A study of thirty-two"
+    },
+    {
+     "n": 9,
+     "at": "found that a typical band"
+    },
+    {
+     "n": 10,
+     "at": "about twenty-eight adults"
+    },
+    {
+     "n": 11,
+     "at": "Dozens of people"
+    },
+    {
+     "n": 12,
+     "at": "Imagine sharing"
+    },
+    {
+     "n": 13,
+     "at": "Among the Ju/'hoansi"
+    },
+    {
+     "n": 14,
+     "at": "neighbors could see and hear"
+    },
+    {
+     "n": 15,
+     "at": "most of what everyone else was doing"
+    },
+    {
+     "n": 16,
+     "at": "Yet she found no physical signs"
+    },
+    {
+     "n": 17,
+     "at": "Dave's first fix"
+    },
+    {
+     "n": 18,
+     "at": "a Do Not Disturb sign"
+    },
+    {
+     "n": 19,
+     "at": "Nobody reads it"
+    },
+    {
+     "n": 20,
+     "at": "A toddler eats it"
+    },
+    {
+     "n": 21,
+     "at": "Dave decides he needs"
+    }
+   ],
+   "banner": {
+    "big": "THE CAMP",
+    "title": "NO WALLS, NO LOCKS"
+   },
+   "callouts": [
+    {
+     "text": "NOT PROOF",
+     "anchor": "That is an educated comparison"
+    },
+    {
+     "text": "ABOUT 28 ADULTS",
+     "anchor": "about twenty-eight adults"
+    },
+    {
+     "text": "A CLUE",
+     "anchor": "It's a clue"
+    }
+   ],
+   "bubbles": [
+    {
+     "text": "DO NOT DISTURB",
+     "t0": 64.02,
+     "t1": 66.62,
+     "x": 1100,
+     "y": 300
+    }
+   ],
+   "tail": 0.7,
+   "tally": {
+    "label": "PRIVACY",
+    "before": 0,
+    "add": 0,
+    "total": 5
+   }
+  },
+  {
+   "audio": "s02.mp3",
+   "images": [
+    {
+     "n": 22
+    },
+    {
+     "n": 23,
+     "at": "Among the Hadza"
+    },
+    {
+     "n": 24,
+     "at": "women weave a dome"
+    },
+    {
+     "n": 25,
+     "at": "It's a bedroom you can build"
+    },
+    {
+     "n": 26,
+     "at": "Ice Age builders"
+    },
+    {
+     "n": 27,
+     "at": "out of mammoth bones"
+    },
+    {
+     "n": 28,
+     "at": "Real architecture"
+    },
+    {
+     "n": 29,
+     "at": "but either way"
+    },
+    {
+     "n": 30,
+     "at": "But here is the catch"
+    },
+    {
+     "n": 31,
+     "at": "Then someone outside asks"
+    },
+    {
+     "n": 32,
+     "at": "okay in there"
+    },
+    {
+     "n": 33,
+     "at": "And with a fire inside"
+    },
+    {
+     "n": 34,
+     "at": "the hide turns into a shadow"
+    },
+    {
+     "n": 35,
+     "at": "Walls helped"
+    },
+    {
+     "n": 36,
+     "at": "Fix number one, partial credit"
+    }
+   ],
+   "banner": {
+    "big": "FIX #1",
+    "title": "WALLS"
+   },
+   "callouts": [
+    {
+     "text": "18,000 YEARS AGO",
+     "anchor": "around eighteen thousand years ago"
+    },
+    {
+     "text": "BLOCKS EYES, NOT EARS",
+     "anchor": "A hide wall blocks eyes"
+    }
+   ],
+   "bubbles": [
+    {
+     "text": "I'M FINE!",
+     "t0": 59.1,
+     "t1": 61.7,
+     "x": 1150,
+     "y": 300
+    }
+   ],
+   "tail": 0.7,
+   "tally": {
+    "label": "PRIVACY",
+    "before": 0,
+    "add": 1,
+    "total": 5
+   },
+   "badge_title": "FIX #1",
+   "survival": "PARTIAL CREDIT",
+   "survival_anchor": "Fix number one, partial credit",
+   "badge_scale": 0.62,
+   "badge_dur": 2.5
+  },
+  {
+   "audio": "s03.mp3",
+   "images": [
+    {
+     "n": 37
+    },
+    {
+     "n": 38,
+     "at": "Draper noted"
+    },
+    {
+     "n": 39,
+     "at": "at very low population densities"
+    },
+    {
+     "n": 40,
+     "at": "So even a packed camp"
+    },
+    {
+     "n": 41,
+     "at": "A few minutes' walk"
+    },
+    {
+     "n": 42,
+     "at": "That is an inference"
+    },
+    {
+     "n": 43,
+     "at": "It is probably also"
+    },
+    {
+     "n": 44,
+     "at": "Dave is alone"
+    },
+    {
+     "n": 45,
+     "at": "Then it gets dark"
+    },
+    {
+     "n": 46,
+     "at": "something far away is watching"
+    },
+    {
+     "n": 47,
+     "at": "So Dave runs back"
+    }
+   ],
+   "banner": {
+    "big": "FIX #2",
+    "title": "DISTANCE"
+   },
+   "callouts": [
+    {
+     "text": "AN INFERENCE",
+     "anchor": "That is an inference"
+    }
+   ],
+   "bubbles": [
+    {
+     "text": "NO SIGNAL",
+     "t0": 34.93,
+     "t1": 37.53,
+     "x": 1100,
+     "y": 300
+    }
+   ],
+   "tail": 0.7,
+   "tally": {
+    "label": "PRIVACY",
+    "before": 1,
+    "add": 1,
+    "total": 5
+   },
+   "badge_title": "FIX #2",
+   "survival": "SAFETY LOST",
+   "survival_anchor": "Distance gave privacy",
+   "badge_scale": 0.62,
+   "badge_dur": 2.5
+  },
+  {
+   "audio": "s04.mp3",
+   "images": [
+    {
+     "n": 48
+    },
+    {
+     "n": 49,
+     "at": "Not really"
+    },
+    {
+     "n": 50,
+     "at": "Researchers tracked"
+    },
+    {
+     "n": 51,
+     "at": "Someone was nearly always awake"
+    },
+    {
+     "n": 52,
+     "at": "The authors suggest"
+    },
+    {
+     "n": 53,
+     "at": "people of different ages"
+    },
+    {
+     "n": 54,
+     "at": "sleeping on different schedules"
+    },
+    {
+     "n": 55,
+     "at": "So at night, privacy lost"
+    },
+    {
+     "n": 56,
+     "at": "a built-in security system, and"
+    },
+    {
+     "n": 57,
+     "at": "the security system is grandpa"
+    }
+   ],
+   "banner": {
+    "big": "FIX #3",
+    "title": "NIGHT"
+   },
+   "callouts": [
+    {
+     "text": "ASLEEP TOGETHER: 18 MIN",
+     "anchor": "just eighteen minutes"
+    }
+   ],
+   "bubbles": [
+    {
+     "text": "GOOD NIGHT, GRANDPA",
+     "t0": 34.5,
+     "t1": 37.1,
+     "x": 900,
+     "y": 300
+    }
+   ],
+   "tail": 0.7,
+   "tally": {
+    "label": "PRIVACY",
+    "before": 2,
+    "add": 1,
+    "total": 5
+   },
+   "badge_title": "FIX #3",
+   "survival": "GRANDPA ON WATCH",
+   "survival_anchor": "So at night, privacy lost",
+   "badge_scale": 0.62,
+   "badge_dur": 2.5
+  },
+  {
+   "audio": "s05.mp3",
+   "images": [
+    {
+     "n": 58
+    },
+    {
+     "n": 59,
+     "at": "argued that the need for privacy"
+    },
+    {
+     "n": 60,
+     "at": "People control contact"
+    },
+    {
+     "n": 61,
+     "at": "body language and personal space"
+    },
+    {
+     "n": 62,
+     "at": "In a camp with no walls"
+    },
+    {
+     "n": 63,
+     "at": "lowering your voice"
+    },
+    {
+     "n": 64,
+     "at": "simply being left alone"
+    },
+    {
+     "n": 65,
+     "at": "Nobody can prove it"
+    },
+    {
+     "n": 66,
+     "at": "The rules had a price"
+    },
+    {
+     "n": 67,
+     "at": "Among the Ju/'hoansi"
+    },
+    {
+     "n": 68,
+     "at": "complaints, criticism and gossip"
+    },
+    {
+     "n": 69,
+     "at": "At night the tone changed"
+    },
+    {
+     "n": 70,
+     "at": "stories, songs and dances"
+    }
+   ],
+   "banner": {
+    "big": "FIX #4",
+    "title": "MANNERS"
+   },
+   "callouts": [
+    {
+     "text": "NOT PROVEN",
+     "anchor": "Nobody can prove it"
+    },
+    {
+     "text": "1 IN 3 TALKS: GOSSIP",
+     "anchor": "about a third of daytime"
+    }
+   ],
+   "bubbles": [],
+   "tail": 0.7,
+   "tally": {
+    "label": "PRIVACY",
+    "before": 3,
+    "add": 1,
+    "total": 5
+   },
+   "badge_title": "FIX #4",
+   "survival": "GOSSIP TAX",
+   "survival_anchor": "The rules had a price",
+   "badge_scale": 0.62,
+   "badge_dur": 2.5
+  },
+  {
+   "audio": "s06.mp3",
+   "images": [
+    {
+     "n": 71
+    },
+    {
+     "n": 72,
+     "at": "Among the Hadza"
+    },
+    {
+     "n": 73,
+     "at": "and camps change membership"
+    },
+    {
+     "n": 74,
+     "at": "If someone drives you crazy"
+    },
+    {
+     "n": 75,
+     "at": "This may be why"
+    },
+    {
+     "n": 76,
+     "at": "It was the freedom to go"
+    },
+    {
+     "n": 77,
+     "at": "And a group that people can leave"
+    }
+   ],
+   "banner": {
+    "big": "FIX #5",
+    "title": "THE EXIT"
+   },
+   "callouts": [
+    {
+     "text": "FREE TO LEAVE",
+     "anchor": "If someone drives you crazy"
+    }
+   ],
+   "bubbles": [],
+   "tail": 0.7,
+   "tally": {
+    "label": "PRIVACY",
+    "before": 4,
+    "add": 1,
+    "total": 5
+   },
+   "badge_title": "FIX #5",
+   "survival": "BEST FIX",
+   "survival_anchor": "The privacy wasn't a room",
+   "badge_scale": 0.62,
+   "badge_dur": 2.5
+  },
+  {
+   "audio": "s07.mp3",
+   "images": [
+    {
+     "n": 78
+    },
+    {
+     "n": 79,
+     "at": "you entered by ladder"
+    },
+    {
+     "n": 80,
+     "at": "The rooftops were the streets"
+    },
+    {
+     "n": 81,
+     "at": "And at Skara Brae"
+    },
+    {
+     "n": 82,
+     "at": "stone houses had doors"
+    },
+    {
+     "n": 83,
+     "at": "Dave finally gets his lock"
+    }
+   ],
+   "banner": {
+    "big": "LATER",
+    "title": "THE FIRST DOORS"
+   },
+   "callouts": [
+    {
+     "text": "9,000 YEARS AGO",
+     "anchor": "around nine thousand years ago"
+    },
+    {
+     "text": "5,000 YEARS AGO",
+     "anchor": "about five thousand years ago"
+    }
+   ],
+   "bubbles": [
+    {
+     "text": "ALONE AT LAST",
+     "t0": 31.01,
+     "t1": 33.61,
+     "x": 1150,
+     "y": 300
+    }
+   ],
+   "tail": 0.7,
+   "tally": {
+    "label": "PRIVACY",
+    "before": 5,
+    "add": 0,
+    "total": 5
+   }
+  },
+  {
+   "audio": "s08.mp3",
+   "images": [
+    {
+     "n": 84
+    },
+    {
+     "n": 85,
+     "at": "They mixed a little wall"
+    },
+    {
+     "n": 86,
+     "at": "That's our best reading"
+    },
+    {
+     "n": 87,
+     "at": "Last time we said"
+    },
+    {
+     "n": 88,
+     "at": "It just didn't have a door"
+    }
+   ],
+   "banner": {
+    "big": "THE VERDICT",
+    "title": "FIVE FIXES, NO DOOR"
+   },
+   "callouts": [
+    {
+     "text": "BEST READING, NOT CERTAIN",
+     "anchor": "That's our best reading"
+    }
+   ],
+   "bubbles": [],
+   "tail": 0.9,
+   "tally": {
+    "label": "PRIVACY",
+    "before": 5,
+    "add": 0,
+    "total": 5
+   },
+   "badge_title": "BEST READING",
+   "survival": "PRIVACY WAS A SKILL",
+   "survival_anchor": "It was a skill",
+   "badge_scale": 0.62,
+   "badge_dur": 3.0
+  },
+  {
+   "audio": "s09.mp3",
+   "images": [
+    {
+     "n": 89
+    },
+    {
+     "n": 90,
+     "at": "Next time, Dave finds out"
+    }
+   ],
+   "bubbles": [
+    {
+     "text": "NO SIGNAL",
+     "t0": 1.85,
+     "t1": 4.45,
+     "x": 1150,
+     "y": 300
+    }
+   ],
+   "tail": 2.0
+  }
+ ]
+}

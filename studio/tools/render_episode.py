@@ -160,7 +160,9 @@ def overlays(frame, sec, t, dur, ev, board):
     hc = sec.get("hook_counter")
     if hc and hc["t0"] <= t <= hc["t1"] + hc.get("hold", 2.0) + 0.4:
         pr = max(0.0, min(1.0, (t - hc["t0"]) / (hc["t1"] - hc["t0"])))
-        val = hc["to"] if pr >= 1 else max(hc["to"], int(round(hc["from"] * (hc["to"] / hc["from"]) ** pr)))
+        if pr >= 1: val = hc["to"]
+        elif hc["from"] < hc["to"]: val = min(hc["to"], int(hc["from"] + (hc["to"] - hc["from"]) * ease(pr)))  # count up (e.g. NEIGHBORS 0 -> 28)
+        else: val = max(hc["to"], int(round(hc["from"] * (hc["to"] / hc["from"]) ** pr)))
         lt = t - hc["t1"]; landed = pr >= 1
         fade = 1.0 - ease((t - (hc["t1"] + hc.get("hold", 2.0))) / 0.4); fade = max(0.0, min(1.0, fade))
         sc = (1.0 + 0.35 * max(0.0, 1 - lt / 0.5)) * (back(lt / 0.3) if lt < 0.3 else 1.0) if landed else 1.0
