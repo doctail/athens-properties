@@ -26,14 +26,13 @@ RED, YELLOW, WOOL = (214, 36, 36), (250, 214, 40), (178, 30, 42)
 
 
 ALIAS = {"north_macedonia": "macedonia"}
-_WORLD = None
+_WORLD = {}
 
 
-def world():
-    global _WORLD
-    if _WORLD is None:
-        _WORLD = json.load(open(GEO / "world_50m.json", encoding="utf-8"))
-    return _WORLD
+def world(name="world_50m.json"):
+    if name not in _WORLD:
+        _WORLD[name] = json.load(open(GEO / name, encoding="utf-8"))
+    return _WORLD[name]
 
 
 def font(sz):
@@ -81,7 +80,7 @@ def build_map(el, W, H, rng):
 
     shadow = np.zeros((SH, SW), np.uint8)
     polys = []  # (slug, pts)
-    Wd = world()
+    Wd = world(el.get("world", "world_50m.json"))
     slugs = list(Wd) if el["land"] == "all" else [ALIAS.get(x, x) for x in el["land"]]
     for slug in slugs:
         g = Wd.get(slug)
@@ -206,7 +205,7 @@ class Board:
                     s_, a_, proj, size = build_map(e, W, H, rng)
                     sp = (s_, a_); e["proj"], e["size"] = proj, size
                 else:
-                    sp = text_sprite(e["text"], e.get("size", 60), e.get("style", "strip"))
+                    sp = text_sprite(e["text"], e.get("size", 60), e.get("style", "strip"), tuple(e.get("color", (38, 28, 20))))
                 e["sprite"] = sp
                 e["cx"], e["cy"] = e["x"] * W, e["y"] * H
                 e["acy"] = e["cy"] - sp[0].shape[0] / 2 + 36 if ty == "image" else e["cy"]
@@ -277,6 +276,14 @@ class Board:
                 col = YELLOW if e.get("color") == "yellow" else RED
                 stroke(frame, pts, col, 16, 0.62, p, nr, 1.1)
                 stroke(frame, pts + 3, col, 9, 0.35, p, nr, 1.1)
+            elif ty == "cross":
+                cx, cy = self.pt(e["at"]); rr = e.get("r", 0.05) * W
+                p = C.ease_out(lt / e.get("dur", 0.5))
+                a1 = np.array([[cx - rr, cy - rr * 0.8], [cx + rr, cy + rr * 0.8]], np.float32)
+                a2 = np.array([[cx + rr, cy - rr * 0.8], [cx - rr, cy + rr * 0.8]], np.float32)
+                stroke(frame, np.linspace(a1[0], a1[1], 30), RED, 20, 0.92, min(1, p * 2), nr, 1.4)
+                if p > 0.5:
+                    stroke(frame, np.linspace(a2[0], a2[1], 30), RED, 20, 0.92, min(1, (p - 0.5) * 2), nr, 1.4)
             elif ty == "arrow":
                 P = catmull([self.pt(p) for p in e["pts"]])
                 p = C.ease_out(lt / e.get("dur", 1.0))

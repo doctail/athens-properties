@@ -28,7 +28,11 @@ for g in t["objects"]["countries"]["geometries"]:
     polys = [g["arcs"]] if g["type"] == "Polygon" else g["arcs"]
     coords = [[ring(r) for r in poly] for poly in polys]
     res[re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_")] = {"name": name, "type": "MultiPolygon", "coordinates": coords}
-out = Path(__file__).resolve().parent.parent / "collage" / "geo" / "world_50m.json"
+name = sys.argv[2] if len(sys.argv) > 2 else "world_50m.json"
+if len(sys.argv) > 3:  # filtro bbox lon0,lat0,lon1,lat1: tiene solo i paesi con almeno un punto dentro
+    x0, y0, x1, y1 = map(float, sys.argv[3].split(","))
+    res = {k: v for k, v in res.items() if any(x0 <= x <= x1 and y0 <= y <= y1 for poly in v["coordinates"] for ring in poly for x, y in ring)}
+out = Path(__file__).resolve().parent.parent / "collage" / "geo" / name
 out.parent.mkdir(parents=True, exist_ok=True)
 out.write_text(json.dumps(res, separators=(",", ":")), encoding="utf-8")
 print(len(res), "paesi ->", out, out.stat().st_size // 1024, "KB")
