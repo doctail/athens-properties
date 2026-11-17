@@ -1,0 +1,14 @@
+V001_1: "Terracotta fragments of a kylix (drinking cup)" (565–550 BCE) — The Metropolitan Museum of Art, Open Access (CC0) — https://www.metmuseum.org/art/collection/search/762895
+V001_2: "Terracotta amphora (jar)" (ca. 560–550 BCE) — The Metropolitan Museum of Art, Open Access (CC0) — https://www.metmuseum.org/art/collection/search/254275
+V002_1: "Bronze helmet of Corinthian type" (late 6th century BCE) — The Metropolitan Museum of Art, Open Access (CC0) — https://www.metmuseum.org/art/collection/search/256133
+V002_2: "Bronze helmet of Corinthian type" (ca. 650–600 BCE) — The Metropolitan Museum of Art, Open Access (CC0) — https://www.metmuseum.org/art/collection/search/250922
+V003_1: "Head of a Persian guard" (ca. 486–465 BCE) — The Metropolitan Museum of Art, Open Access (CC0) — https://www.metmuseum.org/art/collection/search/324433
+V003_2: "Relief: figure in a procession" (ca. 405–359 BCE) — The Metropolitan Museum of Art, Open Access (CC0) — https://www.metmuseum.org/art/collection/search/323723
+V004_1: "Brooch with Assyrian and Achaemenid Persian-inspired design" (ca. 1870) — The Metropolitan Museum of Art, Open Access (CC0) — https://www.metmuseum.org/art/collection/search/891657
+V004_2: "Fluted bowl" (ca. 6th–5th century BCE) — The Metropolitan Museum of Art, Open Access (CC0) — https://www.metmuseum.org/art/collection/search/324289
+V005_1: "Terracotta relief probably from a funnel vase" (late 3rd–early 2nd century BCE) — The Metropolitan Museum of Art, Open Access (CC0) — https://www.metmuseum.org/art/collection/search/248736
+V005_2: "Terracotta relief probably from a funnel vase" (late 3rd–early 2nd century BCE) — The Metropolitan Museum of Art, Open Access (CC0) — https://www.metmuseum.org/art/collection/search/248735
+V006_1: "Lead figure of a winged goddess" (late 7th–early 6th century BCE) — The Metropolitan Museum of Art, Open Access (CC0) — https://www.metmuseum.org/art/collection/search/251570
+V006_2: "Lead figure of a woman" (late 7th–6th century BCE) — The Metropolitan Museum of Art, Open Access (CC0) — https://www.metmuseum.org/art/collection/search/251577
+V007_1: "Terracotta lekythos (oil flask)" (ca. 480–470 BCE) — The Metropolitan Museum of Art, Open Access (CC0) — https://www.metmuseum.org/art/collection/search/251932
+V007_2: "Terracotta krater" (ca. 775 BCE) — The Metropolitan Museum of Art, Open Access (CC0) — https://www.metmuseum.org/art/collection/search/253422

@@ -96,7 +96,7 @@ def main():
         for n, c in enumerate(cands, 1):
             f = outdir / f"{vid}_{n}.jpg"
             try:
-                time.sleep(4.0)
+                time.sleep(6.0)
                 f.write_bytes(get(c["url"]))
                 c["file"] = f.name
                 credits.append(f'{vid}_{n}: "{c["title"][5:]}" — {c["author"] or "unknown"} — {c["license"]} — {c["page"]}')
