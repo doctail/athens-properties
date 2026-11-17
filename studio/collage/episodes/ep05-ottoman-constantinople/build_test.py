@@ -47,11 +47,34 @@ def LB(v, id_, text, phrase, src, dur=2.8, size=56, rot=-2, frm=0, off=0.0, colo
 
 
 PAGES = []
+# Movimento degli attori (usato SOLO se esiste lo sfondo senza personaggi <FLOW>/bg/Vnnn_bg.png|jpg, richiesto in flow-sfondi-test.md)
+ACT = {
+    "002a": {"from": "left", "dist": 0.45, "t": 0.2, "dur": 1.8},
+    "003a": {"from": "left", "dist": 0.0, "t": 0.0, "dur": 0.1, "drift": 0.012, "shadow": False},
+    "004a": {"from": "auto", "dist": 0.35, "t": 0.3, "stagger": 0.45, "dur": 1.4, "bob": 4, "split": True, "shadow": False},
+    "004b": {"from": "auto", "dist": 0.40, "t": 0.2, "stagger": 0.35, "dur": 1.5, "bob": 4, "split": True, "shadow": False, "drift": 0.01},
+    "005": {"from": "left", "dist": 0.30, "t": 0.3, "dur": 1.3},
+    "008": {"from": "left", "dist": 0.30, "t": 0.3, "dur": 1.3},
+    "009": {"from": "left", "dist": 0.0, "t": 0.0, "dur": 0.1, "split": True, "bob": 4, "drift": 0.01, "shadow": False},
+}
+
+
+def bg_path(v):
+    for ext in ("png", "jpg", "jpeg"):
+        p = os.path.join(FLOW, "bg", f"V{v}_bg.{ext}")
+        if os.path.exists(p): return p
+    return None
+
+
 def flow(v, shots, cut, els_fn):
     SHOTS[v] = [(T(v, p), cx, cy, z) for p, cx, cy, z in shots]
     p = {"id": f"V{v}", "audio": os.path.join(HERE, "audio", f"V{v}.mp3"), "image": os.path.join(FLOW, "all", f"V{v}.jpg"),
          "shots": [list(s) for s in SHOTS[v]], "fgpush": 0.035}
-    if cut: p["cut"] = os.path.join(FLOW, f"cut_V{v}.png")
+    bgp = bg_path(v)
+    if bgp and v in ACT:
+        p["bg"], p["act"] = bgp, ACT[v]
+        print("attori attivi:", v)
+    elif cut: p["cut"] = os.path.join(FLOW, f"cut_V{v}.png")
     p["boards"] = [{"t0": 0, "els": els_fn(), "dur": 1}]
     PAGES.append(p)
 

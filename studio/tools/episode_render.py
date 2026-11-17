@@ -56,6 +56,60 @@ def to_screen(shot, sx, sy, W0, H0):
     return (sx * W0 - X0) / cw, (sy * H0 - Y0) / ch
 
 
+def ease_back(x):
+    x = min(1.0, max(0.0, x)); c1 = 1.1; c3 = c1 + 1
+    return 1 + c3 * (x - 1) ** 3 + c1 * (x - 1) ** 2
+
+
+def blit(scene, spr, x, y):
+    """Compone uno sprite premoltiplicato RGBA su scene (RGB) con clipping; x,y = angolo in alto a sinistra."""
+    H, W = scene.shape[:2]; h, w = spr.shape[:2]
+    x0, y0, x1, y1 = max(x, 0), max(y, 0), min(x + w, W), min(y + h, H)
+    if x1 <= x0 or y1 <= y0:
+        return
+    s = spr[y0 - y:y1 - y, x0 - x:x1 - x]
+    a = s[..., 3:4].astype(np.uint16)
+    d = scene[y0:y1, x0:x1].astype(np.uint16)
+    scene[y0:y1, x0:x1] = (d * (255 - a) // 255 + s[..., :3]).clip(0, 255).astype(np.uint8)
+
+
+def shade(scene, shd, x, y, k=0.30):
+    H, W = scene.shape[:2]; h, w = shd.shape[:2]
+    x0, y0, x1, y1 = max(x, 0), max(y, 0), min(x + w, W), min(y + h, H)
+    if x1 <= x0 or y1 <= y0:
+        return
+    a = shd[y0 - y:y1 - y, x0 - x:x1 - x].astype(np.float32)[..., None] / 255.0
+    scene[y0:y1, x0:x1] = (scene[y0:y1, x0:x1].astype(np.float32) * (1 - k * a)).astype(np.uint8)
+
+
+def extract_actors(orig, bg, cut_a, act):
+    """Attori = cio' che e' sparito dallo sfondo (differenza orig-bg), eventualmente ristretto al ritaglio automatico."""
+    d = np.abs(orig.astype(np.int16) - bg.astype(np.int16)).max(axis=2).astype(np.uint8)
+    d = cv2.GaussianBlur(d, (0, 0), 2.0)
+    m = (d > act.get("thr", 28)).astype(np.uint8) * 255
+    m = cv2.morphologyEx(m, cv2.MORPH_CLOSE, np.ones((9, 9), np.uint8))
+    if act.get("within_cut") and cut_a is not None:
+        m = cv2.bitwise_and(m, cv2.dilate((cut_a > 40).astype(np.uint8) * 255, np.ones((3, 3), np.uint8), iterations=6))
+    n, lbl, st, cen = cv2.connectedComponentsWithStats((m > 0).astype(np.uint8))
+    area = m.shape[0] * m.shape[1]
+    comps = [i for i in range(1, n) if st[i, 4] >= act.get("min_area", 0.0015) * area]
+    if not act.get("split"):
+        comps = [None] if comps else []
+    out = []
+    for i in comps:
+        mk = (np.isin(lbl, [j for j in range(1, n) if st[j, 4] >= act.get("min_area", 0.0015) * area]) if i is None else (lbl == i)).astype(np.uint8) * 255
+        mk = cv2.dilate(mk, np.ones((3, 3), np.uint8), iterations=2)
+        mk = cv2.GaussianBlur(mk, (0, 0), 1.2)
+        ys, xs = np.where(mk > 8)
+        x0, x1, y0, y1 = xs.min(), xs.max() + 1, ys.min(), ys.max() + 1
+        a = mk[y0:y1, x0:x1]
+        spr = np.dstack([C.premult(orig[y0:y1, x0:x1], a), a])
+        shd = cv2.GaussianBlur(np.roll(np.roll(np.pad(a, 30), 14, 0), 9, 1), (0, 0), 14)
+        out.append({"x": int(x0), "y": int(y0), "spr": spr, "shd": shd, "cx": (x0 + x1) / 2 / orig.shape[1]})
+    out.sort(key=lambda o: o["cx"])
+    return out
+
+
 class Page:
     TR = 0.40  # durata dello scorrimento tra due inquadrature
 
@@ -71,6 +125,16 @@ class Page:
             self.H0, self.W0 = self.base.shape[:2]
             if spec.get("shots"):
                 self.shots = [tuple(x) for x in spec["shots"]]
+            self.actors, self.act = [], spec.get("act", {})
+            if spec.get("bg"):
+                bgim = cv2.cvtColor(cv2.imread(spec["bg"]), cv2.COLOR_BGR2RGB)
+                bgim = cv2.resize(bgim, (self.W0, self.H0), interpolation=cv2.INTER_CUBIC)
+                cut_a = None
+                if spec.get("cut") and self.act.get("within_cut"):
+                    cut_a = clean_alpha(cv2.imread(spec["cut"], cv2.IMREAD_UNCHANGED)[..., 3])
+                self.actors = extract_actors(self.base, bgim, cut_a, self.act)
+                self.orig_base, self.base = self.base, bgim
+                spec = dict(spec); spec.pop("cut", None)
             if spec.get("cut"):
                 c = cv2.imread(spec["cut"], cv2.IMREAD_UNCHANGED)
                 a = clean_alpha(c[..., 3])
@@ -105,7 +169,26 @@ class Page:
             def M(zz):
                 X0, Y0, cw, ch = camera_rect(cx, cy, zz, self.W0, self.H0)
                 return np.array([[W / cw, 0, -X0 * W / cw], [0, H / ch, -Y0 * H / ch]], np.float64)
-            fr = cv2.warpAffine(self.base, M(z), (W, H), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
+            src = self.base
+            if self.actors:
+                src = self.base.copy(); act = self.act
+                d_ = {"left": (-1, 0), "right": (1, 0), "top": (0, -1), "bottom": (0, 1)}
+                for k, ac in enumerate(self.actors):
+                    te = act.get("t", 0.3) + k * act.get("stagger", 0.0)
+                    if tt < te:
+                        continue
+                    side = act.get("from", "left")
+                    if side == "auto":
+                        side = "left" if ac["cx"] < 0.5 else "right"
+                    vx, vy = d_.get(side, (0, 0))
+                    e = ease_back((tt - te) / act.get("dur", 1.2))
+                    dist = act.get("dist", 0.0)
+                    ox = int(vx * dist * self.W0 * (1 - e) + act.get("drift", 0.0) * self.W0 * (tt - te) * (1 if side != "right" else -1) * (1 if act.get("drift_dir", 1) > 0 else -1))
+                    oy = int(vy * dist * self.H0 * (1 - e) + act.get("bob", 0) * np.sin(2 * np.pi * tt / 2.6 + k * 1.3))
+                    if act.get("shadow", True):
+                        shade(src, ac["shd"], ac["x"] - 30 + ox, ac["y"] - 30 + oy)
+                    blit(src, ac["spr"], ac["x"] + ox, ac["y"] + oy)
+            fr = cv2.warpAffine(src, M(z), (W, H), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
             if self.fg is not None:
                 e = C.ease_out(min(1.0, tt / max(self.dur * 0.6, 0.1)))
                 i = max(k for k, sh_ in enumerate(self.shots) if sh_[0] <= tt + 1e-6)
