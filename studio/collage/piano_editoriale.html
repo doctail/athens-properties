@@ -1,0 +1,3298 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Piano editoriale — History Paper-Collage Channel</title>
+<style>
+  :root {
+    --bg: #12100e;
+    --bg-card: #1c1916;
+    --border: #322c26;
+    --text: #ece6dd;
+    --text-dim: #a89d8e;
+    --accent: #d9a441;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+  header {
+    padding: 48px 24px 32px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, #1a1613 0%, #12100e 100%);
+  }
+  header h1 {
+    font-size: 2rem;
+    margin: 0 0 8px;
+    color: var(--accent);
+    letter-spacing: 0.5px;
+  }
+  header p {
+    color: var(--text-dim);
+    margin: 4px 0;
+    font-size: 0.95rem;
+  }
+  .meta-strip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .meta-pill {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+  }
+  .meta-pill b { color: var(--text); }
+  main {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+  }
+  h2 {
+    font-size: 1.4rem;
+    color: var(--accent);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+    margin-top: 56px;
+  }
+  .note {
+    background: #241f19;
+    border-left: 3px solid var(--accent);
+    padding: 14px 18px;
+    font-size: 0.92rem;
+    color: var(--text-dim);
+    margin: 16px 0 24px;
+  }
+  .note b { color: var(--text); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    margin-top: 12px;
+  }
+  th {
+    text-align: left;
+    padding: 10px 8px;
+    border-bottom: 2px solid var(--border);
+    color: var(--accent);
+    font-weight: normal;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  td {
+    padding: 9px 8px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+  }
+  tr:hover td { background: #1e1a16; }
+  .c-idx, .c-num, .p-idx, .p-num { color: var(--text-dim); white-space: nowrap; }
+  .c-time { color: var(--text-dim); white-space: nowrap; }
+  .c-date { white-space: nowrap; }
+  .tag {
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
+  .calendar-wrap {
+    max-height: 640px;
+    overflow-y: auto;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+  .calendar-wrap table { margin-top: 0; }
+  .calendar-wrap thead th {
+    position: sticky;
+    top: 0;
+    background: var(--bg-card);
+    z-index: 1;
+  }
+  .toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 16px 0 8px;
+  }
+  .toc-link {
+    border: 1px solid var(--border);
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.88rem;
+  }
+  .toc-count { color: var(--text-dim); }
+  .playlist { margin-top: 40px; }
+  .playlist h3 {
+    font-size: 1.15rem;
+    margin-bottom: 4px;
+  }
+  .playlist .count { color: var(--text-dim); font-size: 0.85rem; font-weight: normal; }
+  .playlist-table { font-size: 0.85rem; }
+  .desc-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  .desc-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+  }
+  .desc-card h4 { margin: 0 0 4px; font-size: 1.05rem; }
+  .desc-count { color: var(--text-dim); font-size: 0.8rem; margin: 0 0 10px; }
+  .desc-text { margin: 0; color: var(--text); font-size: 0.92rem; }
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    padding: 24px;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>History Paper-Collage Channel</h1>
+  <p>Piano editoriale — 200 video, ordine di pubblicazione per crescita organica</p>
+  <div class="meta-strip">
+    <div class="meta-pill">Inizio: <b>06 ott 2026</b></div>
+    <div class="meta-pill">Fine stimata: <b>01 set 2028</b></div>
+    <div class="meta-pill">Cadenza: <b>2 video / settimana</b></div>
+    <div class="meta-pill">Giorni: <b>Martedì · Venerdì</b></div>
+    <div class="meta-pill">Orario: <b>15:00 Italia</b> (9:00 ET USA)</div>
+  </div>
+</header>
+
+<main>
+
+  <h2>Metodologia</h2>
+  <div class="note">
+    <b>Come è stato costruito l'ordine.</b> Ogni titolo ha ricevuto un punteggio "hook" basato su:
+    nomi/eventi ad alto riconoscimento globale (Sparta, Alessandro, Cleopatra, Annibale, Vichinghi,
+    Napoleone, Pearl Harbor, D-Day, Muro di Berlino, ecc.), presenza di elementi "mistero" (che
+    convertono bene su YouTube), e categoria del video — "Decisioni" e "Guerre/Misteri/Persone"
+    ricevono un bonus rispetto a "How it worked" (spiegazioni tecniche/ingegneristiche), che
+    trattengono bene chi già segue il canale ma agganciano meno il traffico freddo.<br><br>
+    <b>Playlist</b> = le 5 macro-ere già presenti nel documento originale, ordinate internamente
+    per punteggio hook decrescente (chi entra da un video forte trova altri titoli forti).<br><br>
+    <b>Calendario di pubblicazione</b> = rotazione tra le 5 ere (round-robin, dal punteggio più
+    alto al più basso in ciascuna), per non far vivere il canale di sola storia antica per mesi
+    prima di toccare il '900. Nota: la Storia Contemporanea (playlist V) ha punteggi hook
+    strutturalmente più bassi — sono temi reali ma meno "virali" (economia, globalizzazione) — è
+    normale che compaiano più diradati nel calendario.<br><br>
+    <b>Da rivedere dopo 8-10 settimane</b> con YouTube Analytics (CTR e retention reali): questo
+    ordine è una stima pre-lancio, non una verità definitiva.
+  </div>
+
+  <h2>Calendario di pubblicazione (200 video)</h2>
+  <div class="note">
+    Fuso orario: Italia è avanti di ~6 ore rispetto all'Eastern Time USA tutto l'anno (tranne 1-2
+    settimane a marzo/novembre per il cambio ora sfalsato UE/USA — controlla in quei periodi).
+    15:00 Italia = 9:00 ET / 6:00 PT: il video ha l'intera giornata USA per accumulare segnale
+    prima del prime time serale, quando la piattaforma spinge di più.
+  </div>
+  <div class="calendar-wrap">
+    <table>
+      <thead>
+        <tr><th>#</th><th>Data</th><th>Ora</th><th>Video</th><th>Titolo</th><th>Era</th><th>Categoria</th></tr>
+      </thead>
+      <tbody>
+        
+      <tr>
+        <td class="c-idx">1</td>
+        <td class="c-date">Mar 06 ott 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#4</td>
+        <td class="c-title">Why Leonidas Stayed at Thermopylae</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">2</td>
+        <td class="c-date">Ven 09 ott 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#174</td>
+        <td class="c-title">How the Battle of Stalingrad Changed World War II</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">3</td>
+        <td class="c-date">Mar 13 ott 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#83</td>
+        <td class="c-title">How Genghis Khan United the Mongols</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">4</td>
+        <td class="c-date">Ven 16 ott 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#181</td>
+        <td class="c-title">The Decision That Changed China Forever</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">5</td>
+        <td class="c-date">Mar 20 ott 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#138</td>
+        <td class="c-title">How the Ottoman Empire Conquered Constantinople</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">6</td>
+        <td class="c-date">Ven 23 ott 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#1</td>
+        <td class="c-title">The Decision That Started Rome&#39;s Civil War</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">7</td>
+        <td class="c-date">Mar 27 ott 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#176</td>
+        <td class="c-title">How the Korean War Became a Cold War Conflict</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">8</td>
+        <td class="c-date">Ven 30 ott 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#92</td>
+        <td class="c-title">How the Crusaders Captured Jerusalem</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">9</td>
+        <td class="c-date">Mar 03 nov 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#182</td>
+        <td class="c-title">Why China Opened Its Economy</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">10</td>
+        <td class="c-date">Ven 06 nov 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#134</td>
+        <td class="c-title">How the French Revolution Overthrew the Monarchy</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">11</td>
+        <td class="c-date">Mar 10 nov 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#7</td>
+        <td class="c-title">Why Alexander Invaded the Persian Empire</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">12</td>
+        <td class="c-date">Ven 13 nov 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#177</td>
+        <td class="c-title">How the Cuban Missile Crisis Almost Started World War III</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">13</td>
+        <td class="c-date">Mar 17 nov 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#100</td>
+        <td class="c-title">The Mystery of the Disappearance of the Norse in Greenland</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">14</td>
+        <td class="c-date">Ven 20 nov 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#183</td>
+        <td class="c-title">The Decision That Ended Apartheid</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">15</td>
+        <td class="c-date">Mar 24 nov 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#103</td>
+        <td class="c-title">Why Columbus Sailed West</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">16</td>
+        <td class="c-date">Ven 27 nov 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#9</td>
+        <td class="c-title">Why Sparta Declared War on Athens</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">17</td>
+        <td class="c-date">Mar 01 dic 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#147</td>
+        <td class="c-title">Why Hitler Invaded the Soviet Union</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">18</td>
+        <td class="c-date">Ven 04 dic 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#57</td>
+        <td class="c-title">Why Saladin Decided to Retake Jerusalem</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">19</td>
+        <td class="c-date">Mar 08 dic 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#184</td>
+        <td class="c-title">Why Germany Reunified</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">20</td>
+        <td class="c-date">Ven 11 dic 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#106</td>
+        <td class="c-title">Why England Fought the Spanish Armada</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">21</td>
+        <td class="c-date">Mar 15 dic 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#6</td>
+        <td class="c-title">Why Rome Refused to Negotiate With Hannibal</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">22</td>
+        <td class="c-date">Ven 18 dic 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#148</td>
+        <td class="c-title">Why the Allies Chose Normandy for D-Day</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">23</td>
+        <td class="c-date">Mar 22 dic 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#58</td>
+        <td class="c-title">Why the Fourth Crusade Attacked Constantinople</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">24</td>
+        <td class="c-date">Ven 25 dic 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#185</td>
+        <td class="c-title">Why the Soviet Union Let Eastern Europe Go</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">25</td>
+        <td class="c-date">Mar 29 dic 2026</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#108</td>
+        <td class="c-title">Why Napoleon Invaded Russia</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">26</td>
+        <td class="c-date">Ven 01 gen 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#35</td>
+        <td class="c-title">How Hannibal Became Rome&#39;s Greatest Enemy</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">27</td>
+        <td class="c-date">Mar 05 gen 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#178</td>
+        <td class="c-title">How the Vietnam War Became America&#39;s Longest Conflict</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">28</td>
+        <td class="c-date">Ven 08 gen 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#93</td>
+        <td class="c-title">How the Mongols Defeated the Khwarazmian Empire</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">29</td>
+        <td class="c-date">Mar 12 gen 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#191</td>
+        <td class="c-title">How the Soviet Union Disappeared in One Year</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">30</td>
+        <td class="c-date">Ven 15 gen 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#109</td>
+        <td class="c-title">Why Napoleon Sold Louisiana</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">31</td>
+        <td class="c-date">Mar 19 gen 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#37</td>
+        <td class="c-title">How Alexander Built an Empire in 11 Years</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">32</td>
+        <td class="c-date">Ven 22 gen 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#145</td>
+        <td class="c-title">Why Hitler Invaded Poland</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">33</td>
+        <td class="c-date">Mar 26 gen 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#86</td>
+        <td class="c-title">How Joan of Arc Changed the Hundred Years&#39; War</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">34</td>
+        <td class="c-date">Ven 29 gen 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#194</td>
+        <td class="c-title">How China Became an Economic Superpower</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">35</td>
+        <td class="c-date">Mar 02 feb 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#110</td>
+        <td class="c-title">Why Napoleon Returned From Exile</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">36</td>
+        <td class="c-date">Ven 05 feb 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#39</td>
+        <td class="c-title">How Cleopatra Fought to Keep Egypt Independent</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">37</td>
+        <td class="c-date">Mar 09 feb 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#146</td>
+        <td class="c-title">Why Japan Attacked Pearl Harbor</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">38</td>
+        <td class="c-date">Ven 12 feb 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#98</td>
+        <td class="c-title">Why the Knights Templar Became So Powerful</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">39</td>
+        <td class="c-date">Mar 16 feb 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#196</td>
+        <td class="c-title">How the Computer Changed the Modern World</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">40</td>
+        <td class="c-date">Ven 19 feb 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#125</td>
+        <td class="c-title">How Napoleon Built His European Empire</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">41</td>
+        <td class="c-date">Mar 23 feb 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#45</td>
+        <td class="c-title">How the Spartans Lost Their Military Dominance</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">42</td>
+        <td class="c-date">Ven 26 feb 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#149</td>
+        <td class="c-title">Why the United States Used the Atomic Bomb</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">43</td>
+        <td class="c-date">Mar 02 mar 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#95</td>
+        <td class="c-title">How the Black Death Changed European Society</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">44</td>
+        <td class="c-date">Ven 05 mar 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#197</td>
+        <td class="c-title">How the Smartphone Changed Human Communication</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">45</td>
+        <td class="c-date">Mar 09 mar 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#139</td>
+        <td class="c-title">How Napoleon Became Emperor of France</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">46</td>
+        <td class="c-date">Ven 12 mar 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#48</td>
+        <td class="c-title">The Mystery of the Minoan Civilization</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">47</td>
+        <td class="c-date">Mar 16 mar 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#179</td>
+        <td class="c-title">How the Berlin Wall Divided Europe</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">48</td>
+        <td class="c-date">Ven 19 mar 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#99</td>
+        <td class="c-title">What Happened to the Knights Templar</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">49</td>
+        <td class="c-date">Mar 23 mar 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#198</td>
+        <td class="c-title">How the Internet Changed the Way the World Trades</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">50</td>
+        <td class="c-date">Ven 26 mar 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#126</td>
+        <td class="c-title">Why the Spanish Armada Failed</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">51</td>
+        <td class="c-date">Mar 30 mar 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#50</td>
+        <td class="c-title">What Really Happened to the Library of Alexandria</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">52</td>
+        <td class="c-date">Ven 02 apr 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#165</td>
+        <td class="c-title">Why the Axis Powers Lost World War II</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">53</td>
+        <td class="c-date">Mar 06 apr 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#54</td>
+        <td class="c-title">Why the Vikings Began Raiding England</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">54</td>
+        <td class="c-date">Ven 09 apr 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#199</td>
+        <td class="c-title">How Air Travel Changed the Modern World</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">55</td>
+        <td class="c-date">Mar 13 apr 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#129</td>
+        <td class="c-title">Why Napoleon&#39;s Grand Army Collapsed</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">56</td>
+        <td class="c-date">Ven 16 apr 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#5</td>
+        <td class="c-title">Why Hannibal Chose to Cross the Alps</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">57</td>
+        <td class="c-date">Mar 20 apr 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#141</td>
+        <td class="c-title">The Decision That Started World War I</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">58</td>
+        <td class="c-date">Ven 23 apr 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#56</td>
+        <td class="c-title">Why the First Crusade Was Launched</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">59</td>
+        <td class="c-date">Mar 27 apr 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#200</td>
+        <td class="c-title">How the Container Changed the Global Economy</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">60</td>
+        <td class="c-date">Ven 30 apr 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#135</td>
+        <td class="c-title">How the American Revolution Became a Global War</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">61</td>
+        <td class="c-date">Mar 04 mag 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#8</td>
+        <td class="c-title">Why Alexander Turned Back From India</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">62</td>
+        <td class="c-date">Ven 07 mag 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#143</td>
+        <td class="c-title">Why the United States Entered World War I</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">63</td>
+        <td class="c-date">Mar 11 mag 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#59</td>
+        <td class="c-title">Why the Mongols Invaded Europe</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">64</td>
+        <td class="c-date">Ven 14 mag 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#188</td>
+        <td class="c-title">How China Became the World&#39;s Factory</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">65</td>
+        <td class="c-date">Mar 18 mag 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#101</td>
+        <td class="c-title">Why Henry VIII Broke With Rome</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">66</td>
+        <td class="c-date">Ven 21 mag 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#36</td>
+        <td class="c-title">How Scipio Defeated Hannibal</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">67</td>
+        <td class="c-date">Mar 25 mag 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#144</td>
+        <td class="c-title">Why Russia Left World War I</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">68</td>
+        <td class="c-date">Ven 28 mag 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#60</td>
+        <td class="c-title">Why the Mongols Suddenly Turned Back</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">69</td>
+        <td class="c-date">Mar 01 giu 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#192</td>
+        <td class="c-title">How the European Union Became a Global Power</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">70</td>
+        <td class="c-date">Ven 04 giu 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#107</td>
+        <td class="c-title">Why the Thirty Years&#39; War Began</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">71</td>
+        <td class="c-date">Mar 08 giu 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#41</td>
+        <td class="c-title">How the Battle of Marathon Changed Greece</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">72</td>
+        <td class="c-date">Ven 11 giu 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#171</td>
+        <td class="c-title">How World War I Became a Global War</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">73</td>
+        <td class="c-date">Mar 15 giu 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#75</td>
+        <td class="c-title">How the Mongols Created the Largest Land Empire</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">74</td>
+        <td class="c-date">Ven 18 giu 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#193</td>
+        <td class="c-title">How Japan Became an Economic Giant</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">75</td>
+        <td class="c-date">Mar 22 giu 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#121</td>
+        <td class="c-title">How the Ottoman Empire Became a Global Power</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">76</td>
+        <td class="c-date">Ven 25 giu 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#42</td>
+        <td class="c-title">How the Battle of Salamis Saved Greece</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">77</td>
+        <td class="c-date">Mar 29 giu 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#172</td>
+        <td class="c-title">How the Battle of the Somme Changed Warfare</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">78</td>
+        <td class="c-date">Ven 02 lug 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#84</td>
+        <td class="c-title">How Saladin Built His Power</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">79</td>
+        <td class="c-date">Mar 06 lug 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#195</td>
+        <td class="c-title">How Globalization Reshaped the World</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">80</td>
+        <td class="c-date">Ven 09 lug 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#133</td>
+        <td class="c-title">How the Scientific Revolution Changed Human Knowledge</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">81</td>
+        <td class="c-date">Mar 13 lug 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#43</td>
+        <td class="c-title">How Rome Won the First Punic War</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">82</td>
+        <td class="c-date">Ven 16 lug 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#173</td>
+        <td class="c-title">How Germany Was Defeated in World War I</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">83</td>
+        <td class="c-date">Mar 20 lug 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#85</td>
+        <td class="c-title">How Richard the Lionheart Became a Crusader King</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">84</td>
+        <td class="c-date">Ven 23 lug 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#186</td>
+        <td class="c-title">How the Internet Went From Military Project to Global Network</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">85</td>
+        <td class="c-date">Mar 27 lug 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#136</td>
+        <td class="c-title">How the Haitian Revolution Changed the Atlantic World</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">86</td>
+        <td class="c-date">Ven 30 lug 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#31</td>
+        <td class="c-title">How Cyrus the Great Built the Persian Empire</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">87</td>
+        <td class="c-date">Mar 03 ago 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#175</td>
+        <td class="c-title">How the Allies Won the Battle of the Atlantic</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">88</td>
+        <td class="c-date">Ven 06 ago 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#87</td>
+        <td class="c-title">How Mehmed II Became the Conqueror of Constantinople</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">89</td>
+        <td class="c-date">Mar 10 ago 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#187</td>
+        <td class="c-title">How Container Shipping Changed Global Trade</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">90</td>
+        <td class="c-date">Ven 13 ago 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#140</td>
+        <td class="c-title">How the Industrial Revolution Began in Britain</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">91</td>
+        <td class="c-date">Mar 17 ago 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#44</td>
+        <td class="c-title">How Rome Defeated Macedonia</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">92</td>
+        <td class="c-date">Ven 20 ago 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#180</td>
+        <td class="c-title">How the Soviet War in Afghanistan Changed the Cold War</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">93</td>
+        <td class="c-date">Mar 24 ago 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#89</td>
+        <td class="c-title">How Alfred the Great Stopped the Vikings</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">94</td>
+        <td class="c-date">Ven 27 ago 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#189</td>
+        <td class="c-title">How the European Union Was Built</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">95</td>
+        <td class="c-date">Mar 31 ago 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#127</td>
+        <td class="c-title">Why the Mughal Empire Became So Powerful</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">96</td>
+        <td class="c-date">Ven 03 set 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#46</td>
+        <td class="c-title">What Daily Life Was Really Like in Ancient Rome</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">97</td>
+        <td class="c-date">Mar 07 set 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#170</td>
+        <td class="c-title">Why the Cold War Finally Ended</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">98</td>
+        <td class="c-date">Ven 10 set 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#90</td>
+        <td class="c-title">How Marco Polo Became the Most Famous Traveler of the Middle Ages</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">99</td>
+        <td class="c-date">Mar 14 set 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#190</td>
+        <td class="c-title">How Global Supply Chains Changed the World</td>
+        <td class="c-era"><span class="tag" style="background:#2b8a5e22;color:#2b8a5e;border:1px solid #2b8a5e55">Contemporary History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">100</td>
+        <td class="c-date">Ven 17 set 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#130</td>
+        <td class="c-title">Why the Spanish Empire Lost Its Dominance</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">101</td>
+        <td class="c-date">Mar 21 set 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#47</td>
+        <td class="c-title">What Daily Life Was Really Like in Ancient Athens</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">102</td>
+        <td class="c-date">Ven 24 set 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#150</td>
+        <td class="c-title">Why the Soviet Union Built the Berlin Blockade</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">103</td>
+        <td class="c-date">Mar 28 set 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#76</td>
+        <td class="c-title">Why the Crusader States Disappeared</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">104</td>
+        <td class="c-date">Ven 01 ott 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#102</td>
+        <td class="c-title">Why Martin Luther Refused to Recant</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">105</td>
+        <td class="c-date">Mar 05 ott 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#2</td>
+        <td class="c-title">Why Athens Chose to Build a Navy</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">106</td>
+        <td class="c-date">Ven 08 ott 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#154</td>
+        <td class="c-title">How D-Day Was Planned</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">107</td>
+        <td class="c-date">Mar 12 ott 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#61</td>
+        <td class="c-title">How Constantinople&#39;s Walls Defended an Empire</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">108</td>
+        <td class="c-date">Ven 15 ott 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#104</td>
+        <td class="c-title">Why Portugal Searched for a Route Around Africa</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">109</td>
+        <td class="c-date">Mar 19 ott 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#3</td>
+        <td class="c-title">Why Xerxes Invaded Greece</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">110</td>
+        <td class="c-date">Ven 22 ott 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#156</td>
+        <td class="c-title">How the Manhattan Project Built the Atomic Bomb</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">111</td>
+        <td class="c-date">Mar 26 ott 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#74</td>
+        <td class="c-title">How the Vikings Built Settlements Across Europe</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">112</td>
+        <td class="c-date">Ven 29 ott 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#105</td>
+        <td class="c-title">Why Spain Funded the Conquest of the Americas</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">113</td>
+        <td class="c-date">Mar 02 nov 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#10</td>
+        <td class="c-title">Why Rome Destroyed Carthage</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">114</td>
+        <td class="c-date">Ven 05 nov 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#157</td>
+        <td class="c-title">How the Berlin Airlift Kept a City Alive</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">115</td>
+        <td class="c-date">Mar 09 nov 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#80</td>
+        <td class="c-title">Why the Byzantine Empire Finally Collapsed</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">116</td>
+        <td class="c-date">Ven 12 nov 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#122</td>
+        <td class="c-title">How Spain Built a Global Empire</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">117</td>
+        <td class="c-date">Mar 16 nov 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#22</td>
+        <td class="c-title">How the Persian Empire Became the World&#39;s Largest</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">118</td>
+        <td class="c-date">Ven 19 nov 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#159</td>
+        <td class="c-title">How the Space Race Reached the Moon</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">119</td>
+        <td class="c-date">Mar 23 nov 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#91</td>
+        <td class="c-title">How the Battle of Hastings Changed England</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">120</td>
+        <td class="c-date">Ven 26 nov 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#131</td>
+        <td class="c-title">How the Renaissance Changed Europe</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">121</td>
+        <td class="c-date">Mar 30 nov 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#33</td>
+        <td class="c-title">How Pericles Transformed Athens</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">122</td>
+        <td class="c-date">Ven 03 dic 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#167</td>
+        <td class="c-title">How China Became a Communist State</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">123</td>
+        <td class="c-date">Mar 07 dic 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#94</td>
+        <td class="c-title">How the Hundred Years&#39; War Changed Warfare</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">124</td>
+        <td class="c-date">Ven 10 dic 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#132</td>
+        <td class="c-title">How the Protestant Reformation Split Europe</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">125</td>
+        <td class="c-date">Mar 14 dic 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#34</td>
+        <td class="c-title">How Themistocles Saved Athens</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">126</td>
+        <td class="c-date">Ven 17 dic 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#166</td>
+        <td class="c-title">Why the British Empire Began to Collapse</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">127</td>
+        <td class="c-date">Mar 21 dic 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#51</td>
+        <td class="c-title">Why Constantine Moved the Roman Capital East</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">128</td>
+        <td class="c-date">Ven 24 dic 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#137</td>
+        <td class="c-title">How the Age of Exploration Connected the Continents</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">129</td>
+        <td class="c-date">Mar 28 dic 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#38</td>
+        <td class="c-title">How Augustus Transformed Rome</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">130</td>
+        <td class="c-date">Ven 31 dic 2027</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#168</td>
+        <td class="c-title">Why the Soviet Union Collapsed</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">131</td>
+        <td class="c-date">Mar 04 gen 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#52</td>
+        <td class="c-title">Why Rome Accepted Christianity</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">132</td>
+        <td class="c-date">Ven 07 gen 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#128</td>
+        <td class="c-title">Why the Dutch Golden Age Eventually Declined</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">133</td>
+        <td class="c-date">Mar 11 gen 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#40</td>
+        <td class="c-title">How Nero Lost Control of Rome</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">134</td>
+        <td class="c-date">Ven 14 gen 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#142</td>
+        <td class="c-title">Why Germany Invaded Belgium</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">135</td>
+        <td class="c-date">Mar 18 gen 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#63</td>
+        <td class="c-title">How Viking Longships Made Raids Possible</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">136</td>
+        <td class="c-date">Ven 21 gen 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#117</td>
+        <td class="c-title">How Gunpowder Changed European Warfare</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">137</td>
+        <td class="c-date">Mar 25 gen 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#27</td>
+        <td class="c-title">Why the Assyrian Empire Collapsed</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">138</td>
+        <td class="c-date">Ven 28 gen 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#155</td>
+        <td class="c-title">How Codebreakers Helped Win World War II</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">139</td>
+        <td class="c-date">Mar 01 feb 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#64</td>
+        <td class="c-title">How Vikings Navigated Across the North Atlantic</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">140</td>
+        <td class="c-date">Ven 04 feb 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#123</td>
+        <td class="c-title">How the Dutch Republic Became a Trading Superpower</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">141</td>
+        <td class="c-date">Mar 08 feb 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#49</td>
+        <td class="c-title">The Lost Cities of the Indus Valley</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">142</td>
+        <td class="c-date">Ven 11 feb 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#160</td>
+        <td class="c-title">How Nuclear Deterrence Worked During the Cold War</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">143</td>
+        <td class="c-date">Mar 15 feb 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#69</td>
+        <td class="c-title">How the Black Death Spread Across Europe</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">144</td>
+        <td class="c-date">Ven 18 feb 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#124</td>
+        <td class="c-title">How France Became Europe&#39;s Dominant Power</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">145</td>
+        <td class="c-date">Mar 22 feb 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#18</td>
+        <td class="c-title">How the Persian Royal Road Connected an Empire</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">146</td>
+        <td class="c-date">Ven 25 feb 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#163</td>
+        <td class="c-title">How the Soviet Union Became a Superpower</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">147</td>
+        <td class="c-date">Mar 29 feb 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#71</td>
+        <td class="c-title">How the Byzantine Empire Survived for 1,000 Years</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">148</td>
+        <td class="c-date">Ven 03 mar 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#111</td>
+        <td class="c-title">How the Printing Press Changed Europe</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">149</td>
+        <td class="c-date">Mar 07 mar 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#21</td>
+        <td class="c-title">How Rome Became a Mediterranean Superpower</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">150</td>
+        <td class="c-date">Ven 10 mar 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#164</td>
+        <td class="c-title">How Nazi Germany Conquered Most of Europe</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">151</td>
+        <td class="c-date">Mar 14 mar 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#79</td>
+        <td class="c-title">How the Ottoman Empire Rose From a Frontier State</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">152</td>
+        <td class="c-date">Ven 17 mar 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#112</td>
+        <td class="c-title">How Renaissance Banking Created Fortunes</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">153</td>
+        <td class="c-date">Mar 21 mar 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#23</td>
+        <td class="c-title">How Carthage Built Its Mediterranean Empire</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">154</td>
+        <td class="c-date">Ven 24 mar 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#151</td>
+        <td class="c-title">How Trench Warfare Actually Worked</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">155</td>
+        <td class="c-date">Mar 28 mar 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#81</td>
+        <td class="c-title">How Justinian Tried to Rebuild Rome</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">156</td>
+        <td class="c-date">Ven 31 mar 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#113</td>
+        <td class="c-title">How European Ships Crossed the Atlantic</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">157</td>
+        <td class="c-date">Mar 04 apr 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#26</td>
+        <td class="c-title">How the Assyrian Empire Conquered Mesopotamia</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">158</td>
+        <td class="c-date">Ven 07 apr 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#152</td>
+        <td class="c-title">How the Allies Supplied the Western Front</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">159</td>
+        <td class="c-date">Mar 11 apr 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#73</td>
+        <td class="c-title">Why the Carolingian Empire Fragmented</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">160</td>
+        <td class="c-date">Ven 14 apr 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#114</td>
+        <td class="c-title">How the Age of Exploration Changed Global Trade</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">161</td>
+        <td class="c-date">Mar 18 apr 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#28</td>
+        <td class="c-title">How Ancient Egypt Became a Superpower</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">162</td>
+        <td class="c-date">Ven 21 apr 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#161</td>
+        <td class="c-title">How Germany Became a European Industrial Power</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">163</td>
+        <td class="c-date">Mar 25 apr 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#96</td>
+        <td class="c-title">What Life Was Really Like Inside a Medieval Castle</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">164</td>
+        <td class="c-date">Ven 28 apr 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#115</td>
+        <td class="c-title">How the Spanish Silver Trade Connected the World</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">165</td>
+        <td class="c-date">Mar 02 mag 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#32</td>
+        <td class="c-title">How Darius the Great Organized Persia</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">166</td>
+        <td class="c-date">Ven 05 mag 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#162</td>
+        <td class="c-title">How the United States Became a Global Superpower</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">167</td>
+        <td class="c-date">Mar 09 mag 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#97</td>
+        <td class="c-title">What Life Was Really Like in a Medieval City</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Wars, Society & Mysteries</td>
+      </tr>
+      <tr>
+        <td class="c-idx">168</td>
+        <td class="c-date">Ven 12 mag 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#116</td>
+        <td class="c-title">How the Dutch East India Company Built a Global Network</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">169</td>
+        <td class="c-date">Mar 16 mag 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#24</td>
+        <td class="c-title">Why the Bronze Age Civilization Collapsed</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">170</td>
+        <td class="c-date">Ven 19 mag 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#169</td>
+        <td class="c-title">How Japan Became an Economic Superpower</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">171</td>
+        <td class="c-date">Mar 23 mag 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#53</td>
+        <td class="c-title">Why Justinian Tried to Reconquer the West</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">172</td>
+        <td class="c-date">Ven 26 mag 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#118</td>
+        <td class="c-title">How Early Modern Armies Were Supplied</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">173</td>
+        <td class="c-date">Mar 30 mag 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#25</td>
+        <td class="c-title">Why the Mycenaean World Disappeared</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">174</td>
+        <td class="c-date">Ven 02 giu 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#153</td>
+        <td class="c-title">How Britain Survived the Blitz</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">175</td>
+        <td class="c-date">Mar 06 giu 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#55</td>
+        <td class="c-title">Why William Invaded England in 1066</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Decisions & Turning Points</td>
+      </tr>
+      <tr>
+        <td class="c-idx">176</td>
+        <td class="c-date">Ven 09 giu 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#119</td>
+        <td class="c-title">How Atlantic Slave Trading Networks Operated</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">177</td>
+        <td class="c-date">Mar 13 giu 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#29</td>
+        <td class="c-title">Why the Minoan Civilization Disappeared</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">178</td>
+        <td class="c-date">Ven 16 giu 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#158</td>
+        <td class="c-title">How the Marshall Plan Rebuilt Western Europe</td>
+        <td class="c-era"><span class="tag" style="background:#8a2b3a22;color:#8a2b3a;border:1px solid #8a2b3a55">Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">179</td>
+        <td class="c-date">Mar 20 giu 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#72</td>
+        <td class="c-title">How Charlemagne Built a European Empire</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">180</td>
+        <td class="c-date">Ven 23 giu 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#120</td>
+        <td class="c-title">How Venice Controlled Mediterranean Trade</td>
+        <td class="c-era"><span class="tag" style="background:#2b6b8a22;color:#2b6b8a;border:1px solid #2b6b8a55">Renaissance & Early Modern History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">181</td>
+        <td class="c-date">Mar 27 giu 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#11</td>
+        <td class="c-title">How Rome Supplied an Army of 50,000 Men</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">182</td>
+        <td class="c-date">Ven 30 giu 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#82</td>
+        <td class="c-title">How Charlemagne Became Emperor</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">183</td>
+        <td class="c-date">Mar 04 lug 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#12</td>
+        <td class="c-title">How Roman Aqueducts Carried Water Across Mountains</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">184</td>
+        <td class="c-date">Ven 07 lug 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#88</td>
+        <td class="c-title">How William the Conqueror Controlled England</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">People & Power</td>
+      </tr>
+      <tr>
+        <td class="c-idx">185</td>
+        <td class="c-date">Mar 11 lug 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#13</td>
+        <td class="c-title">How Roman Roads Were Actually Built</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">186</td>
+        <td class="c-date">Ven 14 lug 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#78</td>
+        <td class="c-title">Why the Golden Age of Baghdad Declined</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">187</td>
+        <td class="c-date">Mar 18 lug 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#14</td>
+        <td class="c-title">How the Roman Legion Fought as a Unit</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">188</td>
+        <td class="c-date">Ven 21 lug 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#67</td>
+        <td class="c-title">How the Silk Road Connected Europe and Asia</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">189</td>
+        <td class="c-date">Mar 25 lug 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#16</td>
+        <td class="c-title">How Athens Became a Naval Superpower</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">190</td>
+        <td class="c-date">Ven 28 lug 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#77</td>
+        <td class="c-title">How Venice Became a Mediterranean Power</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">191</td>
+        <td class="c-date">Mar 01 ago 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#20</td>
+        <td class="c-title">How Roman Concrete Changed Construction</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">192</td>
+        <td class="c-date">Ven 04 ago 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#62</td>
+        <td class="c-title">How Medieval Castles Were Designed to Survive Sieges</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">193</td>
+        <td class="c-date">Mar 08 ago 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#30</td>
+        <td class="c-title">How the Hittites Became a Major Power</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">Rise & Fall</td>
+      </tr>
+      <tr>
+        <td class="c-idx">194</td>
+        <td class="c-date">Ven 11 ago 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#65</td>
+        <td class="c-title">How Medieval Knights Actually Fought</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">195</td>
+        <td class="c-date">Mar 15 ago 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#15</td>
+        <td class="c-title">How Ancient Ships Crossed the Mediterranean</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">196</td>
+        <td class="c-date">Ven 18 ago 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#66</td>
+        <td class="c-title">How Medieval Armies Were Supplied</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">197</td>
+        <td class="c-date">Mar 22 ago 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#17</td>
+        <td class="c-title">How Ancient Siege Weapons Destroyed Cities</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">198</td>
+        <td class="c-date">Ven 25 ago 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#68</td>
+        <td class="c-title">How Medieval Cathedrals Were Built</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">199</td>
+        <td class="c-date">Mar 29 ago 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#19</td>
+        <td class="c-title">How Ancient Armies Crossed the Desert</td>
+        <td class="c-era"><span class="tag" style="background:#8a5a2b22;color:#8a5a2b;border:1px solid #8a5a2b55">Ancient History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      <tr>
+        <td class="c-idx">200</td>
+        <td class="c-date">Ven 01 set 2028</td>
+        <td class="c-time">15:00 IT</td>
+        <td class="c-num">#70</td>
+        <td class="c-title">How Medieval Banking Made Long-Distance Trade Possible</td>
+        <td class="c-era"><span class="tag" style="background:#5a4a8a22;color:#5a4a8a;border:1px solid #5a4a8a55">Classical & Medieval History</span></td>
+        <td class="c-cat">How It Worked</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Playlist (ordine consigliato per ciascuna)</h2>
+  <div class="toc">
+    <a href="#playlist-I" class="toc-link" style="border-color:#8a5a2b66;color:#8a5a2b">Ancient History <span class="toc-count">(50)</span></a><a href="#playlist-II" class="toc-link" style="border-color:#5a4a8a66;color:#5a4a8a">Classical & Medieval History <span class="toc-count">(50)</span></a><a href="#playlist-III" class="toc-link" style="border-color:#2b6b8a66;color:#2b6b8a">Renaissance & Early Modern History <span class="toc-count">(40)</span></a><a href="#playlist-IV" class="toc-link" style="border-color:#8a2b3a66;color:#8a2b3a">Modern History <span class="toc-count">(40)</span></a><a href="#playlist-V" class="toc-link" style="border-color:#2b8a5e66;color:#2b8a5e">Contemporary History <span class="toc-count">(20)</span></a>
+  </div>
+  
+    <section class="playlist" id="playlist-I">
+      <h3 style="color:#8a5a2b">Ancient History <span class="count">— 50 video</span></h3>
+      <table class="playlist-table">
+        <thead><tr><th>#</th><th>Video</th><th>Titolo</th><th>Categoria</th></tr></thead>
+        <tbody>
+        <tr>
+          <td class="p-idx">1</td>
+          <td class="p-num">#4</td>
+          <td class="p-title">Why Leonidas Stayed at Thermopylae</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">2</td>
+          <td class="p-num">#1</td>
+          <td class="p-title">The Decision That Started Rome&#39;s Civil War</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">3</td>
+          <td class="p-num">#7</td>
+          <td class="p-title">Why Alexander Invaded the Persian Empire</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">4</td>
+          <td class="p-num">#9</td>
+          <td class="p-title">Why Sparta Declared War on Athens</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">5</td>
+          <td class="p-num">#6</td>
+          <td class="p-title">Why Rome Refused to Negotiate With Hannibal</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">6</td>
+          <td class="p-num">#35</td>
+          <td class="p-title">How Hannibal Became Rome&#39;s Greatest Enemy</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">7</td>
+          <td class="p-num">#37</td>
+          <td class="p-title">How Alexander Built an Empire in 11 Years</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">8</td>
+          <td class="p-num">#39</td>
+          <td class="p-title">How Cleopatra Fought to Keep Egypt Independent</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">9</td>
+          <td class="p-num">#45</td>
+          <td class="p-title">How the Spartans Lost Their Military Dominance</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">10</td>
+          <td class="p-num">#48</td>
+          <td class="p-title">The Mystery of the Minoan Civilization</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">11</td>
+          <td class="p-num">#50</td>
+          <td class="p-title">What Really Happened to the Library of Alexandria</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">12</td>
+          <td class="p-num">#5</td>
+          <td class="p-title">Why Hannibal Chose to Cross the Alps</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">13</td>
+          <td class="p-num">#8</td>
+          <td class="p-title">Why Alexander Turned Back From India</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">14</td>
+          <td class="p-num">#36</td>
+          <td class="p-title">How Scipio Defeated Hannibal</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">15</td>
+          <td class="p-num">#41</td>
+          <td class="p-title">How the Battle of Marathon Changed Greece</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">16</td>
+          <td class="p-num">#42</td>
+          <td class="p-title">How the Battle of Salamis Saved Greece</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">17</td>
+          <td class="p-num">#43</td>
+          <td class="p-title">How Rome Won the First Punic War</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">18</td>
+          <td class="p-num">#31</td>
+          <td class="p-title">How Cyrus the Great Built the Persian Empire</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">19</td>
+          <td class="p-num">#44</td>
+          <td class="p-title">How Rome Defeated Macedonia</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">20</td>
+          <td class="p-num">#46</td>
+          <td class="p-title">What Daily Life Was Really Like in Ancient Rome</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">21</td>
+          <td class="p-num">#47</td>
+          <td class="p-title">What Daily Life Was Really Like in Ancient Athens</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">22</td>
+          <td class="p-num">#2</td>
+          <td class="p-title">Why Athens Chose to Build a Navy</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">23</td>
+          <td class="p-num">#3</td>
+          <td class="p-title">Why Xerxes Invaded Greece</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">24</td>
+          <td class="p-num">#10</td>
+          <td class="p-title">Why Rome Destroyed Carthage</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">25</td>
+          <td class="p-num">#22</td>
+          <td class="p-title">How the Persian Empire Became the World&#39;s Largest</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">26</td>
+          <td class="p-num">#33</td>
+          <td class="p-title">How Pericles Transformed Athens</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">27</td>
+          <td class="p-num">#34</td>
+          <td class="p-title">How Themistocles Saved Athens</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">28</td>
+          <td class="p-num">#38</td>
+          <td class="p-title">How Augustus Transformed Rome</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">29</td>
+          <td class="p-num">#40</td>
+          <td class="p-title">How Nero Lost Control of Rome</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">30</td>
+          <td class="p-num">#27</td>
+          <td class="p-title">Why the Assyrian Empire Collapsed</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">31</td>
+          <td class="p-num">#49</td>
+          <td class="p-title">The Lost Cities of the Indus Valley</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">32</td>
+          <td class="p-num">#18</td>
+          <td class="p-title">How the Persian Royal Road Connected an Empire</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">33</td>
+          <td class="p-num">#21</td>
+          <td class="p-title">How Rome Became a Mediterranean Superpower</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">34</td>
+          <td class="p-num">#23</td>
+          <td class="p-title">How Carthage Built Its Mediterranean Empire</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">35</td>
+          <td class="p-num">#26</td>
+          <td class="p-title">How the Assyrian Empire Conquered Mesopotamia</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">36</td>
+          <td class="p-num">#28</td>
+          <td class="p-title">How Ancient Egypt Became a Superpower</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">37</td>
+          <td class="p-num">#32</td>
+          <td class="p-title">How Darius the Great Organized Persia</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">38</td>
+          <td class="p-num">#24</td>
+          <td class="p-title">Why the Bronze Age Civilization Collapsed</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">39</td>
+          <td class="p-num">#25</td>
+          <td class="p-title">Why the Mycenaean World Disappeared</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">40</td>
+          <td class="p-num">#29</td>
+          <td class="p-title">Why the Minoan Civilization Disappeared</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">41</td>
+          <td class="p-num">#11</td>
+          <td class="p-title">How Rome Supplied an Army of 50,000 Men</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">42</td>
+          <td class="p-num">#12</td>
+          <td class="p-title">How Roman Aqueducts Carried Water Across Mountains</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">43</td>
+          <td class="p-num">#13</td>
+          <td class="p-title">How Roman Roads Were Actually Built</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">44</td>
+          <td class="p-num">#14</td>
+          <td class="p-title">How the Roman Legion Fought as a Unit</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">45</td>
+          <td class="p-num">#16</td>
+          <td class="p-title">How Athens Became a Naval Superpower</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">46</td>
+          <td class="p-num">#20</td>
+          <td class="p-title">How Roman Concrete Changed Construction</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">47</td>
+          <td class="p-num">#30</td>
+          <td class="p-title">How the Hittites Became a Major Power</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">48</td>
+          <td class="p-num">#15</td>
+          <td class="p-title">How Ancient Ships Crossed the Mediterranean</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">49</td>
+          <td class="p-num">#17</td>
+          <td class="p-title">How Ancient Siege Weapons Destroyed Cities</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">50</td>
+          <td class="p-num">#19</td>
+          <td class="p-title">How Ancient Armies Crossed the Desert</td>
+          <td class="p-cat">How It Worked</td>
+        </tr></tbody>
+      </table>
+    </section>
+    <section class="playlist" id="playlist-II">
+      <h3 style="color:#5a4a8a">Classical & Medieval History <span class="count">— 50 video</span></h3>
+      <table class="playlist-table">
+        <thead><tr><th>#</th><th>Video</th><th>Titolo</th><th>Categoria</th></tr></thead>
+        <tbody>
+        <tr>
+          <td class="p-idx">1</td>
+          <td class="p-num">#83</td>
+          <td class="p-title">How Genghis Khan United the Mongols</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">2</td>
+          <td class="p-num">#92</td>
+          <td class="p-title">How the Crusaders Captured Jerusalem</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">3</td>
+          <td class="p-num">#100</td>
+          <td class="p-title">The Mystery of the Disappearance of the Norse in Greenland</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">4</td>
+          <td class="p-num">#57</td>
+          <td class="p-title">Why Saladin Decided to Retake Jerusalem</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">5</td>
+          <td class="p-num">#58</td>
+          <td class="p-title">Why the Fourth Crusade Attacked Constantinople</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">6</td>
+          <td class="p-num">#93</td>
+          <td class="p-title">How the Mongols Defeated the Khwarazmian Empire</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">7</td>
+          <td class="p-num">#86</td>
+          <td class="p-title">How Joan of Arc Changed the Hundred Years&#39; War</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">8</td>
+          <td class="p-num">#98</td>
+          <td class="p-title">Why the Knights Templar Became So Powerful</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">9</td>
+          <td class="p-num">#95</td>
+          <td class="p-title">How the Black Death Changed European Society</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">10</td>
+          <td class="p-num">#99</td>
+          <td class="p-title">What Happened to the Knights Templar</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">11</td>
+          <td class="p-num">#54</td>
+          <td class="p-title">Why the Vikings Began Raiding England</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">12</td>
+          <td class="p-num">#56</td>
+          <td class="p-title">Why the First Crusade Was Launched</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">13</td>
+          <td class="p-num">#59</td>
+          <td class="p-title">Why the Mongols Invaded Europe</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">14</td>
+          <td class="p-num">#60</td>
+          <td class="p-title">Why the Mongols Suddenly Turned Back</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">15</td>
+          <td class="p-num">#75</td>
+          <td class="p-title">How the Mongols Created the Largest Land Empire</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">16</td>
+          <td class="p-num">#84</td>
+          <td class="p-title">How Saladin Built His Power</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">17</td>
+          <td class="p-num">#85</td>
+          <td class="p-title">How Richard the Lionheart Became a Crusader King</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">18</td>
+          <td class="p-num">#87</td>
+          <td class="p-title">How Mehmed II Became the Conqueror of Constantinople</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">19</td>
+          <td class="p-num">#89</td>
+          <td class="p-title">How Alfred the Great Stopped the Vikings</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">20</td>
+          <td class="p-num">#90</td>
+          <td class="p-title">How Marco Polo Became the Most Famous Traveler of the Middle Ages</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">21</td>
+          <td class="p-num">#76</td>
+          <td class="p-title">Why the Crusader States Disappeared</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">22</td>
+          <td class="p-num">#61</td>
+          <td class="p-title">How Constantinople&#39;s Walls Defended an Empire</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">23</td>
+          <td class="p-num">#74</td>
+          <td class="p-title">How the Vikings Built Settlements Across Europe</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">24</td>
+          <td class="p-num">#80</td>
+          <td class="p-title">Why the Byzantine Empire Finally Collapsed</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">25</td>
+          <td class="p-num">#91</td>
+          <td class="p-title">How the Battle of Hastings Changed England</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">26</td>
+          <td class="p-num">#94</td>
+          <td class="p-title">How the Hundred Years&#39; War Changed Warfare</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">27</td>
+          <td class="p-num">#51</td>
+          <td class="p-title">Why Constantine Moved the Roman Capital East</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">28</td>
+          <td class="p-num">#52</td>
+          <td class="p-title">Why Rome Accepted Christianity</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">29</td>
+          <td class="p-num">#63</td>
+          <td class="p-title">How Viking Longships Made Raids Possible</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">30</td>
+          <td class="p-num">#64</td>
+          <td class="p-title">How Vikings Navigated Across the North Atlantic</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">31</td>
+          <td class="p-num">#69</td>
+          <td class="p-title">How the Black Death Spread Across Europe</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">32</td>
+          <td class="p-num">#71</td>
+          <td class="p-title">How the Byzantine Empire Survived for 1,000 Years</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">33</td>
+          <td class="p-num">#79</td>
+          <td class="p-title">How the Ottoman Empire Rose From a Frontier State</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">34</td>
+          <td class="p-num">#81</td>
+          <td class="p-title">How Justinian Tried to Rebuild Rome</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">35</td>
+          <td class="p-num">#73</td>
+          <td class="p-title">Why the Carolingian Empire Fragmented</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">36</td>
+          <td class="p-num">#96</td>
+          <td class="p-title">What Life Was Really Like Inside a Medieval Castle</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">37</td>
+          <td class="p-num">#97</td>
+          <td class="p-title">What Life Was Really Like in a Medieval City</td>
+          <td class="p-cat">Wars, Society & Mysteries</td>
+        </tr>
+        <tr>
+          <td class="p-idx">38</td>
+          <td class="p-num">#53</td>
+          <td class="p-title">Why Justinian Tried to Reconquer the West</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">39</td>
+          <td class="p-num">#55</td>
+          <td class="p-title">Why William Invaded England in 1066</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">40</td>
+          <td class="p-num">#72</td>
+          <td class="p-title">How Charlemagne Built a European Empire</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">41</td>
+          <td class="p-num">#82</td>
+          <td class="p-title">How Charlemagne Became Emperor</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">42</td>
+          <td class="p-num">#88</td>
+          <td class="p-title">How William the Conqueror Controlled England</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">43</td>
+          <td class="p-num">#78</td>
+          <td class="p-title">Why the Golden Age of Baghdad Declined</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">44</td>
+          <td class="p-num">#67</td>
+          <td class="p-title">How the Silk Road Connected Europe and Asia</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">45</td>
+          <td class="p-num">#77</td>
+          <td class="p-title">How Venice Became a Mediterranean Power</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">46</td>
+          <td class="p-num">#62</td>
+          <td class="p-title">How Medieval Castles Were Designed to Survive Sieges</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">47</td>
+          <td class="p-num">#65</td>
+          <td class="p-title">How Medieval Knights Actually Fought</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">48</td>
+          <td class="p-num">#66</td>
+          <td class="p-title">How Medieval Armies Were Supplied</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">49</td>
+          <td class="p-num">#68</td>
+          <td class="p-title">How Medieval Cathedrals Were Built</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">50</td>
+          <td class="p-num">#70</td>
+          <td class="p-title">How Medieval Banking Made Long-Distance Trade Possible</td>
+          <td class="p-cat">How It Worked</td>
+        </tr></tbody>
+      </table>
+    </section>
+    <section class="playlist" id="playlist-III">
+      <h3 style="color:#2b6b8a">Renaissance & Early Modern History <span class="count">— 40 video</span></h3>
+      <table class="playlist-table">
+        <thead><tr><th>#</th><th>Video</th><th>Titolo</th><th>Categoria</th></tr></thead>
+        <tbody>
+        <tr>
+          <td class="p-idx">1</td>
+          <td class="p-num">#138</td>
+          <td class="p-title">How the Ottoman Empire Conquered Constantinople</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">2</td>
+          <td class="p-num">#134</td>
+          <td class="p-title">How the French Revolution Overthrew the Monarchy</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">3</td>
+          <td class="p-num">#103</td>
+          <td class="p-title">Why Columbus Sailed West</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">4</td>
+          <td class="p-num">#106</td>
+          <td class="p-title">Why England Fought the Spanish Armada</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">5</td>
+          <td class="p-num">#108</td>
+          <td class="p-title">Why Napoleon Invaded Russia</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">6</td>
+          <td class="p-num">#109</td>
+          <td class="p-title">Why Napoleon Sold Louisiana</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">7</td>
+          <td class="p-num">#110</td>
+          <td class="p-title">Why Napoleon Returned From Exile</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">8</td>
+          <td class="p-num">#125</td>
+          <td class="p-title">How Napoleon Built His European Empire</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">9</td>
+          <td class="p-num">#139</td>
+          <td class="p-title">How Napoleon Became Emperor of France</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">10</td>
+          <td class="p-num">#126</td>
+          <td class="p-title">Why the Spanish Armada Failed</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">11</td>
+          <td class="p-num">#129</td>
+          <td class="p-title">Why Napoleon&#39;s Grand Army Collapsed</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">12</td>
+          <td class="p-num">#135</td>
+          <td class="p-title">How the American Revolution Became a Global War</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">13</td>
+          <td class="p-num">#101</td>
+          <td class="p-title">Why Henry VIII Broke With Rome</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">14</td>
+          <td class="p-num">#107</td>
+          <td class="p-title">Why the Thirty Years&#39; War Began</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">15</td>
+          <td class="p-num">#121</td>
+          <td class="p-title">How the Ottoman Empire Became a Global Power</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">16</td>
+          <td class="p-num">#133</td>
+          <td class="p-title">How the Scientific Revolution Changed Human Knowledge</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">17</td>
+          <td class="p-num">#136</td>
+          <td class="p-title">How the Haitian Revolution Changed the Atlantic World</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">18</td>
+          <td class="p-num">#140</td>
+          <td class="p-title">How the Industrial Revolution Began in Britain</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">19</td>
+          <td class="p-num">#127</td>
+          <td class="p-title">Why the Mughal Empire Became So Powerful</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">20</td>
+          <td class="p-num">#130</td>
+          <td class="p-title">Why the Spanish Empire Lost Its Dominance</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">21</td>
+          <td class="p-num">#102</td>
+          <td class="p-title">Why Martin Luther Refused to Recant</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">22</td>
+          <td class="p-num">#104</td>
+          <td class="p-title">Why Portugal Searched for a Route Around Africa</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">23</td>
+          <td class="p-num">#105</td>
+          <td class="p-title">Why Spain Funded the Conquest of the Americas</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">24</td>
+          <td class="p-num">#122</td>
+          <td class="p-title">How Spain Built a Global Empire</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">25</td>
+          <td class="p-num">#131</td>
+          <td class="p-title">How the Renaissance Changed Europe</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">26</td>
+          <td class="p-num">#132</td>
+          <td class="p-title">How the Protestant Reformation Split Europe</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">27</td>
+          <td class="p-num">#137</td>
+          <td class="p-title">How the Age of Exploration Connected the Continents</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">28</td>
+          <td class="p-num">#128</td>
+          <td class="p-title">Why the Dutch Golden Age Eventually Declined</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">29</td>
+          <td class="p-num">#117</td>
+          <td class="p-title">How Gunpowder Changed European Warfare</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">30</td>
+          <td class="p-num">#123</td>
+          <td class="p-title">How the Dutch Republic Became a Trading Superpower</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">31</td>
+          <td class="p-num">#124</td>
+          <td class="p-title">How France Became Europe&#39;s Dominant Power</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">32</td>
+          <td class="p-num">#111</td>
+          <td class="p-title">How the Printing Press Changed Europe</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">33</td>
+          <td class="p-num">#112</td>
+          <td class="p-title">How Renaissance Banking Created Fortunes</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">34</td>
+          <td class="p-num">#113</td>
+          <td class="p-title">How European Ships Crossed the Atlantic</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">35</td>
+          <td class="p-num">#114</td>
+          <td class="p-title">How the Age of Exploration Changed Global Trade</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">36</td>
+          <td class="p-num">#115</td>
+          <td class="p-title">How the Spanish Silver Trade Connected the World</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">37</td>
+          <td class="p-num">#116</td>
+          <td class="p-title">How the Dutch East India Company Built a Global Network</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">38</td>
+          <td class="p-num">#118</td>
+          <td class="p-title">How Early Modern Armies Were Supplied</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">39</td>
+          <td class="p-num">#119</td>
+          <td class="p-title">How Atlantic Slave Trading Networks Operated</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">40</td>
+          <td class="p-num">#120</td>
+          <td class="p-title">How Venice Controlled Mediterranean Trade</td>
+          <td class="p-cat">How It Worked</td>
+        </tr></tbody>
+      </table>
+    </section>
+    <section class="playlist" id="playlist-IV">
+      <h3 style="color:#8a2b3a">Modern History <span class="count">— 40 video</span></h3>
+      <table class="playlist-table">
+        <thead><tr><th>#</th><th>Video</th><th>Titolo</th><th>Categoria</th></tr></thead>
+        <tbody>
+        <tr>
+          <td class="p-idx">1</td>
+          <td class="p-num">#174</td>
+          <td class="p-title">How the Battle of Stalingrad Changed World War II</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">2</td>
+          <td class="p-num">#176</td>
+          <td class="p-title">How the Korean War Became a Cold War Conflict</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">3</td>
+          <td class="p-num">#177</td>
+          <td class="p-title">How the Cuban Missile Crisis Almost Started World War III</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">4</td>
+          <td class="p-num">#147</td>
+          <td class="p-title">Why Hitler Invaded the Soviet Union</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">5</td>
+          <td class="p-num">#148</td>
+          <td class="p-title">Why the Allies Chose Normandy for D-Day</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">6</td>
+          <td class="p-num">#178</td>
+          <td class="p-title">How the Vietnam War Became America&#39;s Longest Conflict</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">7</td>
+          <td class="p-num">#145</td>
+          <td class="p-title">Why Hitler Invaded Poland</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">8</td>
+          <td class="p-num">#146</td>
+          <td class="p-title">Why Japan Attacked Pearl Harbor</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">9</td>
+          <td class="p-num">#149</td>
+          <td class="p-title">Why the United States Used the Atomic Bomb</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">10</td>
+          <td class="p-num">#179</td>
+          <td class="p-title">How the Berlin Wall Divided Europe</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">11</td>
+          <td class="p-num">#165</td>
+          <td class="p-title">Why the Axis Powers Lost World War II</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">12</td>
+          <td class="p-num">#141</td>
+          <td class="p-title">The Decision That Started World War I</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">13</td>
+          <td class="p-num">#143</td>
+          <td class="p-title">Why the United States Entered World War I</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">14</td>
+          <td class="p-num">#144</td>
+          <td class="p-title">Why Russia Left World War I</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">15</td>
+          <td class="p-num">#171</td>
+          <td class="p-title">How World War I Became a Global War</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">16</td>
+          <td class="p-num">#172</td>
+          <td class="p-title">How the Battle of the Somme Changed Warfare</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">17</td>
+          <td class="p-num">#173</td>
+          <td class="p-title">How Germany Was Defeated in World War I</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">18</td>
+          <td class="p-num">#175</td>
+          <td class="p-title">How the Allies Won the Battle of the Atlantic</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">19</td>
+          <td class="p-num">#180</td>
+          <td class="p-title">How the Soviet War in Afghanistan Changed the Cold War</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">20</td>
+          <td class="p-num">#170</td>
+          <td class="p-title">Why the Cold War Finally Ended</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">21</td>
+          <td class="p-num">#150</td>
+          <td class="p-title">Why the Soviet Union Built the Berlin Blockade</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">22</td>
+          <td class="p-num">#154</td>
+          <td class="p-title">How D-Day Was Planned</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">23</td>
+          <td class="p-num">#156</td>
+          <td class="p-title">How the Manhattan Project Built the Atomic Bomb</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">24</td>
+          <td class="p-num">#157</td>
+          <td class="p-title">How the Berlin Airlift Kept a City Alive</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">25</td>
+          <td class="p-num">#159</td>
+          <td class="p-title">How the Space Race Reached the Moon</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">26</td>
+          <td class="p-num">#167</td>
+          <td class="p-title">How China Became a Communist State</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">27</td>
+          <td class="p-num">#166</td>
+          <td class="p-title">Why the British Empire Began to Collapse</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">28</td>
+          <td class="p-num">#168</td>
+          <td class="p-title">Why the Soviet Union Collapsed</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">29</td>
+          <td class="p-num">#142</td>
+          <td class="p-title">Why Germany Invaded Belgium</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">30</td>
+          <td class="p-num">#155</td>
+          <td class="p-title">How Codebreakers Helped Win World War II</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">31</td>
+          <td class="p-num">#160</td>
+          <td class="p-title">How Nuclear Deterrence Worked During the Cold War</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">32</td>
+          <td class="p-num">#163</td>
+          <td class="p-title">How the Soviet Union Became a Superpower</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">33</td>
+          <td class="p-num">#164</td>
+          <td class="p-title">How Nazi Germany Conquered Most of Europe</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">34</td>
+          <td class="p-num">#151</td>
+          <td class="p-title">How Trench Warfare Actually Worked</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">35</td>
+          <td class="p-num">#152</td>
+          <td class="p-title">How the Allies Supplied the Western Front</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">36</td>
+          <td class="p-num">#161</td>
+          <td class="p-title">How Germany Became a European Industrial Power</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">37</td>
+          <td class="p-num">#162</td>
+          <td class="p-title">How the United States Became a Global Superpower</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">38</td>
+          <td class="p-num">#169</td>
+          <td class="p-title">How Japan Became an Economic Superpower</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">39</td>
+          <td class="p-num">#153</td>
+          <td class="p-title">How Britain Survived the Blitz</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">40</td>
+          <td class="p-num">#158</td>
+          <td class="p-title">How the Marshall Plan Rebuilt Western Europe</td>
+          <td class="p-cat">How It Worked</td>
+        </tr></tbody>
+      </table>
+    </section>
+    <section class="playlist" id="playlist-V">
+      <h3 style="color:#2b8a5e">Contemporary History <span class="count">— 20 video</span></h3>
+      <table class="playlist-table">
+        <thead><tr><th>#</th><th>Video</th><th>Titolo</th><th>Categoria</th></tr></thead>
+        <tbody>
+        <tr>
+          <td class="p-idx">1</td>
+          <td class="p-num">#181</td>
+          <td class="p-title">The Decision That Changed China Forever</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">2</td>
+          <td class="p-num">#182</td>
+          <td class="p-title">Why China Opened Its Economy</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">3</td>
+          <td class="p-num">#183</td>
+          <td class="p-title">The Decision That Ended Apartheid</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">4</td>
+          <td class="p-num">#184</td>
+          <td class="p-title">Why Germany Reunified</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">5</td>
+          <td class="p-num">#185</td>
+          <td class="p-title">Why the Soviet Union Let Eastern Europe Go</td>
+          <td class="p-cat">Decisions & Turning Points</td>
+        </tr>
+        <tr>
+          <td class="p-idx">6</td>
+          <td class="p-num">#191</td>
+          <td class="p-title">How the Soviet Union Disappeared in One Year</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">7</td>
+          <td class="p-num">#194</td>
+          <td class="p-title">How China Became an Economic Superpower</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">8</td>
+          <td class="p-num">#196</td>
+          <td class="p-title">How the Computer Changed the Modern World</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">9</td>
+          <td class="p-num">#197</td>
+          <td class="p-title">How the Smartphone Changed Human Communication</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">10</td>
+          <td class="p-num">#198</td>
+          <td class="p-title">How the Internet Changed the Way the World Trades</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">11</td>
+          <td class="p-num">#199</td>
+          <td class="p-title">How Air Travel Changed the Modern World</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">12</td>
+          <td class="p-num">#200</td>
+          <td class="p-title">How the Container Changed the Global Economy</td>
+          <td class="p-cat">People & Power</td>
+        </tr>
+        <tr>
+          <td class="p-idx">13</td>
+          <td class="p-num">#188</td>
+          <td class="p-title">How China Became the World&#39;s Factory</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">14</td>
+          <td class="p-num">#192</td>
+          <td class="p-title">How the European Union Became a Global Power</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">15</td>
+          <td class="p-num">#193</td>
+          <td class="p-title">How Japan Became an Economic Giant</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">16</td>
+          <td class="p-num">#195</td>
+          <td class="p-title">How Globalization Reshaped the World</td>
+          <td class="p-cat">Rise & Fall</td>
+        </tr>
+        <tr>
+          <td class="p-idx">17</td>
+          <td class="p-num">#186</td>
+          <td class="p-title">How the Internet Went From Military Project to Global Network</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">18</td>
+          <td class="p-num">#187</td>
+          <td class="p-title">How Container Shipping Changed Global Trade</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">19</td>
+          <td class="p-num">#189</td>
+          <td class="p-title">How the European Union Was Built</td>
+          <td class="p-cat">How It Worked</td>
+        </tr>
+        <tr>
+          <td class="p-idx">20</td>
+          <td class="p-num">#190</td>
+          <td class="p-title">How Global Supply Chains Changed the World</td>
+          <td class="p-cat">How It Worked</td>
+        </tr></tbody>
+      </table>
+    </section>
+
+  <h2>Descrizioni playlist (da incollare su YouTube)</h2>
+  <div class="desc-grid">
+    
+    <div class="desc-card">
+      <h4 style="color:#8a5a2b">Ancient History</h4>
+      <p class="desc-count">50 video</p>
+      <p class="desc-text">Dalle guerre persiane alla caduta di Cartagine: le decisioni, le battaglie e i misteri che hanno definito il mondo antico. Sparta, Atene, Roma, la Persia e l&#39;Egitto raccontati attraverso le scelte dei loro protagonisti e i motori nascosti dietro ogni impero. Nuovi episodi ogni settimana.</p>
+    </div>
+    <div class="desc-card">
+      <h4 style="color:#5a4a8a">Classical & Medieval History</h4>
+      <p class="desc-count">50 video</p>
+      <p class="desc-text">Dal crollo di Roma alla caduta di Costantinopoli: mille anni di imperi, crociate, invasioni vichinghe e conquiste mongole. Come si viveva, come si combatteva e perché i grandi imperi medievali sono nati e caduti.</p>
+    </div>
+    <div class="desc-card">
+      <h4 style="color:#2b6b8a">Renaissance & Early Modern History</h4>
+      <p class="desc-count">40 video</p>
+      <p class="desc-text">Dall&#39;arrivo di Colombo alla caduta di Napoleone: la nascita del mondo moderno tra esplorazioni, rivoluzioni e imperi globali. Riforma, Rinascimento, colonizzazione e le guerre che hanno ridisegnato l&#39;Europa e il mondo.</p>
+    </div>
+    <div class="desc-card">
+      <h4 style="color:#8a2b3a">Modern History</h4>
+      <p class="desc-count">40 video</p>
+      <p class="desc-text">Dalla Prima Guerra Mondiale alla fine della Guerra Fredda: i conflitti, le decisioni e le tecnologie che hanno plasmato il ventesimo secolo. Le due guerre mondiali, la Guerra Fredda e le crisi che hanno tenuto il mondo con il fiato sospeso.</p>
+    </div>
+    <div class="desc-card">
+      <h4 style="color:#2b8a5e">Contemporary History</h4>
+      <p class="desc-count">20 video</p>
+      <p class="desc-text">Dagli anni &#39;80 a oggi: come la Cina, l&#39;Unione Europea e la tecnologia hanno ridisegnato l&#39;economia globale. La caduta dell&#39;URSS, la fine dell&#39;apartheid e la nascita del mondo interconnesso in cui viviamo.</p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  Generato per History Paper-Collage Channel — ordine e calendario da rivalutare con dati reali dopo le prime 8-10 settimane di pubblicazione.
+</footer>
+
+</body>
+</html>

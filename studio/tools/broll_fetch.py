@@ -18,7 +18,7 @@ OK = re.compile(r"^(public domain|pd|cc0|cc[ -]by(-sa)?[ -]?\d?\.?\d?)", re.I)
 BAD = re.compile(r"(nc|nd|fair use|non-?commercial|copyrighted)", re.I)
 
 
-def get(url, tries=5):
+def get(url, tries=6):
     for i in range(tries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA})
@@ -26,7 +26,8 @@ def get(url, tries=5):
                 return r.read()
         except urllib.error.HTTPError as e:
             if e.code in (429, 503):
-                time.sleep(8 * (i + 1))
+                ra = e.headers.get("Retry-After", "")
+                time.sleep(min(90, int(ra)) if ra.isdigit() else 15 * (i + 1))
                 continue
             raise
     raise RuntimeError("troppi tentativi: " + url)
@@ -87,7 +88,7 @@ def main():
         vid, q = parts[0], parts[1]
         time.sleep(1.2)
         try:
-            cands = search(q, width, per)
+            cands = search(q, width, per) or search(q, 1280, per)
         except Exception as e:
             manifest[vid] = {"query": q, "error": str(e), "candidates": []}
             print(f"{vid}: ERRORE {e}")
@@ -95,7 +96,7 @@ def main():
         for n, c in enumerate(cands, 1):
             f = outdir / f"{vid}_{n}.jpg"
             try:
-                time.sleep(1.0)
+                time.sleep(4.0)
                 f.write_bytes(get(c["url"]))
                 c["file"] = f.name
                 credits.append(f'{vid}_{n}: "{c["title"][5:]}" — {c["author"] or "unknown"} — {c["license"]} — {c["page"]}')
