@@ -1,0 +1,26 @@
+{
+ "voice": "Bill pqHfZKP75CvOlQylNhV4",
+ "style": {
+  "stability": 48,
+  "style": 38,
+  "similarityBoost": 75,
+  "speed": 94
+ },
+ "note": "Generated 2026-11-17 via vsub text_to_speech, per page. Only pages listed here exist; the rest are NOT generated (paused until the graphics test passes). Cost: 1747 chars = 170 credits (0.097/char).",
+ "durations_s": {
+  "V001": 13.061,
+  "V002a": 11.076,
+  "V002b": 5.59,
+  "V003a": 9.064,
+  "V003b": 8.15,
+  "V004a": 7.079,
+  "V004b": 13.244,
+  "V005": 14.315,
+  "V006": 13.636,
+  "V007a": 9.404,
+  "V007b": 5.486,
+  "V008": 11.677,
+  "V009": 13.427
+ },
+ "total_s": 135.2
+}

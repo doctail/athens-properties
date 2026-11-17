@@ -130,7 +130,7 @@ OVERLAY: two paper pegs: "HALIL: WITHDRAW" and "ZAGAN: ATTACK" with a thread to 
 [V030] NARRATOR: On May 27, twelve Venetian ships returned from the Aegean with the news that no relief fleet was coming. The emperor's last card was gone.
 IMAGE: Twelve small ships returning to a harbor at dusk, their sails drooping.
 OVERLAY: date "MAY 27"; counter "12 SHIPS"; big red X over "RELIEF FLEET".
-[V031] NARRATOR: He told his soldiers to rest, fast, and pray. Then, just after midnight on May 29, he gave the order.
+[V031] NARRATOR: Mehmed told his soldiers to rest, fast, and pray. Then, just after midnight on May 29, he gave the order.
 IMAGE: A silent camp at night: rows of soldiers kneeling in prayer under torches, the dark walls behind.
 OVERLAY: date "MAY 28 — REST AND PRAYER"; clock-less title "MAY 29, JUST AFTER MIDNIGHT".
 
