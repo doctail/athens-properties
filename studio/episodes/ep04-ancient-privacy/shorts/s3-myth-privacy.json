@@ -34,16 +34,16 @@
    ],
    "shots": [
     [
-     "images/V25.jpg",
+     "images/V28.jpg",
      1.0,
      0.5,
      0.5
     ],
     [
      "images/V28.jpg",
-     1.0,
+     1.8,
      0.5,
-     0.5
+     0.45
     ]
    ]
   },
@@ -63,12 +63,6 @@
     ],
     [
      "images/V30.jpg",
-     1.0,
-     0.5,
-     0.5
-    ],
-    [
-     "images/V32.jpg",
      1.0,
      0.5,
      0.5
@@ -110,13 +104,13 @@
    ],
    "shots": [
     [
-     "images/V33.jpg",
+     "images/V23.jpg",
      1.6,
      0.5,
      0.4
     ],
     [
-     "images/V33.jpg",
+     "images/V23.jpg",
      1.0,
      0.5,
      0.5

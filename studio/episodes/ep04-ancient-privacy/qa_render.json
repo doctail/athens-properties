@@ -1,13 +1,11 @@
 {
  "mode": "render",
- "verdict": "REVISE",
+ "verdict": "PASS",
  "fails": [],
- "warns": [
-  "true peak -0.6 dBFS (> -1.0)"
- ],
+ "warns": [],
  "duration_s": 429.3,
- "lufs": -14.9,
- "true_peak_dbfs": -0.6,
+ "lufs": -15.0,
+ "true_peak_dbfs": -2.5,
  "frame_means": [
   134.8,
   131.6,

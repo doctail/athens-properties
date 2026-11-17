@@ -1,8 +1,7 @@
 # EP04 — upload metadata (SKELETON)
 
 Status: SKELETON v1. Do not upload before: script approved, images approved, preview approved, publish OK from the owner. Upload is manual.
-Publish: **Friday 2026-11-20, 21:00 Italy** (CALENDAR Dave). EP03 ends with "Next time, Dave learns that privacy was never a thing in the Stone Age", so this date is a promise to the audience: do not move it.
-**Chapters: TO COMPUTE after the render** from `edit.json` timings / `audio/align.json` (no paid call). The list below is only the section structure with estimated starts from the word count (script.md), to be replaced by the real values. Recompute if music or intro changes the length.
+Chapters computed from the real render (final_music.mp4, 7:09, section starts from the rendered segments; the cold open is the intro, there is no separate version). Recompute if music or intro changes the length.
 
 ## Title (EN-US)
 How Did Ancient Humans Get Any Privacy?
@@ -15,16 +14,16 @@ How did ancient humans get any privacy? Dave steps out of a cave into a Stone Ag
 Spoiler: the answer is not a door. 👇 Which fix would you have picked?
 
 CHAPTERS
-0:00 Intro            (to compute)
-0:00 The camp         (to compute)
-0:00 Fix 1: Walls     (to compute)
-0:00 Fix 2: Distance  (to compute)
-0:00 Fix 3: Night     (to compute)
-0:00 Fix 4: Manners   (to compute)
-0:00 Fix 5: The exit  (to compute)
-0:00 The first doors  (to compute)
-0:00 The verdict      (to compute)
-0:00 Next episode: the Ice Age  (to compute)
+0:00 Intro
+0:15 The camp
+1:34 Fix 1: Walls
+2:49 Fix 2: Distance
+3:35 Fix 3: Night
+4:12 Fix 4: Manners
+5:10 Fix 5: The exit
+5:41 The first doors
+6:20 The verdict
+6:53 Next episode: the Ice Age
 
 SOURCES (full list with notes in sources.md)
 • Hill et al. (2011), Science 331:1286, co-residence patterns in hunter-gatherer societies
@@ -55,7 +54,7 @@ Two Flow variants (A: crowd peeking over the hide curtain, B: tiny hut packed wi
 Same track as EP03 for continuity ("Science Montage", Jeremy Blake, YouTube Audio Library; file in the EP03 audio/music folder) unless the owner prefers another. Mix per studio/tools/mix_music.sh (music about -27 LUFS before ducking, sidechain under the voice, final -14 LUFS).
 
 ## Voice
-vsub "Bill" (pqHfZKP75CvOlQylNhV4), stability 55, similarity 75, style 15, **speed 100** (EP03 wrongly used 105). Estimated cost: about 5,457 characters x 0.138 = ~753 vsub credits for the long video + ~450 for 3 Shorts (EP03 reference: 773 total). Not spent yet; needs the owner's OK after the script.
+vsub "Bill" (pqHfZKP75CvOlQylNhV4), stability 55, similarity 75, style 15, **speed 100** (EP03 wrongly used 105). Spent: 5,472 characters, 544 vsub credits (measured), for the long video only; Shorts not voiced yet.
 
 ## Shorts (plan from CALENDAR Dave)
 ### S1 — "Everyone asleep at once: 18 minutes" (Sun 2026-11-22) — images V01–V11, ~8 s, loop, number reveal
