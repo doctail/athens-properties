@@ -109,7 +109,9 @@ Controllo: ricerca canali YouTube e pagina `youtube.com/@handle` (404 = libero).
 
 Prime tre: **Lot by Lot Cities, Ledger of Cities, Yearplot** [Guessing sull'effetto sul brand, Certain sulla disponibilità su YouTube a oggi].
 
-### 3.3 Icona (800x800, verrà ritagliata a cerchio)
+> **SUPERATE (18/11):** le sezioni 3.3 (icona) e 3.4 (banner) sono state scritte PRIMA di vedere le immagini dei concorrenti e usano fondo scuro e ambra, che la sezione 5.3 indica come l'aspetto più abusato. Per icona e banner vale il brief della **sezione 5.4** (fondo crema #F3EEE2). Le misure (800x800 icona, 2048x1152 banner, area sicura 1235x338) restano valide.
+
+### 3.3 Icona (800x800, verrà ritagliata a cerchio) [SUPERATA da 5.4]
 - Fondo piatto blu ardesia #0F1A24 a tutto riquadro.
 - Al centro, dentro un cerchio ideale di 600 px di diametro (margine di 100 px su ogni lato), 9 impronte di edifici viste dall'alto (rettangoli ruotati di pochi gradi, tre per riga, dimensioni irregolari, 12 px di vuoto tra loro), ognuna colorata per epoca di costruzione con una scala ambra #E8A33D (più vecchio) -> arancio -> rosa -> ciano #3FC1C9 (più nuovo). Nessuna lettera: a 32 px resta un mosaico riconoscibile, a 98 px si leggono i colori.
 - Nessun elemento a meno di 100 px dal bordo; nessuna foto di terzi. Una variante B: monogramma di una sola lettera (L/Y) in bianco sopra due blocchi colorati, solo se la A risulta troppo astratta in anteprima.
