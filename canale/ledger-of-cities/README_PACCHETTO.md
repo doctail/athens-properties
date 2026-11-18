@@ -1,5 +1,5 @@
 # Pacchetto canale LEDGER OF CITIES
-1. `nome_e_handle.txt`: nome, handle (ATTENZIONE: @ledgerofcities occupato), alternative libere. Leggere per primo.
+1. `nome_e_handle.txt`: nome e handle (Ledger of Cities, @ledgerofcities, canale del proprietario).
 2. `lista_lancio.md`: checklist da spuntare nell'ordine.
 3. `impostazioni_studio.md`: click per click in Studio.
 4. `descrizione_EN.txt`: incollare in Customization > Basic info > Description.

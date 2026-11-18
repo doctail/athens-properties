@@ -1,10 +1,10 @@
 # Impostazioni YouTube Studio (passo per passo)
-Handle usato: **@ledgerofcities3d** (@ledgerofcities e' occupato, vedi nome_e_handle.txt). Tutto cio' che e' mostrato o caricato su YouTube e' in inglese americano.
+Handle: **@ledgerofcities** (canale del proprietario, gia' rinominato il 18/11/2026). Tutto cio' che e' mostrato o caricato su YouTube e' in inglese americano.
 
 ## 1. Customization > Basic info
 1. Studio > **Customization** > **Basic info**.
 2. **Name**: `Ledger of Cities`.
-3. **Handle**: `@ledgerofcities3d` (verifica prima che sia libero; registra per primo).
+3. **Handle**: `@ledgerofcities` (gia' impostato, nulla da cambiare).
 4. **Description**: incolla tutto `descrizione_EN.txt`.
 5. **Channel URL**: lascia quello dell'handle.
 6. **Links**: aggiungi solo Reddit (subreddit da verificare) e altri social se esistono. Nessun link di affiliazione o donazione.

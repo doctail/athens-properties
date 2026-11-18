@@ -1,7 +1,6 @@
 # Lista di lancio
 - [ ] Controllare il marchio "Ledger of Cities" su USPTO TESS e EUIPO eSearch (compito del proprietario; non verificato).
-- [ ] Decidere il nome definitivo: @ledgerofcities e' occupato, scegliere l'handle alternativo (consigliato @ledgerofcities3d) o un altro nome.
-- [ ] **Registrare l'handle per primo** (Studio > Customization > Basic info).
+- [x] Nome e handle: Ledger of Cities, @ledgerofcities (canale del proprietario, rinominato il 18/11/2026).
 - [ ] Impostare il nome "Ledger of Cities".
 - [ ] Caricare l'avatar `avatar_800.png`.
 - [ ] Caricare il banner `banner_2048x1152.png` e controllare le anteprime TV/desktop/mobile.
