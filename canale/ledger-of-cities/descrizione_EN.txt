@@ -1,0 +1,9 @@
+Real 3D city timelapses built year by year from official building data. No AI imagery. Just the city, the years and the music.
+
+Ledger of Cities renders every city in 3D from open data: the real footprint, height and construction year of each building, placed in its real year and layered over historical maps of how the city looked before. Where a building's year is unknown or estimated, the video says so on screen.
+
+New cities on a regular schedule. Tell us in the comments which city should be next.
+
+Data sources: municipal and national open-data portals and cadastres, U.S. Census TIGER/Line, © OpenStreetMap contributors (ODbL). Each video lists its exact datasets and licenses in its description.
+
+Rendered in Blender.

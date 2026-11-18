@@ -1,0 +1,16 @@
+# Lista di lancio
+- [ ] Controllare il marchio "Ledger of Cities" su USPTO TESS e EUIPO eSearch (compito del proprietario; non verificato).
+- [ ] Decidere il nome definitivo: @ledgerofcities e' occupato, scegliere l'handle alternativo (consigliato @ledgerofcities3d) o un altro nome.
+- [ ] **Registrare l'handle per primo** (Studio > Customization > Basic info).
+- [ ] Impostare il nome "Ledger of Cities".
+- [ ] Caricare l'avatar `avatar_800.png`.
+- [ ] Caricare il banner `banner_2048x1152.png` e controllare le anteprime TV/desktop/mobile.
+- [ ] Incollare la descrizione `descrizione_EN.txt`.
+- [ ] Incollare i tag canale `tag_canale.txt`.
+- [ ] Impostare paese e email di contatto (placeholder sostituito nel solo campo email).
+- [ ] Caricare il watermark `watermark_150.png`.
+- [ ] Impostare le Upload defaults (vedi `impostazioni_studio.md`).
+- [ ] Creare le 3 playlist.
+- [ ] Preparare il trailer 60-90 s e il video in evidenza (Home tab).
+- [ ] Primo video con consegna completa (miniatura, titolo, descrizione da template, capitoli, tag, commento fissato EN + locale).
+- [ ] Fissare il commento da `commento_fissato_template.md`.
