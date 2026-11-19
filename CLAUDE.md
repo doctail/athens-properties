@@ -12,6 +12,18 @@
 - Il proprietario non guarda le immagini: **le controlla l'agente, una per una** (stile, personaggi, emblemi protetti come croci rosse, corrispondenza con la frase `[V nnn]`), poi voce, render e montaggio. Il costo si dichiara in una riga prima di una chiamata a pagamento, e si va avanti.
 - Risposte brevi: cosa è stato fatto, cosa non va, cosa serve dal proprietario (solo se serve davvero).
 
+## Comunicazione col proprietario (ordine del 19/11/2026: la chat era arrivata a 456K token di messaggi, in gran parte miei)
+- **Messaggi brevi e concisi**: massimo 10-15 righe. Prima riga = il problema o l'esito. Niente tabelle, niente elenchi lunghi, niente ripetizione di quello che ha già letto, a meno che il proprietario li chieda. Se non capisce, chiede lui una spiegazione.
+- **Il proprietario non vuole numeri tecnici di camera/drone** (tabelle di distanza, inclinazione, velocità, soglie R2): li controlla la chat e gli agenti. Gli si dice solo "ok" o "non va, perché in una riga". I numeri restano nei file e in Nodum.
+- **Gli agenti riportano al massimo 8 righe**; i dettagli li scrivono in un file nel repo o in Nodum e la chat li legge solo se serve. Niente output grandi di tool o di agenti nella conversazione (usa estratti, `head`, conteggi).
+- Non rispiegare le decisioni già prese; le decisioni piccole le prende la chat e le registra in Nodum, il proprietario le cambia se vuole.
+- A ogni consegna di file: invia i file con `SendUserFile`, senza ricopiarne il contenuto nel messaggio.
+
+## Stato corrente (19/11/2026)
+- Nuovo canale: **Ledger of Cities** (`@ledgerofcities`, del proprietario). Pacchetto grafico e metadata in `canale/ledger-of-cities/`; confronto concorrenti in `report/CONFRONTO_CANALI.md`.
+- **Marsiglia e Pittsburgh sono pronte e NON vanno in nessuna coda di lavoro** (ordine del proprietario).
+- Il resto del lavoro, le decisioni e le istruzioni di ripresa sono in Nodum `CH Year Built/HANDOFF 2026-11-19` e `CH Year Built/REBUILD Year Built 2026-11-18`. Parti da lì.
+
 ## Memoria
 - La conoscenza dei 4 canali sta in **Nodum** (vault "My Vault"): parti da `00 HQ/00 START`, poi `00 HQ/RULES` e la CARD del canale su cui lavori. Non ricopiare quelle note nel repo.
 - Year Built vive nel repo `doctail/city3d` (memoria tecnica in `PRODUZIONE_TIMELAPSE.md`).
