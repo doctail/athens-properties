@@ -18,6 +18,14 @@
 - Agenti: massimo 15 righe di rapporto, dettagli in file nel repo o in Nodum.
 - Il proprietario non risponde a domande che hanno già una regola: decidi tu e vai avanti.
 
+## LISTA OBBLIGATORIA PRIMA DI OGNI GO PER IL POD (errore NYC, 20/11/2026: 2 ore di pod buttate)
+Nessun GO senza TUTTO questo, verificato dalla chat sui file (non dagli agenti sulla parola):
+1. Ogni decisione del proprietario in Nodum (navi, popolazioni, ecc.) e' ATTIVA nella configurazione che il pod scarica: controlla il valore reale nel file, non il default.
+2. Foglio di fotogrammi veri per OGNI epoca, con attenzione a costa, porto, acqua, moli e isole: nessun edificio sull'acqua, navi presenti dove previsto. Misura il numero di edifici sull'acqua per anno (deve essere 0, salvo moli storici).
+3. Il proprietario vede i fotogrammi prima del GO (almeno 5-6, epoca antica e moderna) e dice ok.
+4. Costo con base misurata, e tempo per fotogramma misurato su un render locale rappresentativo.
+5. Il commit nel GO e' su main e il diff-check dei file di render e' aggiornato.
+
 ## Comunicazione col proprietario (ordine del 19/11/2026: la chat era arrivata a 456K token di messaggi, in gran parte miei)
 - **Messaggi brevi e concisi**: massimo 10-15 righe. Prima riga = il problema o l'esito. Niente tabelle, niente elenchi lunghi, niente ripetizione di quello che ha già letto, a meno che il proprietario li chieda. Se non capisce, chiede lui una spiegazione.
 - **Il proprietario non vuole numeri tecnici di camera/drone** (tabelle di distanza, inclinazione, velocità, soglie R2): li controlla la chat e gli agenti. Gli si dice solo "ok" o "non va, perché in una riga". I numeri restano nei file e in Nodum.
