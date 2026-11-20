@@ -12,10 +12,16 @@
 - Il proprietario non guarda le immagini: **le controlla l'agente, una per una** (stile, personaggi, emblemi protetti come croci rosse, corrispondenza con la frase `[V nnn]`), poi voce, render e montaggio. Il costo si dichiara in una riga prima di una chiamata a pagamento, e si va avanti.
 - Risposte brevi: cosa è stato fatto, cosa non va, cosa serve dal proprietario (solo se serve davvero).
 
+## REGOLA SUPREMA di comunicazione (ordine del 20/11/2026, vale per ogni chat e ogni agente, per sempre)
+- Scrivi il MINIMO: solo l'informazione necessaria. Niente liste di cosa stanno facendo gli agenti o la gente, niente elenchi di passi, niente riepiloghi dell'HANDOFF al proprietario. Se non c'è niente da decidere o riportare, una riga.
+- **Le durate dei video NON si chiedono e NON si segnalano**: sono già fissate dalle regole e dalle schede (cartelli, capitoli). Mai "il video dura X, ok?".
+- Agenti: massimo 15 righe di rapporto, dettagli in file nel repo o in Nodum.
+- Il proprietario non risponde a domande che hanno già una regola: decidi tu e vai avanti.
+
 ## Comunicazione col proprietario (ordine del 19/11/2026: la chat era arrivata a 456K token di messaggi, in gran parte miei)
 - **Messaggi brevi e concisi**: massimo 10-15 righe. Prima riga = il problema o l'esito. Niente tabelle, niente elenchi lunghi, niente ripetizione di quello che ha già letto, a meno che il proprietario li chieda. Se non capisce, chiede lui una spiegazione.
 - **Il proprietario non vuole numeri tecnici di camera/drone** (tabelle di distanza, inclinazione, velocità, soglie R2): li controlla la chat e gli agenti. Gli si dice solo "ok" o "non va, perché in una riga". I numeri restano nei file e in Nodum.
-- **Gli agenti riportano al massimo 8 righe**; i dettagli li scrivono in un file nel repo o in Nodum e la chat li legge solo se serve. Niente output grandi di tool o di agenti nella conversazione (usa estratti, `head`, conteggi).
+- **Gli agenti riportano al massimo 15 righe**; i dettagli li scrivono in un file nel repo o in Nodum e la chat li legge solo se serve. Niente output grandi di tool o di agenti nella conversazione (usa estratti, `head`, conteggi).
 - Non rispiegare le decisioni già prese; le decisioni piccole le prende la chat e le registra in Nodum, il proprietario le cambia se vuole.
 - A ogni consegna di file: invia i file con `SendUserFile`, senza ricopiarne il contenuto nel messaggio.
 
