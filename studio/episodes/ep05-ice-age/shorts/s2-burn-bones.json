@@ -1,0 +1,138 @@
+{
+ "audio": "s2-burn-bones.mp3",
+ "out": "s2-burn-bones.mp4",
+ "hook": "NO WOOD? NO PROBLEM.",
+ "badge": "ICE AGE FUEL",
+ "gap": 0.1,
+ "seamless": true,
+ "phrases": [
+  {
+   "text": "No trees? Burn bones.",
+   "key": [
+    "trees",
+    "bones"
+   ],
+   "shots": [
+    [
+     "images/V12.jpg",
+     1,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V13.jpg",
+     1,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "At Mezhyrich, hearths held burned bone.",
+   "key": [
+    "Mezhyrich",
+    "bone"
+   ],
+   "shots": [
+    [
+     "images/V14.jpg",
+     1,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V15.jpg",
+     1,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V14.jpg",
+     1.9,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V15.jpg",
+     1.9,
+     0.4,
+     0.92
+    ]
+   ]
+  },
+  {
+   "text": "Almost no wood charcoal.",
+   "key": [
+    "wood",
+    "charcoal"
+   ],
+   "shots": [
+    [
+     "images/V16.jpg",
+     1,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V16.jpg",
+     2.0,
+     0.8,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "Researchers read it as fuel.",
+   "key": [
+    "Researchers",
+    "fuel"
+   ],
+   "shots": [
+    [
+     "images/V17.jpg",
+     1,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V21.jpg",
+     1,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V17.jpg",
+     1.9,
+     0.7,
+     0.7
+    ],
+    [
+     "images/V21.jpg",
+     1.9,
+     0.4,
+     0.75
+    ]
+   ]
+  },
+  {
+   "text": "So where's Dave's firewood?",
+   "key": [
+    "firewood"
+   ],
+   "shots": [
+    [
+     "images/V13.jpg",
+     1.7,
+     0.5,
+     0.3
+    ],
+    [
+     "images/V12.jpg",
+     1,
+     0.5,
+     0.5
+    ]
+   ]
+  }
+ ]
+}

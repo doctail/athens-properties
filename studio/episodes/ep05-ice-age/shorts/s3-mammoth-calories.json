@@ -1,0 +1,133 @@
+{
+ "audio": "s3-mammoth-calories.mp3",
+ "out": "s3-mammoth-calories.mp4",
+ "hook": "3.5 MILLION CALORIES?",
+ "badge": "BY ONE ESTIMATE",
+ "gap": 0.1,
+ "seamless": true,
+ "phrases": [
+  {
+   "text": "Mammoth: millions of calories?",
+   "key": [
+    "Mammoth",
+    "calories"
+   ],
+   "shots": [
+    [
+     "images/V23.jpg",
+     1,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V24.jpg",
+     1,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "By one estimate, 3.5 million.",
+   "key": [
+    "estimate",
+    "million"
+   ],
+   "shots": [
+    [
+     "images/V26.jpg",
+     1,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V30.jpg",
+     1,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V26.jpg",
+     1.9,
+     0.75,
+     0.85
+    ]
+   ]
+  },
+  {
+   "text": "Muscle alone.",
+   "key": [
+    "Muscle",
+    "alone"
+   ],
+   "shots": [
+    [
+     "images/V28.jpg",
+     1,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V27.jpg",
+     1,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V32.jpg",
+     1,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "A big male: about eleven feet tall.",
+   "key": [
+    "eleven",
+    "tall"
+   ],
+   "shots": [
+    [
+     "images/V25.jpg",
+     1,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V25.jpg",
+     2.0,
+     0.8,
+     0.25
+    ],
+    [
+     "images/V31.jpg",
+     1,
+     0.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "text": "So how big is one",
+   "key": [
+    "big",
+    "one"
+   ],
+   "shots": [
+    [
+     "images/V29.jpg",
+     1,
+     0.5,
+     0.5
+    ],
+    [
+     "images/V23.jpg",
+     1,
+     0.5,
+     0.5
+    ]
+   ]
+  }
+ ]
+}

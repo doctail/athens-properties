@@ -1,0 +1,27 @@
+# EP05 — prompt da rifare (QA visivo)
+
+Landscape 16:9: incolla HEADER di flow-prompts.md, poi questi prompt (stesso numero, allega il model sheet di Dave). Totale 16.
+Short 9:16: V17 e V32 (V14 opzionale). Primo = ultimo frame: V11/V22/V33 non servono. Le altre immagini sono approvate. Miniatura migliore: t3.
+
+## Landscape
+014. Wide: a cold, dry, windy grassland under a pale blue sky, patches of snow, yellow grass flattened by the wind, a herd of woolly mammoths grazing in the middle distance, large and clearly readable, with thick dark-brown outlines on everything including the grass clumps and the mammoths, flat colors, pale glacier wall far away. No people.
+016. Extreme close-up detail, no people: a few dry yellow grass blades bending in the wind, each with a frost-white rim, thick dark-brown outlines, snow patch and pale blue sky blurred behind.
+026. A stylised cartoon map of Eurasia, simple flat shapes with thick dark-brown outlines, pale blue sea, white ice over the north, ochre land, with about eight small bone-needle icons dotted over the land. Nothing else on the map: no animals, no huts, no sea creatures, no compass, no frame decorations. No letters, no numbers.
+029. A wooden drying rack with three flat, headless fox, wolf and wolverine pelts hanging by their edges in the cold wind, snowy camp with bone dwellings behind. No people in the image.
+033. Reaction: close-up of Dave, relieved, eyes closed, with the fur collar of his big fur coat pulled up to his nose, snow on his hair, mustard hoodie visible at the neck, frosted yellow grass and a pale glacier wall blurred behind. No trees. One Dave only.
+039. Close-up detail, no people: glowing orange bone pieces and ash inside a camp fire pit, sparks rising into the cold dark-blue air, thick dark-brown outlines.
+048. Reaction: Dave's face sticking out of a pile of snow, blinking, snow on his hair, toppled snow blocks around him, treeless frosted yellow-grass plain behind, NO trees.
+049. Wide shot of a round dwelling built from mammoth bones and tusks, curved frame of tusks and skulls covered with animal hides, smoke rising from the top, a few people in furs outside carrying bones to a hearth, pale blue sky, snow patches. NO Dave, NO firewood logs, NO trees.
+052. Dave in a fur coat over his hoodie stepping through a low hide-flap doorway into the bone dwelling, inside curved mammoth tusks and bones lashed with sinew, hide walls, fire pit of glowing bones, warm orange air waves, eyes closing in relief. NO wooden door, NO planks, NO hinges.
+055. Dave in his fur coat sitting inside the bone house, eyes shut, smiling, cheeks pink, steaming bowl of broth in his hands; a floating rating card with exactly three gold filled stars and two empty grey outline stars. No letters or numbers.
+059. A neighbor in a full-sleeved fur parka with hood, mittens and boots, NO bare skin, looking over Dave's shoulder at his phone with a puzzled frown, question-mark bubble above, Dave in hoodie holding the phone; snowy treeless plain, bone hut behind.
+060. Reaction: Dave in his hoodie holding his belly, wavy growl lines near it, sad eyes looking down, snowy plain with frosted yellow grass, NO trees.
+075. Close-up detail only, no people: a curved antler hook of a spear-thrower carved with a tiny mammoth figure, resting on a hide in warm firelight, plain simple background.
+083. Dave pointing at a wooden board showing only five icons (fur coat, flame, bone house, hunk of meat, group of furred people); beside it a plain round VERDICT stamp: flat gold circle with one simple teal tick mark, NO stars, NO ornaments, NO patterns, NO text, NO cross.
+084. Dave in a fur coat over his hoodie holding his phone, five tiny icons floating above him like thought bubbles: coat, flame, bone house, meat, and a crowd of five fully clothed people in fur parkas with hoods (NO bare skin). Treeless icy landscape.
+088. Dave in a fur coat over his hoodie next to a floating cartoon globe with small white polar caps and large green and sand continents, his finger tracing it; frosted yellow grass plain, NO trees.
+
+## Short verticali 9:16 (allega il model sheet di Dave)
+V17. Vertical 9:16 flat 2D vector cartoon, thick dark-brown outlines, cold Ice Age palette. ONE Dave (reference image) in mustard hoodie, blue jeans, white sneakers, warming his hands over a small hearth ringed with stones that burns only animal bones (long bones, a rib cage, a mammoth tusk fragment) with orange flames and sparks, NO wooden logs, NO sticks. Background: bare windy frosted steppe, pale sky, a far-off pale glacier wall, NO trees. Dave's eyebrows raised, amazed. NO text, NO numbers, NO logos, NO red crosses, NO flags.
+V32. Vertical 9:16 flat 2D vector cartoon, thick dark-brown outlines, cold Ice Age palette. ONE single Dave (reference image), centered, full body, big shaggy fur coat over mustard hoodie, blue jeans, white sneakers, licking his lips with a happy satisfied face, one hand on a round full belly. Plain pale icy-blue snowy plain background. Only ONE character in the frame, no collage, no character sheet, no multiple poses. NO text, NO numbers, NO logos, NO red crosses, NO flags.
+V14 (opzionale). Vertical 9:16 flat 2D vector cartoon, thick dark-brown outlines. Close-up of a stone-ringed hearth pit full of glowing burning animal bones only (long bones, ribs, a mammoth tusk piece), orange light and sparks, NO wood logs, NO skulls, frozen ground around. NO text, NO numbers, NO logos.
