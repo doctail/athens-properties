@@ -1,0 +1,19 @@
+{
+ "mode": "render",
+ "verdict": "PASS",
+ "fails": [],
+ "warns": [],
+ "duration_s": 435.8,
+ "lufs": -15.1,
+ "true_peak_dbfs": -2.4,
+ "frame_means": [
+  194.4,
+  199.0,
+  201.1,
+  58.9,
+  187.9,
+  164.8,
+  191.8,
+  171.5
+ ]
+}

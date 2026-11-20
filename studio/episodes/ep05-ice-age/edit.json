@@ -1,0 +1,659 @@
+{
+ "sections": [
+  {
+   "audio": "s00.mp3",
+   "images": [
+    {
+     "n": 1
+    },
+    {
+     "n": 2,
+     "at": "the ice is up"
+    },
+    {
+     "n": 3,
+     "at": "His fur coat"
+    },
+    {
+     "n": 4,
+     "at": "and he's standing"
+    },
+    {
+     "n": 5,
+     "at": "So how did people"
+    }
+   ],
+   "title_card": 20.49,
+   "riser_before_title": true,
+   "tail": 1.5,
+   "hook_counter": {
+    "label": "FEET OF ICE",
+    "from": 0,
+    "to": 10000,
+    "t0": 0.4,
+    "t1": 3.4,
+    "hold": 2.0
+   },
+   "callouts": [
+    {
+     "text": "HOW DID THEY SURVIVE?",
+     "anchor": "So how did people"
+    }
+   ]
+  },
+  {
+   "audio": "s01.mp3",
+   "images": [
+    {
+     "n": 6
+    },
+    {
+     "n": 7,
+     "at": "The Ice Age was not a frozen"
+    },
+    {
+     "n": 8,
+     "at": "Twenty thousand years ago"
+    },
+    {
+     "n": 9,
+     "at": "from about twenty-six"
+    },
+    {
+     "n": 10,
+     "at": "Ice sheets covered"
+    },
+    {
+     "n": 11,
+     "at": "compared with around"
+    },
+    {
+     "n": 12,
+     "at": "The world was roughly"
+    },
+    {
+     "n": 13,
+     "at": "and the sea sat"
+    },
+    {
+     "n": 14,
+     "at": "But that leaves"
+    },
+    {
+     "n": 15,
+     "at": "Africa and most of Asia"
+    },
+    {
+     "n": 16,
+     "at": "It was cold, dry"
+    },
+    {
+     "n": 17,
+     "at": "with herds of grazing"
+    },
+    {
+     "n": 18,
+     "at": "And here's the twist"
+    },
+    {
+     "n": 19,
+     "at": "By the scientific definition"
+    },
+    {
+     "n": 20,
+     "at": "We just live"
+    }
+   ],
+   "banner": {
+    "big": "MYTH",
+    "title": "ICE EVERYWHERE?"
+   },
+   "tail": 0.7,
+   "tally": {
+    "label": "WARMTH",
+    "before": 0,
+    "add": 0,
+    "total": 5
+   },
+   "callouts": [
+    {
+     "text": "LAST GLACIAL MAXIMUM",
+     "anchor": "the Last Glacial Maximum"
+    },
+    {
+     "text": "25% OF LAND VS 11% TODAY",
+     "anchor": "compared with around"
+    },
+    {
+     "text": "11 F COLDER",
+     "anchor": "roughly eleven degrees"
+    },
+    {
+     "text": "STILL IN AN ICE AGE",
+     "anchor": "we're still in an ice age"
+    }
+   ],
+   "bubbles": []
+  },
+  {
+   "audio": "s02.mp3",
+   "images": [
+    {
+     "n": 21
+    },
+    {
+     "n": 22,
+     "at": "A neighbor offers"
+    },
+    {
+     "n": 23,
+     "at": "Then the wind arrives"
+    },
+    {
+     "n": 24,
+     "at": "Ice Age people had fur"
+    },
+    {
+     "n": 25,
+     "at": "Needles made of bone"
+    },
+    {
+     "n": 26,
+     "at": "turn up at Ice Age sites"
+    },
+    {
+     "n": 27,
+     "at": "Archaeologists still argue"
+    },
+    {
+     "n": 28,
+     "at": "The skins had to come"
+    },
+    {
+     "n": 29,
+     "at": "In the Czech Republic"
+    },
+    {
+     "n": 30,
+     "at": "with skinning marks"
+    },
+    {
+     "n": 31,
+     "at": "Even lice"
+    },
+    {
+     "n": 32,
+     "at": "maybe much earlier"
+    },
+    {
+     "n": 33,
+     "at": "Dave's hoodie gets demoted"
+    }
+   ],
+   "banner": {
+    "big": "FIX #1",
+    "title": "CLOTHES"
+   },
+   "tail": 0.7,
+   "tally": {
+    "label": "WARMTH",
+    "before": 0,
+    "add": 1,
+    "total": 5
+   },
+   "callouts": [
+    {
+     "text": "ABOUT 40,000 YEARS OLD",
+     "anchor": "the oldest about forty"
+    },
+    {
+     "text": "80,000+ YEARS?",
+     "anchor": "A DNA study"
+    }
+   ],
+   "bubbles": [
+    {
+     "text": "BRRR!",
+     "t0": 7.03,
+     "t1": 9.63,
+     "x": 200,
+     "y": 300
+    }
+   ],
+   "badge_title": "FIX #1",
+   "survival": "FUR + NEEDLE",
+   "survival_anchor": "Dave's hoodie gets demoted",
+   "badge_scale": 0.62,
+   "badge_dur": 2.5
+  },
+  {
+   "audio": "s03.mp3",
+   "images": [
+    {
+     "n": 34
+    },
+    {
+     "n": 35,
+     "at": "On a cold, dry steppe"
+    },
+    {
+     "n": 36,
+     "at": "His fire lasts"
+    },
+    {
+     "n": 37,
+     "at": "At Mezhyrich"
+    },
+    {
+     "n": 38,
+     "at": "hearths held lots"
+    },
+    {
+     "n": 39,
+     "at": "Researchers read that"
+    },
+    {
+     "n": 40,
+     "at": "though whether"
+    },
+    {
+     "n": 41,
+     "at": "And in France"
+    },
+    {
+     "n": 43,
+     "at": "Lascaux is famous"
+    },
+    {
+     "n": 42,
+     "at": "Soot analysis points"
+    },
+    {
+     "n": 44,
+     "at": "A bowl, some fat"
+    },
+    {
+     "n": 45,
+     "at": "One small fire"
+    }
+   ],
+   "banner": {
+    "big": "FIX #2",
+    "title": "FIRE"
+   },
+   "tail": 0.7,
+   "tally": {
+    "label": "WARMTH",
+    "before": 1,
+    "add": 1,
+    "total": 5
+   },
+   "callouts": [
+    {
+     "text": "BURNED BONE, NO CHARCOAL",
+     "anchor": "burned bone and almost no wood"
+    },
+    {
+     "text": "17,000 YEARS AGO",
+     "anchor": "around seventeen thousand"
+    }
+   ],
+   "bubbles": [
+    {
+     "text": "BLOW, BLOW!",
+     "t0": 9.22,
+     "t1": 11.82,
+     "x": 100,
+     "y": 650
+    }
+   ],
+   "badge_title": "FIX #2",
+   "survival": "BONE + FAT",
+   "survival_anchor": "A bowl, some fat",
+   "badge_scale": 0.62,
+   "badge_dur": 2.5
+  },
+  {
+   "audio": "s04.mp3",
+   "images": [
+    {
+     "n": 46
+    },
+    {
+     "n": 47,
+     "at": "The wind removes it"
+    },
+    {
+     "n": 48,
+     "at": "in about a minute"
+    },
+    {
+     "n": 49,
+     "at": "At Mezhyrich"
+    },
+    {
+     "n": 50,
+     "at": "about twenty to thirty feet"
+    },
+    {
+     "n": 51,
+     "at": "with several hundred"
+    },
+    {
+     "n": 52,
+     "at": "and a hearth in the middle"
+    },
+    {
+     "n": 53,
+     "at": "A 2025 dating study"
+    },
+    {
+     "n": 54,
+     "at": "The same study suggests"
+    },
+    {
+     "n": 55,
+     "at": "Not bad for a house"
+    },
+    {
+     "n": 56,
+     "at": "Inside there's a fire"
+    },
+    {
+     "n": 57,
+     "at": "Fix three works too"
+    }
+   ],
+   "banner": {
+    "big": "FIX #3",
+    "title": "A HOUSE"
+   },
+   "tail": 0.7,
+   "tally": {
+    "label": "WARMTH",
+    "before": 2,
+    "add": 1,
+    "total": 5
+   },
+   "callouts": [
+    {
+     "text": "18,000 YEARS AGO",
+     "anchor": "about eighteen thousand years ago"
+    },
+    {
+     "text": "A WINTER CABIN",
+     "anchor": "winter cabin"
+    }
+   ],
+   "bubbles": [
+    {
+     "text": "MY IGLOO!",
+     "t0": 4.91,
+     "t1": 7.51,
+     "x": 150,
+     "y": 250
+    }
+   ],
+   "badge_title": "FIX #3",
+   "survival": "BONE HOUSE",
+   "survival_anchor": "Not bad for a house",
+   "badge_scale": 0.62,
+   "badge_dur": 2.5
+  },
+  {
+   "audio": "s05.mp3",
+   "images": [
+    {
+     "n": 58
+    },
+    {
+     "n": 59,
+     "at": "No signal"
+    },
+    {
+     "n": 60,
+     "at": "And there are no farms"
+    },
+    {
+     "n": 61,
+     "at": "The big prize"
+    },
+    {
+     "n": 63,
+     "at": "By one estimate"
+    },
+    {
+     "n": 62,
+     "at": "That's a lot of dinners"
+    },
+    {
+     "n": 64,
+     "at": "Whether hunters took"
+    },
+    {
+     "n": 65,
+     "at": "But nobody lived"
+    },
+    {
+     "n": 66,
+     "at": "The pits at Mezhyrich"
+    },
+    {
+     "n": 67,
+     "at": "And plants?"
+    },
+    {
+     "n": 68,
+     "at": "Starch on grinding"
+    },
+    {
+     "n": 69,
+     "at": "Bread? No"
+    }
+   ],
+   "banner": {
+    "big": "FIX #4",
+    "title": "FOOD"
+   },
+   "tail": 0.7,
+   "tally": {
+    "label": "WARMTH",
+    "before": 3,
+    "add": 1,
+    "total": 5
+   },
+   "callouts": [
+    {
+     "text": "BY ONE ESTIMATE: 3.5M CALORIES",
+     "anchor": "three and a half million"
+    },
+    {
+     "text": "30,000 YEARS AGO",
+     "anchor": "at least thirty thousand"
+    }
+   ],
+   "bubbles": [
+    {
+     "text": "NO SIGNAL",
+     "t0": 4.73,
+     "t1": 7.33,
+     "x": 1250,
+     "y": 300
+    }
+   ],
+   "badge_title": "FIX #4",
+   "survival": "MAMMOTH + MORE",
+   "survival_anchor": "But nobody lived",
+   "badge_scale": 0.62,
+   "badge_dur": 2.5
+  },
+  {
+   "audio": "s06.mp3",
+   "images": [
+    {
+     "n": 70
+    },
+    {
+     "n": 71,
+     "at": "A big male stood"
+    },
+    {
+     "n": 72,
+     "at": "Dave weighs a bit less"
+    },
+    {
+     "n": 73,
+     "at": "Hunters had tools"
+    },
+    {
+     "n": 74,
+     "at": "In France, antler"
+    },
+    {
+     "n": 75,
+     "at": "A spear-thrower is a longer"
+    },
+    {
+     "n": 76,
+     "at": "so the spear flies"
+    },
+    {
+     "n": 77,
+     "at": "But tools weren't"
+    },
+    {
+     "n": 78,
+     "at": "and, okay, shared body heat"
+    },
+    {
+     "n": 79,
+     "at": "That last part is a joke"
+    },
+    {
+     "n": 80,
+     "at": "Genetic studies"
+    },
+    {
+     "n": 81,
+     "at": "some lineages"
+    }
+   ],
+   "banner": {
+    "big": "FIX #5",
+    "title": "THE CREW"
+   },
+   "tail": 0.7,
+   "tally": {
+    "label": "WARMTH",
+    "before": 4,
+    "add": 1,
+    "total": 5
+   },
+   "callouts": [
+    {
+     "text": "SPEAR-THROWERS: ~19,000-17,000 YEARS",
+     "anchor": "roughly nineteen"
+    },
+    {
+     "text": "STILL CONTESTED",
+     "anchor": "but that is contested"
+    },
+    {
+     "text": "POPULATION SHRANK",
+     "anchor": "population shrank"
+    }
+   ],
+   "bubbles": [
+    {
+     "text": "I GOT THIS!",
+     "t0": 3.49,
+     "t1": 6.09,
+     "x": 100,
+     "y": 250
+    }
+   ],
+   "badge_title": "FIX #5",
+   "survival": "THE CREW",
+   "survival_anchor": "The crew was not a luxury",
+   "badge_scale": 0.62,
+   "badge_dur": 2.5
+  },
+  {
+   "audio": "s07.mp3",
+   "images": [
+    {
+     "n": 82
+    },
+    {
+     "n": 84,
+     "at": "Fur and sewing"
+    },
+    {
+     "n": 83,
+     "at": "That's our best reading"
+    },
+    {
+     "n": 85,
+     "at": "And the Ice Age was never"
+    },
+    {
+     "n": 86,
+     "at": "It was a world of cold"
+    },
+    {
+     "n": 87,
+     "at": "Dave's odds alone"
+    },
+    {
+     "n": 88,
+     "at": "With the crew?"
+    }
+   ],
+   "banner": {
+    "big": "THE VERDICT",
+    "title": "FIVE FIXES, ONE CREW"
+   },
+   "tail": 0.9,
+   "tally": {
+    "label": "WARMTH",
+    "before": 5,
+    "add": 0,
+    "total": 5
+   },
+   "callouts": [
+    {
+     "text": "NOT A CERTAINTY",
+     "anchor": "That's our best reading"
+    }
+   ],
+   "bubbles": [],
+   "badge_title": "VERDICT",
+   "survival": "COLD HAS SOLUTIONS",
+   "survival_anchor": "It was a world of cold",
+   "badge_scale": 0.62,
+   "badge_dur": 3.0
+  },
+  {
+   "audio": "s08.mp3",
+   "images": [
+    {
+     "n": 89
+    },
+    {
+     "n": 90,
+     "at": "Next time"
+    }
+   ],
+   "tail": 2.0,
+   "bubbles": [
+    {
+     "text": "NO SIGNAL",
+     "t0": 1.59,
+     "t1": 4.19,
+     "x": 850,
+     "y": 200
+    }
+   ]
+  }
+ ]
+}
