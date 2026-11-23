@@ -19,7 +19,7 @@ Le voci marcate [verificare] dipendono da ciò che mostra l'interfaccia KDP al m
 | Contenuti sessualmente espliciti | No |
 | Età di lettura | vuoto (minima e massima) |
 | Marketplace principale | Amazon.com |
-| Categorie (3) | vedi sotto [verificare] |
+| Categorie (3) | vedi sotto |
 | Libro low-content | NO (non spuntare: serve l'ISBN gratuito e l'anteprima Look Inside) |
 | Libro a caratteri grandi (Large print) | NO (le soluzioni sono a 10 pt e le istruzioni a 13 pt; KDP chiede 16 pt in tutto il testo) |
 | Parole chiave (7) | vedi sotto |
@@ -46,10 +46,10 @@ Le voci marcate [verificare] dipendono da ciò che mostra l'interfaccia KDP al m
 <i>Interior pages designed with AI assistance.</i>
 ```
 
-### Categorie [verificare nell'interfaccia KDP]
-1. Libros en español > Humor y entretenimiento > Rompecabezas y juegos > Sopas de letras
-2. Libros en español > Humor y entretenimiento > Rompecabezas y juegos > Juegos de palabras
-3. Games & Activities > Puzzles > Word Search
+### Categorie (scelte nel selettore KDP; "Libros en español" non c'è: Amazon la assegna in base alla lingua)
+1. Humor & Entertainment > Puzzles & Games > Word Search
+2. Self-Help > Memory Improvement
+3. Parenting & Relationships > Aging Parents
 
 ### Parole chiave (una per riga, senza virgole)
 1. pasatiempos tercera edad en español

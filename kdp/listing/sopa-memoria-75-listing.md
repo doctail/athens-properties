@@ -61,11 +61,11 @@ Morgan Hayes
 6. cuaderno pasatiempos papá mamá
 7. entretenimiento abuelita abuelito
 
-## Categorie (3, verificare su KDP)
+## Categorie (3, dal selettore KDP)
 
-1. Libros en español > Humor y entretenimiento > Rompecabezas y juegos > Sopas de letras (verificare su KDP)
-2. Libros en español > Humor y entretenimiento > Rompecabezas y juegos > Juegos de palabras (verificare su KDP)
-3. Games & Activities > Puzzles > Word Search (verificare su KDP)
+1. Humor & Entertainment > Puzzles & Games > Word Search
+2. Self-Help > Memory Improvement
+3. Parenting & Relationships > Aging Parents
 
 ## Conteggi caratteri (python3)
 
