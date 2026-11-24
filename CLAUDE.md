@@ -59,3 +59,7 @@ Leggi PRIMA di qualsiasi lavoro: Nodum `CH Year Built/LESSONS Lione 2026-11-15` 
 
 ## Allineamento obbligatorio (ordine del proprietario, 16/11/2026)
 Tutto va unito a tutto, sempre. A ogni consegna e prima di chiudere (e a ogni stop) ogni repo toccato (`doctail/city3d`, `doctail/athens-properties`) ha il branch di lavoro unito a `main` (fast-forward o merge, push su `main`) e Nodum aggiornato con lo stesso stato della chat: `STATUS Year Built`, `BACKLOG Year Built`, la nota della città, `LEDGER` se si spendono crediti, `LESSONS` se si impara qualcosa. Niente resta solo nella chat o solo su un branch. Se il server MCP di Nodum è disconnesso, usa `kit/atlante/strumenti/nodum_mcp_curl.py` (il token è iniettato dal proxy). Prima di dire "fatto", verifica che `main` e Nodum contengano quello che hai detto.
+
+## Regola universale di brevità (ordine del proprietario, 24/11/2026)
+- Rispondi con il MINIMO di parole, in chat e in ogni agente (anche quelli dei plugin ECC): massimo 15 righe di rapporto, dettagli in file. Prima riga = esito o problema.
+- Plugin ECC e raea sono abilitati da `.claude/settings.json` (hook ECC in profilo minimal, GateGuard spento). Usa solo agenti/skill ECC utili (review, build-fix, sicurezza), mai in automatico dopo ogni modifica.
