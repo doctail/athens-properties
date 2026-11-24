@@ -35,7 +35,7 @@ Nessun GO senza TUTTO questo, verificato dalla chat sui file (non dagli agenti s
 
 ## Stato corrente (19/11/2026)
 - Nuovo canale: **Ledger of Cities** (`@ledgerofcities`, del proprietario). Pacchetto grafico e metadata in `canale/ledger-of-cities/`; confronto concorrenti in `report/CONFRONTO_CANALI.md`.
-- **Marsiglia e Pittsburgh sono pronte e NON vanno in nessuna coda di lavoro** (ordine del proprietario).
+- **Marsiglia e Pittsburgh: da rifare con colori nuovi (ordine del proprietario, 24/11/2026; i vecchi video sono cancellati).** Stato in Nodum `CH Year Built/STATUS Year Built` (sezione 2026-11-24). Un agente alla volta.
 - Il resto del lavoro, le decisioni e le istruzioni di ripresa sono in Nodum `CH Year Built/HANDOFF 2026-11-19` e `CH Year Built/REBUILD Year Built 2026-11-18`. Parti da lì.
 
 ## Memoria
