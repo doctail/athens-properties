@@ -26,6 +26,12 @@ Nessun GO senza TUTTO questo, verificato dalla chat sui file (non dagli agenti s
 4. Costo con base misurata, e tempo per fotogramma misurato su un render locale rappresentativo.
 5. Il commit nel GO e' su main e il diff-check dei file di render e' aggiornato.
 
+## REGIA e VERSIONE LIGHT (feedback del proprietario su NYC, 26/11/2026: il video e' stato lasciato cosi, ma dal prossimo vale sempre)
+Errori di regia visti solo guardando il video: dal secondo 20 al 40 non succedeva niente (nessuna scheda nuova); dal 1980 al 2020 la camera restava fissa su Central Park mentre le schede e gli anni andavano avanti; inquadrature sbagliate in molti punti. Le soste sul pod non erano il problema: nessun controllo misurava il "tempo morto".
+1. **Versione LIGHT obbligatoria per ogni citta'**: dopo il render, la chat (o un agente) ricrea una versione leggera (es. 640x360, stesso montaggio con overlay) e la SPEZZA in parti da pochi minuti, cosi' il proprietario la guarda e puo' inviare le parti alla chat, che altrimenti non vede il video e non capisce gli errori. La chat guarda i fotogrammi di ogni parte (uno ogni 2-3 s) prima di dire "ok".
+2. **QA di regia PRIMA del GO** (misurato sulla schedule, in locale): (a) nessun intervallo senza nuova scheda, hover o evento maggiore di ~10 s; (b) la camera non resta sullo stesso bersaglio per piu' di ~8 s mentre l'anno avanza di piu' di ~10 anni (se un hover e' lungo, l'anno deve restare fermo, come da regola); (c) ogni scheda che appare deve riferirsi a quello che la camera sta inquadrando; (d) controllare le zone con molte schede e anni veloci (es. 1980-2020 a NYC) e quelle senza eventi (es. 20-40 s a NYC).
+3. Il rewind iniziale e i primi 20 s hanno un controllo a parte: la camera deve inquadrare la citta', non il mare.
+
 ## Comunicazione col proprietario (ordine del 19/11/2026: la chat era arrivata a 456K token di messaggi, in gran parte miei)
 - **Messaggi brevi e concisi**: massimo 10-15 righe. Prima riga = il problema o l'esito. Niente tabelle, niente elenchi lunghi, niente ripetizione di quello che ha già letto, a meno che il proprietario li chieda. Se non capisce, chiede lui una spiegazione.
 - **Il proprietario non vuole numeri tecnici di camera/drone** (tabelle di distanza, inclinazione, velocità, soglie R2): li controlla la chat e gli agenti. Gli si dice solo "ok" o "non va, perché in una riga". I numeri restano nei file e in Nodum.
