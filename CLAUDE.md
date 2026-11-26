@@ -41,7 +41,7 @@ Errori di regia visti solo guardando il video: dal secondo 20 al 40 non succedev
 
 ## Stato corrente (19/11/2026)
 - Nuovo canale: **Ledger of Cities** (`@ledgerofcities`, del proprietario). Pacchetto grafico e metadata in `canale/ledger-of-cities/`; confronto concorrenti in `report/CONFRONTO_CANALI.md`.
-- **Marsiglia e Pittsburgh: da rifare con colori nuovi (ordine del proprietario, 24/11/2026; i vecchi video sono cancellati).** Stato in Nodum `CH Year Built/STATUS Year Built` (sezione 2026-11-24). Un agente alla volta.
+- **Pittsburgh: GO dato il 26/11, pod con `cities/pittsburgh/delivery/GO_POD.md` (city3d main); poi montaggio con years.json e musiche del proprietario. Marsiglia e le altre citta': da rifare con colori nuovi, una per volta, un agente alla volta.** Ripresa: Nodum `CH Year Built/HANDOFF 2026-11-26 Pittsburgh GO`.
 - Il resto del lavoro, le decisioni e le istruzioni di ripresa sono in Nodum `CH Year Built/HANDOFF 2026-11-19` e `CH Year Built/REBUILD Year Built 2026-11-18`. Parti da lì.
 
 ## Memoria
