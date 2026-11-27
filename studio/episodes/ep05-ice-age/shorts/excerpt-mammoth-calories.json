@@ -1,0 +1,124 @@
+{
+ "audio": "../audio/s05.mp3",
+ "src_start": 9.375,
+ "src_end": 32.205,
+ "lead": 0.3,
+ "tail": 3.8,
+ "card_dur": 2.2,
+ "hook": "HOW MANY CALORIES IN ONE MAMMOTH?",
+ "badge": "BY ONE ESTIMATE",
+ "out": "excerpt-mammoth-calories.mp4",
+ "card": "FULL STORY: LINK BELOW",
+ "captions": [
+  [
+   9.375,
+   11.89,
+   "Farming is still thousands of years away.",
+   [
+    "Farming"
+   ]
+  ],
+  [
+   12.695,
+   14.47,
+   "The big prize was the mammoth.",
+   [
+    "mammoth"
+   ]
+  ],
+  [
+   15.305,
+   20.51,
+   "By one estimate, a single mammoth carries about three and a half million calories of muscle alone.",
+   [
+    "estimate",
+    "million",
+    "calories"
+   ]
+  ],
+  [
+   21.349,
+   22.31,
+   "That's a lot of dinners.",
+   [
+    "dinners"
+   ]
+  ],
+  [
+   23.2175,
+   28.97,
+   "Whether hunters took them down, or also used animals that died on their own, is still debated.",
+   [
+    "debated",
+    "hunters"
+   ]
+  ],
+  [
+   29.971,
+   32.205,
+   "But nobody lived on mammoth alone.",
+   [
+    "nobody",
+    "alone"
+   ]
+  ]
+ ],
+ "shots": [
+  [
+   9.375,
+   "../images/060.jpg",
+   1.0,
+   0.5,
+   0.5
+  ],
+  [
+   12.6,
+   "../images/061.jpg",
+   1.0,
+   0.3,
+   0.5
+  ],
+  [
+   15.3,
+   "../images/063.jpg",
+   1.0,
+   0.5,
+   0.5
+  ],
+  [
+   18.0,
+   "../images/062.jpg",
+   1.0,
+   0.5,
+   0.5
+  ],
+  [
+   21.3,
+   "../images/064.jpg",
+   1.0,
+   0.5,
+   0.5
+  ],
+  [
+   23.2,
+   "../images/061.jpg",
+   1.6,
+   0.35,
+   0.55
+  ],
+  [
+   26.5,
+   "../images/061.jpg",
+   1.6,
+   0.85,
+   0.55
+  ],
+  [
+   29.9,
+   "../images/060.jpg",
+   1.5,
+   0.5,
+   0.4
+  ]
+ ]
+}
